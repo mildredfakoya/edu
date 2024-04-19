@@ -1,0 +1,41 @@
+
+  .sq-sidenav{
+    height: 100%;
+    width: auto;
+    position: relative;
+    margin-top: auto;
+    padding-top: 30px;
+    background-color: rgb(204, 204, 200);
+    
+  }
+
+  .sq-sidenav a
+  {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 5px 5px 25px;
+    display: block;
+    color: black;  
+  }
+
+  .sq-sidenav a:hover
+  {
+    text-decoration: none;
+    color: white;  
+  }
+
+  .sq-cover{
+    height: 100%;
+    width: auto;
+    position: relative;
+    margin-top: auto;
+
+  }
+
+  .sq-cover fieldset{
+    margin-top: 30px;
+    float: left;
+    padding: 5px;
+  }
+
+  
