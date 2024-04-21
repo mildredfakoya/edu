@@ -3,60 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/se_eduq.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css">
-    <title>Special </title>
+    <title>Special Education Questionnaire </title>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Logo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    EDU Forms
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="pages/se_eduq/se_home.html">Special Education Questionnaire</a>
-                    <a class="dropdown-item" href="pages/Lucia_Pri_Quest/LPQ_Cov.html">Primary Questionnaire</a>
-                    <a class="dropdown-item" href="pages/early_childQ/ecQ_home.html">Early Childhood Questionnaire</a>
-                    <a class="dropdown-item" href="pages/sec_Quest/secQHome.html">Secondary Questionnaire</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </header>
-</body>
-<section class="hero">
+  <header class="header">
     <div class="container">
-      <h1 class="text-center">Welcome to SOP Internship Forms Page</h1>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                EDU Forms
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="pages/se_eduq/se_home.html">Special Education Questionnaire</a>
+                <a class="dropdown-item" href="pages/Lucia_Pri_Quest/LPQ_Cov.html">Primary Questionnaire</a>
+                <a class="dropdown-item" href="pages/early_childQ/ecQ_home.html">Early Childhood Questionnaire</a>
+                <a class="dropdown-item" href="pages/sec_Quest/secQHome.html">Secondary Questionnaire</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="hero">
+    <div class="container">
+      <h1 class="text-center h2" > GOVERNMENT OF ST.LUCIA </h1>
+        <h2 class="text-center h3">MINISTRY OF EDUCATION, INNOVATION, GENDER RELATIONS AND SUSTAINABLE DEVELOPMENT</h2>
+        
       <!--  text or elements for hero section here -->
+    </div>
+     
+    
+  </section>
+  
+  <section class="se-form row ">
+    <div class="form-container  col-8">
+      <h2 class="text-center h4">Special Education (V/Fort) Questionnaire Form</h2>
+
+      <!-- content for the About section here -->
+      <form  action="" method="post">
+        <label for="date-quest">Date questionnaire Completed</label>
+        <input type="text" name="date-quest" id="date-quest">
+        <div class="b-infor h5">Background Information:</div>
+        <label for="school-name">Name of School</label>
+        <input type="text" name="school-name" id="school-name">
+        <label for="school-code">School Code : </label>
+        <input type="number" name="school-code" id="school-code">
+        <label for="m-address"> Mailing Adress </label>
+        <input type="text" name="m-address" id="m-address">
+        <label for="principal">Name of Principal</label>
+        <input type="text" name="principal" id="principal">
+        <label for="district">Name Of District</label>
+        <input type="text" name="district" id="district">
+        <label for="management"> Management </label>
+        <input type="checkbox" name="management" id="management" value="Ministry of Education"> Ministry Of Education
+        <input type="checkbox" name="management" id="management" value="board/council">Board/Council
+        <input type="text" name="management" id="management" value="others">Others:
+        <label for="ownership">Ownership</label>
+        <input type="checkbox" name="ownership" id="ownership" value="Government"> Government
+        <input type="checkbox" name="ownership" id="ownership" value="private"> Private
+        <input type="checkbox" name="ownership" id="ownership" value="denominational"> Denominational
+        <label for="enrollment"> Enrollment</label>
+        <input type="number" name="enrollment" id="enrollment">
+        <label for="non-tstaff">Non-Teaching Staff</label>
+        <input type="number" name="" id="">
+        <label for="t-staff">Teaching Staff</label>
+        <input type="number" name="t-staff" id="t-staff">
+        <label for="school-type">Type of School</label>
+        <input type="checkbox" name="school-type" id="school-type" value="hearing impaired"> Hearing Impaired
+        <input type="checkbox" name="school-type" id="school-type" value="visually impaired"> Visually Impaired
+        <input type="checkbox" name="school-type" id="school-type" value="Blind"> Blind
+        <input type="checkbox" name="school-type" id="school-type" value="autistic"> Autistic
+        <input type="checkbox" name="school-type" id="school-type" value="physical impairements"> Physical impairements
+        <input type="checkbox" name="school-type" id="school-type" value="multiple handcaps"> Multiple Handcaps
+        <input type="checkbox" name="school-type" id="school-type" value="mentally challenged"> Mentally Challenged
+        <label for="p-field">Playing Field</label>
+        <input type="checkbox" name="p-field" id="p-field" value="community owned"> Community Owned
+        <input type="checkbox" name="p-field" id="p-field" value="School owned"> School Owned
+        <input type="text" name="p-field" id="p-field"  > Others Specify:
+
+
+      </form>
     </div>
   </section>
   
-  <section class="about">
-    <div class="container">
-      <h2 class="text-center">About Us</h2>
-      <!-- content for the About section here -->
-    </div>
-  </section>
-<footer class="footer bg-light">
+  <footer class="footer bg-light">
     <div class="container">
       <p class="text-center">Footer content here</p>
       <!-- footer content or links here -->
     </div>
   
   </footer>
+  
+</body>
+ 
 </html>
