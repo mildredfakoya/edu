@@ -3,62 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Early Child Questionnaire</title>
-  <link rel="stylesheet" href="../../css/main.css">
+  <title>SOP Internship forms Page</title>
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="../../css/early_childQ.css">
-</head> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css">
+</head>
 
 <body>
- <header>
-    <nav>
-      <ul>
-        <li> <a href="index.html">Home</a></li>
-        <li> <a href=""> EDU Forms</a></li>
-     </ul>
+  <header class="header">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              EDU Forms
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="pages/se_eduq/se_home.html">Special Education Questionnaire</a>
+              <a class="dropdown-item" href="pages/Lucia_Pri_Quest/LPQ_Cov.html">Primary Questionnaire</a>
+              <a class="dropdown-item" href="pages/early_childQ/ecQ_home.html">Early Childhood Questionnaire</a>
+              <a class="dropdown-item" href="pages/sec_Quest/secQHome.html">Secondary Questionnaire</a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </nav>
-</header>
-<section class="row">
-  <section class="col-3">
-     <div>
-       <h2> Side Navigaton</h2>
+  </div>
+  </header>
+
+  <section class="form-ecq-content">
+    <section class="row">
+      <div class="col-12" >
+        <div class="form-ecq">
+          <h1> Government of St. Lucia </h1>
+          <h3> Ministry of Education, Innovation, Gender Relations and Sustainable Development</h3>
+        </div>
+      </div> 
+    </section>
+
+    <section class="row">
+      <div class="col-3">
+        <div>
+          <h3>Side Navigation </h3>
+          <nav><a href="#">Home</a></nav>
           <nav><a href="#">Demography</a></nav>
-     </div>  
+          <nav><a href="#"> Staff Profile</a></nav>
+          <nav><a href="#">Children Profile</a></nav>
+        </div>
+      </div>
+
+      <div class="col-9">
+        <div>
+          <h3>Early Childhood Questionnaire</h3>
+          <h4>Welcome Address </h4>
+          <p> Welcome to Early Childhood Questionnaire</p>
+          <p> Your participation in this initiative is crucial in shaping the 
+              future of education within our district. 
+              Please follow the instructions below to complete the questionnaire 
+              comprehensively and accurately
+          </p>
+          <h4>Instructions</h4>
+            <ul>
+              <li>Begin by reviewing <em><b>each</b></em> sections to understand the information required</li>
+              <li>Provide demographic information about your school. </li>
+              <li>Provide details of staffs, Highlight qualifications, experience, and areas of expertise</li>
+              
+            </ul>
+        </div>
+        
+        <div class="form-container-ecq">
+          <form action="">
+
+            <label for="districtname">District</label>
+            <select name="districtname" id="districtname">
+              <option value="district1"> District 1</option>
+              <option value="district2"> District 2</option>
+            </select>
+
+            <label for="sch_name">Schools</label>
+            <select name="sch_name" id="sch_name">
+              <option value="school1"> School 1</option>
+              <option value="school2"> School 2</option>
+            </select>
+
+            <label for="QDate">Questionnaire insert date: </label>
+            <input id="QDate" name="QDate" type="date" placeholder="Enter date">
+
+            <label for="Sname">Supervisor Name </label>
+            <input id="Sname" name="Sname" type="text" placeholder="Enter Name">
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
   </section>
- <section class="col-9">
-   <div>
-   <h1>Government of St. Lucia </h1>
-   <h2> Ministry of Education, Innovation, </h2>
-      <h2>Gender Relations and Sustainable Development</h2>
-      <p>Annual Education Census Questionnaire</p> 
-      <p>EARLY CHILDHOOD </p>
-      <p>2020-21 ACADEMIC YEAR</p>
-   </div>   
-   <div>
-       <h3>Instruction</h3>
-       <p>
-           1. Please refer to the technical notes for explanation or definition on the last page for any item identified using<br>
-            the asterix (*). You may contact officers of the Ministry of Education at 451-7710/468-3220 or at <br> ecsu.slu@gmail.com for further assistance required in completing the questionnaire. 
-           </p>
+  
 
-           2.  All data furnished in this questionnaire should refer to October 15, 2020 unless otherwise specified.  
+    
+    
 
-       <p>The completed questionnaire should reach the following address before or on November 20, 2020 </p>  
-       
-       <P>Curriculum Officer – Early Childhood Services Unit
-           Department of Education, Innovation and Gender Relations 
-           Francis Compton Building, Waterfront, Castries
-       </P>
-   </div>
-   
+        
 
-   <div>
-     <label for="QDate">Questionnaire date completed </label>
-     <input id="QDate" name="QDate" type="date" placeholder="Enter date"><br><br>
 
-     <label for="Sname">Supervisor Name </label>
-     <input id="Sname" name="Sname" type="text" placeholder="Enter Name">
-   </div>  
- </section>
-</section>
+    
+
+     
+  
 </body>
 </html>  
