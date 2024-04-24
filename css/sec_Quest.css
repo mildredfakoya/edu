@@ -1,9 +1,10 @@
 
+  
   .sq-sidenav{
     height: 100%;
     width: auto;
-    position: relative;
-    margin-top: auto;
+    position: fixed;
+    /*margin-top: auto;*/
     padding-top: 30px;
     background-color: rgb(204, 204, 200);
     
@@ -13,10 +14,17 @@
   {
     text-decoration: none;
     font-size: 20px;
-    padding: 5px 5px 5px 25px;
+    padding: 0 5px 5px 15px;
     display: block;
     color: black;  
   }
+.sq-sidenav-ul
+{
+  width: 100%;
+  height: auto;
+  margin: o 5px;
+  
+}
 
   .sq-sidenav a:hover
   {
@@ -25,17 +33,30 @@
   }
 
   .sq-cover{
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
     position: relative;
+  }
+  
+ 
+  .sq-cover form{
     margin-top: auto;
-
+    padding: 5px;
+    
   }
 
-  .sq-cover fieldset{
-    margin-top: 30px;
-    float: left;
+  .sq-school-fieldset{
+    border: 0.5px groove gray;
+    margin: 5px;
     padding: 5px;
+    
+  }
+  .sq-school-fieldset legend{
+    font-size:medium;
+    font-style: italic;
+    color: gray;
   }
 
   
