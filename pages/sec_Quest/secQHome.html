@@ -6,66 +6,35 @@
   <title>SOP Internship forms Page</title>
   <link rel="stylesheet" href="../../css/main.css">
   <link rel="stylesheet" href="../../css/sec_Quest.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css">
 </head>
 <body>
 
-<header class="header">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Logo</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              EDU Forms
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="pages/se_eduq/se_home.html">Special Education Questionnaire</a>
-              <a class="dropdown-item" href="pages/Lucia_Pri_Quest/LPQ_Cov.html">Primary Questionnaire</a>
-              <a class="dropdown-item" href="pages/early_childQ/ecQ_home.html">Early Childhood Questionnaire</a>
-              <a class="dropdown-item" href="pages/sec_Quest/secQHome.html">Secondary Questionnaire</a>
-            </div>
-          </li>
-        </ul>
-      </div>
+  <header class="header">
+    <h1>Welcome to EDU Forms Project Page</h1>
+    <!-- Navigation -->
+    <nav class="nav">
+      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="#">About</a>
+      <a class="nav-link" href="#">Logout</a>
     </nav>
-  </div>
-</header>
+  </header>
 
-<section class="hero">
-  <div class="container">
-    <h2 class="text-center" >Government of St. Lucia</h2>
-    <h4 class="text-center">Ministry of Education, Innovation Gender Relations and Sustainable Development</h4>
-    <!--  text or elements for hero section here -->
-  </div>
-</section>
+  <section class="row">
+    <div >
+      <h2 class="sq-section-heading">Government of St. Lucia</h2>
+      <h3 class="sq-section-heading">Ministry of Education, Innovation Gender Relations 
+        and Sustainable Development</h3>
+    </div>
+  </section>
 
 <section class="row">
-<!--  <div class="col-2 sq-sidenav ">
-    <a href="#">School</a>
-    <a href="#">Student</a>
-    <a href="#">Staff</a>
-    <a href="#">Age Distribution</a>
-    <a href="#">CXC</a>
-    <a href="#">CVQ</a>
-    <a href="#">ICT</a>
-    <a href="#">Building and Facilities</a>-->
-    <!-- side navigation bar for all respected tabs such as student, school, staff etc 
-  </div>-->
-  <div class="col-10 sq-cover bg-light">
-    <h5 class="container" style="text-align: center; font-style: italic;">Annual Education Census Questionnaire Secondary School 2020-21 Academic Year</h5>
+  <div class="sq-cover">
+    <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Annual Education Census Questionnaire 
+      Secondary School 2020-21 Academic Year</h3>
     <form action="secQSchool.html" method="post" autocomplete="off">
-      <fieldset>
+      <fieldset class="sq-cover-fieldset">
         <label for="district">Select District: &nbsp;</label>
-        <select name="district" id="district"> 
+        <select name="district" id="district" class="sq-form-input"> 
           <option selected>Select District  &nbsp; </option>
           <option value="district 1">District 1</option>
           <option value="district 2">District 2</option>
@@ -75,27 +44,31 @@
           <option value="district 6">District 6</option>
           <option value="district 7">District 7</option>
           <option value="district 8">District 8</option>
-    </select><br>
+        </select><br>
         <!--School list should change as per the district selection-->
         <label for="schoolname">Name of the School: &nbsp;</label>
-        <select name="schoolname" id="schoolname"> 
+        <select name="schoolname" id="schoolname" class="sq-form-input"> 
               <option selected>Select School</option>
               <option value="babonneau secondary">Babonneau Secondary</option>
               <option value="corinth secondary">Corinth Secondary</option>
               <option value="saint lucia sports academy">Saint Luica Sports Academy</option>
         </select><br><br>
-        <h6 style="text-align: justify; font-style: oblique;">Instructions:</h6><br>
+        <h4 style="text-align: justify; font-style: oblique;">Instructions:</h4>
           
             <p>1. &nbsp;All data furnished in this questionnaire should refer to the day of <b>October 15, 2020.</b>
-            The completed questionnaire should reach your <b>District Office</b> by <b>November 20, 2020.</b></p><br>
+            The completed questionnaire should reach your <b>District Office</b> by <b>November 20, 2020.</b></p>
             <p>2. &nbsp;Please refer to the <i style="color: blue;">classifications</i> for teachers and explanatory notes provided on the 
               last two pages before completing the questionnaire. You may contact officers of the Department
             of Education, Innovation and Gender Relations at <b>468-3220/3221</b> or at the <i>educationstats@gmail.com</i> 
           for any assistance required in completing the questionnaire.</p><br>
           
         <label for="principal-name">Name of the Principal: &nbsp;</label>
-        <input type="text" name="principal-name" id="principal-name"><br><br>
-        <input type="submit" name="continue" value="Continue">
+        <input type="text" name="principal-name" id="principal-name" class="sq-form-input"><br>
+        <label for="date">Completed Date: &nbsp;</label>
+        <input type="date" name="date" id="date" class="sq-form-input"><br><br>
+
+        <!--<button type="submit" class="sq-form-button">Continue</button>-->
+        <input type="submit" name="continue" value="Continue" class="sq-form-button">
       </fieldset>
     </form>
   </div>
