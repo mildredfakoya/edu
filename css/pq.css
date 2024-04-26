@@ -1,0 +1,93 @@
+
+.pq-container {
+  background: #808080;
+  color: white;
+  text-align: center;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #808080;
+  border-radius: 8px;
+}
+
+.pqc-article {
+  margin: 0 auto;
+}
+.article-headcont {
+  font-family: sans-serif;
+}
+.article-heading {
+  font-weight: border;
+  font-size: 32px;
+}
+
+.pq-container {
+  position: relative;
+  top: 5px;
+}
+
+.pqc-navcontainer > .col-3 {
+  background-color: #ccc;
+  padding: 20px;
+  height: 100vh;
+  border: 4px solid #C0C0C0;
+  border-radius: 8px;
+}
+.pqc-navcontainer > .col-3 ul {
+  list-style-type: disc;
+}
+.pqc-navcontainer > .col-3 li a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.pqc-navlinks {
+  color: blue;
+}
+.pqnav-link {
+  color: blue;
+  margin-bottom: 50px;
+}
+
+ /* Form Styles*/
+ .article-formcont {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #63686d;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pqform-group{
+  margin-bottom: 20px;
+}
+
+.pqform-label{
+  display:block;
+  font-weight: bold;
+}
+
+.pqform-input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.pqform-button{
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pqform-button:hover{
+  background-color: #0056b3;
+}
