@@ -6,100 +6,209 @@
   <title>SOP Internship forms Page</title>
   <link rel="stylesheet" href="../../css/main.css">
   <link rel="stylesheet" href="../../css/sec_Quest.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css">
 </head>
 <body>
 
-<header class="header">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Logo</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="../../index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              EDU Forms
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="pages/se_eduq/se_home.html">Special Education Questionnaire</a>
-              <a class="dropdown-item" href="pages/Lucia_Pri_Quest/LPQ_Cov.html">Primary Questionnaire</a>
-              <a class="dropdown-item" href="pages/early_childQ/ecQ_home.html">Early Childhood Questionnaire</a>
-              <a class="dropdown-item" href="pages/sec_Quest/secQHome.html">Secondary Questionnaire</a>
-            </div>
-          </li>
-        </ul>
-      </div>
+  <header class="header">
+    <h1>Welcome to EDU Forms Project Page</h1>
+    <!-- Navigation -->
+    <nav class="nav">
+      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="#">About</a>
+      <a class="nav-link" href="#">Logout</a>
     </nav>
-  </div>
-</header>
+  </header>
 
-<section class="hero">
-  <div class="container">
-    <h2 class="text-center">Government of St. Lucia</h2>
-    <h4 class="text-center">Ministry of Education, Innovation Gender Relations and Sustainable Development</h4>
-    <!--  text or elements for hero section here -->
-  </div>
-</section>
+  <section class="row">
+    <div >
+      <h2 class="sq-section-heading">Government of St. Lucia</h2>
+      <h3 class="sq-section-heading">Ministry of Education, Innovation Gender Relations 
+        and Sustainable Development</h3>
+    </div>
+  </section>
 
 <section class="row">
   <div class="col-2 sq-sidenav ">
-    <a href="secQHome.html">Cover</a>
-    <a href="#">School</a>
-    <a href="#">Student</a>
-    <a href="#">Staff</a>
-    <a href="#">Age Distribution</a>
-    <a href="#">CXC</a>
-    <a href="#">CVQ</a>
-    <a href="#">ICT</a>
-    <a href="#">Building and Facilities</a>
-    <a href="#">Classifications and Definitions</a>
-    <a href="#">Confirmation Page</a>
+      <a href="secQHome.html">Cover</a>
+      <a href="secQSchool.html">School</a>
+      <a href="secQStudent.html">Student</a>
+      <a href="secQStaff.html">Staff</a>
+      <a href="secQAgeDistribution.html">Age Distribution</a>
+      <a href="secQCXC.html">CXC</a>
+      <a href="secQCVQ.html">CVQ</a>
+      <a href="secQICT.html">ICT</a>
+      <a href="secQBuildingFacility.html">Building and Facilities</a>
+      <a href="#">Classifications and Definitions</a>
+      <a href="#">Confirmation Page</a>
   </div>
-  <div class="col-10 sq-cover bg-light">
-    <h5 class="container">Annual Education Census Questionnaire Secondary School 2020-21 Academic Year</h5>
-    <form action="" method="post" autocomplete="off" class="sq-form">
-        <fieldset class="sq-school-fieldset">
+
+  
+  <div class="col-10 sq-form">  
+    <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Annual Education Census Questionnaire 
+      Secondary School 2020-21 Academic Year</h3>
+    <form action="" method="post" autocomplete="off" >
+        <fieldset class="sq-form-fieldset">
             <legend>School Information</legend>
             <label for="school">Name of School: &nbsp;</label>
-            <input type="text" name="school" id="school"><br>
+            <input type="text" name="school" id="school" class="sq-form-input"><br>
             <label for="estdate">Date Established: &nbsp;</label>
-            <input type="date" name="estdate" id="estdate"><br>
+            <input type="date" name="estdate" id="estdate" class="sq-form-input"><br>
             <label for="district">Education District: &nbsp;</label>
-            <input type="text" name="district" id="district"><br>
+            <input type="text" name="district" id="district" class="sq-form-input"><br>
             <label for="principal">Principal: &nbsp;</label>
-            <input type="text" name="principal" id="principal"><br>
+            <input type="text" name="principal" id="principal"  class="sq-form-input"><br>
             <label for="address">School Address: &nbsp;</label><br>
-            <textarea name="schooladdress" id="schooladdress" cols="40" rows="5">
+            <textarea name="schooladdress" id="schooladdress" cols="40" rows="5" class="sq-form-input">
             </textarea><br>
             <label for="phone">Telephone: &nbsp;</label>
-            <input type="tel" name="phone" id="phone"><br>
+            <input type="tel" name="phone" id="phone" class="sq-form-input"><br>
             <label for="fax">Fax: &nbsp;</label>
-            <input type="tel" name="fax" id="fax"><br>
+            <input type="tel" name="fax" id="fax" class="sq-form-input"><br>
             <label for="email">School Email: &nbsp;</label>
-            <input type="email" name="email" id="email"><br>
+            <input type="email" name="email" id="email" class="sq-form-input"><br>
             <label for="pemail">Principal Email: &nbsp;</label>
-            <input type="email" name="pemail" id="pemail"><br>
-
-
+            <input type="email" name="pemail" id="pemail" class="sq-form-input"><br>
         </fieldset>
-        <fieldset class="sq-school-fieldset">
+
+        <fieldset class="sq-form-fieldset">
             <legend>Management Structure</legend>
+            <label for="mgt">Management Structure: &nbsp;</label>
+              <input type="checkbox" name="mgt" id="mgt" value="ministry of education">Ministry of Education
+              <input type="checkbox" name="mgt" id="mgt" value="school board/counsil">School Board/Counsil
+              <input type="checkbox" name="mgt" id="mgt" value="church">church
+              <input type="checkbox" name="mgt" id="mgt" value="PTA">PTA <br>
+              <b><i><small>(check all that apply)</small></i></b><br>
 
+              <label for="activepta">Does the school have an active PTA?  &nbsp;</label>
+              <input type="radio" name="activepta" id="activepta" value="yes" class="sq-form-input">Yes
+              <input type="radio" name="activepta" id="activepta" value="no">No <br>
+
+              <label for="developmentplan">Does the school have a school development plan?  &nbsp;</label>
+              <input type="radio" name="developmentplan" id="developmentplan" value="yes" class="sq-form-input">Yes
+              <input type="radio" name="developmentplan" id="developmentplan" value="no">No <br>
+
+              <label for="devplandate">Please state the date covered by the plan</label>
+              <label for="devplanfromdate">From: &nbsp;</label>
+              <input type="date" name="devplanfromdate" id="devplanfromdate" class="sq-form-input">
+              <label for="devplantodate">To: &nbsp;</label>
+              <input type="date" name="devplantodate" id="devplantodate" class="sq-form-input"><br>
+
+              <label for="disasterplan">Does the school have a Disaster Management Plan?  &nbsp;</label>
+              <input type="radio" name="disasterplan" id="disasterplan" value="yes" class="sq-form-input">Yes
+              <input type="radio" name="disasterplan" id="disasterplan" value="no">No <br>
+
+              <label for="emergencydrill">Were any emergency drills conducted during previous school
+                year?  &nbsp;</label>
+              <input type="radio" name="emergencydrill" id="emergencydrill" value="yes">Yes
+              <input type="radio" name="emergencydrill" id="emergencydrill" value="no">No <br>
+
+              <label for="annualreport">Annual school report was submitted last academic year  &nbsp;</label>
+              <input type="radio" name="annualreport" id="annualreport" value="yes">Yes
+              <input type="radio" name="annualreport" id="annualreport" value="no">No <br>
+
+              <label for="schoolstatus">School Status/Type/Ownership:  &nbsp;</label>
+              <input type="radio" name="schoolstatus" id="schoolstatus" value="public" >Public
+              <input type="radio" name="schoolstatus" id="schoolstatus" value="government assisted">Government
+              <input type="radio" name="schoolstatus" id="schoolstatus" value="private">Private <br>
         </fieldset>
-      <fieldset class="sq-school-fieldset">
+      <fieldset class="sq-form-fieldset">
         <legend>School Structure</legend>
-      
+
+          <label for="totalclasses">Total Number of Classes: &nbsp;</label>
+          <input type="number" name="totalclasses" id="totalclasses" class="sq-form-input"><br>
+
+          <label for="singleclasses">Number of single classes in single classrooms : &nbsp;</label>
+          <input type="number" name="singleclasses" id="singleclasses" class="sq-form-input"><br>
+
+          <label for="halltypeclasses">Number of classes in halltype space: &nbsp;</label>
+          <input type="number" name="halltypeclasses" id="halltypeclasses" class="sq-form-input"><br>
+
+          <label for="enrollmentcap">School Enrollment Capacity: &nbsp;</label>
+          <input type="number" name="enrollmentcap" id="enrollmentcap" class="sq-form-input"><br>
+      </fieldset>
+
+      <fieldset class="sq-form-fieldset">
+        <legend>T1. Class Structure</legend>
+            
+            <h4>Enter total number of classes per Forms/ number of Groups</h4>
+            <p><i>(e.g there maybe one group of forms 1's or 2 groups of form ones etc)</i></p>
+          <div>
+            <label for="f1"><b>Form-1: &nbsp;</b></label><br>
+            <label for="f1group">Number of Classes/groups: &nbsp;</label>
+            <input type="number" name="f1group" id="f1group" class="sq-form-input">
+            <label for="f1malestu">Male Students: &nbsp;</label>
+            <input type="f1malestu" name="f1malestu" id="f1malestu" class="sq-form-input">
+            <label for="f1femalestu">Female Student: &nbsp;</label>
+            <input type="number" name="f1femalestu" id="f1femalestu" class="sq-form-input"><br><br>
+
+            <label for="f2"><b>Form-2: &nbsp;</b></label><br>
+            <label for="f2group">Number of Classes/groups: &nbsp;</label>
+            <input type="number" name="f2group" id="f2group" class="sq-form-input">
+            <label for="f2malestu">Male Students: &nbsp;</label>
+            <input type="f2malestu" name="f2malestu" id="f2malestu" class="sq-form-input">
+            <label for="f2femalestu">Female Student: &nbsp;</label>
+            <input type="number" name="f2femalestu" id="f2femalestu" class="sq-form-input"><br><br>
+
+            <label for="f3"><b>Form-3: &nbsp;</b></label><br>
+            <label for="f3group">Number of Classes/groups: &nbsp;</label>
+            <input type="number" name="f3group" id="f3group" class="sq-form-input">
+            <label for="f3malestu">Male Students: &nbsp;</label>
+            <input type="f3malestu" name="f3malestu" id="f3malestu" class="sq-form-input">
+            <label for="f3femalestu">Female Student: &nbsp;</label>
+            <input type="number" name="f3femalestu" id="f3femalestu" class="sq-form-input"><br><br>
+
+            <label for="f4"><b>Form-4: &nbsp;</b></label><br>
+            <label for="f4group">Number of Classes/groups: &nbsp;</label>
+            <input type="number" name="f4group" id="f4group" class="sq-form-input">
+            <label for="f4malestu">Male Students: &nbsp;</label>
+            <input type="f4malestu" name="f4malestu" id="f4malestu" class="sq-form-input">
+            <label for="f4femalestu">Female Student: &nbsp;</label>
+            <input type="number" name="f4femalestu" id="f4femalestu" class="sq-form-input"><br><br>
+
+            <label for="f5"><b>Form-5: &nbsp;</b></label><br>
+            <label for="f5group">Number of Classes/groups: &nbsp;</label>
+            <input type="number" name="f5group" id="f5group" class="sq-form-input">
+            <label for="f5malestu">Male Students: &nbsp;</label>
+            <input type="f5malestu" name="f5malestu" id="f5malestu" class="sq-form-input">
+            <label for="f5femalestu">Female Student: &nbsp;</label>
+            <input type="number" name="f5femalestu" id="f5femalestu" class="sq-form-input"><br><br>
+
+            <label for="lower6"><b>Lower-6: &nbsp;</b></label><br>
+            <label for="lower6group">Number of Classes/groups: &nbsp;</label>
+            <input type="number" name="lower6group" id="lower6group" class="sq-form-input">
+            <label for="lower6malestu">Male Students: &nbsp;</label>
+            <input type="lower6malestu" name="lower6malestu" id="lower6malestu" class="sq-form-input">
+            <label for="lower6femalestu">Female Student: &nbsp;</label>
+            <input type="number" name="lower6femalestu" id="lower6femalestu" class="sq-form-input"><br><br>
+
+            <label for="uppper6"><b>Upper-6: &nbsp;</b></label><br>
+            <label for="upper6group">Number of Classes/groups: &nbsp;</label>
+            <input type="number" name="upper6group" id="upper6group" class="sq-form-input">
+            <label for="upper6malestu">Male Students: &nbsp;</label>
+            <input type="upper6malestu" name="upper6malestu" id="upper6malestu" class="sq-form-input">
+            <label for="upper6femalestu">Female Student: &nbsp;</label>
+            <input type="number" name="upper6femalestu" id="upper6femalestu" class="sq-form-input"><br><br>
+
+            <label for="total"><b>Total: &nbsp;</b></label><br>
+            <label for="totalgroup">Number of Classes/groups: &nbsp;</label>
+            <input type="number" name="totalgroup" id="totalgroup" class="sq-form-input">
+            <label for="totalmalestu">Male Students: &nbsp;</label>
+            <input type="totalmalestu" name="totalmalestu" id="totalmalestu" class="sq-form-input">
+            <label for="totalfemalestu">Female Student: &nbsp;</label>
+            <input type="number" name="totalfemalestu" id="totalfemalestu" class="sq-form-input"><br><br>
+
+            <label for="trcount"><b>Total Teacher: &nbsp;</b></label><br>
+            <label for="maletr">Male: &nbsp;</label>
+            <input type="number" name="maletr" id="maletr" class="sq-form-input">
+            <label for="femaletr">Female: &nbsp;</label>
+            <input type="number" name="femaletr" id="femaletr" class="sq-form-input">
+          </div>
+
+
       </fieldset>
       <div>
-        <input type="submit" name="save" value="Save">
-        <input type="submit" name="next" value="Next">
+        <input type="submit" name="save" value="Save" class="sq-form-button">
+        <input type="submit" name="next" value="Next" class="sq-form-button">
       </div>
     </form>
   </div>
