@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Lucia Primary Questionnaire Forms</title>
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../css/pq.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Primary School-Structure Form Page</h1>
+        <!-- Navigation -->
+        <nav class="nav">
+            <a class="nav-link" href="../../index.html">Home</a>
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Logout</a>
+        </nav>
+    </header>
+    <section class="row">
+        <div class="form1-schinfo">
+            <div class="col-4 pqs">
+                <form action="#">
+                    <fieldset>
+                        <legend>School Information</legend>
+                        
+                        <label for="date_established">Date Established:</label>
+                        <input type="date" id="date_established" name="date_established">
+                        
+                        <label for="education_district">Education District:</label>
+                        <input type="text" id="education_district" name="education_district">
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        
+                        <label for="principal_name">Principal:</label>
+                        <input type="text" id="principal_name" name="principal_name">
+                        
+                        <label for="school_address">Address:</label>
+                        <textarea id="school_address" name="school_address" rows="3"></textarea>
+                        
+                        <label for="telephone">Telephone:</label>
+                        <input type="tel" id="telephone" name="telephone">
+                        
+                        <label for="fax">Fax:</label>
+                        <input type="tel" id="fax" name="fax">
+                        
+                        <label for="school_email">School's Email:</label>
+                        <input type="email" id="school_email" name="school_email">
+                        
+                        <label for="principal_email">Principal's Email:</label>
+                        <input type="email" id="principal_email" name="principal_email">
+                    </fieldset>
+                </form>
+                
+            </div>
+            <div class="col-4 pqs">
+                <form action="#">
+                    <fieldset>
+                        <legend>Management Structure</legend>
+                        <label for="ministry">Ministry of Education</label>
+                        <input type="checkbox" id="ministry" name="management_structure" value="ministry">
+                        <label for="school_board">School Board/Council</label>
+                        <input type="checkbox" id="school_board" name="management_structure" value="school_board">
+                        <label for="senior_management">Senior Management Team</label>
+                        <input type="checkbox" id="senior_management" name="management_team" value="senior_management">
+                        <label for="church">Church</label>
+                        <input type="checkbox" id="church" name="management_team" value="church">
+                    </fieldset>
+                    <p>(Check all that apply)</p>
+                    <fieldset>
+                        <legend>PTA and Plans</legend>
+                        
+                        <label for="pta">Does the school have an active PTA?</label>
+                        <input type="radio" id="pta_yes" name="pta" value="yes">
+                        <label for="pta_yes">YES</label>
+                        <input type="radio" id="pta_no" name="pta" value="no">
+                        <label for="pta_no">NO</label>
+                        
+                        <label for="development_plan">Does the school have a School Development Plan?</label>
+                        <input type="radio" id="development_plan_yes" name="development_plan" value="yes">
+                        <label for="development_plan_yes">YES</label>
+                        <input type="radio" id="development_plan_no" name="development_plan" value="no">
+                        <label for="development_plan_no">NO</label>
+                        
+                        <label for="disaster_plan">Does the school have a Disaster Management Plan?</label>
+                        <input type="radio" id="disaster_plan_yes" name="disaster_plan" value="yes">
+                        <label for="disaster_plan_yes">YES</label>
+                        <input type="radio" id="disaster_plan_no" name="disaster_plan" value="no">
+                        <label for="disaster_plan_no">NO</label>
+                        
+                        <label for="emergency_drills">Were any emergency drills conducted during the previous school year?</label>
+                        <input type="radio" id="emergency_drills_yes" name="emergency_drills" value="yes">
+                        <label for="emergency_drills_yes">YES</label>
+                        <input type="radio" id="emergency_drills_no" name="emergency_drills" value="no">
+                        <label for="emergency_drills_no">NO</label>
+                        
+                        <label for="annual_report">Annual school report was submitted last academic year</label>
+                        <input type="radio" id="annual_report_yes" name="annual_report" value="yes">
+                        <label for="annual_report_yes">YES</label>
+                        <input type="radio" id="annual_report_no" name="annual_report" value="no">
+                        <label for="annual_report_no">NO</label>
+                    </fieldset>
+                
+                    <fieldset>
+                        <legend>School Status / Type / Ownership</legend>
+                        <label for="public">Public</label>
+                        <input type="radio" id="public" name="school_status" value="public">
+                        <label for="government_assisted">Government Assisted</label>
+                        <input type="radio" id="government_assisted" name="school_status" value="government_assisted">
+                        <label for="private">Private</label>
+                        <input type="radio" id="private" name="school_status" value="private">
+                    </fieldset>
+                </form>
+                
+            </div>
+            <div class="col-4 pqs">
+                <form action="#">
+                    <fieldset>
+                        <legend>School Structure</legend>
+                        
+                        <label for="total_classes">Total number of classes:</label>
+                        <input type="number" id="total_classes" name="total_classes" min="0">
+                        
+                        <label for="single_classrooms">Number of single classes in single classrooms:</label>
+                        <input type="number" id="single_classrooms" name="single_classrooms" min="0">
+                        
+                        <label for="hall_space">Number of classes in hall-type space:</label>
+                        <input type="number" id="hall_space" name="hall_space" min="0">
+                        
+                        <label for="shared_classrooms">Number of classes sharing classrooms:</label>
+                        <input type="number" id="shared_classrooms" name="shared_classrooms" min="0">
+                        
+                        <label for="enrolment_capacity">Enrolment Capacity:</label>
+                        <input type="number" id="enrolment_capacity" name="enrolment_capacity" min="0">
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Student Enrolment</legend>
+                        
+                        <label for="male_enrolment">Male:</label>
+                        <input type="number" id="male_enrolment" name="male_enrolment" min="0">
+                        
+                        <label for="female_enrolment">Female:</label>
+                        <input type="number" id="female_enrolment" name="female_enrolment" min="0">
+                        
+                        <label for="total_enrolment">Total:</label>
+                        <input type="number" id="total_enrolment" name="total_enrolment" min="0" readonly>
+                        <!-- Total enrolment will be calculated automatically using JavaScript -->
+                    </fieldset>
+                </form>
+                
+            </div>
+    </section>
+    <section class="row">
+        <div class="form1-schinfo">
+            <div class="col-4 pqs">
+                <form action="#">
+                    <fieldset>
+                        <legend>Class Structure</legend>
+                        
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Grade</th>
+                                    <th>Number of Groups/Classes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Kindergarten (K)</td>
+                                    <td><input type="number" name="groups_k" id="groups_k" min="0"></td>
+                                </tr>
+                                <tr>
+                                    <td>Grade 1</td>
+                                    <td><input type="number" name="groups_1" id="groups_1" min="0"></td>
+                                </tr>
+                                <tr>
+                                    <td>Grade 2</td>
+                                    <td><input type="number" name="groups_2" id="groups_2" min="0"></td>
+                                </tr>
+                                <tr>
+                                    <td>Grade 3</td>
+                                    <td><input type="number" name="groups_3" id="groups_3" min="0"></td>
+                                </tr>
+                                <tr>
+                                    <td>Grade 4</td>
+                                    <td><input type="number" name="groups_4" id="groups_4" min="0"></td>
+                                </tr>
+                                <tr>
+                                    <td>Grade 5</td>
+                                    <td><input type="number" name="groups_5" id="groups_5" min="0"></td>
+                                </tr>
+                                <tr>
+                                    <td>Grade 6</td>
+                                    <td><input type="number" name="groups_6" id="groups_6" min="0"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <label for="male_students">Male Students:</label>
+                        <input type="number" id="male_students" name="male_students" min="0">
+                        
+                        <label for="female_students">Female Students:</label>
+                        <input type="number" id="female_students" name="female_students" min="0">
+                        
+                        <label for="total_students">Total Students:</label>
+                        <input type="number" id="total_students" name="total_students" min="0" readonly>
+                    </fieldset>
+                </form>
+                
+            </div>
+            <div class="col-4 pqs">
+                <form action="#">
+                    <fieldset>
+                        <legend>Teacher Information</legend>
+                        
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Grade</th>
+                                    <th>Number of Teachers</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Kindergarten (K)</td>
+                                    <td><input type="number" name="teachers_k" id="teachers_k" min="0"></td>
+                                </tr>
+                                <tr>
+                                    <td>Grade 1</td>
+                                    <td><input type="number" name="teachers_1" id="teachers_1" min="0"></td>
+                                </tr>
+                                <tr>
+                                    <td>Grade 2</td>
+                                    <td><input type="number" name="teachers_2" id="teachers_2" min="0"></td>
+                                </tr>
+                                <tr>
+                                    <td>Grade 3</td>
+                                    <td><input type="number" name="teachers_3" id="teachers_3" min="0"></td>
+                                </tr>
+                                <tr>
+                                    <td>Grade 4</td>
+                                    <td><input type="number" name="teachers_4" id="teachers_4" min="0"></td>
+                                </tr>
+                                <tr>
+                                    <td>Grade 5</td>
+                                    <td><input type="number" name="teachers_5" id="teachers_5" min="0"></td>
+                                </tr>
+                                <tr>
+                                    <td>Grade 6</td>
+                                    <td><input type="number" name="teachers_6" id="teachers_6" min="0"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <label for="male_teachers">Male Teachers:</label>
+                        <input type="number" id="male_teachers" name="male_teachers" min="0">
+                        
+                        <label for="female_teachers">Female Teachers:</label>
+                        <input type="number" id="female_teachers" name="female_teachers" min="0">
+                        
+                        <label for="total_teachers">Total Teachers:</label>
+                        <input type="number" id="total_teachers" name="total_teachers" min="0" readonly>
+                        
+                        <label for="specialist_teachers">No. of Specialist Teachers (on school's staff):</label>
+                        <input type="number" id="specialist_teachers" name="specialist_teachers" min="0">
+                        
+                        <label for="shared_specialist_teachers">No. of Specialist Teachers who are Shared:</label>
+                        <input type="number" id="shared_specialist_teachers" name="shared_specialist_teachers" min="0">
+                    </fieldset>
+                </form>
+                
+            </div>
+            <div class="col-4 pqs">
+                <form action="#">
+                    <fieldset>
+                        <legend>Student Enrolment by Age, Grade, and Gender</legend>
+                        
+                        <div class="row">
+                            <div class="col-4">
+                                <label for="age_less_than_5">Age as of October 15th (Yrs) &lt; 5</label>
+                                <input type="text" id="age_less_than_5_gender_m" name="age_less_than_5_gender_m" placeholder="Male">
+                                <input type="text" id="age_less_than_5_gender_f" name="age_less_than_5_gender_f" placeholder="Female">
+                            </div>
+                            
+                            <div class="col-4">
+                                <label for="age_5">Age as of October 15th (Yrs) 5</label>
+                                <input type="text" id="age_5_gender_m" name="age_5_gender_m" placeholder="Male">
+                                <input type="text" id="age_5_gender_f" name="age_5_gender_f" placeholder="Female">
+                            </div>
+                            
+                            <!-- Repeat for other age groups -->
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-4">
+                                <label for="total">Total Enrolment</label>
+                                <input type="text" id="total_gender_m" name="total_gender_m" placeholder="Male">
+                                <input type="text" id="total_gender_f" name="total_gender_f" placeholder="Female">
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-4">
+                                <label for="total_enrolment">Total Enrolment:</label>
+                                <input type="number" id="total_enrolment" name="total_enrolment" min="0">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                
+                
+            </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+          <p>© 2024 SOP EDU Forms. All rights reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>

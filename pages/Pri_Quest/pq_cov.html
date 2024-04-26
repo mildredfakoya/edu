@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primary Questionnaire Forms</title>
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../css/pq.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Welcome to Primary Forms Project Page</h1>
+        <!-- Navigation -->
+        <nav class="nav">
+          <a class="nav-link" href="../../index.html">Home</a>
+          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#">Logout</a>
+        </nav>
+    </header>
+    <section class="row pq-container">
+        <div class="pqc-container">
+            <div class="pqc-navcontainer">
+                <nav class="col-3">
+                    <h2 class="pqc-navlinks">Questionnaire Links</h2>
+                    <ul>
+                        <li><a class="pqnav-link" href="./pq_structure.html">Structure</a></li>
+                        <li><a class="pqnav-link" href="./pq_students.html">Students</a></li>
+                        <li><a class="pqnav-link" href="./pq_agedist.html">Ages-Distribution</a></li>
+                        <li><a class="pqnav-link" href=".performance.html">Performance</a></li>
+                        <li><a class="pqnav-link" href="./pq_staff.html">Staff</a></li>
+                        <li><a class="pqnav-link" href="./pq_building.html">Building</a></li>
+                        <li><a class="pqnav-link" href="./pq_more.html">More</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="pqc-article">
+                <article class="col-9">
+                    <div class="article-headcont">
+                        <h1 class="article-heading">Government of St. Lucia</h1>
+                        <h3>Ministry of Education and Innovation<br/> Gender Relations and Sustainable Developmemt</h3>
+                        <p><strong>Annual Education Census Questionnaire<br/>Primary School<br/>2021-2022 Academic Year</strong></p>
+                    </div>
+                    <div class="article-formcont">
+                        <fieldset>
+                            <legend>District and Schools Lists</legend>
+                            <form action="#" method="post">
+                                <label for="district" class="pqform-label">School Districts:</label>
+                                <select name="district" id="district">
+                                    <option value="district1">District 1</option>
+                                    <option value="district2">District 2</option>
+                                    <option value="district3">District 3</option>
+                                    <option value="district4">District 4</option>
+                                    <option value="district5">District 5</option>
+                                    <option value="district6">District 6</option>
+                                    <option value="district7">District 7</option>
+                                    <option value="district8">District 8</option>
+                
+                                    <!-- Add more district options as needed -->
+                                </select>
+                                <br><br>
+                                <label for="school" class="pqform-label">Name of School:</label>
+                                <select name="school" id="school">
+                                    <!-- Options for schools in District 1 -->
+                                    <optgroup label="District 1">
+                                        <option value="school1">Babonneau Primary</option>
+                                        <option value="school1">Balata Combined</option>
+                                        <option value="school2">Boguis Combined</option>
+                                        <option value="school3">Dame Pearlette Louisy Primary</option>
+                                        <option value="school4">Des Barras Combined</option>
+                                        <option value="school5">Fond Assau Combined</option>
+                                        <option value="school6">Grande Riviere Combined</option>
+                                        <option value="school7">Gros Islet Primary</option>
+                                        <option value="school8">La Guerre Combined</option>
+                                        <option value="school9">Monchy Combined</option>
+                                    </optgroup>
+                                    <!-- Options for schools in District 2 -->
+                                    <optgroup label="District 2">
+                                        <option value="school1">Anglican Infant</option>
+                                        <option value="school2">Anglican Primary</option>
+                                        <option value="school3">Carmen Rene Memorial</option>
+                                        <option value="school4">Carmille Henry Memorial</option>
+                                        <option value="school5">Methodist Combined</option>
+                                        <option value="school6">Morne Dudon Combined</option>
+                                        <option value="school7">Vide Bouteille Combined</option>
+                                    </optgroup>
+                                    <!-- Options for schools in District 3 -->
+                                    <optgroup label="District 3">
+                                        <option value="school1">Ave Maria Girls Infant</option>
+                                        <option value="school2">Ave Maria Girls Primary</option>
+                                        <option value="school3">Bocage Combined</option>
+                                        <option value="school4">Forestierre Combined</option>
+                                        <option value="school5">Marchand Combined</option>
+                                        <option value="school6">St. Aloysius R.C. Boy's Infant</option>
+                                        <option value="school7">St. Aloysius R.C. Boy's Primary</option>
+                                        <option value="school8">Ti Rocherr Combined</option>
+                                    </optgroup>
+                                    <!-- Options for schools in District 4 -->
+                                    <optgroup label="District 4">
+                                        <option value="school1">Anse La Raye Infant</option>
+                                        <option value="school2">Anse La Raye Primary</option>
+                                        <option value="school3">Bexon Infant</option>
+                                        <option value="school4">Ciceron Combined</option>
+                                        <option value="school5">La Croix Maingot Combined</option>
+                                        <option value="school6">Millet Primary</option>
+                                        <option value="school7">Odsan Combined</option>
+                                        <option value="school8">Roseau Combined</option>
+                                    </optgroup>
+                                    <!-- Options for schools in District 5 -->
+                                    <optgroup label="District 5">
+                                        <option value="school1">Aux Lyons Combined</option>
+                                        <option value="school2">Dennery Primary</option>
+                                        <option value="school3">Dennery Infant</option>
+                                        <option value="school4">Derniere Riviere Combined</option>
+                                        <option value="school5">La Ressource Combined</option>
+                                        <option value="school6">Micoud Primary</option>
+                                        <option value="school7">Mon Repos Combined</option>
+                                        <option value="school8">Richfond Combined</option>
+                                        <option value="school9">Ti Rocher (Micoud)</option>
+                                    </optgroup>
+                                    <!-- Options for schools in District 6 -->
+                                    <optgroup label="District 6">
+                                        <option value="school1">Augier Combined</option>
+                                        <option value="school2">Belle Vue Combined</option>
+                                        <option value="school3">Blanchard Combined</option>
+                                        <option value="school4">Desruisseaux Combined</option>
+                                        <option value="school5">Grace Combined</option>
+                                        <option value="school6">Pierrot Combined/option>
+                                        <option value="school7">Plain View Combined</option>
+                                        <option value="school8">Vieux Fort Infant</option>
+                                        <option value="school9">Vigier Combined</option>
+                                    </optgroup>
+                                    <!-- Options for schools in District 7 -->
+                                    <optgroup label="District 7">
+                                        <option value="school1">Banse La Grace Combined</option>
+                                        <option value="school2">Delcer Combined</option>
+                                        <option value="school3">Dugard Combined</option>
+                                        <option value="school4">Laborie Boys Primary</option>
+                                        <option value="school5">Laborie Girls' Primary</option>
+                                        <option value="school6">Mongouge Combined</option>
+                                        <option value="school7">Piaye Combined</option>
+                                        <option value="school8">Reunion Primary</option>
+                                        <option value="school9">Riviere Doree Combined</option>
+                                        <option value="school0">Roblot Combined</option>
+                                        <option value="school1">Saltibus Combined</option>
+                                    </optgroup>
+                                    <!-- Options for schools in District 8 -->
+                                    <optgroup label="District 8">
+                                        <option value="school1">Bouton Combined</option>
+                                        <option value="school2">Canaries Primary</option>
+                                        <option value="school3">Fond St. Jacques Primary</option>
+                                        <option value="school4">Les Etangs Combined</option>
+                                        <option value="school5">Soufriere Infant</option>
+                                        <option value="school6">Soufriere Primary</option>
+                                        <option value="school7">St. Aloysius R.C. Boy's Primary</option>
+                                        <option value="school8">Ti Rocherr Combined</option>
+                                    </optgroup>
+                                </select>
+                                <br/>
+                                <button type="submit" name="button" class="pqform-button">Submit</button>
+                            </form>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <h4>Instructions</h4>
+                        <ol>
+                            <li>Provide all details as requested in <em><b>each</b></em> section</li>
+                            <li>The completed questionnaire should on or before <strong>November 20, 2020.</strong></li>
+                            <li>Contact officers of the Departmentof Education, Innovation and Gender Relations at 463-3220/3221 or at <br/>
+                                educationstats@gmail.com for any assistance required in completing the questionnaire</li>
+                        </ol>
+                    </div>
+                    <form action="" method="post">
+                        <div class="pq-form-group">
+                            <label for="DOC" class="pqform-label">Date of Questionnaire Completion</label>
+                            <input type="text" id="DOC" name="DOC" class="pqform-input" required>
+                        </div>
+                        <div class="pq-form-group">
+                            <label for="sign" class="pqform-label">Principal Signature</label>
+                            <input type="text" id="sign" name="sign" class="pqform-input" required>
+                            
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </div>    
+    </section>
+    <footer class="footer">
+        <div class="container">
+          <p>© 2024 SOP EDU Forms. All rights reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>
