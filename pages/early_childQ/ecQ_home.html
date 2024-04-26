@@ -3,114 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SOP Internship forms Page</title>
-  <link rel="stylesheet" href="css/main.css">
+  <title>Early Child Questionnaire</title>
+  <link rel="stylesheet" href="../../css/main.css">
   <link rel="stylesheet" href="../../css/early_childQ.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css">
 </head>
 
 <body>
   <header class="header">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Logo</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              EDU Forms
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="pages/se_eduq/se_home.html">Special Education Questionnaire</a>
-              <a class="dropdown-item" href="pages/Lucia_Pri_Quest/LPQ_Cov.html">Primary Questionnaire</a>
-              <a class="dropdown-item" href="pages/early_childQ/ecQ_home.html">Early Childhood Questionnaire</a>
-              <a class="dropdown-item" href="pages/sec_Quest/secQHome.html">Secondary Questionnaire</a>
+    <h1>Welcome to EDU Forms Project Page</h1>
+    <!-- Navigation -->
+
+    <nav class="header-nav">
+      <ul>
+        <li class="active"><a href="#">Schools</a>
+            <div class="sub-nav-1">
+              <ul>
+                <li class="subnav_list"><a href="#">School 1</a></li>
+                <li class="subnav_list"><a href="#">School 2</a></li>
+                <li class="subnav_list"><a href="#">School 3</a></li>
+                <li class="subnav_list"><a href="#">School 3</a></li>
+                <li class="subnav_list"><a href="#">School 4</a></li>
+              </ul>
             </div>
-          </li>
-        </ul>
-      </div>
+        </li>
+        <li><a href="pages/early_childQ/ecQ_home.html">Home</a></li>
+        <li><a href="#"About></a></li>
+        
+      </ul>
+      
     </nav>
-  </div>
   </header>
+  
 
-  <section class="form-ecq-content">
-    <section class="row">
-      <div class="col-12" >
-        <div class="form-ecq">
-          <h1> Government of St. Lucia </h1>
-          <h3> Ministry of Education, Innovation, Gender Relations and Sustainable Development</h3>
-        </div>
-      </div> 
-    </section>
 
-    <section class="row">
-      <div class="col-3">
-        <div>
-          <h3>Side Navigation </h3>
-          <nav><a href="#">Home</a></nav>
-          <nav><a href="#">Demography</a></nav>
-          <nav><a href="#"> Staff Profile</a></nav>
-          <nav><a href="#">Children Profile</a></nav>
-        </div>
+
+  <section class="row">
+    <div class="col-3">
+      <div class="form_sidenav_ecq">
+        <h3>Side Navigation </h3>
+        <nav><a href="ecQ_home.html" target="_self">Home</a></nav>
+        <nav><a href="demography.html" target="_self" >Demography</a></nav>
+        <nav><a href="staff_profile.html " target="_self"> Staff Profile</a></nav>
+        <nav><a href="children_profile.html" target="_self">Children Profile</a></nav>
       </div>
+    </div>
 
-      <div class="col-9">
-        <div>
-          <h3>Early Childhood Questionnaire</h3>
-          <h4>Welcome Address </h4>
+    <div class="col-9">
+      <div class="form-body">
+    
+        <h4>Welcome Address </h4>
           <p> Welcome to Early Childhood Questionnaire</p>
           <p> Your participation in this initiative is crucial in shaping the 
-              future of education within our district. 
-              Please follow the instructions below to complete the questionnaire 
-              comprehensively and accurately
+            future of education within our district. 
+            Please follow the instructions below to complete the questionnaire 
+            comprehensively and accurately
           </p>
-          <h4>Instructions</h4>
-            <ul>
+      
+
+        <h4>Instructions</h4>
+        <div>
+          <ul>
               <li>Begin by reviewing <em><b>each</b></em> sections to understand the information required</li>
               <li>Provide demographic information about your school. </li>
               <li>Provide details of staffs, Highlight qualifications, experience, and areas of expertise</li>
               
-            </ul>
+          </ul>
         </div>
         
         <div class="form-container-ecq">
-          <form action="">
+        <form action="" method="post">
+          <div class="form-group-ecq">
 
-            <label for="districtname">District</label>
-            <select name="districtname" id="districtname">
-              <option value="district1"> District 1</option>
-              <option value="district2"> District 2</option>
-            </select>
+            <label for="QDate" form-label class="form-label">Questionnaire insert date: </label>
+            <input id="QDate" name="QDate" type="date" placeholder="Enter date" class="form-input">
 
-            <label for="sch_name">Schools</label>
-            <select name="sch_name" id="sch_name">
-              <option value="school1"> School 1</option>
-              <option value="school2"> School 2</option>
-            </select>
+            <label for="Sname" class="form-label">Supervisor Name </label>
+            <input id="Sname" name="Sname" type="text" placeholder="Enter Name" class="input">
+          </div>
 
-            <label for="QDate">Questionnaire insert date: </label>
-            <input id="QDate" name="QDate" type="date" placeholder="Enter date">
-
-            <label for="Sname">Supervisor Name </label>
-            <input id="Sname" name="Sname" type="text" placeholder="Enter Name">
-
-          </form>
-
+        </form>
         </div>
 
+        
+
       </div>
-    </section>
   </section>
+
   
 
-    
+  <footer class="row">
+    <div class="col-12">
+        <ul>
+            <li><a href=""> Home</a></li>
+            <li><a href=""> Home</a></li>
+            <li><a href=""> Home</a></li>
+        </ul>
+    </div>
+    <div>
+        &copy;
+    </div>
+</footer>
     
 
         

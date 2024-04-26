@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Early Child Questionnaire</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/early_childQ.css">
+</head> 
+
+<body>
+    <header class="header">
+        <h1>Welcome to EDU Forms Project Page</h1>
+        <!-- Navigation -->
+    
+        <nav class="header-nav">
+          <ul>
+            <li class="active"><a href="#">Schools</a>
+                <div class="sub-nav-1">
+                  <ul>
+                    <li><a href="#">School 1</a>
+                      
+                    </li>
+                    <li><a href="#">School 2</a></li>
+                    <li><a href="#">School 3</a></li>
+                    <li><a href="#">School 4</a></li>
+                  </ul>
+                </div>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            
+          </ul>
+          
+        </nav>
+      </header>
+      
+
+    <section class="row">
+        <section class="col-3">
+           <div class="form_sidenav_ecq">
+             <h2> Side Navigaton</h2>
+                <nav><a href="ecQ_home.html">Home</a></nav>
+                <nav><a href="demography.html">Demography</a></nav>
+                <nav><a href="staff_profile.html">Staff Profile</a></nav>
+                <nav><a href="children_profile.html">children Profile</a></nav>
+                
+           </div>  
+        </section>
+
+    <section class="col-9">
+        <div class="form-body">
+            <div>
+            <h2> School Demography </h2>
+            </div>
+
+        <form action="" method="post">
+            <div class="form-group-ecq">
+            <fieldset> 
+            <legend> Centre details</legend>  
+            <div class="form-label">
+            <label for="centre_name"> Name of Centre </label>
+            <input id="centre_name" name="centre_name" type="text" placeholder="Enter name of centre">
+            <label for="location"> Location </label>
+            <input id="location" name="location" type="text" placeholder="Enter location name">
+            </div>
+            </fieldset>
+            </div>
+            
+          
+        
+          <div class="form-group-ecq">
+          <fieldset>
+            <legend>Background Information</legend>
+            <label for="date_establish">Establishment Date </label>
+            <input type="date" id="date_establish" name="date_establish" required><br>
+
+            <label for="mail_add"> Mailing Address: </label>
+            <textarea id="mail_add" name="mail_add" required></textarea><br>
+
+            <label for="landline">Landline: </label>
+            <input type="text" id="Landline" name="landline" required><br>
+
+            <label for="mobile">Mobile: </label>
+            <input type="text" id="mobile" name="mobile" required><br>
+
+            <label for="fax"> Fax: </label>
+            <input type="text" id="fax" name="fax" required><br>
+
+            <label for="email">Email Address: </label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="admin_name">Administrator Name: </label>
+            <input type="text" id="admin_name" name="admin_name"><br>
+
+            <label for="admin_sex">Sex: </label>
+              <select id="admin_sex" name="admin_sex">
+                <option value="male" name="admin_sex"> Male </option>
+                <option value="female" name="admin_sex">Female </option>
+              </select>
+          </fieldset>
+          </div>
+
+          <div class="form-group-ecq">
+          <fieldset>
+            <legend>Practitioners Details </legend>
+            <Label>Number of Practitioners (Do not include administrator)</Label><br>
+            <label for="male_pract"> Male Practitioners: </label>
+            <input type="text" id="male_pract" name="male_pract" placeholder="Enter No. of male Practitioners" required><br>
+
+            <label for="female_pract"> Female Practitioners: </label>
+            <input type="text" id="female_pract" name="female_pract" placeholder="Enter No. of female Practitioners" required><br>
+
+            <label for="total_pract"> Total Practitioners: </label>
+            <input type="text" id="total_pract" name="total_pract" placeholder="Enter Number of Total Practitioners" required><br>
+          </fieldset>
+          </div> 
+
+          <div class="form-group-ecq">
+          <fieldset>
+            <legend>Non-Practioners Details</legend>
+            <label for="male_nonpract"> Male Non-Practitioners: </label>
+            <input type="text" id="male_nonpract" name="male_nonpract" placeholder="Enter No. of male Non-Practitioners" required><br>
+
+            <label for="female_nonpract"> Female Non-Practitioners: </label>
+            <input type="text" id="female_nonpract" name="female_nonpract" placeholder="Enter No. of female Non-Practitioners" required><br>
+
+            <label for="total_nonpract"> Total Non-Practitioners: </label>
+            <input type="text" id="total_nonpract" name="total_nonpract" placeholder="Enter Number of Total Non-Practitioners" required><br>
+          </fieldset>
+          </div>
+    
+         <div class="form-group-ecq"> 
+         <fieldset>
+            <legend>Enrolment as of October 15th:</legend>
+            <label for="male_enrol">No. of Male Enrolled</label>
+            <input type="text" id="male_enrol" name="male_enrol"><br>
+
+            <label for="female_enrol">No. of Female Enrolled</label>
+            <input type="text" id="female_enrol" name="female_enrol"><br><br>
+
+            <label for="total_enrol">Total Enrolment</label>
+            <input type="text" id="total_enrol" name="total_enrol"><br>
+
+            <label for="capacity">Enrolment Capacity:</label>
+            <input type="text" id="capacity" name="capacity"><br>
+         </fieldset>
+          </div>
+
+         <div class="form-group-ecq"> 
+          <fieldset>
+            <legend>Participating Children</legend>
+            <label for="">Age groups of children participating in programme:</label><br>
+            <label for="age_grp"> Children Age Group: </label>
+              <select id="age_grp" name="age_grp">
+                <option> Birth-2yrs </option>
+                <option> 3-5+ yrs </option>
+                <option> Birth-5+yrs </option>
+              </select>
+         </fieldset> 
+         </div>
+
+         <div class="form-group-ecq"> 
+         <fieldset>
+            <legend>Register Centre</legend>
+            <label for="centre">Centre Registered as:</label>
+            <select id="centre" name="centre">
+                <option>Daycare</option>
+                <option>Preschool</option>
+            </select>
+         </fieldset>
+         </div>
+
+         <div class="form-group-ecq">
+          <fieldset>
+            <legend> Management</legend>
+            <label for="Disaster_plan">Does the school have a Disaster Management Plan?</label>
+            <label for="Disaster_plan_yes">Yes</label>
+            <input type="radio" id="Disaster_plan_yes" name="Disaster_plan" value="Yess">
+            <label for="Disaster_plan_no">NO</label>
+            <input type="radio" id="Disaster_plan_no" name="Disaster_plan" value="no"><br>
+
+            <label for="emergency_drill"> Were any Emergency Drills conducted in the past year?</label>
+            <input type="radio" id="emergency_drill_yes" name="emergency_drill" value="yes">
+            <label for="emergency_drill_yes"> Yes </label>
+            <input type="radio" id="emergency_drill_no" name="emergency_drill" value="no">
+            <label for="emergency_drill_no"> No </label> <br>
+
+            <label for="how_many"> If yes, how many? </label>
+            <input type="text" id="how_many" name="how_many"> <br>
+
+            <label for="education_govt">Which of the following are present at the school</label><br>
+            <label for="education_govt_pta">Active PTA</label>
+            <input type="checkbox" id="education_govt_pta" name="education_govt_pta">
+            <label for="education_govt_bm"> Board of Management</label>
+            <input type="checkbox" id="education_govt_bm" name="education_govt_bm">
+            <label for="education_govt_dc"> Development Committee</label>
+            <input type="checkbox" id="education_govt_dc" name="education_govt_dc">
+          </fieldset>
+         </div>
+
+         <div class="form-group-ecq">
+          <fieldset>
+            <legend>School Ownership</legend>
+            <label for="sch_owner"> Ownership: </label><br>
+            <label for="private_own"> Private</label>
+            <input type="radio" id="private_own" name="sch_owner">
+            <label for="church_own">Church Assisted</label>
+            <input type="radio" id="church_own" name="sch_owner">
+            <label for="govt_own"> Government</label>
+            <input type="radio" id="govt_own" name="sch_owner">
+            <label for="other_own">Other: </label>
+            <input type="text" id="other_own" name="other_own" placeholder="Please specify"> <br>
+
+            
+            <label for=""> Building used (Check all that apply) </label><br>
+            <label for="own"> Own</label>
+            <input type="checkbox" id="own" name="own">
+            <label for="rent">Rent</label>
+            <input type="checkbox" id="rent" name="rent">
+            <label for="home"> Home </label>
+            <input type="checkbox" id="home" name="home">
+            <label for="church">Church </label>
+            <input type="checkbox" id="church" name="church">
+            <label for="govt_sch"> Government School</label>
+            <input type="checkbox" id="govt_sch" name="govt_sch">
+            <label for="comm_centre">Community Centre</label>
+            <input type="checkbox" id="comm_centre" name="comm_centre">
+            <label for="purpose"> Purpose Built </label>
+            <input type="checkbox" id="purpose" name="purpose">
+            <label for="other_pur">Other: </label>
+            <input type="text" id="other_pur" name="other_pur" placeholder="Please specify"> <br>
+
+            <label for=""> Outdoor Space Used (Check all that apply):  </label><br>
+            <label for="centre_owned"> Centre Owned </label>
+            <input type="checkbox" id="centre_owned" name="centre_owned">
+            <label for="comm_owned">Community Owned</label>
+            <input type="checkbox" id="comm_owned" name="comm_owned">
+            <label for="playing_field"> Playing Field</label>
+            <input type="checkbox" id="playing_field" name="playing_field">
+            <label for="none"> None </label>
+            <input type="checkbox" id="none" name="none">
+            <label for="other_outdoor">Other: </label>
+            <input type="text" id="other_door" name="other_door" placeholder="Please specify"> <br>
+          </fieldset>
+         </div>
+
+         <div class="form-group-ecq">
+          <fieldset>
+            <legend>Staff Turn Over</legend>
+            <label for="staff_hired">Number of Staff Hired </label>
+            <input type="text" id="staff_hired" name="staff_hired">
+            <label for="resign_staff">Number of resigned Staff</label>
+            <input type="text" id="resign_staff" name="resign_staff">
+          </fieldset>
+         </div>
+
+         <div class="form-group-ecq">
+          <fieldset>
+            <legend> ICT Access</legend>
+          </fieldset>
+         </div>
+
+         <div class="form-group-ecq">
+          <input type="button" value="Continue" class="form-button-ecq">
+         </div>
+
+        </form>
+        </div> 
+           
+    </section>
+
+
+
+    <footer class="row">
+        <div class="col-12">
+            <ul>
+                <li><a href=""> Home</a></li>
+                <li><a href=""> Home</a></li>
+                <li><a href=""> Home</a></li>
+            </ul>
+        </div>
+        <div>
+            &copy;
+        </div>
+    </footer>
+
+</body>
+</html>
