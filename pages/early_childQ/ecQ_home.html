@@ -18,17 +18,16 @@
         <li class="active"><a href="#">Schools</a>
             <div class="sub-nav-1">
               <ul>
-                <li><a href="#">School 1</a>
-                  
-                </li>
-                <li><a href="#">School 2</a></li>
-                <li><a href="#">School 3</a></li>
-                <li><a href="#">School 4</a></li>
+                <li class="subnav_list"><a href="#">School 1</a></li>
+                <li class="subnav_list"><a href="#">School 2</a></li>
+                <li class="subnav_list"><a href="#">School 3</a></li>
+                <li class="subnav_list"><a href="#">School 3</a></li>
+                <li class="subnav_list"><a href="#">School 4</a></li>
               </ul>
             </div>
         </li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="pages/early_childQ/ecQ_home.html">Home</a></li>
+        <li><a href="#"About></a></li>
         
       </ul>
       
@@ -40,17 +39,17 @@
 
   <section class="row">
     <div class="col-3">
-      <div class="">
+      <div class="form_sidenav_ecq">
         <h3>Side Navigation </h3>
-        <nav><a href="ecQ_home.html">Home</a></nav>
-        <nav><a href="demography.html">Demography</a></nav>
-        <nav><a href="staff_profile.html"> Staff Profile</a></nav>
-        <nav><a href="children_profile.html">Children Profile</a></nav>
+        <nav><a href="ecQ_home.html" target="_self">Home</a></nav>
+        <nav><a href="demography.html" target="_self" >Demography</a></nav>
+        <nav><a href="staff_profile.html " target="_self"> Staff Profile</a></nav>
+        <nav><a href="children_profile.html" target="_self">Children Profile</a></nav>
       </div>
     </div>
 
     <div class="col-9">
-      <div class="">
+      <div class="form-body">
     
         <h4>Welcome Address </h4>
           <p> Welcome to Early Childhood Questionnaire</p>
@@ -72,17 +71,20 @@
         </div>
         
         <div class="form-container-ecq">
-          <form action="">
+        <form action="" method="post">
+          <div class="form-group-ecq">
 
-            <label for="QDate">Questionnaire insert date: </label>
-            <input id="QDate" name="QDate" type="date" placeholder="Enter date">
+            <label for="QDate" form-label class="form-label">Questionnaire insert date: </label>
+            <input id="QDate" name="QDate" type="date" placeholder="Enter date" class="form-input">
 
-            <label for="Sname">Supervisor Name </label>
-            <input id="Sname" name="Sname" type="text" placeholder="Enter Name">
+            <label for="Sname" class="form-label">Supervisor Name </label>
+            <input id="Sname" name="Sname" type="text" placeholder="Enter Name" class="input">
+          </div>
 
-          </form>
-
+        </form>
         </div>
+
+        
 
       </div>
   </section>

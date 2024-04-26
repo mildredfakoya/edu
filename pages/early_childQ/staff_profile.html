@@ -35,27 +35,30 @@
     </nav>
   </header>
 
-  <section class="row">
-    <div class="col-3">
-        <h3>Side Navigation </h3>
-        <nav><a href="ecQ_home.html">Home</a></nav>
-        <nav><a href="demography.html">Demography</a></nav>
-        <nav><a href="staff_profile.html"> Staff Profile</a></nav>
-        <nav><a href="children_profile.html">Children Profile</a></nav>
-
-    </div>
+    <section class="row">
+    <section class="col-3">
+       <div class="form_sidenav_ecq">
+         <h2> Side Navigaton</h2>
+            <nav><a href="ecQ_home.html">Home</a></nav>
+            <nav><a href="demography.html">Demography</a></nav>
+            <nav><a href="staff_profile.html">Staff Profile</a></nav>
+            <nav><a href="children_profile.html">children Profile</a></nav>
+       </div>  
+    </section>
 
     <div class="col-9">
-        <h2> Staff Profile Form</h2>
-        <form>
-        <div>
-            <fieldset>
-                <legend>Staff Profile Form </legend>
-                <h3>Distribution by Sex, Teaching Experience, Training and Qualification</h3>
+        <div class="form-body">
+        
+            <form>
+        
+                <h2>Staff Profile Form </legend></h2>
+                <h4>Distribution by Sex, Teaching Experience, Training and Qualification</h4>
 
-                <div class="form-group">
-                <label for=" staff_classification"> Staff Classification:</label>
-                <select name="staff_classification" id="staff_classification">
+                <div class="form-group-ecq">
+                <fieldset>
+                    <legend>Staff Classification</legend>
+                    <label for=" staff_classification"> Staff Classification:</label>
+                    <select name="staff_classification" id="staff_classification">
                     <option value="ECA- Early Childhood Administrator/Supervisor">ECA- Early Childhood Administrator/Supervisor</option>
                     <option value="ECP- Early Childhood Practitioner">ECP- Early Childhood Practitioner</option>
                     <option value="AA-Administrative Assistant">AA-Administrative Assistant</option>
@@ -64,21 +67,34 @@
                     <option value="Sec- Secretary">Sec- Secretary</option>
                     <option value="CL-Cleaner"> CL-Cleaner</option>
                     <option value="DA-Domestic Assistant"> DA-Domestic</option>
-                </select>
+                    </select>
+                </fieldset>
                 </div>
                 
-                <div class="form-group">
-                <label for="fullname">Fullname: </label>
-                <input type="text" id="fullname" name="fullname" placeholder="Enter Staff Name">
-                </div>
+                <div class="form-group-ecq">
+                <fieldset>
+                <legend>Staff full Name </legend>
+                <label for="staff_name">Name </label>
+                <input type="text" id="staff_name" name="staff_name" placeholder="Enter Name">
+                <label for="staff_surname">Surame </label>
+                <input type="text" id="staff_surname" name="staff_surname" placeholder="Enter surame">
+                </fieldset>
 
+                <div class="form-group-ecq">
+                <fieldset>
+                <legend> Staff Gender </legend>
                 <label for="">sex: </label>
                 <label for="male_sex"> Male </label>
                 <input type="radio" id="male_sex" name="male_sex">
                 <label for="female_sex"> Female</label>
                 <input type="radio" id="female_sex" name="female_sex">
+                </fieldset>
+                </div>
 
-                <label for="age_range">Staff Age_Range </label>
+                <div class="form-group-ecq">
+                <fieldset>
+                <legend> Staff Age Range</legend>
+                <label for="age_range"> Age_Range </label>
                 <select name="age_range" id="age_range">
                     <option value="Less than 25"> Less than 25</option>
                     <option value="25-29"> 25-29</option>
@@ -88,32 +104,55 @@
                     <option value="45-49">45-49</option>
                     <option value="50 and above">50 and Above</option>
                 </select>
+                </fieldset>
+                </div>
                 
-
+                <div class="form-group-ecq">
+                <fieldset>
+                <legend>Children Age Group Under Care</legend>
                 <label for=" age_group"> Age Group Under Care </label>
                 <input type="text" id="age_group" name="age_group" placeholder="Enter children age group under staff care">
+                </fieldset>
+                </div>
 
-                <label for="ec_experience">Years of EC teaching Experience</label>
-                <input type="text" id="ec_experience" name="ec_experience" placeholder="Enter Staff EC experience years">
+                <div class="form-group-ecq">
+                <fieldset>
+                    <legend> </legend>
+                    <label for="ec_experience">Years of EC teaching Experience</label>
+                    <input type="text" id="ec_experience" name="ec_experience" placeholder="Enter Staff EC experience years">
+                </fieldset>
+                </div>
 
-                <label for="childhood_trained">Early Childhood Trained</label>
-                <label for="childhood_trained_yes"> Yes </label>
-                <input type="radio" id="childhood_trained_yes" name="childhood_trained_yes">
-                <label for="childhood_trained_no"> No </label>
-                <input type="radio" id="childhood_trained_no" name="childhood_trained_no">
+                <div class="form-group-ecq">
+                <fieldset> 
+                    <legend></legend>
+                    <label for="childhood_trained">Early Childhood Trained</label>
+                    <label for="childhood_trained_yes"> Yes </label>
+                    <input type="radio" id="childhood_trained_yes" name="childhood_trained_yes">
+                    <label for="childhood_trained_no"> No </label>
+                    <input type="radio" id="childhood_trained_no" name="childhood_trained_no">
+                </fieldset>
+                </div>
 
-                <label for="highest_qualification">Highest Qualification:</label>
-                <select name="highest_qualification" id="highest_qualification">
+                <div class="form-group-ecq">
+                <fieldset>
+                    <legend></legend>
+                    <label for="highest_qualification">Highest Qualification:</label>
+                    <select name="highest_qualification" id="highest_qualification">
                     <option value="BA-  Bachelor of Arts">BA-  Bachelor of Arts</option>
                     <option value="BSC- Bac. of Science">BSC- Bac. of Science </option>
-                    
-                </select>
-                
+                    </select>
+                </fieldset>
+                </div>
 
-            </fieldset>
+                <div class="form-group-ecq">
+                    <input type="button" value="Continue" class="form-button-ecq">
+                </div>
+
+            </form>
         
         </div>
-        </form>
+        
 
 
 

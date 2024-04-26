@@ -37,8 +37,8 @@
       
 
     <section class="row">
-        <section class="col-2">
-           <div>
+        <section class="col-3">
+           <div class="form_sidenav_ecq">
              <h2> Side Navigaton</h2>
                 <nav><a href="ecQ_home.html">Home</a></nav>
                 <nav><a href="demography.html">Demography</a></nav>
@@ -48,25 +48,28 @@
            </div>  
         </section>
 
-    <section class="col-10">
-        <div>
+    <section class="col-9">
+        <div class="form-body">
             <div>
             <h2> School Demography </h2>
             </div>
 
-        <form>
-            <div class="form-group">
+        <form action="" method="post">
+            <div class="form-group-ecq">
             <fieldset> 
             <legend> Centre details</legend>  
+            <div class="form-label">
             <label for="centre_name"> Name of Centre </label>
-            <input id="centre_name" name="centre_name" type="text" placeholder="Enter name of centre"><br>
+            <input id="centre_name" name="centre_name" type="text" placeholder="Enter name of centre">
             <label for="location"> Location </label>
             <input id="location" name="location" type="text" placeholder="Enter location name">
+            </div>
             </fieldset>
             </div>
+            
           
         
-          <div>
+          <div class="form-group-ecq">
           <fieldset>
             <legend>Background Information</legend>
             <label for="date_establish">Establishment Date </label>
@@ -92,12 +95,13 @@
 
             <label for="admin_sex">Sex: </label>
               <select id="admin_sex" name="admin_sex">
-                <option value="male"> Male </option>
-                <option value="female">Female </option>
+                <option value="male" name="admin_sex"> Male </option>
+                <option value="female" name="admin_sex">Female </option>
               </select>
           </fieldset>
           </div>
-          <div>
+
+          <div class="form-group-ecq">
           <fieldset>
             <legend>Practitioners Details </legend>
             <Label>Number of Practitioners (Do not include administrator)</Label><br>
@@ -111,7 +115,8 @@
             <input type="text" id="total_pract" name="total_pract" placeholder="Enter Number of Total Practitioners" required><br>
           </fieldset>
           </div> 
-          <div>
+
+          <div class="form-group-ecq">
           <fieldset>
             <legend>Non-Practioners Details</legend>
             <label for="male_nonpract"> Male Non-Practitioners: </label>
@@ -125,7 +130,7 @@
           </fieldset>
           </div>
     
-         <div> 
+         <div class="form-group-ecq"> 
          <fieldset>
             <legend>Enrolment as of October 15th:</legend>
             <label for="male_enrol">No. of Male Enrolled</label>
@@ -141,7 +146,8 @@
             <input type="text" id="capacity" name="capacity"><br>
          </fieldset>
           </div>
-         <div> 
+
+         <div class="form-group-ecq"> 
           <fieldset>
             <legend>Participating Children</legend>
             <label for="">Age groups of children participating in programme:</label><br>
@@ -153,7 +159,8 @@
               </select>
          </fieldset> 
          </div>
-         <div> 
+
+         <div class="form-group-ecq"> 
          <fieldset>
             <legend>Register Centre</legend>
             <label for="centre">Centre Registered as:</label>
@@ -163,19 +170,20 @@
             </select>
          </fieldset>
          </div>
-         <div>
+
+         <div class="form-group-ecq">
           <fieldset>
             <legend> Management</legend>
             <label for="Disaster_plan">Does the school have a Disaster Management Plan?</label>
             <label for="Disaster_plan_yes">Yes</label>
-            <input type="radio" id="Disaster_plan_yes" name="Disaster_plan_yes" value="Yess">
+            <input type="radio" id="Disaster_plan_yes" name="Disaster_plan" value="Yess">
             <label for="Disaster_plan_no">NO</label>
-            <input type="radio" id="Disaster_plan_no" name="Disaster_plan_no" value="no"><br>
+            <input type="radio" id="Disaster_plan_no" name="Disaster_plan" value="no"><br>
 
-            <label for=""> Were any Emergency Drills conducted in the past year?</label>
-            <input type="radio" id="emergency_drill_yes" name="emergency_drill_yes" value="yes">
+            <label for="emergency_drill"> Were any Emergency Drills conducted in the past year?</label>
+            <input type="radio" id="emergency_drill_yes" name="emergency_drill" value="yes">
             <label for="emergency_drill_yes"> Yes </label>
-            <input type="radio" id="emergency_drill_no" name="emergency_drill_no" value="no">
+            <input type="radio" id="emergency_drill_no" name="emergency_drill" value="no">
             <label for="emergency_drill_no"> No </label> <br>
 
             <label for="how_many"> If yes, how many? </label>
@@ -189,15 +197,18 @@
             <label for="education_govt_dc"> Development Committee</label>
             <input type="checkbox" id="education_govt_dc" name="education_govt_dc">
           </fieldset>
+         </div>
+
+         <div class="form-group-ecq">
           <fieldset>
             <legend>School Ownership</legend>
-            <label for=""> Ownership: </label><br>
+            <label for="sch_owner"> Ownership: </label><br>
             <label for="private_own"> Private</label>
-            <input type="checkbox" id="private_own" name="private_own">
+            <input type="radio" id="private_own" name="sch_owner">
             <label for="church_own">Church Assisted</label>
-            <input type="checkbox" id="church_own" name="church_own">
+            <input type="radio" id="church_own" name="sch_owner">
             <label for="govt_own"> Government</label>
-            <input type="checkbox" id="govt_own" name="govt_own">
+            <input type="radio" id="govt_own" name="sch_owner">
             <label for="other_own">Other: </label>
             <input type="text" id="other_own" name="other_own" placeholder="Please specify"> <br>
 
@@ -232,7 +243,9 @@
             <label for="other_outdoor">Other: </label>
             <input type="text" id="other_door" name="other_door" placeholder="Please specify"> <br>
           </fieldset>
+         </div>
 
+         <div class="form-group-ecq">
           <fieldset>
             <legend>Staff Turn Over</legend>
             <label for="staff_hired">Number of Staff Hired </label>
@@ -240,12 +253,17 @@
             <label for="resign_staff">Number of resigned Staff</label>
             <input type="text" id="resign_staff" name="resign_staff">
           </fieldset>
+         </div>
 
+         <div class="form-group-ecq">
           <fieldset>
             <legend> ICT Access</legend>
           </fieldset>
+         </div>
 
-          <input type="button" value="Continue">
+         <div class="form-group-ecq">
+          <input type="button" value="Continue" class="form-button-ecq">
+         </div>
 
         </form>
         </div> 
