@@ -3,134 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/main.css">
   <link rel="stylesheet" href="../../css/se_eduq.css">
-    <title>Special </title>
+    <title>Special Education Questionnaire </title>
 </head>
 <body>
-    <header class="header">
-         
-      </header>
-      
-       <section class="row landing-page">
-        <div class="container">
-          <div class="form-box">
-            <!-- Progress and Navigation -->
-            <div class="progress col-5">
-              <ul class="progress-steps">
-                <li class=" step active">
-                  <span>1</span>
-                  <p>School Information</p>
-                </li>
-                <li class=" step ">
-                  <span>2</span>
-                  <p>staff Information</p>
-                </li>
-                
-                <li class=" step ">
-                  <span>3</span>
-                  <p>Non-staff Information</p>
-                </li>
-                <li class=" step ">
-                  <span>4</span>
-                  <p>Students/ Pupils</p>
-                </li>
-                <li class=" step ">
-                  <span>5</span>
-                  <p>Enrollment</p>
-                </li>
-                <li class=" step ">
-                  <span>6</span>
-                  <p>Buildings</p>
-                </li>
-                <li class=" step ">
-                  <span>7</span>
-                  <p>Furniture</p>
-                </li>
-                <li class=" step ">
-                  <span>8</span>
-                  <p>Funds Raised</p>
-                </li>
-              </ul>
-            </div>
-            <!-- Form for the Questionnaires -->
-            <form class="col-7" action="" method="post">
-              <div class="form form-step">
-                <div class="bg-svg"></div>
-                <h2> School Background Information</h2>
-                <p> Enter the background information for the school</p>
-                <div>
-                    <label>Name of School</label>
-                    <input type="text" name="" id="" placeholder="Enter school name">
-                    </div>
-                    <div>
-                        <label for="">School Code</label>
-                    <input type="number" name="" id="" placeholder="Enter school code">
-                    </div>
-                    <div class="address">
-                        <label for="">Mailing Address</label>
-                        <input type="text" name="" id="" placeholder="Address">
-                        
-                    </div>
-            </div>
-              <div class="form-two form-step">
-              <div class="bg-svg"></div>
-              <h2>Class Structure</h2>
-              <div>
-                <label for="">Total Number of Classes</label>
-                <input type="Number" name="" id="">
-              </div>
-              <div>
-                <label for="">Total Number of Classrooms</label>
-                <input type="Number" name="" id="">
-              </div>
-              <div>
-                <label for="">Total Number of Halls</label>
-                <input type="Number" name="" id="">
-              </div>
-              <div>
-                <label for="">Number of single Classes in Single Classrooms</label>
-                <input type="Number" name="" id="">
-              </div>
-              
-              </div>
-            <div class="form-three form-step">
-                <div class="bg-svg"></div>
-                <h2>Enrollment</h2>
-                <div>
-                    <label for="">Itinerant</label>
-                    <input type="checkbox" name="" id="">
-                </div>
-                <div>
-                    <label for="">Resource Room</label>
-                    <input type="checkbox" name="" id="">
-                </div>
-                <div>
-                    <label for="">Home Based</label>
-                    <input type="checkbox" name="" id="">
-                </div>
-            </div>
-            <div class="btn-group">
-                <button type="button" class="btn-prev" disable>Back</button>
-                <button type="button" class="btn-next">Next</button>
-                <button type="button" class="btn-submit">Submit</button>
-
-            </div>
-
-            </form>
-          </div>
-        </div>
-       </section>
-      
-      <footer class="footer bg-light">
-        <div class="container">
-          <p class="text-center">Footer content here</p>
-          <!-- footer content or links here -->
-        </div>
-      
-      </footer>
+  <header class="header">
+    <h1>Welcome to EDU Forms Project Page</h1>
+    <!-- Navigation -->
+    <nav class="nav">
+      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="#">About</a>
+      <a class="nav-link" href="#">Logout</a>
+    </nav>
+  </header>
+  <!-- introduction Section -->
+  <div class="welcome-info">
+    <h3>GOVERNMENT OF ST.LUCIA</h3>
+    <h3>
+      MINISTRY OF EDUCATION, INNOVATION, GENDER RELATIONS AND SUSTAINABLE DEVELOPMENT</h3>
+      <h4>Special Education (V/Fort) Questionnaire for the Academic Year 2020/21</h4>
+  </div>
+  <div class="se_container">
+      <h3 class="se_headings">Select Your School</h3>
+   
+    <!-- Dropdown Menu to select schools -->
+    <form class="se_myForm" action="" method="post">
+      <label for="school" class="school-select" hidden> Select Your School </label><br>
+      <select id="school" name="option"  > <br>
+        <option value="" selected disabled required> Select School</option>
+        <option value="school1">School 1</option>
+        <option value="school2">School 2</option>
+        <option value="school3">School 3</option>
+        <option value="school4">School 4</option>
+      </select>
+      <br><br>
+      <button type="button"><a href="/pages/se_eduq/se_forms.html">Next</a></button>
+    </form>
+  </div>
+  
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 SOP EDU Forms. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
  
 </html>
