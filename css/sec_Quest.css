@@ -1,10 +1,10 @@
 .sq-sidenav
 {
     height: 100%;
-    width:min-content; 
+    width:100%; 
     border-radius: 5px;
     /*margin-top: auto;*/
-    padding-top: 20px;
+    padding: 20px;
     background-color: rgb(204, 204, 200);  
 }
 .sq-sidenav li
@@ -28,6 +28,7 @@
 .sq-section-heading
 {
     text-align: center;
+    margin: 0;
     /*margin-top: 5px;*/
 }
 .sq-cover{
@@ -42,10 +43,10 @@
 }
 .sq-form{
     height: auto;
-    width: 85%;
+    width: 100%;
     position: relative;
     border-radius: 5px;
-    background-color: rgb(231, 231, 228);
+    /*background-color: rgb(231, 231, 228);*/
 }
 .sq-form-input
 {
@@ -81,7 +82,7 @@
 .sq-table
 {
   height: auto;
-  width: 85%;
+  width: max-content;
   position: relative;
   border-collapse: collapse;
   margin-left: auto;
@@ -92,15 +93,31 @@
   border: groove 1px rgb(118, 119, 114);
   text-align: center;
   font-style: normal; 
+  width: min-content;
 }
 .sq-table th{
     border: groove 1px rgb(118, 119, 114);
     text-align: center;
     font-style: normal; 
+    width:max-content;
 }
 .sq-table-caption
 {
   font-size:medium;
   font-style: italic;
   color: gray;
+}
+.sq-table-input{
+    width: fit-content;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.sq-hori-nav{
+    background-color: rgb(237, 240, 240);
+    margin: 15px;
+    text-align: center;
+}
+.sq-hori-nav a{
+    color: black;
 }
