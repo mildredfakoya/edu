@@ -9,30 +9,18 @@
 </head>
 
 <body>
+  
   <header class="header">
-    <h1>Welcome to EDU Forms Project Page</h1>
-    <!-- Navigation -->
-
-    <nav class="header-nav">
-      <ul>
-        <li class="active"><a href="#">Schools</a>
-            <div class="sub-nav-1">
-              <ul>
-                <li class="subnav_list"><a href="#">School 1</a></li>
-                <li class="subnav_list"><a href="#">School 2</a></li>
-                <li class="subnav_list"><a href="#">School 3</a></li>
-                <li class="subnav_list"><a href="#">School 3</a></li>
-                <li class="subnav_list"><a href="#">School 4</a></li>
-              </ul>
-            </div>
-        </li>
-        <li><a href="pages/early_childQ/ecQ_home.html">Home</a></li>
-        <li><a href="#"About></a></li>
-        
-      </ul>
-      
-    </nav>
+      <h1>Welcome to EDU Forms Project Page</h1>
+      <!-- Navigation -->
+      <nav class="nav">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">Logout</a>
+      </nav>
   </header>
+
+ 
   
 
 
@@ -72,13 +60,28 @@
         
         <div class="form-container-ecq">
         <form action="" method="post">
-          <div class="form-group-ecq">
+          <div class="form-group">
 
             <label for="QDate" form-label class="form-label">Questionnaire insert date: </label>
             <input id="QDate" name="QDate" type="date" placeholder="Enter date" class="form-input">
 
             <label for="Sname" class="form-label">Supervisor Name </label>
-            <input id="Sname" name="Sname" type="text" placeholder="Enter Name" class="input">
+            <input id="Sname" name="Sname" type="text" placeholder="Enter Name" class="form-input">
+
+            <nav class="header-nav">
+              <ul>
+                <li class="active"><a href="#">Schools</a>
+                    <div class="sub-nav-1">
+                      <ul>
+                        <li class="subnav_list"><a href="#">School 1</a></li>
+                        <li class="subnav_list"><a href="#">School 2</a></li>
+                        <li class="subnav_list"><a href="#">School 3</a></li>
+                        <li class="subnav_list"><a href="#">School 3</a></li>
+                        <li class="subnav_list"><a href="#">School 4</a></li>
+                      </ul>
+                    </div>
+                </li>
+              </ul>  
           </div>
 
         </form>
@@ -94,9 +97,10 @@
   <footer class="row">
     <div class="col-12">
         <ul>
-            <li><a href=""> Home</a></li>
-            <li><a href=""> Home</a></li>
-            <li><a href=""> Home</a></li>
+            <li><a href="../early_childQ/ecQ_home.html"> Home</a></li>
+            <li><a href="../early_childQ/demography.html"> Demography</a></li>
+            <li><a href="../early_childQ/children_profile.html"> Children</a></li>
+            <li><a href="../early_childQ/staff_profile.html"> Staff</a></li>
         </ul>
     </div>
     <div>
@@ -105,12 +109,6 @@
 </footer>
     
 
-        
-
-
     
-
-     
-  
 </body>
 </html>  

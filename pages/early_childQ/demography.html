@@ -9,31 +9,15 @@
 </head> 
 
 <body>
-    <header class="header">
-        <h1>Welcome to EDU Forms Project Page</h1>
-        <!-- Navigation -->
-    
-        <nav class="header-nav">
-          <ul>
-            <li class="active"><a href="#">Schools</a>
-                <div class="sub-nav-1">
-                  <ul>
-                    <li><a href="#">School 1</a>
-                      
-                    </li>
-                    <li><a href="#">School 2</a></li>
-                    <li><a href="#">School 3</a></li>
-                    <li><a href="#">School 4</a></li>
-                  </ul>
-                </div>
-            </li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            
-          </ul>
-          
-        </nav>
-      </header>
+  <header class="header">
+    <h1>Welcome to EDU Forms Project Page</h1>
+    <!-- Navigation -->
+    <nav class="nav">
+      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="#">About</a>
+      <a class="nav-link" href="#">Logout</a>
+    </nav>
+  </header>
       
 
     <section class="row">
@@ -44,165 +28,163 @@
                 <nav><a href="demography.html">Demography</a></nav>
                 <nav><a href="staff_profile.html">Staff Profile</a></nav>
                 <nav><a href="children_profile.html">children Profile</a></nav>
-                
            </div>  
         </section>
 
     <section class="col-9">
-        <div class="form-body">
-            <div>
+      <div class="form-body">
+          <div>
             <h2> School Demography </h2>
-            </div>
+          </div>
 
-        <form action="" method="post">
+          <form action="" method="post">
             <div class="form-group-ecq">
             <fieldset> 
             <legend> Centre details</legend>  
-            <div class="form-label">
-            <label for="centre_name"> Name of Centre </label>
-            <input id="centre_name" name="centre_name" type="text" placeholder="Enter name of centre">
-            <label for="location"> Location </label>
-            <input id="location" name="location" type="text" placeholder="Enter location name">
-            </div>
+            <label for="centre_name" class="form-label"> Name of Centre </label>
+            <input id="centre_name" name="centre_name" type="text" placeholder="Enter name of centre" class="form-input">
+            <label for="location" form-label> Location </label>
+            <input id="location" name="location" type="text" placeholder="Enter location name" class="form-input">
             </fieldset>
             </div>
             
           
         
-          <div class="form-group-ecq">
-          <fieldset>
+            <div class="form-group-ecq">
+            <fieldset>
             <legend>Background Information</legend>
-            <label for="date_establish">Establishment Date </label>
-            <input type="date" id="date_establish" name="date_establish" required><br>
+            <label for="date_establish" class="form-label">Establishment Date </label>
+            <input type="date" id="date_establish" name="date_establish" class="form-input" required><br>
 
-            <label for="mail_add"> Mailing Address: </label>
-            <textarea id="mail_add" name="mail_add" required></textarea><br>
+            <label for="mail_add" class="form-label"> Mailing Address: </label>
+            <textarea id="mail_add" name="mail_add" required></textarea>
 
-            <label for="landline">Landline: </label>
-            <input type="text" id="Landline" name="landline" required><br>
+            <label for="landline" class="form-label">Landline: </label>
+            <input type="text" id="Landline" name="landline" class="form-input" required><br>
 
-            <label for="mobile">Mobile: </label>
-            <input type="text" id="mobile" name="mobile" required><br>
+            <label for="mobile" class="form-label">Mobile: </label>
+            <input type="text" id="mobile" name="mobile" class="form-input" required><br>
 
-            <label for="fax"> Fax: </label>
-            <input type="text" id="fax" name="fax" required><br>
+            <label for="fax" class="form-label"> Fax: </label>
+            <input type="text" id="fax" name="fax" class="form-input" required><br>
 
-            <label for="email">Email Address: </label>
-            <input type="email" id="email" name="email" required><br>
+            <label for="email" class="form-label">Email Address: </label>
+            <input type="email" id="email" name="email" class="form-input" required><br>
 
-            <label for="admin_name">Administrator Name: </label>
-            <input type="text" id="admin_name" name="admin_name"><br>
+            <label for="admin_name" class="form-label">Administrator Name: </label>
+            <input type="text" id="admin_name" name="admin_name" class="form-input"><br>
 
-            <label for="admin_sex">Sex: </label>
+            <label for="admin_sex" class="form-label">Sex: </label>
               <select id="admin_sex" name="admin_sex">
                 <option value="male" name="admin_sex"> Male </option>
                 <option value="female" name="admin_sex">Female </option>
               </select>
-          </fieldset>
-          </div>
+            </fieldset>
+            </div>
 
-          <div class="form-group-ecq">
-          <fieldset>
+            <div class="form-group-ecq">
+            <fieldset>
             <legend>Practitioners Details </legend>
-            <Label>Number of Practitioners (Do not include administrator)</Label><br>
-            <label for="male_pract"> Male Practitioners: </label>
-            <input type="text" id="male_pract" name="male_pract" placeholder="Enter No. of male Practitioners" required><br>
+            <p>Number of Practitioners (Do not include administrator)</p>
+            <label for="male_pract" class="form-label"> Male Practitioners: </label>
+            <input type="text" id="male_pract" name="male_pract" placeholder="Enter No. of male Practitioners" class="form-input" required><br>
 
-            <label for="female_pract"> Female Practitioners: </label>
-            <input type="text" id="female_pract" name="female_pract" placeholder="Enter No. of female Practitioners" required><br>
+            <label for="female_pract" class="form-label"> Female Practitioners: </label>
+            <input type="text" id="female_pract" name="female_pract" placeholder="Enter No. of female Practitioners" class="form-input" required><br>
 
-            <label for="total_pract"> Total Practitioners: </label>
-            <input type="text" id="total_pract" name="total_pract" placeholder="Enter Number of Total Practitioners" required><br>
-          </fieldset>
-          </div> 
+            <label for="total_pract"class="form-label"> Total Practitioners: </label>
+            <input type="text" id="total_pract" name="total_pract" placeholder="Enter Number of Total Practitioners" class="form-input" required><br>
+            </fieldset>
+            </div> 
 
-          <div class="form-group-ecq">
-          <fieldset>
+            <div class="form-group-ecq">
+            <fieldset>
             <legend>Non-Practioners Details</legend>
-            <label for="male_nonpract"> Male Non-Practitioners: </label>
-            <input type="text" id="male_nonpract" name="male_nonpract" placeholder="Enter No. of male Non-Practitioners" required><br>
+            <label for="male_nonpract" class="form-label"> Male Non-Practitioners: </label>
+            <input class="form-input" type="text" id="male_nonpract" name="male_nonpract" placeholder="Enter No. of male Non-Practitioners" required><br>
 
-            <label for="female_nonpract"> Female Non-Practitioners: </label>
-            <input type="text" id="female_nonpract" name="female_nonpract" placeholder="Enter No. of female Non-Practitioners" required><br>
+            <label for="female_nonpract" class="form-label"> Female Non-Practitioners: </label>
+            <input class="form-input" type="text" id="female_nonpract" name="female_nonpract" placeholder="Enter No. of female Non-Practitioners" required><br>
 
-            <label for="total_nonpract"> Total Non-Practitioners: </label>
-            <input type="text" id="total_nonpract" name="total_nonpract" placeholder="Enter Number of Total Non-Practitioners" required><br>
-          </fieldset>
-          </div>
+            <label for="total_nonpract" class="form-label"> Total Non-Practitioners: </label>
+            <input class="form-input" type="text" id="total_nonpract" name="total_nonpract" placeholder="Enter Number of Total Non-Practitioners" required><br>
+            </fieldset>
+            </div>
     
-         <div class="form-group-ecq"> 
-         <fieldset>
+            <div class="form-group-ecq"> 
+            <fieldset>
             <legend>Enrolment as of October 15th:</legend>
-            <label for="male_enrol">No. of Male Enrolled</label>
-            <input type="text" id="male_enrol" name="male_enrol"><br>
+            <label for="male_enrol" class="form-label">No. of Male Enrolled</label>
+            <input type="text" id="male_enrol" name="male_enrol" class="form-input" placeholder="Enter no of male enrolled" required><br>
 
-            <label for="female_enrol">No. of Female Enrolled</label>
-            <input type="text" id="female_enrol" name="female_enrol"><br><br>
+            <label for="female_enrol" class="form-label">No. of Female Enrolled</label>
+            <input type="text" id="female_enrol" name="female_enrol" class="form-input" placeholder="Enter no of female enrolled"><br><br>
 
-            <label for="total_enrol">Total Enrolment</label>
-            <input type="text" id="total_enrol" name="total_enrol"><br>
+            <label for="total_enrol" class="form-label">Total Enrolment</label>
+            <input type="text" id="total_enrol" name="total_enrol" class="form-input"required placeholder="Enter total enrolled "><br>
 
-            <label for="capacity">Enrolment Capacity:</label>
-            <input type="text" id="capacity" name="capacity"><br>
-         </fieldset>
-          </div>
+            <label for="capacity" class="form-label">Enrolment Capacity:</label>
+            <input type="text" id="capacity" name="capacity" class="form-input" placeholder="Enter the enrollment capacity no">
+            </fieldset>
+            </div>
 
-         <div class="form-group-ecq"> 
-          <fieldset>
+            <div class="form-group-ecq"> 
+            <fieldset>
             <legend>Participating Children</legend>
-            <label for="">Age groups of children participating in programme:</label><br>
+            <h4>Age groups of children participating in programme:</h4>
             <label for="age_grp"> Children Age Group: </label>
               <select id="age_grp" name="age_grp">
                 <option> Birth-2yrs </option>
                 <option> 3-5+ yrs </option>
                 <option> Birth-5+yrs </option>
               </select>
-         </fieldset> 
-         </div>
+            </fieldset> 
+            </div>
 
-         <div class="form-group-ecq"> 
-         <fieldset>
+            <div class="form-group-ecq"> 
+            <fieldset>
             <legend>Register Centre</legend>
             <label for="centre">Centre Registered as:</label>
-            <select id="centre" name="centre">
-                <option>Daycare</option>
-                <option>Preschool</option>
+            <select id="centre" name="centre" class="form-select">
+                <option class="select-option">Select one</option>
+                <option class="">Daycare</option>
+                <option >Preschool</option>
             </select>
-         </fieldset>
-         </div>
+            </fieldset>
+            </div>
 
-         <div class="form-group-ecq">
-          <fieldset>
+            <div class="form-group-ecq">
+            <fieldset>
             <legend> Management</legend>
-            <label for="Disaster_plan">Does the school have a Disaster Management Plan?</label>
+            <label for="Disaster_plan" class="form-label">Does the school have a Disaster Management Plan?</label>
             <label for="Disaster_plan_yes">Yes</label>
-            <input type="radio" id="Disaster_plan_yes" name="Disaster_plan" value="Yess">
+            <input type="radio" id="Disaster_plan_yes" name="Disaster_plan" value="Yes">
             <label for="Disaster_plan_no">NO</label>
-            <input type="radio" id="Disaster_plan_no" name="Disaster_plan" value="no"><br>
+            <input type="radio" id="Disaster_plan_no" name="Disaster_plan" value="no">
 
-            <label for="emergency_drill"> Were any Emergency Drills conducted in the past year?</label>
+            <label for="emergency_drill" class="form-label"> Were any Emergency Drills conducted in the past year?</label>
             <input type="radio" id="emergency_drill_yes" name="emergency_drill" value="yes">
             <label for="emergency_drill_yes"> Yes </label>
             <input type="radio" id="emergency_drill_no" name="emergency_drill" value="no">
-            <label for="emergency_drill_no"> No </label> <br>
+            <label for="emergency_drill_no"> No </label>
 
-            <label for="how_many"> If yes, how many? </label>
-            <input type="text" id="how_many" name="how_many"> <br>
+            <label for="how_many" class="form-label"> If yes, how many? </label>
+            <input type="text" id="how_many" name="how_many" class="form-input"> 
 
-            <label for="education_govt">Which of the following are present at the school</label><br>
+            <label for="education_govt" class="form-label">Which of the following are present at the school</label><br>
             <label for="education_govt_pta">Active PTA</label>
             <input type="checkbox" id="education_govt_pta" name="education_govt_pta">
             <label for="education_govt_bm"> Board of Management</label>
             <input type="checkbox" id="education_govt_bm" name="education_govt_bm">
             <label for="education_govt_dc"> Development Committee</label>
             <input type="checkbox" id="education_govt_dc" name="education_govt_dc">
-          </fieldset>
-         </div>
+            </fieldset>
+            </div>
 
-         <div class="form-group-ecq">
-          <fieldset>
+            <div class="form-group-ecq">
+            <fieldset>
             <legend>School Ownership</legend>
-            <label for="sch_owner"> Ownership: </label><br>
+            <label for="sch_owner" class="form-label"> Ownership: </label><br>
             <label for="private_own"> Private</label>
             <input type="radio" id="private_own" name="sch_owner">
             <label for="church_own">Church Assisted</label>
@@ -210,10 +192,10 @@
             <label for="govt_own"> Government</label>
             <input type="radio" id="govt_own" name="sch_owner">
             <label for="other_own">Other: </label>
-            <input type="text" id="other_own" name="other_own" placeholder="Please specify"> <br>
+            <input type="text" id="other_own" name="sch_owner" placeholder="Please specify" class="form-input"> <br>
 
             
-            <label for=""> Building used (Check all that apply) </label><br>
+            <label for="own" class="form-label"> Building used (Check all that apply) </label><br>
             <label for="own"> Own</label>
             <input type="checkbox" id="own" name="own">
             <label for="rent">Rent</label>
@@ -229,9 +211,9 @@
             <label for="purpose"> Purpose Built </label>
             <input type="checkbox" id="purpose" name="purpose">
             <label for="other_pur">Other: </label>
-            <input type="text" id="other_pur" name="other_pur" placeholder="Please specify"> <br>
+            <input type="text" id="other_pur" name="other_pur" placeholder="Please specify" class="form-input"> 
 
-            <label for=""> Outdoor Space Used (Check all that apply):  </label><br>
+            <label for="centre_owned" class="form-label"> Outdoor Space Used (Check all that apply):  </label><br>
             <label for="centre_owned"> Centre Owned </label>
             <input type="checkbox" id="centre_owned" name="centre_owned">
             <label for="comm_owned">Community Owned</label>
@@ -241,32 +223,365 @@
             <label for="none"> None </label>
             <input type="checkbox" id="none" name="none">
             <label for="other_outdoor">Other: </label>
-            <input type="text" id="other_door" name="other_door" placeholder="Please specify"> <br>
-          </fieldset>
-         </div>
+            <input type="text" id="other_door" name="other_door" placeholder="Please specify" class="form-input">
+            </fieldset>
+            </div>
 
-         <div class="form-group-ecq">
-          <fieldset>
+            <div class="form-group-ecq">
+            <fieldset>
             <legend>Staff Turn Over</legend>
-            <label for="staff_hired">Number of Staff Hired </label>
-            <input type="text" id="staff_hired" name="staff_hired">
-            <label for="resign_staff">Number of resigned Staff</label>
-            <input type="text" id="resign_staff" name="resign_staff">
-          </fieldset>
-         </div>
+            <label for="staff_hired" class="form-label">Number of Staff Hired </label>
+            <input type="text" id="staff_hired" name="staff_hired" class="form-input" placeholder="Enter total no of staff hired">
+            <label for="resign_staff" class="form-label">Number of resigned Staff</label>
+            <input type="text" id="resign_staff" name="resign_staff" class="form-input" placeholder="Enter total no of resigned staff">
+            </fieldset>
+            </div>
 
-         <div class="form-group-ecq">
-          <fieldset>
+            <div class="form-group-ecq">
+            <fieldset>
             <legend> ICT Access</legend>
-          </fieldset>
-         </div>
+            <h4>No of working Items:</h4>
+            <div>
+            <label for="no_computers" class="form-label">Computers</label>
+            <input type="number" name="no_computers" id="no_computers" class="form-input" placeholder="Enter no of working computers in the centre">
+            </div>
 
-         <div class="form-group-ecq">
-          <input type="button" value="Continue" class="form-button-ecq">
-         </div>
+            <div>
+            <label for="laptops_no" class="form-label">Laptops</label>
+            <input type="number" name="laptops_no" id="laptops_no" class="form-input" placeholder="Enter no of working laptops">
+            </div>
+
+            <div>
+            <label for="tablets_no" class="form-label">Tablets/Ipads</label>
+            <input type="number" name="tablets_no" id="tablets_no" class="form-input" placeholder="Enter no of working tabltes">
+            </div>
+
+            <div class="form-group-ecq">
+            <label for="television_no" class="form-label">Television sets</label>
+            <input type="number" name="television_no" id="television_no" class="form-input">
+            </div>
+
+            <div class="form-group-ecq">
+            <label for="dvd_no" class="form-label">DVD Players</label>
+            <input type="number" name="dvd_no" id="dvd_no" class="form-input">
+            </div>
+
+            <div class="form-group-ecq">
+            <label for="vcr_no" class="form-label">VCRs</label>
+            <input type="number" name="vcr_no" id="vcr_no" class="form-input">
+            </div>
+
+            <div class="form-group-ecq">
+            <label for="radios_no" class="form-label">Radios/Stereo sets</label>
+            <input type="number" name="radios_no" id="radios_no" class="form-input">
+            </div>
+
+            <div class="form-group-ecq">
+            <label for="cdplayer_no" class="form-label">CD Players</label>
+            <input type="number" name="cdplayer_no" id="cdplayer_no" class="form-input">  
+            </div>         
+            </fieldset>
+            </div>
+
+            <div class="form-group-ecq">
+           <fieldset>
+            <legend>Internet Access</legend>
+            <label for="internet_access" class="form-label">Does the centre have internet access?</label>
+            <select name="internet_access" id="internet_access">
+            <option value="Choose_one">choose One</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            </select>
+            </fieldset>
+            </div>
+
+            <div class="form-group-ecq">
+            <fieldset>
+                <legend>Building Status</legend>
+                <h4>Building Evaluation</h4>
+                    <div>
+                    <label for="floor-sats-cond" class="form-label">Floor: </label>
+                    <label for="floor-sats-cond"> Satisfactory Condition : </label>
+                    <input type="text" name="floor-sats-cond" id="floor-sats-cond">
+                    <label for="floor-repair"> Needed Repair: </label>
+                    <input type="text" name="floor-repair" id="floor-repair">
+                    <label for="floor-comment">Comment</label>
+                    <input type="text" name="floor-comment" id="floor-comment">
+                    </div>
+                    <div>
+                    <label for="walls-sats-cond" class="form-label">Walls: </label>
+                    <label for="walls-sats-cond"> Satisfactory Condition</label>
+                    <input type="text" name="walls-sats-cond" id="walls-sats-cond">
+                    <label for="walls-repair"> Needed Repair: </label>
+                    <input type="text" name="walls-repair" id="walls-repair">
+                    <label for="wall-comment">Comment: </label>
+                    <input type="text" name="wall-comment" id="wall-comment">
+                    </div>
+                    <div>
+                        <label for="Partitions-sats-cond" class="form-label">Partitions: </label>
+                        <label for="Partitions-sats-cond"> Satisfactory Condition</label>
+                        <input type="text" name="Partitions-sats-cond" id="Partitions-sats-cond">
+                        <label for="Partitions-repair"> Needed Repair: </label>
+                        <input type="text" name=Partitions-repair" id="Partitions-repair">
+                        <label for="Partitions-comment"> Comment:</label>
+                        <input type="text" name="Partitions-comment" id="Partitions-comment">
+                    </div>
+                    <div>
+                        <label for="windows-sats-cond" class="form-label">Windows: </label>
+                        <label for="windows-sats-cond"> Satisfactory Condition</label>
+                        <input type="text" name="windows" id="windows-sats-cond">
+                        <label for="windows-repair"> Needed Repair: </label>
+                        <input type="text" name="windows-repair" id="windows-repair">
+                        <label for="windows-comment">Comment</label>
+                        <input type="text" name="windows-comment" id="windows-comment">
+                    </div>
+                    <div>
+                        <label for="doors-sats-cond" class="form-label">Doors: </label>
+                        <label for="doors-sats-cond"> Satisfactory Condition</label>
+                        <input type="text" name="doors-sats-cond" id="doors-sats-cond">
+                        <label for="doors-repair"> Needed Repair: </label>
+                        <input type="text" name="doors-repair" id="doors-repair">
+                        <label for="doors-comment">Comment</label>
+                        <input type="text" name="doors-comment" id="doors-comment">
+                    </div>
+                    <div>
+                        <label for="ceilings-sats-cond" class="form-label">Ceilings: </label>
+                        <label for="ceilings-sats-cond"> Satisfactory Condition</label>
+                        <input type="text" name="ceilings-sats-cond" id="ceilings-sats-cond">
+                        <label for="ceiling-repair"> Needed Repair: </label>
+                        <input type="text" name="ceiling-repair" id="ceiling-repair">
+                        <label for="ceiling-comment">Comment</label>
+                        <input type="text" name="ceiling-comment" id="ceiling-comment">
+                    </div>
+                    <div>
+                        <label for="rofs-sats-cond" class="form-label">Roofs: </label>
+                        <label for="roofs-sats-cond"> Satisfactory Condition</label>
+                        <input type="text" name="rofs-sats-cond" id="roofs-sats-cond">
+                        <label for="roofs-repair"> Needed Repair: </label>
+                        <input type="text" name="roofs-repair" id="roofs-repair">
+                        <label for="roofs-comment">Comment</label>
+                        <input type="text" name="roofs-comment" id="roofs-comment">
+                    </div>
+                    <div>
+                        <label for="rs-sats-cond" class="form-label">Running Supply: </label>
+                        <label for="rs-sats-cond"> Satisfactory Condition</label>
+                        <input type="text" name="rs-sats-cond" id="rs-sats-cond">
+                        <label for="rs-repair"> Needed Repair: </label>
+                        <input type="text" name="rs-repair" id="rs-repair">
+                        <label for="floor-comment">Comment</label>
+                        <input type="text" name="rs-comment" id="rs-comment">
+                    </div>
+                    <div>
+                        <label for="wst-sats-cond" class="form-label">Water Storage Tanks: </label>
+                        <label for="wst-sats-cond"> Satisfactory Condition</label>
+                        <input type="text" name="wst-sats-cond" id="wst-sats-cond">
+                        <label for="wst-repair"> Needed Repair: </label>
+                        <input type="text" name="wst-repair" id="wst-repair">
+                        <label for="wst-repair">Comment</label>
+                        <input type="text" name="wst-repair" id="wst-repair">
+                    </div>
+                    <div>
+                        <label for="light-bulbs-cond" class="form-label">Light Bulbs: </label>
+                        <label for="light-bulbs-cond"> Satisfactory Condition</label>
+                        <input type="text" name="light-bulbs-cond" id="light-bulbs-cond">
+                        <label for="light-bulbs-repair"> Needed Repair: </label>
+                        <input type="text" name="light-bulbs-repair" id="light-bulbs-repair">
+                        <label for="light-bulbs-comment">Comment</label>
+                        <input type="text" name="light-bulbs-comment" id="light-bulbs-comment">
+                    </div>
+                    <div>
+                        <label for="elect-outlet-cond" class="form-label">Electricity outlets: </label>
+                        <label for="elect-outlet-cond"> Satisfactory Condition</label>
+                        <input type="text" name="elect-outlet-cond" id="elect-outlet-cond">
+                        <label for="elect-outlet-repair"> Needed Repair: </label>
+                        <input type="text" name="elect-outlet-repair" id="elect-outlet-repair">
+                        <label for="elect-outlet-comment">Comment</label>
+                    <input type="text" name="elect-outlet-comment" id="elect-outlet-comment">
+                    </div>
+                    <div>
+                        <label for="fencing-cond" class="form-label">Fencing: </label>
+                        <label for="fencing-cond"> Satisfactory Condition</label>
+                        <input type="text" name="fencing-cond" id="fencing-sats-cond">
+                        <label for="fencing-repair"> Needed Repair: </label>
+                        <input type="text" name="fencing-repair" id="fencing-repair">
+                        <label for="fencing-comment">Comment</label>
+                    <input type="text" name="fencing-comment" id="fencing-comment">
+                    </div>  
+
+                    <div>
+                      <label for="gates-sats-cond" class="form-label">Gates: </label>
+                      <label for="gates-sats-cond"> Satisfactory Condition</label>
+                      <input type="text" name="gates-sats-cond" id="gates-sats-cond">
+                      <label for="gates-repair"> Needed Repair: </label>
+                      <input type="text" name="gates-repair" id="gates-repair">
+                      <label for="gates-comment">Comment</label>
+                    <input type="text" name="gates-comment" id="gates-comment">
+                  </div> 
+
+                  <div>
+                    <label for="ramps-rails-sats-cond" class="form-label">Ramps/Rails: </label>
+                    <label for="ramps-rails-sats-cond"> Satisfactory Condition</label>
+                    <input type="text" name="ramps-rails-sats-cond" id="ramps-rails-sats-cond">
+                    <label for="ramps-rails-repair"> Needed Repair: </label>
+                    <input type="text" name="ramps-rails-repair" id="ramps-rails-repair">
+                    <label for="ramps-rails-comment">Comment</label>
+                    <input type="text" name="ramps-rails-comment" id="ramps-rails-comment">
+                  </div> 
+
+                  <div>
+                    <label for="wheelchair-accesibility" class="form-label">Is the width of the main school entrance sufficient for wheelchair accessibility?: </label>
+                    <label for="wheelchair-accesibility"> Satisfactory Condition</label>
+                    <input type="text" name="wheelchair-accesibility" id="wheelchair-accesibility">
+                    <label for="wheelchair-access-repair"> Needed Repair: </label>
+                    <input type="text" name="wheelchair-access-repair" id="wheelchair-access-repair">
+                    <label for="wheelchair-access-comment">Comment</label>
+                    <input type="text" name="wheelchair-access-comment" id="wheelchair-access-comment">
+                  </div> 
+
+                  <div>
+                    <label for="sch-path" class="form-label">Is the path to the school wheelchair-accessible, even during the rainy season?: </label>
+                    <label for="sch-path"> Satisfactory Condition</label>
+                    <input type="text" name="sch-path" id="sch-path">
+                    <label for="sch-path-repair"> Needed Repair: </label>
+                    <input type="text" name="sch-path-repair" id="sch-path-repair">
+                    <label for="sch-path-comment">Comment</label>
+                    <input type="text" name="sch-path-comment" id="sch-path-comment">
+                  </div> 
+
+
+            </fieldset>
+            </div>
+
+            <div class="form-group-ecq">
+            <fieldset>
+              <legend>Water, Sanitation and Hygiene</legend>
+              <div>
+              <label for=""><strong>Note:</strong> <P>Yes = piped, protected well/spring, rainwater catchment, delivered or packaged (bottled) water</P></label>
+              <p>No = unprotected well/spring, lake/river/stream, none</p>
+              </div>
+              <div>
+              <label for="drinking-water" class="form-label">Improved drinking water source:</label>
+              <label for="drinking-water-yes">Yes</label>
+              <input type="radio" name="drinking-water" id="drinking-water-yes">
+              <label for="drinking-water-no">No</label>
+              <input type="radio" name="drinking-water" id="drinking-water-no">
+              </div>
+
+              <div>
+                <label for="water-availability" class="form-label">Water currently available from the source: </label>
+                <label for="water-availability-yes">Yes</label>
+                <input type="radio" name="water-availability" id="water-availability-yes">
+                <label for="water-availability-no">No</label>
+                <input type="radio" name="water-availability" id="water-availability-no">
+              </div>
+
+              <div>
+                <label for="handwashing" class="form-label">Accessible handwashing facilities: </label>
+                <label for="handwashing-yes">Yes </label>
+                <input type="radio" name="handwashing" id="handwashing-yes">
+                <label for="handwashing-no"> No </label>
+                <input type="radio" name="handwashing" id="handwashing-no">
+              </div>
+
+              <div>
+                <label for="Accessible-handwash" class="form-label">Accessible handwashing with soap and water currently available</label>
+                <label for="Accessible-handwash-yes"> Yes</label>
+                <input type="radio" name="Accessible-handwash-yes" id="Accessible-handwash-yes">
+                <label for="Accessible-handwash-no"> No </label>
+                <input type="radio" name="Accessible-handwash-no" id="Accessible-handwash-no">
+              </div>
+
+              <div>
+                <label for="children-toilet" class="form-label"> Single-sex children toilets:</label>
+                <label for="children-toilet-girls">Girls' only toilets</label>
+                <input type="checkbox" name="children-toilet-girls" id="children-toilet-girls">
+                <label for="children-toilet-boys">Boys' only toilets</label>
+                <input type="checkbox" name="children-toilet-boys" id="children-toilet-boys">
+                <label for="children-toilet-common">Common used toilets</label>
+                <input type="checkbox" name="children-toilet-common" id="children-toilet">
+              </div>
+            </fieldset>
+            </div>
+
+            <fieldset>
+              <legend> Number of Toilets Urinals and Washrooms in school </legend>
+              <fieldset>
+                <Legend>Single-sex children toilets:</Legend>
+              <div>
+                <h4>Provide the number of available facility </h4>
+              <label for="no-girls-toilet"class="form-label">No of Girls' toilets</label>
+              <input type="text" name="no-girls-toilet" id="no-girls-toilet" placeholder="Enter the no of girls tolet">
+              </div>
+              <div>
+              <label for="no-boys-toilet" class="form-label">No of Boys' toilets</label>
+              <input type="text" name="no-boys-toilet" id="no-boys-toilet" >
+              </div>
+              <div>
+              <label for="no-common-toilet" class="form-label">No of common toilets</label>
+              <input type="text" name="no-common-toilet" id="no-common-toilet">
+              </div>
+              </fieldset>
+
+              <fieldset>
+              <legend> Number Staff Toilets: </legend>
+              <div>
+              <label for="staff-toilet-female"class="form-label" class="form-label">Femal staff toilets</label>
+              <input type="text" name="staff-toilet-female" id="staff-toilet-female">
+              </div>
+              <div>
+              <label for="staff-toilet-male" class="form-label">Male staff toilets</label>
+              <input type="text" name="staff-toilet-male" id="staff-toilet-male">
+              </div>
+              <div>
+              <label for="common-staff-toilet" class="form-label">Common staff toilets</label>
+              <input type="text" name="common-staff-toilet" id="common-staff-toilet">
+              </div>
+              </fieldset>
+
+             
+              <fieldset>
+                <legend> Number of Urinals: </legend>
+                
+                <div>
+                <label for="urinals-boys" class="form-label">Boys' only toilets</label>
+                <input type="text" name="urinals-boys" id="urinals-boys" >
+                </div>
+                <div>
+                <label for="urinals-staff" class="form-label">Stafs' only toilets</label>
+                <input type="text" name="urinals-staff" id="urinals-staff" >
+                </div>
+                <div>
+                <label for="common-urinals" class="form-label">Commonly Used</label>
+                <input type="text" name="common-urinals" id="common-urinals" >
+                </div>
+                </fieldset>
+
+                
+              <fieldset>
+                <legend> Washrooms facilitiles for children with disabilities: </legend>
+                <div>
+                <label for="washroom-girls" class="form-label">Girls' only</label>
+                <input type="text" name="washroom-girls" id="washroom-girls" >
+                </div>
+                <div>
+                <label for="washroom-boys" class="form-label">Boys' only</label>
+                <input type="text" name="washroom-boys" id="washroom-boys" >
+                </div>
+                <div>
+                <label for="common-washrooms" class="form-label">Common used Washrooms</label>
+                <input type="text" name="common-washrooms" id="common-washrooms" >
+                </div>
+                </fieldset>
+            </fieldset>
+
+            <div class="form-group-ecq">
+            <input type="button" value="Continue" class="form-button-ecq">
+          </div>
+         
+
 
         </form>
-        </div> 
+      </div> 
            
     </section>
 
@@ -275,9 +590,10 @@
     <footer class="row">
         <div class="col-12">
             <ul>
-                <li><a href=""> Home</a></li>
-                <li><a href=""> Home</a></li>
-                <li><a href=""> Home</a></li>
+                <li><a href="../early_childQ/ecQ_home.html"> Home</a></li>
+                <li><a href="../early_childQ/demography.html"> Demography</a></li>
+                <li><a href="../early_childQ/children_profile.html"> Children</a></li>
+                <li><a href="../early_childQ/staff_profile.html"> Staff</a></li>
             </ul>
         </div>
         <div>
