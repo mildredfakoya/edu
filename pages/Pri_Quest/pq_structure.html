@@ -19,7 +19,7 @@
             <a class="nav-link" href="#">Logout</a>
         </nav>
     </header>
-    <section class="row">
+    <section class="row pq-container">
         <div class="form1-schinfo">
             <div class="col-4 pqs">
                 <form action="#">
@@ -148,8 +148,7 @@
                         <input type="number" id="female_enrolment" name="female_enrolment" min="0">
                         
                         <label for="total_enrolment">Total:</label>
-                        <input type="number" id="total_enrolment" name="total_enrolment" min="0" readonly>
-                        <!-- Total enrolment will be calculated automatically using JavaScript -->
+                        <input type="number" id="total_enrolment" name="total_enrolment" min="0">
                     </fieldset>
                 </form>
                 
@@ -171,11 +170,11 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Kindergarten (K)</td>
+                                    <td><label for="groups_k">Kindergarten (K)</label></td>
                                     <td><input type="number" name="groups_k" id="groups_k" min="0"></td>
                                 </tr>
                                 <tr>
-                                    <td>Grade 1</td>
+                                    <td><label for="groups_1">Grade 1</label></td>
                                     <td><input type="number" name="groups_1" id="groups_1" min="0"></td>
                                 </tr>
                                 <tr>
@@ -208,7 +207,7 @@
                         <input type="number" id="female_students" name="female_students" min="0">
                         
                         <label for="total_students">Total Students:</label>
-                        <input type="number" id="total_students" name="total_students" min="0" readonly>
+                        <input type="number" id="total_students" name="total_students" min="0">
                     </fieldset>
                 </form>
                 
@@ -275,47 +274,13 @@
                 </form>
                 
             </div>
-            <div class="col-4 pqs">
-                <form action="#">
-                    <fieldset>
-                        <legend>Student Enrolment by Age, Grade, and Gender</legend>
-                        
-                        <div class="row">
-                            <div class="col-4">
-                                <label for="age_less_than_5">Age as of October 15th (Yrs) &lt; 5</label>
-                                <input type="text" id="age_less_than_5_gender_m" name="age_less_than_5_gender_m" placeholder="Male">
-                                <input type="text" id="age_less_than_5_gender_f" name="age_less_than_5_gender_f" placeholder="Female">
-                            </div>
-                            
-                            <div class="col-4">
-                                <label for="age_5">Age as of October 15th (Yrs) 5</label>
-                                <input type="text" id="age_5_gender_m" name="age_5_gender_m" placeholder="Male">
-                                <input type="text" id="age_5_gender_f" name="age_5_gender_f" placeholder="Female">
-                            </div>
-                            
-                            <!-- Repeat for other age groups -->
-                        </div>
-                        
-                        <div class="row">
-                            <div class="col-4">
-                                <label for="total">Total Enrolment</label>
-                                <input type="text" id="total_gender_m" name="total_gender_m" placeholder="Male">
-                                <input type="text" id="total_gender_f" name="total_gender_f" placeholder="Female">
-                            </div>
-                        </div>
-                        
-                        <div class="row">
-                            <div class="col-4">
-                                <label for="total_enrolment">Total Enrolment:</label>
-                                <input type="number" id="total_enrolment" name="total_enrolment" min="0">
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
-                
-                
-            </div>
+        </div>
     </section>
+    <div>
+        <button type="previous">Go Back</button>
+        <button type="submit">Submit</button>
+        <button type="next">Next</button>
+    </div>
 
     <footer class="footer">
         <div class="container">
