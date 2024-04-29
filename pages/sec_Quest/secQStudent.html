@@ -24,11 +24,14 @@
       <h2 class="sq-section-heading">Government of St. Lucia</h2>
       <h3 class="sq-section-heading">Ministry of Education, Innovation Gender Relations 
         and Sustainable Development</h3>
+        <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Annual Education Census Questionnaire 
+          Secondary School 2020-21 Academic Year</h3>
     </div>
   </section>
 
   <section class="row">
-    <div class="col-2 sq-sidenav ">
+    <section class="col-2">
+    <div class="sq-sidenav ">
         <a href="secQHome.html">Cover</a>
         <a href="secQSchool.html">School</a>
         <a href="secQStudent.html">Student</a>
@@ -41,16 +44,16 @@
         <a href="#">Classifications and Definitions</a>
         <a href="#">Confirmation Page</a>
     </div>
-  
-    <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Annual Education Census Questionnaire 
-      Secondary School 2020-21 Academic Year</h3>
-    <div class="col-10">  
+    </section>
+    <section class="col-10">
+    <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Student Enrollment Form</h3>
+    <div>  
       
-      <table class="sq-table" >
+      <table class="sq-table sq-form" >
         <caption class="sq-table-caption">T2:Distribution of Current Enrollment according to New Entrants,
           Repeaters and Transfers in the school.
         </caption>
-          <form action="">
+          <form action="" method="post" autocomplete="on">
             <tr>
               <th rowspan="2"></th>
               <th rowspan="2">Gender</th>
@@ -68,119 +71,119 @@
               <th>5</th>
             </tr>
             <tr>
-              <th rowspan="2">New Entrants from Primary Schools</th>
-              <th>M</th>
-              <td></td>
+              <th rowspan="2"><label for="newentry" >New Entrants from Primary Schools</label></th>
+              <th><input type="checkbox" name="newentry" id="newentry" value="M" class="sq-table-input">M</th>
+              <td><input type="number" name="newentry" id="newentry" class="sq-table-input"></td>
               <td colspan="6"></td>
-              <td></td>
-              <td rowspan="2"></td>
+              <td><input type="number" name="newentry" id="newentry" class="sq-table-input"></td>
+              <td rowspan="2"><input type="number" name="number" id="number" class="sq-table-input"></td>
             </tr>
             <tr>
-              <th>F</th>
-              <td></td>
+              <th><input type="checkbox" name="newentry" id="newentry" value="F" class="sq-table-input">F</th>
+              <td><input type="number" name="newentry" id="newentry" class="sq-table-input"></td>
               <td colspan="6"></td>
-              <td></td>
-              <td rowspan="2"></td>
+              <td><input type="number" name="newentry" id="newentry" class="sq-table-input"></td>
+              <!--<td rowspan="2"></td>-->
             </tr>
             <tr>
-              <th rowspan="2">Repeaters</th>
-              <th>M</th>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td rowspan="2"></td>
+              <th rowspan="2"><label for="repeaters">Repeaters</label></th>
+              <th><input type="checkbox" name="repeaters" id="repeaters" value="M" class="sq-table-input">M</th>
+              <td><input type="number" name="repeaters" id="repeaters" class="sq-table-input"></td>
+              <td><input type="number" name="repeaters" id="repeaters" class="sq-table-input"></td>
+              <td><input type="number" name="repeaters" id="repeaters" class="sq-table-input"></td>
+              <td><input type="number" name="repeaters" id="repeaters" class="sq-table-input"></td>
+              <td><input type="number" name="repeaters" id="repeaters" class="sq-table-input"></td>
+              <td><input type="number" name="repeaters" id="repeaters" class="sq-table-input"></td>
+              <td><input type="number" name="repeaters" id="repeaters" class="sq-table-input"></td>
+              <td><input type="number" name="repeaters" id="repeaters" class="sq-table-input"></td>
+              <td rowspan="2"><input type="number" name="repeaters" id="repeaters" class="sq-table-input"></td>
             </tr>
             <tr>
-              <th>F</th>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td rowspan="2"></td>
+              <th><input type="checkbox" name="repeaters" id="repeaters" value="F" class="sq-table-input">F</th>
+              <td><input type="number" name="repeaters" id="repeaters" class="sq-table-input"></td>
+              <td><input type="number" name="repeaters" id="repeaters" class="sq-table-input"></td>
+              <td><input type="number" name="repeaters" id="repeaters" class="sq-table-input"></td>
+              <td><input type="number" name="repeaters" id="repeaters" class="sq-table-input"></td>
+              <td><input type="number" name="repeaters" id="repeaters" class="sq-table-input"></td>
+              <td><input type="number" name="repeaters" id="repeaters" class="sq-table-input"></td>
+              <td><input type="number" name="repeaters" id="repeaters" class="sq-table-input"></td>
+              <td><input type="number" name="repeaters" id="repeaters" class="sq-table-input"></td>
+              
             </tr>
             <tr>
-              <th rowspan="2">Transfers in from other schools in country</th>
-              <th>M</th>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td rowspan="2"></td>
+              <th rowspan="2"><label for="countrytransfers">Transfers in from other schools in country</label></th>
+              <th><input type="checkbox" name="countrytransfers" id="countrytransfers" value="M" class="sq-table-input">M</th>
+              <td><input type="number" name="countrytransfers" id="countrytransfers" class="sq-table-input"></td>
+              <td><input type="number" name="countrytransfers" id="countrytransfers" class="sq-table-input"></td>
+              <td><input type="number" name="countrytransfers" id="countrytransfers" class="sq-table-input"></td>
+              <td><input type="number" name="countrytransfers" id="countrytransfers" class="sq-table-input"></td>
+              <td><input type="number" name="countrytransfers" id="countrytransfers" class="sq-table-input"></td>
+              <td><input type="number" name="countrytransfers" id="countrytransfers" class="sq-table-input"></td>
+              <td><input type="number" name="countrytransfers" id="countrytransfers" class="sq-table-input"></td>
+              <td><input type="number" name="countrytransfers" id="countrytransfers" class="sq-table-input"></td>
+              <td rowspan="2"><input type="number" name="countrytransfers" id="countrytransfers" class="sq-table-input"></td>
             </tr>
             <tr>
-              <th>F</th>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td rowspan="2"></td>
+              <th><input type="checkbox" name="countrytransfers" id="countrytransfers" value="F" class="sq-table-input">F</th>
+              <td><input type="number" name="countrytransfers" id="countrytransfers" class="sq-table-input"></td>
+              <td><input type="number" name="countrytransfers" id="countrytransfers" class="sq-table-input"></td>
+              <td><input type="number" name="countrytransfers" id="countrytransfers" class="sq-table-input"></td>
+              <td><input type="number" name="countrytransfers" id="countrytransfers" class="sq-table-input"></td>
+              <td><input type="number" name="countrytransfers" id="countrytransfers" class="sq-table-input"></td>
+              <td><input type="number" name="countrytransfers" id="countrytransfers" class="sq-table-input"></td>
+              <td><input type="number" name="countrytransfers" id="countrytransfers" class="sq-table-input"></td>
+              <td><input type="number" name="countrytransfers" id="countrytransfers" class="sq-table-input"></td>
+            
             </tr>
             <tr>
-              <th rowspan="2">Transfers in from overseas</th>
-              <th>M</th>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td rowspan="2"></td>
+              <th rowspan="2"><label for="overseastransfers">Transfers in from overseas</label></th>
+              <th><input type="checkbox" name="overseastransfers" id="overseastransfers" value="M" class="sq-table-input">M</th>
+              <td><input type="number" name="overseastransfers" id="overseastransfers" class="sq-table-input"></td>
+              <td><input type="number" name="overseastransfers" id="overseastransfers" class="sq-table-input"></td>
+              <td><input type="number" name="overseastransfers" id="overseastransfers" class="sq-table-input"></td>
+              <td><input type="number" name="overseastransfers" id="overseastransfers" class="sq-table-input"></td>
+              <td><input type="number" name="overseastransfers" id="overseastransfers" class="sq-table-input"></td>
+              <td><input type="number" name="overseastransfers" id="overseastransfers" class="sq-table-input"></td>
+              <td><input type="number" name="overseastransfers" id="overseastransfers" class="sq-table-input"></td>
+              <td><input type="number" name="overseastransfers" id="overseastransfers" class="sq-table-input"></td>
+              <td rowspan="2"><input type="number" name="overseastransfers" id="overseastransfers" class="sq-table-input"></td>
             </tr>
             <tr>
-              <th>F</th>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td rowspan="2"></td>
+              <th><input type="checkbox" name="overseastransfers" id="overseastransfers" value="F" class="sq-table-input">F</th>
+              <td><input type="number" name="overseastransfers" id="overseastransfers" class="sq-table-input"></td>
+              <td><input type="number" name="overseastransfers" id="overseastransfers" class="sq-table-input"></td>
+              <td><input type="number" name="overseastransfers" id="overseastransfers" class="sq-table-input"></td>
+              <td><input type="number" name="overseastransfers" id="overseastransfers" class="sq-table-input"></td>
+              <td><input type="number" name="overseastransfers" id="overseastransfers" class="sq-table-input"></td>
+              <td><input type="number" name="overseastransfers" id="overseastransfers" class="sq-table-input"></td>
+              <td><input type="number" name="overseastransfers" id="overseastransfers" class="sq-table-input"></td>
+              <td><input type="number" name="overseastransfers" id="overseastransfers" class="sq-table-input"></td>
+              
             </tr>
             <tr>
-              <th rowspan="2">Total</th>
-              <th>M</th>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td rowspan="2"></td>
+              <th rowspan="2"><label for="totalcurrentstud">Total</label></th>
+              <th><input type="checkbox" name="totalcurrentstud" id="totalcurrentstud" value="M" class="sq-table-input">M</th>
+              <td><input type="number" name="totalcurrentstud" id="totalcurrentstud" class="sq-table-input"></td>
+              <td><input type="number" name="totalcurrentstud" id="totalcurrentstud" class="sq-table-input"></td>
+              <td><input type="number" name="totalcurrentstud" id="totalcurrentstud" class="sq-table-input"></td>
+              <td><input type="number" name="totalcurrentstud" id="totalcurrentstud" class="sq-table-input"></td>
+              <td><input type="number" name="totalcurrentstud" id="totalcurrentstud" class="sq-table-input"></td>
+              <td><input type="number" name="totalcurrentstud" id="totalcurrentstud" class="sq-table-input"></td>
+              <td><input type="number" name="totalcurrentstud" id="totalcurrentstud" class="sq-table-input"></td>
+              <td><input type="number" name="totalcurrentstud" id="totalcurrentstud" class="sq-table-input"></td>
+              <td rowspan="2"><input type="number" name="totalcurrentstud" id="totalcurrentstud" class="sq-table-input"></td>
             </tr>
             <tr>
-              <th>F</th>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td rowspan="2"></td>
+              <th><input type="checkbox" name="totalcurrentstud" id="totalcurrentstud" value="F" class="totalcurrentstud">F</th>
+              <td><input type="number" name="totalcurrentstud" id="totalcurrentstud" class="sq-table-input"></td>
+              <td><input type="number" name="totalcurrentstud" id="totalcurrentstud" class="sq-table-input"></td>
+              <td><input type="number" name="totalcurrentstud" id="totalcurrentstud" class="sq-table-input"></td>
+              <td><input type="number" name="totalcurrentstud" id="totalcurrentstud" class="sq-table-input"></td>
+              <td><input type="number" name="totalcurrentstud" id="totalcurrentstud" class="sq-table-input"></td>
+              <td><input type="number" name="totalcurrentstud" id="totalcurrentstud" class="sq-table-input"></td>
+              <td><input type="number" name="totalcurrentstud" id="totalcurrentstud" class="sq-table-input"></td>
+              <td><input type="number" name="totalcurrentstud" id="totalcurrentstud" class="sq-table-input"></td>
+              
             </tr>
             <tr>
               <td colspan="11">
@@ -193,8 +196,8 @@
           </form>
   </table><br>
   <table class="sq-table" >
-    <caption class="sq-table-caption">T3: School Leavers during the Last School Year</caption>
-      <form action="">
+    <caption class="sq-table-caption">T3: School Leavers during the Last School Year (Students Outflow)</caption>
+      <form action="" method="post" autocomplete="on">
         <tr>
           <th rowspan="2"></th>
           <th rowspan="2">Gender</th>
@@ -212,129 +215,123 @@
           <th>5</th>
         </tr>
         <tr>
-          <th rowspan="2">Dropouts</th>
-          <th>M</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td rowspan="2"></td>
+          <th rowspan="2"><label for="dropouts">Dropouts</label></th>
+          <th><input type="checkbox" name="dropouts" id="dropouts" value="M" class="sq-table-input">M</th>
+          <td><input type="number" name="dropouts" id="dropouts" class="sq-table-input"></td>
+          <td><input type="number" name="dropouts" id="dropouts" class="sq-table-input"></td>
+          <td><input type="number" name="dropouts" id="dropouts" class="sq-table-input"></td>
+          <td><input type="number" name="dropouts" id="dropouts" class="sq-table-input"></td>
+          <td><input type="number" name="dropouts" id="dropouts" class="sq-table-input"></td>
+          <td><input type="number" name="dropouts" id="dropouts" class="sq-table-input"></td>
+          <td><input type="number" name="dropouts" id="dropouts" class="sq-table-input"></td>
+          <td><input type="number" name="dropouts" id="dropouts" class="sq-table-input"></td>
+          <td rowspan="2"><input type="number" name="dropouts" id="dropouts" class="sq-table-input"></td>
         </tr>
         <tr>
-          <th>F</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td rowspan="2"></td>
+          <th><input type="checkbox" name="dropouts" id="dropouts" value="F" class="sq-table-input">F</th>
+          <td><input type="number" name="dropouts" id="dropouts" class="sq-table-input"></td>
+          <td><input type="number" name="dropouts" id="dropouts" class="sq-table-input"></td>
+          <td><input type="number" name="dropouts" id="dropouts" class="sq-table-input"></td>
+          <td><input type="number" name="dropouts" id="dropouts" class="sq-table-input"></td>
+          <td><input type="number" name="dropouts" id="dropouts" class="sq-table-input"></td>
+          <td><input type="number" name="dropouts" id="dropouts" class="sq-table-input"></td>
+          <td><input type="number" name="dropouts" id="dropouts" class="sq-table-input"></td>
+          <td><input type="number" name="dropouts" id="dropouts" class="sq-table-input"></td>
+          
         </tr>
         <tr>
-          <th rowspan="2">Transfers out to other Schools</th>
-          <th>M</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td rowspan="2"></td>
+          <th rowspan="2"><label for="transsferout">Transfers out to other Schools</label></th>
+          <th><input type="checkbox" name="transsferout" id="transsferout" value="M" class="sq-table-input">M</th>
+          <td><input type="number" name="transsferout" id="transsferout" class="sq-table-input"></td>
+          <td><input type="number" name="transsferout" id="transsferout" class="sq-table-input"></td>
+          <td><input type="number" name="transsferout" id="transsferout" class="sq-table-input"></td>
+          <td><input type="number" name="transsferout" id="transsferout" class="sq-table-input"></td>
+          <td><input type="number" name="transsferout" id="transsferout" class="sq-table-input"></td>
+          <td><input type="number" name="transsferout" id="transsferout" class="sq-table-input"></td>
+          <td><input type="number" name="transsferout" id="transsferout" class="sq-table-input"></td>
+          <td><input type="number" name="transsferout" id="transsferout" class="sq-table-input"></td>
+          <td rowspan="2"><input type="number" name="transsferout" id="transsferout" class="sq-table-input"></td>
         </tr>
         <tr>
-          <th>F</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td rowspan="2"></td>
+          <th><input type="checkbox" name="transsferout" id="transsferout" value="F" class="sq-table-input">F</th>
+          <td><input type="number" name="transsferout" id="transsferout" class="sq-table-input"></td>
+          <td><input type="number" name="transsferout" id="transsferout" class="sq-table-input"></td>
+          <td><input type="number" name="transsferout" id="transsferout" class="sq-table-input"></td>
+          <td><input type="number" name="transsferout" id="transsferout" class="sq-table-input"></td>
+          <td><input type="number" name="transsferout" id="transsferout" class="sq-table-input"></td>
+          <td><input type="number" name="transsferout" id="transsferout" class="sq-table-input"></td>
+          <td><input type="number" name="transsferout" id="transsferout" class="sq-table-input"></td>
+          <td><input type="number" name="transsferout" id="transsferout" class="sq-table-input"></td>
+          
         </tr>
         <tr>
-          <th rowspan="2">Transfers to overseas</th>
-          <th>M</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td rowspan="2"></td>
+          <th rowspan="2"><label for="overseastransferout">Transfers to overseas</label></th>
+          <th><input type="checkbox" name="overseastransferout" id="overseastransferout" value="M" class="sq-table-input">M</th>
+          <td><input type="number" name="overseastransferout" id="overseastransferout" class="sq-table-input"></td>
+          <td><input type="number" name="overseastransferout" id="overseastransferout" class="sq-table-input"></td>
+          <td><input type="number" name="overseastransferout" id="overseastransferout" class="sq-table-input"></td>
+          <td><input type="number" name="overseastransferout" id="overseastransferout" class="sq-table-input"></td>
+          <td><input type="number" name="overseastransferout" id="overseastransferout" class="sq-table-input"></td>
+          <td><input type="number" name="overseastransferout" id="overseastransferout" class="sq-table-input"></td>
+          <td><input type="number" name="overseastransferout" id="overseastransferout" class="sq-table-input"></td>
+          <td><input type="number" name="overseastransferout" id="overseastransferout" class="sq-table-input"></td>
+          <td rowspan="2"><input type="number" name="overseastransferout" id="overseastransferout" class="sq-table-input"></td>
         </tr>
         <tr>
-          <th>F</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td rowspan="2"></td>
+          <th><input type="checkbox" name="overseastransferout" id="overseastransferout" value="F" class="sq-table-input">F</th>
+          <td><input type="number" name="overseastransferout" id="overseastransferout" class="sq-table-input"></td>
+          <td><input type="number" name="overseastransferout" id="overseastransferout" class="sq-table-input"></td>
+          <td><input type="number" name="overseastransferout" id="overseastransferout" class="sq-table-input"></td>
+          <td><input type="number" name="overseastransferout" id="overseastransferout" class="sq-table-input"></td>
+          <td><input type="number" name="overseastransferout" id="overseastransferout" class="sq-table-input"></td>
+          <td><input type="number" name="overseastransferout" id="overseastransferout" class="sq-table-input"></td>
+          <td><input type="number" name="overseastransferout" id="overseastransferout" class="sq-table-input"></td>
+          <td><input type="number" name="overseastransferout" id="overseastransferout" class="sq-table-input"></td>
+        
         </tr>
         <tr>
-          <th rowspan="2">Graduates</th>
-          <th>M</th>
+          <th rowspan="2"><label for="graduates">Graduates</label></th>
+          <th><input type="checkbox" name="graduates" id="graduates" value="M" class="sq-table-input">M</th>
+          <td colspan="4"></td>
+          <td><input type="number" name="graduates" id="graduates" class="sq-table-input"></td>
           <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td rowspan="2"></td>
+          <td><input type="number" name="graduates" id="graduates" class="sq-table-input"></td>
+          <td><input type="number" name="graduates" id="graduates" class="sq-table-input"></td>
+          <td rowspan="2"><input type="number" name="graduates" id="graduates" class="sq-table-input"></td>
         </tr>
         <tr>
-          <th>F</th>
+          <th><input type="checkbox" name="graduates" id="graduates" value="F" class="sq-table-input">F</th>
+          <td colspan="4"></td>
+          <td><input type="number" name="graduates" id="graduates" class="sq-table-input"></td>
           <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td rowspan="2"></td>
+          <td><input type="number" name="graduates" id="graduates" class="sq-table-input"></td>
+          <td><input type="number" name="graduates" id="graduates" class="sq-table-input"></td>
+          
         </tr>
         <tr>
-          <th rowspan="2">Total</th>
-          <th>M</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td rowspan="2"></td>
+          <th rowspan="2"><label for="totaldropouts">Total</label></th>
+          <th><input type="checkbox" name="totaldropouts" id="totaldropouts" value="M" class="sq-table-input">M</th>
+          <td><input type="number" name="totaldropouts" id="totaldropouts" class="sq-table-input"></td>
+          <td><input type="number" name="totaldropouts" id="totaldropouts" class="sq-table-input"></td>
+          <td><input type="number" name="totaldropouts" id="totaldropouts" class="sq-table-input"></td>
+          <td><input type="number" name="totaldropouts" id="totaldropouts" class="sq-table-input"></td>
+          <td><input type="number" name="totaldropouts" id="totaldropouts" class="sq-table-input"></td>
+          <td><input type="number" name="totaldropouts" id="totaldropouts" class="sq-table-input"></td>
+          <td><input type="number" name="totaldropouts" id="totaldropouts" class="sq-table-input"></td>
+          <td><input type="number" name="totaldropouts" id="totaldropouts" class="sq-table-input"></td>
+          <td><input type="number" name="totaldropouts" id="totaldropouts" class="sq-table-input"></td>
         </tr>
         <tr>
-          <th>F</th>
+          <th><input type="checkbox" name="totaldropouts" id="totaldropouts" value="F" class="sq-table-input">F</th>
+          <td><input type="number" name="totaldropouts" id="totaldropouts" class="sq-table-input"></td>
+          <td><input type="number" name="totaldropouts" id="totaldropouts" class="sq-table-input"></td>
+          <td><input type="number" name="totaldropouts" id="totaldropouts" class="sq-table-input"></td>
+          <td><input type="number" name="totaldropouts" id="totaldropouts" class="sq-table-input"></td>
+          <td><input type="number" name="totaldropouts" id="totaldropouts" class="sq-table-input"></td>
+          <td><input type="number" name="totaldropouts" id="totaldropouts" class="sq-table-input"></td>
+          <td><input type="number" name="totaldropouts" id="totaldropouts" class="sq-table-input"></td>
+          <td><input type="number" name="totaldropouts" id="totaldropouts" class="sq-table-input"></td>
           <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td rowspan="2"></td>
         </tr>
         <tr>
           <td colspan="11">
@@ -348,9 +345,9 @@
     </table><br>
     <table class="sq-table" >
       <caption class="sq-table-caption">T4: Reasons for Dropouts in the Last Year</caption>
-        <form action="">
+        <form action="" method="post" autocomplete="on">
           <tr>
-            <th rowspan="2"></th>
+            <th rowspan="2">Reason</th>
             <th rowspan="2">Gender</th>
             <th colspan="5">Forms</th>
             <th rowspan="2">Lower-6</th>
@@ -366,131 +363,172 @@
             <th>5</th>
           </tr>
           <tr>
-            <th rowspan="2">Dropouts</th>
-            <th>M</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td rowspan="2"></td>
+            <th rowspan="2"><label for="financialreason"></label>Financial Difficulties</th>
+            <th><input type="checkbox" name="financialreason" id="financialreason" value="M" class="sq-table-input">M</th>
+            <td><input type="number" name="financialreason" id="financialreason" class="sq-table-input"></td>
+            <td><input type="number" name="financialreason" id="financialreason" class="sq-table-input"></td>
+            <td><input type="number" name="financialreason" id="financialreason" class="sq-table-input"></td>
+            <td><input type="number" name="financialreason" id="financialreason" class="sq-table-input"></td>
+            <td><input type="number" name="financialreason" id="financialreason" class="sq-table-input"></td>
+            <td><input type="number" name="financialreason" id="financialreason" class="sq-table-input"></td>
+            <td><input type="number" name="financialreason" id="financialreason" class="sq-table-input"></td>
+            <td><input type="number" name="financialreason" id="financialreason" class="sq-table-input"></td>
+            <td rowspan="2"><input type="number" name="financialreason" id="financialreason" class="sq-table-input"></td>
           </tr>
           <tr>
-            <th>F</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td rowspan="2"></td>
+            <th><input type="checkbox" name="financialreason" id="financialreason" value="F" class="sq-table-input">F</th>
+            <td><input type="number" name="financialreason" id="financialreason" class="sq-table-input"></td>
+            <td><input type="number" name="financialreason" id="financialreason" class="sq-table-input"></td>
+            <td><input type="number" name="financialreason" id="financialreason" class="sq-table-input"></td>
+            <td><input type="number" name="financialreason" id="financialreason" class="sq-table-input"></td>
+            <td><input type="number" name="financialreason" id="financialreason" class="sq-table-input"></td>
+            <td><input type="number" name="financialreason" id="financialreason" class="sq-table-input"></td>
+            <td><input type="number" name="financialreason" id="financialreason" class="sq-table-input"></td>
+            <td><input type="number" name="financialreason" id="financialreason" class="sq-table-input"></td>
+            
           </tr>
           <tr>
-            <th rowspan="2">Transfers out to other Schools</th>
-            <th>M</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td rowspan="2"></td>
+            <th rowspan="2"><label for="pregnencyreason">Pregnency</label></th>
+            <th><input type="checkbox" name="pregnencyreason" id="pregnencyreason" value="M" class="sq-table-input">M</th>
+            <td><input type="number" name="pregnencyreason" id="pregnencyreason" class="sq-table-input"></td>
+            <td><input type="number" name="pregnencyreason" id="pregnencyreason" class="sq-table-input"></td>
+            <td><input type="number" name="pregnencyreason" id="pregnencyreason" class="sq-table-input"></td>
+            <td><input type="number" name="pregnencyreason" id="pregnencyreason" class="sq-table-input"></td>
+            <td><input type="number" name="pregnencyreason" id="pregnencyreason" class="sq-table-input"></td>
+            <td><input type="number" name="pregnencyreason" id="pregnencyreason" class="sq-table-input"></td>
+            <td><input type="number" name="pregnencyreason" id="pregnencyreason" class="sq-table-input"></td>
+            <td><input type="number" name="pregnencyreason" id="pregnencyreason" class="sq-table-input"></td>
+            <td rowspan="2"><input type="number" name="pregnencyreason" id="pregnencyreason" class="sq-table-input"></td>
           </tr>
           <tr>
-            <th>F</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td rowspan="2"></td>
+            <th><input type="checkbox" name="pregnencyreason" id="pregnencyreason" value="F" class="sq-table-input">F</th>
+            <td><input type="number" name="pregnencyreason" id="pregnencyreason" class="sq-table-input"></td>
+            <td><input type="number" name="pregnencyreason" id="pregnencyreason" class="sq-table-input"></td>
+            <td><input type="number" name="pregnencyreason" id="pregnencyreason" class="sq-table-input"></td>
+            <td><input type="number" name="pregnencyreason" id="pregnencyreason" class="sq-table-input"></td>
+            <td><input type="number" name="pregnencyreason" id="pregnencyreason" class="sq-table-input"></td>
+            <td><input type="number" name="pregnencyreason" id="pregnencyreason" class="sq-table-input"></td>
+            <td><input type="number" name="pregnencyreason" id="pregnencyreason" class="sq-table-input"></td>
+            <td><input type="number" name="pregnencyreason" id="pregnencyreason" class="sq-table-input"></td>
+            
           </tr>
           <tr>
-            <th rowspan="2">Transfers to overseas</th>
-            <th>M</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td rowspan="2"></td>
+            <th rowspan="2"><label for="tprelation">Teacher Pupil Relationship</label></th>
+            <th><input type="checkbox" name="tprelation" id="tprelation" value="M" class="sq-table-input">M</th>
+            <td><input type="number" name="tprelation" id="tprelation" class="sq-table-input"></td>
+            <td><input type="number" name="tprelation" id="tprelation" class="sq-table-input"></td>
+            <td><input type="number" name="tprelation" id="tprelation" class="sq-table-input"></td>
+            <td><input type="number" name="tprelation" id="tprelation" class="sq-table-input"></td>
+            <td><input type="number" name="tprelation" id="tprelation" class="sq-table-input"></td>
+            <td><input type="number" name="tprelation" id="tprelation" class="sq-table-input"></td>
+            <td><input type="number" name="tprelation" id="tprelation" class="sq-table-input"></td>
+            <td><input type="number" name="tprelation" id="tprelation" class="sq-table-input"></td>
+            <td rowspan="2"><input type="number" name="tprelation" id="tprelation" class="sq-table-input"></td>
           </tr>
           <tr>
-            <th>F</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td rowspan="2"></td>
+            <th><input type="checkbox" name="tprelation" id="tprelation" value="F" class="sq-table-input">F</th>
+            <td><input type="number" name="tprelation" id="tprelation" class="sq-table-input"></td>
+            <td><input type="number" name="tprelation" id="tprelation" class="sq-table-input"></td>
+            <td><input type="number" name="tprelation" id="tprelation" class="sq-table-input"></td>
+            <td><input type="number" name="tprelation" id="tprelation" class="sq-table-input"></td>
+            <td><input type="number" name="tprelation" id="tprelation" class="sq-table-input"></td>
+            <td><input type="number" name="tprelation" id="tprelation" class="sq-table-input"></td>
+            <td><input type="number" name="tprelation" id="tprelation" class="sq-table-input"></td>
+            <td><input type="number" name="tprelation" id="tprelation" class="sq-table-input"></td>
+            
           </tr>
           <tr>
-            <th rowspan="2">Graduates</th>
-            <th>M</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td rowspan="2"></td>
+            <th rowspan="2"><label for="healthreason">Continuous Poor performance/failure</label></th>
+            <th><input type="checkbox" name="healthreason" id="healthreason" value="M" class="sq-table-input">M</th>
+            <td><input type="number" name="healthreason" id="healthreason" class="sq-table-input"></td>
+            <td><input type="number" name="healthreason" id="healthreason" class="sq-table-input"></td>
+            <td><input type="number" name="healthreason" id="healthreason" class="sq-table-input"></td>
+            <td><input type="number" name="healthreason" id="healthreason" class="sq-table-input"></td>
+            <td><input type="number" name="healthreason" id="healthreason" class="sq-table-input"></td>
+            <td><input type="number" name="healthreason" id="healthreason" class="sq-table-input"></td>
+            <td><input type="number" name="healthreason" id="healthreason" class="sq-table-input"></td>
+            <td><input type="number" name="healthreason" id="healthreason" class="sq-table-input"></td>
+            <td rowspan="2"><input type="number" name="healthreason" id="healthreason" class="sq-table-input"></td>
           </tr>
           <tr>
-            <th>F</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td rowspan="2"></td>
+            <th><input type="checkbox" name="healthreason" id="healthreason" value="F" class="sq-table-input">F</th>
+            <td><input type="number" name="healthreason" id="healthreason" class="sq-table-input"></td>
+            <td><input type="number" name="healthreason" id="healthreason" class="sq-table-input"></td>
+            <td><input type="number" name="healthreason" id="healthreason" class="sq-table-input"></td>
+            <td><input type="number" name="healthreason" id="healthreason" class="sq-table-input"></td>
+            <td><input type="number" name="healthreason" id="healthreason" class="sq-table-input"></td>
+            <td><input type="number" name="healthreason" id="healthreason" class="sq-table-input"></td>
+            <td><input type="number" name="healthreason" id="healthreason" class="sq-table-input"></td>
+            <td><input type="number" name="healthreason" id="healthreason" class="sq-table-input"></td>
           </tr>
           <tr>
-            <th rowspan="2">Total</th>
-            <th>M</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td rowspan="2"></td>
+
           </tr>
           <tr>
-            <th>F</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td rowspan="2"></td>
+            <th rowspan="2"><label for="insuf-parent-control">Insufficient Parent Control</label></th>
+            <th><input type="checkbox" name="insuf-parent-control" id="insuf-parent-control" value="M" class="sq-table-input">M</th>
+            <td><input type="number" name="insuf-parent-control" id="insuf-parent-control" class="sq-table-input"></td>
+            <td><input type="number" name="insuf-parent-control" id="insuf-parent-control" class="sq-table-input"></td>
+            <td><input type="number" name="insuf-parent-control" id="insuf-parent-control" class="sq-table-input"></td>
+            <td><input type="number" name="insuf-parent-control" id="insuf-parent-control" class="sq-table-input"></td>
+            <td><input type="number" name="insuf-parent-control" id="insuf-parent-control" class="sq-table-input"></td>
+            <td><input type="number" name="insuf-parent-control" id="insuf-parent-control" class="sq-table-input"></td>
+            <td><input type="number" name="insuf-parent-control" id="insuf-parent-control" class="sq-table-input"></td>
+            <td><input type="number" name="insuf-parent-control" id="insuf-parent-control" class="sq-table-input"></td>
+            <td rowspan="2"><input type="number" name="insuf-parent-control" id="insuf-parent-control" class="sq-table-input"></td>
           </tr>
           <tr>
+            <th><input type="checkbox" name="insuf-parent-control" id="insuf-parent-control" value="F" class="sq-table-input">F</th>
+            <td><input type="number" name="insuf-parent-control" id="insuf-parent-control" class="sq-table-input"></td>
+            <td><input type="number" name="insuf-parent-control" id="insuf-parent-control" class="sq-table-input"></td>
+            <td><input type="number" name="insuf-parent-control" id="insuf-parent-control" class="sq-table-input"></td>
+            <td><input type="number" name="insuf-parent-control" id="insuf-parent-control" class="sq-table-input"></td>
+            <td><input type="number" name="insuf-parent-control" id="insuf-parent-control" class="sq-table-input"></td>
+            <td><input type="number" name="insuf-parent-control" id="insuf-parent-control" class="sq-table-input"></td>
+            <td><input type="number" name="insuf-parent-control" id="insuf-parent-control" class="sq-table-input"></td>
+            <td><input type="number" name="insuf-parent-control" id="insuf-parent-control" class="sq-table-input"></td>
+          </tr>
+
+          <tr>
+            <th rowspan="2"><label for="healthreason">Health</label></th>
+            <th><input type="checkbox" name="healthreason" id="healthreason" value="M" class="sq-table-input">M</th>
+          </tr>
+          <tr>
+            <th><input type="checkbox" name="healthreason" id="healthreason" value="F" class="sq-table-input">F</th>
+          </tr>
+
+          <tr>
+            <th rowspan="2"><label for="irrelevance-curriculum">Irrelevance Curriculum to Pupil</label></th>
+            <th><input type="checkbox" name="irrelevance-curriculum" id="irrelevance-curriculum" value="M" class="sq-table-input">M</th>
+          </tr>
+          <tr>
+            <th><input type="checkbox" name="irrelevance-curriculum" id="irrelevance-curriculum" value="F" class="sq-table-input">F</th>
+          </tr>
+
+          <tr>
+            <th rowspan="2"><label for="migration">Migration</label></th>
+            <th><input type="checkbox" name="migration" id="migration" value="M" class="sq-table-input">M</th>
+          </tr>
+          <tr>
+            <th><input type="checkbox" name="migration" id="migration" value="F" class="sq-table-input">F</th>
+          </tr>
+
+          <tr>
+            <th rowspan="2"><label for="other-reason">Other(specify)</label></th>
+            <th><input type="checkbox" name="other-reason" id="other-reason" value="M" class="sq-table-input">M</th>
+          </tr>
+          <tr>
+            <th><input type="checkbox" name="other-reason" id="other-reason" value="F" class="sq-table-input">F</th>
+          </tr>
+
+          <tr>
+            <th rowspan="2"><label for="unknown-reason">Unknown</label></th>
+            <th><input type="checkbox" name="unknown-reason" id="unknown-reason" value="M" class="sq-table-input">M</th>
+          </tr>
+          <tr>
+            <th><input type="checkbox" name="unknown-reason" id="unknown-reason" value="F" class="sq-table-input">F</th>
+          </tr>
+            <tr>
             <td colspan="11">
               <div>
                 <input type="submit" name="save" value="Save" class="sq-form-button">
@@ -501,6 +539,7 @@
           </form>
     </table>
   </div>
+    </section>
 </section>
 
 

@@ -6,21 +6,6 @@
   <title>SOP Internship forms Page</title>
   <link rel="stylesheet" href="../../css/main.css">
   <link rel="stylesheet" href="../../css/sec_Quest.css">
-  <style>
-    DIV.table 
-    {
-        display:table;
-    }
-    FORM.tr, DIV.tr
-    {
-        display:table-row;
-    }
-    SPAN.td
-    {
-        display:table-cell;
-    }
-    </style>
-
 </head>
 <body>
 
@@ -39,17 +24,81 @@
       <h2 class="sq-section-heading">Government of St. Lucia</h2>
       <h3 class="sq-section-heading">Ministry of Education, Innovation Gender Relations 
         and Sustainable Development</h3>
+        <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Annual Education Census Questionnaire 
+          Secondary School 2020-21 Academic Year</h3>
     </div>
   </section>
-    ...
-    <div class="table">
-        <form class="tr" method="post" action="blah.html">
-            <span class="td"><input type="text"/></span>
-            <span class="td"><input type="text"/></span>
-        </form>
-        <div class="tr">
-            <span class="td">(cell data)</span>
-            <span class="td">(cell data)</span>
-        </div>
-        ...
+
+  <section class="row">
+    <section class="col-2">
+    <div class="sq-sidenav ">
+        <a href="secQHome.html">Cover</a>
+        <a href="secQSchool.html">School</a>
+        <a href="secQStudent.html">Student</a>
+        <a href="secQStaff.html">Staff</a>
+        <a href="secQAgeDistribution.html">Age Distribution</a>
+        <a href="secQCXC.html">CXC</a>
+        <a href="secQCVQ.html">CVQ</a>
+        <a href="secQICT.html">ICT</a>
+        <a href="secQBuildingFacility.html">Building and Facilities</a>
+        <a href="#">Classifications and Definitions</a>
+        <a href="#">Confirmation Page</a>
     </div>
+    </section>
+    <section class="col-10">
+        <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">
+             Questionnaire for Information and Communiction Technology Dept.</h3>
+        <div class="sq-form">  
+            <form action="" method="post" autocomplete="off" >
+                <fieldset class="sq-form-fieldset">
+                    <legend>T13: <b>Staff Profile</b>(Administrative and Teaching) 
+                    - Please refere to the <a href="secQClassification.html" target="_blank">Classification table</a>.</legend>
+                    <div>
+                      <nav class="sq-hori-nav"  >
+                        <a class="nav-link" href="#">New</a>
+                        <a class="nav-link" href="#">View</a>
+                        <a class="nav-link" href="#">Update</a>
+                        <a class="nav-link" href="#">Delete</a>
+                    </nav>
+                    </div>
+
+                    <label for="staff-seq">Sequence No: &nbsp;</label>
+                    <input type="number" name="staff-seq" id="staff-seq" class="sq-form-input"><br>
+                    <label for="staff-surname">Surname: &nbsp;</label>
+                    <input type="text" name="staff-surname" id="staff-surname" class="sq-form-input"><br>
+                    <label for="staff-firstname">Firstname: &nbsp;</label>
+                    <input type="text" name="staff-firstname" id="staff-firstname" class="sq-form-input"><br>
+                    <label for="staff-gender">Gender: &nbsp;</label>
+                    <input type="radio" name="staff-gender" id="staff-gender" value="male" class="sq-form-input">Male
+                    <input type="radio" name="staff-gender" id="staff-gender" value="female" class="sq-form-input">Female <br>
+                    <label for="staff-classification">Classification: &nbsp;</label>
+                    <select name="staff-classification" id="staff-classification" class="sq-form-input"> 
+                      <option selected>Select staff-classification  &nbsp; </option>
+                      <option value="staff-classification 1">staff-classification 1</option>
+                      <option value="staff-classification 2">staff-classification 2</option>
+                      <option value="staff-classification 3">staff-classification 3</option>
+                      <option value="staff-classification 4">staff-classification 4</option>
+                      <option value="staff-classification 5">staff-classification 5</option>
+                      <option value="staff-classification 6">staff-classification 6</option>
+                      <option value="staff-classification 7">staff-classification 7</option>
+                      <option value="staff-classification 8">staff-classification 8</option>
+                    </select><br>
+
+                    <label for="tr-type">Teacher Type: &nbsp;</label>
+                    <select name="tr-type" id="tr-type" class="sq-form-input">
+                      <option selected>Select Teacher Type</option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                    </select><br>
+
+                </fieldset>
+            </form>
+        </div>
+    </section>
+  </section>
+</body>
+</html>
