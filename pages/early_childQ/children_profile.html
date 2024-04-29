@@ -9,121 +9,240 @@
 </head>
 
 <body>
-  <header class="header">
-    <h1>Welcome to EDU Forms Project Page</h1>
-    <!-- Navigation -->
-
-    <nav class="header-nav">
-      <ul>
-        <li class="active"><a href="#">Schools</a>
-            <div class="sub-nav-1">
-              <ul>
-                <li><a href="#">School 1</a>
-                  
-                </li>
-                <li><a href="#">School 2</a></li>
-                <li><a href="#">School 3</a></li>
-                <li><a href="#">School 4</a></li>
-              </ul>
-            </div>
-        </li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        
-      </ul>
-      
-    </nav>
-  </header>
+    <header class="header">
+        <h1>Welcome to EDU Forms Project Page</h1>
+        <!-- Navigation -->
+        <nav class="nav">
+          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#">Logout</a>
+        </nav>
+      </header>
 
   <section class="row">
     <div class="col-3">
+        <div class="form_sidenav_ecq">
         <h3>Side Navigation </h3>
         <nav><a href="ecQ_home.html">Home</a></nav>
         <nav><a href="demography.html">Demography</a></nav>
         <nav><a href="staff_profile.html"> Staff Profile</a></nav>
         <nav><a href="children_profile.html">Children Profile</a></nav>
+        </div>
 
     </div>
 
     <div class="col-9">
-        <h2> Children Profile Form</h2>
-        <div>
-            <form action="" method="post">
-               <table>
-                 <thead>
-                    <tr>
-                    <th>Age</th>
-                    <th>Sex</th>
-                    <th> </th>
-                    <th></th>
-                    </tr>
+        <div class="form-body">
+        <div><h2> Children Profile Form</h2></div>
+        <div>            
+            <form action="" method="POST">
 
-                    <tr>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-
-                 </thead>
-
-                 <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>                        
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>                        
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>                        
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>                        
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>                        
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>                        
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>                        
-                    </tr>
-
-
-
-                 </tbody>
-
-               </table>
-
-
+                <div class="form-group-ecq">
+                <fieldset>
+                    <legend><h2>Enrollment by Age and Sex</h2></legend>
+                    <div>
+                        <h4>&lt; 1 year</h4>
+                        <label for="less_year1_male" class="form-label">Male:</label>
+                        <input type="number" id="less_year1_male" name="less_year1_male">
+                    </div>
+                    <div>
+                        
+                        <label for="less_year1_female">Female:</label>
+                        <input type="number" id="less_year1_female" name="less_year1_female">
+                    <div>
+                        <label for="less_year1_total">Total</label>
+                        <input type="text" id="less_year1_total" name="less_year1_total">                    
+                    </div>
+               
+                    <h4>1 year</h4>
+                    <div>
+                        <label for="less_year1_male">Male:</label>
+                        <input type="number" id="less_year1_male" name="less_year1_male">
+                    </div>
+                    <div>
+                        <label for="less_year1_female">Female:</label>
+                        <input type="number" id="less_year1_female" name="less_year1_female">
+                    <div>
+                        <label for="less_year1_total">Total</label>
+                        <input type="text" id="less_year1_total" name="less_year1_total">                    
+                    </div>
                 
+                
+                
+                    <h4>2 year</h4>
+                    <div>
+                        <label for="less_year1_male">Male:</label>
+                        <input type="number" id="less_year1_male" name="less_year1_male">
+                    </div>
+                    <div>
+                        <label for="less_year1_female">Female:</label>
+                        <input type="number" id="less_year1_female" name="less_year1_female">
+                    <div>
+                        <label for="less_year1_total">Total</label>
+                        <input type="text" id="less_year1_total" name="less_year1_total">                    
+                    </div>
+                
+               
+                    <h4>3 year</h4>
+                    <div>
+                        <label for="less_year1_male">Male:</label>
+                        <input type="number" id="less_year1_male" name="less_year1_male">
+                    </div>
+                    <div>
+                        <label for="less_year1_female">Female:</label>
+                        <input type="number" id="less_year1_female" name="less_year1_female">
+                    <div>
+                        <label for="less_year1_total">Total</label>
+                        <input type="text" id="less_year1_total" name="less_year1_total">                    
+                    </div>
+                
+                    <h4>4 year</h4>
+                    <div>
+                        <label for="less_year1_male">Male:</label>
+                        <input type="number" id="less_year1_male" name="less_year1_male">
+                    </div>
+                    <div>
+                        <label for="less_year1_female">Female:</label>
+                        <input type="number" id="less_year1_female" name="less_year1_female">
+                    <div>
+                        <label for="less_year1_total">Total</label>
+                        <input type="text" id="less_year1_total" name="less_year1_total">                    
+                    </div>
+                
+                    <h4>Above 5 Year</h4>
+                    <div>
+                        <label for="less_year1_male">Male:</label>
+                        <input type="number" id="less_year1_male" name="less_year1_male">
+                    </div>
+                    <div>
+                        <label for="less_year1_female">Female:</label>
+                        <input type="number" id="less_year1_female" name="less_year1_female">
+                    <div>
+                        <label for="less_year1_total">Total</label>
+                        <input type="text" id="less_year1_total" name="less_year1_total">                    
+                    </div>
+                
+                
+                    <h4>Total Enrolment by Sex</h4>
+                    <div>
+                        <label for="total-sex-male">Total male Enrolled:</label>
+                        <input type="number" id="total-sex-male" name="total-sex-male">
+                    <div>
+                    <div>
+                        <label for="total-sex-female">Total Female Enrolled:</label>
+                        <input type="number" id="total-sex-female" name="total-sex-female">
+                    <div>
+                        <label for="total_gender-enrolled">Total Gender Enrolled</label>
+                        <input type="text" id="total_gender-enrolled" name="total_gender-enrolled">                    
+                    </div>
+                </fieldset>
+
+                <div class="form-table">
+                <fieldset>
+                    <legend>Distribution of Current Enrolment According to  Areas of Impairment by Sex:</legend>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Area of Impairment</th>
+                                <th colspan="2">Speech</th>
+                                <th colspan="2">Vision</th>
+                                <th colspan="2">Hearing</th>
+                                <th colspan="2">Physical Challenged</th>                                
+                            </tr>
+                            <tr>
+                                <th>Gender</th>
+                                <th>Observed</th>
+                                <th>Diagnosed</th>
+                                <th>Observed</th>
+                                <th>Diagnosed</th>
+                                <th>Observed</th>
+                                <th>Diagnosed</th>
+                                <th>Observed</th>
+                                <th>Diagnosed</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><label for="male_no"></label> Male</td>
+                                <td><input type="text" name="male_no" id="male_no"></td>
+                                <td><input type="text" name="male_no" id="male_no"></td>
+                                <td><input type="text" name="male_no" id="male_no"></td>
+                                <td><input type="text" name="male_no" id="male_no"></td>
+                                <td><input type="text" name="male_no" id="male_no"></td>
+                                <td><input type="text" name="male_no" id="male_no"></td>
+                                <td><input type="text" name="male_no" id="male_no"></td>
+                                <td><input type="text" name="male_no" id="male_no"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="female_no"></label> Female</td>
+                                <td><input type="text" name="female_no" id="female_no"></td>
+                                <td><input type="text" name="female_no" id="female_no"></td>
+                                <td><input type="text" name="female_no" id="female_no"></td>
+                                <td><input type="text" name="female_no" id="female_no"></td>
+                                <td><input type="text" name="female_no" id="female_no"></td>
+                                <td><input type="text" name="female_no" id="female_no"></td>
+                                <td><input type="text" name="female_no" id="female_no"></td>
+                                <td><input type="text" name="female_no" id="female_no"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="total_no_1"></label> Total</td>
+                                <td><input type="text" name="total_no_1" id="total_no_1"></td>
+                                <td><input type="text" name="total_no_1" id="total_no_1"></td>
+                                <td><input type="text" name="total_no_1" id="total_no_1"></td>
+                                <td><input type="text" name="total_no_1" id="total_no_1"></td>
+                                <td><input type="text" name="total_no_1" id="total_no_1"></td>
+                                <td><input type="text" name="total_no_1" id="total_no_1"></td>
+                                <td><input type="text" name="total_no_1" id="total_no_1"></td>
+                                <td><input type="text" name="total_no_1" id="total_no_1"></td>
+                            </tr>
+                        </tbody>
+                    </table>                    
+
+                </fieldset>
+                </div>
+                
+                <fieldset>
+                    <legend>Other Areas of Impairment </legend>
+                   <div>
+                    <label for="other_impairment">Area of Impairment: </label>
+                    <input type="text" name="other_impairment" id="other_impairment">
+                   </div>
+
+                   <div>
+                    <label for="other_male_impair_observed">Observed Male:</label>
+                    <input type="text" name="other_male_impair_observed" id="other_male_impair_observed" placeholder="Enter no of male observed">
+                   </div>
+
+                   <div>
+                    <label for="other_female_impair_observed">Observed female:</label>
+                    <input type="text" name="other_female_impair_observed" id="other_female_impair_observed" placeholder="Enter no of female observed">
+                   </div>
+
+                   <div>
+                    <label for="total_impair_observed">Total Observed:</label>
+                    <input type="text" name="total_impair_observed" id="total_impair_observed" placeholder="Enter the total no observed">
+                   </div>
+
+                   <div>
+                    <label for="male_impair_diagnosed">Diagnosed Male:</label>
+                    <input type="text" name="male_impair_diagnosed" id="male_impair_diagnosed" placeholder="Enter no of male Diagnosed">
+                   </div>
+
+                   <div>
+                    <label for="female_impair_diagnosed">Diagnosed female:</label>
+                    <input type="text" name="female_impair_diagnosed" id="female_impair_diagnosed" placeholder="Enter no of female Diagnosed">
+                   </div>
+
+                   <div>
+                    <label for="total_impair_diagnosed">Total Diagnosed:</label>
+                    <input type="text" name="total_impair_diagnosed" id="total_impair_diagnosed" placeholder="Enter the total no Diagnosed">
+                   </div>
+
+
+                </fieldset>
+
+            </div>    
             </form>
         </div>
 
@@ -133,16 +252,17 @@
   </section>
 
   <footer class="row">
-    <div class="col-12">
-        <ul>
-            <li><a href=""> Home</a></li>
-            <li><a href=""> Home</a></li>
-            <li><a href=""> Home</a></li>
-        </ul>
-    </div>
-    <div>
-        &copy;
-    </div>
-</footer>
+        <div class="col-12">
+            <ul>
+                <li><a href="../early_childQ/ecQ_home.html"> Home</a></li>
+                <li><a href="../early_childQ/demography.html"> Demography</a></li>
+                <li><a href="../early_childQ/children_profile.html"> Children</a></li>
+                <li><a href="../early_childQ/staff_profile.html"> Staff</a></li>
+            </ul>
+        </div>
+        <div>
+            &copy;
+        </div>
+    </footer>
 </body>
 </html>  
