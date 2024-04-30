@@ -11,7 +11,7 @@
 
 <body>
     <header class="header">
-        <h1>Primary School-Student Form Page</h1>
+        <h1>Primary School-Staff Form Page</h1>
         <!-- Navigation -->
         <nav class="nav">
             <a class="nav-link" href="../../index.html">Home</a>
@@ -19,49 +19,317 @@
             <a class="nav-link" href="#">Logout</a>
         </nav>
     </header>
-    <section class="row">
-        <!-- T10: Staff Profile & Qualification -->
-        <div class="col-12">
-            <form>
-                <h2>T10. Staff Profile & Qualification</h2>
-                <table>
-                    <tr>
-                        <th></th>
-                        <th>Surname, Name</th>
-                        <th>Sex</th>
-                        <th>Classification</th>
-                        <th>Teacher type</th>
-                        <th>Grade Taught</th>
-                        <th>Teaching Experience (Years)</th>
-                        <th>Age (range) as of October 15th</th>
-                        <th>Nationality</th>
-                        <th>Highest Qualification</th>
-                        <th>Area of Specialization of Highest Qualification</th>
-                        <th>Other Qualifications</th>
-                        <th>No. of Hours of CPD in past school year</th>
-                        <th>Was appraised in last school year</th>
-                    </tr>
-                    <tr>
-                        <td><E.G></E></td>
-                        <td><input type="text" name="staff_name">Alexander, Jane</td>
-                        <td><input type="text" name="staff_sex">F</td>
-                        <td><input type="text" name="staff_classification">HOD</td>
-                        <td><input type="text" name="staff_teacher_type">NT</td>
-                        <td><input type="text" name="staff_grade_taught">K</td>
-                        <td><input type="number" name="staff_experience">12</td>
-                        <td><input type="number" name="staff_age">34</td>
-                        <td><input type="text" name="staff_nationality">GND</td>
-                        <td><input type="text" name="staff_highest_qualification">BSC.</td>
-                        <td><input type="text" name="staff_specialization">Computing</td>
-                        <td><input type="text" name="staff_other_qualifications">A'Levels Math, Chemistry</td>
-                        <td><input type="number" name="staff_cpd_hours">16</td>
-                        <td><input type="text" name="staff_appraisal">No</td>
-                    </tr>
-                </table>
-                <button type="submit">Submit</button>
-            </form>
+    <section class="row pq-container struct">
+        <div class="pqc-container">
+            <div class="pqc-navcontainer">
+                <nav class="col-3">
+                    <h2 class="pqc-navlinks">Questionnaire Links</h2>
+                    <ul>
+                        <li><a class="pqnav-link" href="./pq_structure.html">Structure</a></li>
+                        <li><a class="pqnav-link" href="./pq_students.html">Students</a></li>
+                        <li><a class="pqnav-link" href="./pq_staff.html">Staff</a></li>
+                        <li><a class="pqnav-link" href="./pq_more.html">More</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-9">
+                <div><h2>Staff (Administrative and Teaching) Profile & Qualification</h2></div>
+                <div class="">
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Staff Profile</legend>
+                        <div class="form-group">
+                            <label for="surname_name">Surname, Name:</label>
+                            <input type="text" id="surname_name" name="surname_name">
+                        </div>
+                        <div class="form-group">
+                            <label for="sex">Sex:</label>
+                            <select id="sex" name="sex">
+                                <option value="F">Female</option>
+                                <option value="M">Male</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="classification">Classification:</label>
+                            <select id="classification" name="classification">
+                                <option value="HOD">Head of Department</option>
+                                <option value="VP">Vice Principal</option>
+                                <option value="PR">Principal</option>
+                                <option value="SEC">Secretary</option>
+                                <option value="GC">Guidance Counsellor</option>
+                                <option value="LC">Literacy Coordinator</option>
+                                <option value="EMIS">Emis Coordinator</option>
+                                <option value="LB">Librarian</option>
+                                <option value="SE">Special Education Teacher</option>
+                                <option value="CT">Class Room Teacher</option>
+                                <option value="MT">Management Team</option>
+                                <option value="ITS">IT Support Personnel</option>
+                                <option value="Sp">Spanish Coordinator</option>
+                                <option value="PE">Physical Education</option>
+                                <option value="SUB">Substitute Teacher</option>
+                                <option value="TA">Teacher Assistant</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="teacher_type">Teacher Type:</label>
+                            <select id="teacher_type" name="teacher_type">
+                                <option value="NT">Non Graduate Trained Teacher</option>
+                                <option value="NU">Non Graduate Untrained Teacher</option>
+                                <option value="GT">Graduate Trained</option>
+                                <option value="GU">Graduate Untrained</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="grade_taught">Grade Taught:</label>
+                            <select id="grade_taught" name="grade_taught">
+                                <option value="K">Kindergarten</option>
+                                <option value="1">Grade 1</option>
+                                <option value="2">Grade 2</option>
+                                <option value="3">Grade 3</option>
+                                <option value="4">Grade 4</option>
+                                <option value="5">Grade 5</option>
+                                <option value="6">Grade 6</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="teaching_experience">Teaching Experience (Years):</label>
+                            <select id="teaching_experience" name="teaching_experience">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="age_range">Age (range) as of October 15th:</label>
+                            <select id="age_range" name="age_range">
+                                <option value="A">Less than 25</option>
+                                <option value="B">25-29</option>
+                                <option value="C">30-34</option>
+                                <option value="D">35-39</option>
+                                <option value="E">40-44</option>
+                                <option value="F">45-49</option>
+                                <option value="G">50 and over</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="nationality">Nationality:</label>
+                            <input type="text" id="nationality" name="nationality">
+                        </div>
+                        <div class="form-group">
+                            <label for="highest_qualification">Highest Qualification:</label>
+                            <select id="highest_qualification" name="highest_qualification">
+                                <option value="BA">Bachelor of Arts</option>
+                                <option value="BSC">Bachelor of Science</option>
+                                <option value="MA">Masters of Arts</option>
+                                <option value="MSC">Masters of Science</option>
+                                <option value="MPhil">Masters of Philosophy</option>
+                                <option value="DIP">Diploma</option>
+                                <option value="CERT">Certificate</option>
+                                <option value="ASSOC">Associate Degree</option>
+                                <option value="OLEVEL">GCE/CXC O Level</option>
+                                <option value="ALEVEL">GCE/CAPE A’ Levels</option>
+                                <option value="PhD">Doctor of Philosophy</option>
+                                <option value="EdD">Doctor of Education</option>
+                                <option value="BEd.">Bachelor of Education</option>
+                                <option value="CVQ">Caribbean Vocational Qualification</option>
+                                <option value="NVQ">National Vocational Qualification</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="area_of_specialization">Area of Specialization of Highest Qualification:</label>
+                            <input type="text" id="area_of_specialization" name="area_of_specialization">
+                        </div>
+                        <div class="form-group">
+                            <label for="other_qualifications">Other Qualifications:</label>
+                            <input type="text" id="other_qualifications" name="other_qualifications">
+                        </div>
+                        <div class="form-group">
+                            <label for="cpd_hours">No. of Hours of CPD in past school year:</label>
+                            <select id="cpd_hours" name="cpd_hours">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="appraised">Was appraised in last school year:</label>
+                            <select id="appraised" name="appraised">
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <div class=" ">
+                        <form action="#" method="post">
+                            <fieldset>
+                                <legend>Teaching Staff (excluding Principal) by Gender, Training</legend>
+                                <div class="form-group">
+                                    <label for="grad_male_trained">GRADUATES:</label>
+                                    <input type="text" id="grad_male_trained" name="grad_male_trained" placeholder="No. Trained (Male)">
+                                    <input type="text" id="grad_female_trained" name="grad_female_trained" placeholder="No. Trained (Female)">
+                                </div>
+                                <div class="form-group">
+                                    <label for="non_grad_male_trained">NON-GRADUATES:</label>
+                                    <input type="text" id="non_grad_male_trained" name="non_grad_male_trained" placeholder="No. Trained (Male)">
+                                    <input type="text" id="non_grad_female_trained" name="non_grad_female_trained" placeholder="No. Trained (Female)">
+                                </div>
+            
+                                <div class="form-group">
+                                    <label for="grand_total_male">Grand Total:</label>
+                                    <input type="text" id="grand_total_male" name="grand_total_male" placeholder="Male">
+                                    <input type="text" id="grand_total_female" name="grand_total_female" placeholder="Female">
+                                </div>
+            
+                                <div class="form-group">
+                                    <label for="specialists_male">Out of which are Specialists:</label>
+                                    <input type="text" id="specialists_male" name="specialists_male" placeholder="Male">
+                                    <input type="text" id="specialists_female" name="specialists_female" placeholder="Female">
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                
+                    <div class=" ">
+                        <form action="#" method="post">
+                            <fieldset>
+                                <legend>Teachers who left in the past year</legend>
+                    
+                                <div class="form-group">
+                                    <label for="resignation_male">Resignation:</label>
+                                    <input type="text" id="resignation_male" name="resignation_male" placeholder="Male">
+                                    <input type="text" id="resignation_female" name="resignation_female" placeholder="Female">
+                                </div>
+                        
+                                <div class="form-group">
+                                    <label for="termination_male">Termination:</label>
+                                    <input type="text" id="termination_male" name="termination_male" placeholder="Male">
+                                    <input type="text" id="termination_female" name="termination_female" placeholder="Female">
+                                </div>
+                        
+                                <div class="form-group">
+                                    <label for="secondment_male">Secondment:</label>
+                                    <input type="text" id="secondment_male" name="secondment_male" placeholder="Male">
+                                    <input type="text" id="secondment_female" name="secondment_female" placeholder="Female">
+                                </div>
+                        
+                                <div class="form-group">
+                                    <label for="retirement_male">Retirement:</label>
+                                    <input type="text" id="retirement_male" name="retirement_male" placeholder="Male">
+                                    <input type="text" id="retirement_female" name="retirement_female" placeholder="Female">
+                                </div>
+                        
+                                <div class="form-group">
+                                    <label for="other_male">Other:</label>
+                                    <input type="text" id="other_male" name="other_male" placeholder="Male">
+                                    <input type="text" id="other_female" name="other_female" placeholder="Female">
+                                </div>
+                            </fieldset>
+                        </div>
+            
+                    <div class=" ">
+                        <form action="#" method="post">
+                            <fieldset>
+                                <legend>Teachers on Study Leave</legend>
+                        
+                                <div class="form-group">
+                                    <label for="with_pay_male">With Pay:</label>
+                                    <input type="text" id="with_pay_male" name="with_pay_male" placeholder="Male">
+                                    <input type="text" id="with_pay_female" name="with_pay_female" placeholder="Female">
+                                </div>
+                        
+                                <div class="form-group">
+                                    <label for="without_pay_male">Without Pay:</label>
+                                    <input type="text" id="without_pay_male" name="without_pay_male" placeholder="Male">
+                                    <input type="text" id="without_pay_female" name="without_pay_female" placeholder="Female">
+                                </div>
+                            </fieldset>
+                        </form>
+                    
+                    <div class=" ">
+                        <form action="#" method="post">
+                            <fieldset>
+                                <legend>Non-Teaching Staff</legend>
+        
+                                <div class="form-group">
+                                    <label for="secretary_male">Secretary:</label>
+                                    <input type="text" id="secretary_male" name="secretary_male" placeholder="Male">
+                                    <input type="text" id="secretary_female" name="secretary_female" placeholder="Female">
+                                </div>
+                    
+                                <div class="form-group">
+                                    <label for="typist_male">Typist:</label>
+                                    <input type="text" id="typist_male" name="typist_male" placeholder="Male">
+                                    <input type="text" id="typist_female" name="typist_female" placeholder="Female">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Bursar_male">Bursar:</label>
+                                    <input type="text" id="bursar_male" name="typist_male" placeholder="Male">
+                                    <input type="text" id="bursar_female" name="typist_female" placeholder="Female">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Shop Director_male">Shop Director:</label>
+                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male">
+                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Shop Di_male">Lab Assistants:</label>
+                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male">
+                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Shop Director_male">Librarian/LRC Coordinator:</label>
+                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male">
+                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Shop Director_male">Counsellor:</label>
+                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male">
+                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Shop Director_male">Watchman/Security:</label>
+                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male">
+                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Shop Director_male">Cleaner:</label>
+                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male">
+                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Shop Director_male">Groundsman:</label>
+                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male">
+                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Shop Director_male">others(specify):</label>
+                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male">
+                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female">
+                                </div>
+                                
+                            </fieldset>
+                        </form>
+                    </div>
+            </div>
         </div>
+        <div>
+            <button type="previous">Go Back</button>
+            <button type="submit">Submit</button>
+            <button type="next">Next</button>
+        </div>    
     </section>
-    
+    <footer class="footer">
+        <div class="container">
+          <p>© 2024 SOP EDU Forms. All rights reserved.</p>
+        </div>
+      </footer>
 </body>
-</html>    
+</html>
+                
+            

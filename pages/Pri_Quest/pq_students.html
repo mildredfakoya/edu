@@ -19,52 +19,46 @@
             <a class="nav-link" href="#">Logout</a>
         </nav>
     </header>
-    <section class="row">
-        <div col-6>
-            <fieldset class="pqstu-container">
-                <legend>Student Form Page</legend>
+    <section class="row pq-container struct">
+        <div class="pqc-container">
+            <div class="pqc-navcontainer">
+                <nav class="col-3">
+                    <h2 class="pqc-navlinks">Questionnaire Links</h2>
+                    <ul>
+                        <li><a class="pqnav-link" href="./pq_structure.html">Structure</a></li>
+                        <li><a class="pqnav-link" href="./pq_students.html">Students</a></li>
+                        <li><a class="pqnav-link" href="./pq_staff.html">Staff</a></li>
+                        <li><a class="pqnav-link" href="./pq_more.html">More</a></li>
+                    </ul>
+                </nav>
+            </div>
+        <div class="col-9 student-cont">
+            <div><h2>Student Form Page</h2></div>
             <!-- T2: Distribution of Current Enrolment -->
                 <div class="">
                     <form action="#" method="post">
-                        <h2>T2. Distribution of Current Enrolment</h2>
-                        <table>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <th>K</th>
-                                <th>G1</th>
-                                <th>G2</th>
-                                <th>G3</th>
-                                <th>G4</th>
-                                <th>G5</th>                        
-                                <th>G6</th>
-                            </tr>
-                            <tr>
-                                <td><label>New Entrants</label></td>
-                                <td><input type="radio" id="male" name="gender" value="male">
-                                <br><input type="radio" id="female" name="gender" value="female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                            </tr>
-                            <tr>
-                                <td>No. of Grade K's who attended Pre-School</td>
-                                <td><input type="radio" id="male" name="gender" value="male">
+                        <fieldset class="pqstu-container">
+                            <legend>Distribution of current Enrollment</legend>
+                            <table class="form-table">
+                                <tr class="form-row">
+                                    <th><div class="form-col-header"></div></th>
+                                    <th><div class="form-col-header"></div></th>
+                                    <th><div class="form-col-header"></div>K</th>
+                                    <th><div class="form-col-header"></div>G1</th>
+                                    <th><div class="form-col-header"></div>G2</th>
+                                    <th><div class="form-col-header"></div>G3</th>
+                                    <th><div class="form-col-header"></div>G4</th>
+                                    <th><div class="form-col-header"></div>G5</th>                        
+                                    <th><div class="form-col-header"></div>G6</th>
+                                </tr>
+                                <tr class="form-row">
+                                    <td><div class="form-col"><label>New Entrants</label></div></td>
+                                    <td><input type="radio" id="male" name="gender" value="male">
                                     <br><input type="radio" id="female" name="gender" value="female"></td>
                                     <td><input type="number" name="new_entrants_k_male">
                                     <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
+                                    <td><div class="form-col"><input type="number" name="new_entrants_k_male"></div>
+                                        
                                     <input type="number" name="new_entrants_k_female"></td>
                                     <td><input type="number" name="new_entrants_k_male">
                                     <input type="number" name="new_entrants_k_female"></td>
@@ -76,677 +70,813 @@
                                     <input type="number" name="new_entrants_k_female"></td>
                                     <td><input type="number" name="new_entrants_k_male">
                                     <input type="number" name="new_entrants_k_female"></td>
-                            </tr>
-                            <tr>
-                                <td>Repeaters</td>
-                                <td><input type="radio" id="male" name="gender" value="male">
-                                    <br><input type="radio" id="female" name="gender" value="female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                            </tr>
-                            <tr>
-                                <td>Transfers in from other schools in country</td>
-                                <td><input type="radio" id="male" name="gender" value="male">
-                                    <br><input type="radio" id="female" name="gender" value="female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                            </tr>
-                            <tr>
-                                <td>Trasfers in from overseas</td>
-                                <td><input type="radio" id="male" name="gender" value="male">
-                                    <br><input type="radio" id="female" name="gender" value="female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                            </tr>
-                            <tr>
-                                <td>Total</td>
-                                <td><input type="radio" id="male" name="gender" value="male">
-                                    <br><input type="radio" id="female" name="gender" value="female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                                    <td><input type="number" name="new_entrants_k_male">
-                                    <input type="number" name="new_entrants_k_female"></td>
-                            </tr>
-                        </table>
+                                </tr>
+                                <tr>
+                                    <td>No. of Grade K's who attended Pre-School</td>
+                                    <td><input type="radio" id="male" name="gender" value="male">
+                                        <br><input type="radio" id="female" name="gender" value="female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                </tr>
+                                <tr>
+                                    <td>Repeaters</td>
+                                    <td><input type="radio" id="male" name="gender" value="male">
+                                        <br><input type="radio" id="female" name="gender" value="female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                </tr>
+                                <tr>
+                                    <td>Transfers in from other schools in country</td>
+                                    <td><input type="radio" id="male" name="gender" value="male">
+                                        <br><input type="radio" id="female" name="gender" value="female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                </tr>
+                                <tr>
+                                    <td>Trasfers in from overseas</td>
+                                    <td><input type="radio" id="male" name="gender" value="male">
+                                        <br><input type="radio" id="female" name="gender" value="female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                </tr>
+                                <tr>
+                                    <td>Total</td>
+                                    <td><input type="radio" id="male" name="gender" value="male">
+                                        <br><input type="radio" id="female" name="gender" value="female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                        <td><input type="number" name="new_entrants_k_male">
+                                        <input type="number" name="new_entrants_k_female"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
                     </form>
                 </div>
-            
                 <!-- T3: School Leavers during the Last School Year -->
                 <div class=" ">
-                    <form>
-                        <h2>T3. School Leavers during the Last School Year</h2>
-                        <table>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <th>K</th>
-                                <th>G1</th>
-                                <th>G2</th>
-                                <th>G3</th>
-                                <th>G4</th>
-                                <th>G5</th>                        
-                                <th>G6</th>
-                            </tr>
-                            <tr>
-                                <td><label>Dropouts</label></td>
-                                <td><input type="radio" id="male" name="gender" value="male">
-                                <br><input type="radio" id="female" name="gender" value="female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                            </tr>
-                            <tr>
-                                <td><label>Transfers out to other schools</label></td>
-                                <td><input type="radio" id="male" name="gender" value="male">
-                                <br><input type="radio" id="female" name="gender" value="female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                            </tr>
-                            <tr>
-                                <td><label>Transfers to overseas</label></td>
-                                <td><input type="radio" id="male" name="gender" value="male">
-                                <br><input type="radio" id="female" name="gender" value="female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                            </tr>
-                            <tr>
-                                <td><label>Graduates</label></td>
-                                <td><input type="radio" id="male" name="gender" value="male">
-                                <br><input type="radio" id="female" name="gender" value="female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                            </tr>
-                            <tr>
-                                <td><label>Total</label></td>
-                                <td><input type="radio" id="male" name="gender" value="male">
-                                <br><input type="radio" id="female" name="gender" value="female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>School Leavers during the last school Year</legend>
+                            <table class="form-table">
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th>K</th>
+                                    <th>G1</th>
+                                    <th>G2</th>
+                                    <th>G3</th>
+                                    <th>G4</th>
+                                    <th>G5</th>                        
+                                    <th>G6</th>
                                 </tr>
-                        </table>
+                                <tr>
+                                    <td><label>Dropouts</label></td>
+                                    <td><input type="radio" id="male" name="gender" value="male">
+                                    <br><input type="radio" id="female" name="gender" value="female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Transfers out to other schools</label></td>
+                                    <td><input type="radio" id="male" name="gender" value="male">
+                                    <br><input type="radio" id="female" name="gender" value="female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Transfers to overseas</label></td>
+                                    <td><input type="radio" id="male" name="gender" value="male">
+                                    <br><input type="radio" id="female" name="gender" value="female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Graduates</label></td>
+                                    <td><input type="radio" id="male" name="gender" value="male">
+                                    <br><input type="radio" id="female" name="gender" value="female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Total</label></td>
+                                    <td><input type="radio" id="male" name="gender" value="male">
+                                    <br><input type="radio" id="female" name="gender" value="female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    </tr>
+                            </table>
+                        </fieldset>
                     </form>
                 </div>
             
                 <!-- T4: Reasons for dropouts in the last year -->
                 <div class=" ">
-                    <form>
-                        <h2>T4. Reasons for Dropouts in the Last Year</h2>
-                        <table>
-                            <tr>
-                                <th>REASONS</th>
-                                <th>Sex</th>
-                                <th>K</th>
-                                <th>G1</th>
-                                <th>G2</th>
-                                <th>G3</th>
-                                <th>G4</th>
-                                <th>G5</th>
-                                <th>G6</th>
-                            </tr>
-                            <tr>
-                                <td><label>Financial Difficulties</label></td>
-                                <td><input type="radio" id="male" name="gender" value="male">
-                                <br><input type="radio" id="female" name="gender" value="female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                            </tr>
-                            <tr>
-                                <td><label>Pregnancy</label></td>
-                                <td><input type="radio" id="male" name="gender" value="male">
-                                <br><input type="radio" id="female" name="gender" value="female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                            </tr>
-                            <tr>
-                                <td><label>Health</label></td>
-                                <td><input type="radio" id="male" name="gender" value="male">
-                                <br><input type="radio" id="female" name="gender" value="female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                            </tr>
-                            <tr>
-                                <td><label>Migration</label></td>
-                                <td><input type="radio" id="male" name="gender" value="male">
-                                <br><input type="radio" id="female" name="gender" value="female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                            </tr>
-                            <tr>
-                                <td><label>Others(specify)</label></td>
-                                <td><input type="radio" id="male" name="gender" value="male">
-                                <br><input type="radio" id="female" name="gender" value="female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                                <td><input type="number" name="new_entrants_k_male">
-                                <input type="number" name="new_entrants_k_female"></td>
-                            </tr>
-                        </table>
-                        <button type="previous">Go Back</button>
-                        <button type="submit">Submit</button>
-                        <button type="next">Next</button>
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Reasons for Dropout in the Last Year</legend>
+                            <table class="form-table">
+                                <tr>
+                                    <th>REASONS</th>
+                                    <th>Sex</th>
+                                    <th>K</th>
+                                    <th>G1</th>
+                                    <th>G2</th>
+                                    <th>G3</th>
+                                    <th>G4</th>
+                                    <th>G5</th>
+                                    <th>G6</th>
+                                </tr>
+                                <tr>
+                                    <td><label>Financial Difficulties</label></td>
+                                    <td><input type="radio" id="male" name="gender" value="male">
+                                    <br><input type="radio" id="female" name="gender" value="female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Pregnancy</label></td>
+                                    <td><input type="radio" id="male" name="gender" value="male">
+                                    <br><input type="radio" id="female" name="gender" value="female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Health</label></td>
+                                    <td><input type="radio" id="male" name="gender" value="male">
+                                    <br><input type="radio" id="female" name="gender" value="female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Migration</label></td>
+                                    <td><input type="radio" id="male" name="gender" value="male">
+                                    <br><input type="radio" id="female" name="gender" value="female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Others(specify)</label></td>
+                                    <td><input type="radio" id="male" name="gender" value="male">M
+                                    <br><input type="radio" id="female" name="gender" value="female">F</td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                    <td><input type="number" name="new_entrants_k_male">
+                                    <input type="number" name="new_entrants_k_female"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
                     </form>
                 </div>
-            </fieldset>
-        </div>
-    </section>
-    <section>
-        <div>
-            <div class="col-6">
-                <form action="#">
-                    <fieldset>
-                        <legend>Student Enrolment by Age, Grade, and Gender</legend>
-                        <div class="">
-                                <h2>Ages as of October 15th</h2>
-                                <table>
-                                    <tr>
-                                        <th>Ages as of October 15th (Yrs)</th>
-                                        <th>Gender</th>
-                                        <th colspan="2">Primary Grades</th>
-                                    </tr>
-                                    <tr>
-                                        <th></th>
-                                        <th></th>
-                                        <th>K</th>
-                                        <th>G1</th>
-                                        <th>G2</th>
-                                        <th>G3</th>
-                                        <th>G4</th>
-                                        <th>G5</th>                        
-                                        <th>G6</th>
-                                        <th>Total</th>
-                                        <th>Both</th>
-                                    </tr>
-                                    <tr>
-                                        <td><label>&lt; 5</label></td>
-                                        <td><input type="radio" id="male" name="gender" value="male">
-                                        <br><input type="radio" id="female" name="gender" value="female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label>5</label></td>
-                                        <td><input type="radio" id="male" name="gender" value="male">
-                                        <br><input type="radio" id="female" name="gender" value="female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label>6</label></td>
-                                        <td><input type="radio" id="male" name="gender" value="male">
-                                        <br><input type="radio" id="female" name="gender" value="female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label>7</label></td>
-                                        <td><input type="radio" id="male" name="gender" value="male">
-                                        <br><input type="radio" id="female" name="gender" value="female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label>7</label></td>
-                                        <td><input type="radio" id="male" name="gender" value="male">
-                                        <br><input type="radio" id="female" name="gender" value="female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label>8</label></td>
-                                        <td><input type="radio" id="male" name="gender" value="male">
-                                        <br><input type="radio" id="female" name="gender" value="female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label>9</label></td>
-                                        <td><input type="radio" id="male" name="gender" value="male">
-                                        <br><input type="radio" id="female" name="gender" value="female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label>10</label></td>
-                                        <td><input type="radio" id="male" name="gender" value="male">
-                                        <br><input type="radio" id="female" name="gender" value="female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label>11</label></td>
-                                        <td><input type="radio" id="male" name="gender" value="male">
-                                        <br><input type="radio" id="female" name="gender" value="female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label>12</label></td>
-                                        <td><input type="radio" id="male" name="gender" value="male">
-                                        <br><input type="radio" id="female" name="gender" value="female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label>13</label></td>
-                                        <td><input type="radio" id="male" name="gender" value="male">
-                                        <br><input type="radio" id="female" name="gender" value="female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label>14</label></td>
-                                        <td><input type="radio" id="male" name="gender" value="male">
-                                        <br><input type="radio" id="female" name="gender" value="female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label>15</label></td>
-                                        <td><input type="radio" id="male" name="gender" value="male">
-                                        <br><input type="radio" id="female" name="gender" value="female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label>16</label></td>
-                                        <td><input type="radio" id="male" name="gender" value="male">
-                                        <br><input type="radio" id="female" name="gender" value="female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label>16+</label></td>
-                                        <td><input type="radio" id="male" name="gender" value="male">
-                                        <br><input type="radio" id="female" name="gender" value="female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label>Total</label></td>
-                                        <td><input type="radio" id="male" name="gender" value="male">
-                                        <br><input type="radio" id="female" name="gender" value="female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label>Total Enrolment</label></td>
-                                        <td></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                        <td><input type="number" name="new_entrants_k_male">
-                                        <input type="number" name="new_entrants_k_female"></td>
-                                    </tr>
-                                </table>
+                <div class=" ">
+                    <div>
+                        <h2>Student Enrolment by Age, Grade, and Gender</h2>
+                    </div>
+                        <div class="" form-row>
+                            <form action="#" method="post" >
+                                <fieldset>
+                                    <legend>Ages as of October 15th</legend>
+                                    <table class="form-table">
+                                        <tr>
+                                            <th>Ages as of October 15th (Yrs)</th>
+                                            <th>Gender</th>
+                                            <th colspan="2">Primary Grades</th>
+                                        </tr>
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th>K</th>
+                                            <th>G1</th>
+                                            <th>G2</th>
+                                            <th>G3</th>
+                                            <th>G4</th>
+                                            <th>G5</th>                        
+                                            <th>G6</th>
+                                            <th>Total</th>
+                                            <th>Both</th>
+                                        </tr>
+                                        <tr>
+                                            <td><label>&lt; 5</label></td>
+                                            <td><input type="radio" id="male" name="gender" value="male">
+                                            <br><input type="radio" id="female" name="gender" value="female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>5</label></td>
+                                            <td><input type="radio" id="male" name="gender" value="male">
+                                            <br><input type="radio" id="female" name="gender" value="female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>6</label></td>
+                                            <td><input type="radio" id="male" name="gender" value="male">
+                                            <br><input type="radio" id="female" name="gender" value="female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>7</label></td>
+                                            <td><input type="radio" id="male" name="gender" value="male">
+                                            <br><input type="radio" id="female" name="gender" value="female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>7</label></td>
+                                            <td><input type="radio" id="male" name="gender" value="male">
+                                            <br><input type="radio" id="female" name="gender" value="female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>8</label></td>
+                                            <td><input type="radio" id="male" name="gender" value="male">
+                                            <br><input type="radio" id="female" name="gender" value="female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>9</label></td>
+                                            <td><input type="radio" id="male" name="gender" value="male">
+                                            <br><input type="radio" id="female" name="gender" value="female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>10</label></td>
+                                            <td><input type="radio" id="male" name="gender" value="male">
+                                            <br><input type="radio" id="female" name="gender" value="female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>11</label></td>
+                                            <td><input type="radio" id="male" name="gender" value="male">
+                                            <br><input type="radio" id="female" name="gender" value="female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>12</label></td>
+                                            <td><input type="radio" id="male" name="gender" value="male">
+                                            <br><input type="radio" id="female" name="gender" value="female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>13</label></td>
+                                            <td><input type="radio" id="male" name="gender" value="male">
+                                            <br><input type="radio" id="female" name="gender" value="female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>14</label></td>
+                                            <td><input type="radio" id="male" name="gender" value="male">
+                                            <br><input type="radio" id="female" name="gender" value="female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>15</label></td>
+                                            <td><input type="radio" id="male" name="gender" value="male">
+                                            <br><input type="radio" id="female" name="gender" value="female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>16</label></td>
+                                            <td><input type="radio" id="male" name="gender" value="male">
+                                            <br><input type="radio" id="female" name="gender" value="female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>16+</label></td>
+                                            <td><input type="radio" id="male" name="gender" value="male">
+                                            <br><input type="radio" id="female" name="gender" value="female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Total</label></td>
+                                            <td><input type="radio" id="male" name="gender" value="male">
+                                            <br><input type="radio" id="female" name="gender" value="female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Total Enrolment</label></td>
+                                            <td></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                            <td><input type="number" name="new_entrants_k_male">
+                                            <input type="number" name="new_entrants_k_female"></td>
+                                        </tr>
+                                    </table>
+                                </fieldset>
+                            </form>
                         </div>
-                
-                    </fieldset>
-                </form>
-            </div>
+
+                <!-- T6: Number of pupils reading at or above their grade level -->
+                <div class=" ">
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Number of pupils reading at or above their grade level</legend>
+                            <table>
+                                <tr>
+                                    <th>Grade Level</th>
+                                    <th>Male</th>
+                                    <th>Female</th>
+                                    <th>Total</th>
+                                    <th>Test Name</th>
+                                </tr>
+                                <tr>
+                                    <td>Grade 2</td>
+                                    <td><input type="number" name="t6_grade2_male"></td>
+                                    <td><input type="number" name="t6_grade2_female"></td>
+                                    <td><input type="number" name="t6_grade2_total"></td>
+                                    <td><input type="text" name="t6_grade2_test_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>Grade 4</td>
+                                    <td><input type="number" name="t6_grade2_male"></td>
+                                    <td><input type="number" name="t6_grade2_female"></td>
+                                    <td><input type="number" name="t6_grade2_total"></td>
+                                    <td><input type="text" name="t6_grade2_test_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>Grade 6</td>
+                                    <td><input type="number" name="t6_grade2_male"></td>
+                                    <td><input type="number" name="t6_grade2_female"></td>
+                                    <td><input type="number" name="t6_grade2_total"></td>
+                                    <td><input type="text" name="t6_grade2_test_name"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </form>
+                </div>
+            
+                <!-- T7: Number of pupils performing at or above their grade level in Mathematics -->
+                <div class=" ">
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Number of pupils performing at or above their grade level in Mathematics</legend>
+                            <table>
+                                <tr>
+                                    <th>Grade Level</th>
+                                    <th>Male</th>
+                                    <th>Female</th>
+                                    <th>Total</th>
+                                    <th>Test Name</th>
+                                </tr>
+                                <tr>
+                                    <td>Grade 2</td>
+                                    <td><input type="number" name="t6_grade2_male"></td>
+                                    <td><input type="number" name="t6_grade2_female"></td>
+                                    <td><input type="number" name="t6_grade2_total"></td>
+                                    <td><input type="text" name="t6_grade2_test_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>Grade 4</td>
+                                    <td><input type="number" name="t6_grade4_male"></td>
+                                    <td><input type="number" name="t6_grade4_female"></td>
+                                    <td><input type="number" name="t6_grade4_total"></td>
+                                    <td><input type="text" name="t6_grade4_test_name"></td>
+                                </tr>
+                                <tr>
+                                    <td>Grade 6</td>
+                                    <td><input type="number" name="t6_grade6_male"></td>
+                                    <td><input type="number" name="t6_grade6_female"></td>
+                                    <td><input type="number" name="t6_grade6_total"></td>
+                                    <td><input type="text" name="t6_grade6_test_name"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </form>
+                </div>
+            
+                <!-- T8: ICT at Primary Level -->
+                <div class=" ">
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>ICT at Primary Level</legend>
+                            <ol>
+                                <li>
+                                    <label>No of computers used for administrative purposes:</label>
+                                    <input type="number" name="t8_admin_computers">
+                                </li>
+                                <li>
+                                    <label>No of computers used for pedagogical purposes:</label>
+                                    <input type="number" name="t8_pedagogical_computers">
+                                </li>
+                                <li>
+                                    <label>Does your school have access to the internet?</label>
+                                    <select name="t8_internet_access">
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label>Number of classrooms with internet access:</label>
+                                    <input type="number" name="t8_classrooms_with_internet">
+                                </li>
+                                <li>
+                                    <label>No of teachers with basic computer skills:</label>
+                                    <input type="number" name="t8_teachers_with_skills">
+                                </li>
+                                <li>
+                                    <label>No. of teachers currently teaching using ICT facilities:</label>
+                                    <input type="number" name="t8_teachers_using_ict">
+                                </li>
+                                <li>
+                                    <label>Number of teachers trained to teach using ICT facilities:</label>
+                                    <input type="number" name="t8_teachers_trained">
+                                </li>
+                            </ol>
+                        </fieldset>
+                    </form>
+                </div>
+                </div>
         </div>
     </section>
     <footer class="footer">
