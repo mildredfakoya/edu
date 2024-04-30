@@ -3,9 +3,1594 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/se_eduq.css">
     <title>Enrollment</title>
 </head>
 <body>
     <h3 class="se_headings">Enrollment</h3>
+    <section>
+        <div>
+            <form action="" method="post">
+                <fieldset class="se_fieldset">
+                    <legend>Enrolment by Type of Program</legend>
+                    <div>
+                        <div>
+                            <label for="type_program">Enrolment by Type of Program:</label> <br>
+                            <input type="checkbox" name="type_program[]" id="itinerant" value="Itinerant">
+                            <label for="intinerant">Itinerant</label>
+                        </div>
+                        <div>
+                            
+                            <input type="checkbox" name="type_program[]" id="Resource_Room" value="Resource Room">
+                            <label for="Resource_Room"> Resource Room</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="Home_Based" value="Home Based">
+                            <label for="Home_Based">Home Based</label>
+                        </div>
+                       
+                        
+                    </div>
+                </fieldset>
+                <fieldset class="se_fieldset">
+                    <legend>Enrolment By School and Gender</legend>
+                    <div>
+                        <label for="schoolName">Name of Schools where pupils are based:</label>
+                        <input type="text" id="schoolName" name="schoolName">
+    
+                    </div>
+                    
+  <label>Infant/Primary:</label>
+  <div>
+    <label for="infantPrimaryM">M:</label>
+    <input type="number" id="infantPrimaryM" name="infantPrimaryM">
+    </div>
+    <div>
+    <label for="infantPrimaryF">F:</label>
+    <input type="number" id="infantPrimaryF" name="infantPrimaryF">
+  </div>
+
+  <label>Secondary:</label>
+  <div>
+    <label for="secondaryM">M:</label>
+    <input type="number" id="secondaryM" name="secondaryM">
+    </div>
+    <div>
+    <label for="secondaryF">F:</label>
+    <input type="number" id="secondaryF" name="secondaryF">
+  </div>
+
+  <label>Vocational/Skills:</label>
+  <div>
+    <label for="vocationalM">M:</label>
+    <input type="number" id="vocationalM" name="vocationalM">
+  </div>
+  <div>
+    <label for="vocationalF">F:</label>
+    <input type="number" id="vocationalF" name="vocationalF">
+  </div>
+
+                </fieldset>
+                <fieldset  class="se_fieldset">
+                    <legend>Distribution of Current Enrolment according to Fresh Intake and Repeaters</legend>
+                    <table class="se_form_tables" >
+                        <thead>
+                          <tr>
+                            <th rowspan="2">Type</th> 
+                            <th rowspan="2">Gender</th>
+                            <th colspan="7">Classes</th>
+                          </tr>
+                          <tr>
+                            <th>Hearing Impaired</th>
+                            <th>Visually Impaired</th>
+                            <th>Learning Difficulties</th>
+                            <th>Mentally Challenged</th>
+                            <th>Multiple Handicaps</th>
+                            <th>Autistic</th>
+                            <th>Physically Challenged</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr> 
+                              <!-- Rows for Fresh Intake -->
+                            <td rowspan="2">Fresher Intake</td>
+                            <!-- Male  row-->
+                            <td>M</td>
+                            <div>
+                              <td><label for="fresherIntakeM-Hearing" hidden>Hearing Impaired</label>
+                                  <input type="number" id="fresherIntakeM-Hearing" name="fresherIntakeM-Hearing">
+                              </td>
+                            </div>
+                                 <div>
+                                  <td><label for="fresherIntakeM-Visually" hidden>Visually Impaired</label>
+                                      <input type="number" id="fresherIntakeM-Visually" name="fresherIntakeM-Visually">
+                                  </td>
+                                 </div>
+                            <div>
+                              <td><label for="fresherIntakeM-Learning" hidden>Learning Difficulties</label>
+                                  <input type="number" id="fresherIntakeM-Learning" name="fresherIntakeM-Learning">
+                              </td>
+                            </div>
+                            <div>
+                              <td><label for="fresherIntakeM-Mentally" hidden>Mentally Challenged</label>
+                                  <input type="number" id="fresherIntakeM-Mentally" name="fresherIntakeM-Mentally">
+                              </td>
+                            </div>
+                            <div>
+                              <td><label for="fresherIntakeM-Multiple" hidden>Multiple Handicaps</label>
+                                  <input type="number" id="fresherIntakeM-Multiple" name="fresherIntakeM-Multiple">
+                              </td>
+                            </div>
+                             <div>
+                              <td><label for="fresherIntakeM-Autistic" hidden>Autistic</label>
+                                  <input type="number" id="fresherIntakeM-Autistic" name="fresherIntakeM-Autistic">
+                              </td>
+                             </div>
+                             <div>
+                              <td><label for="fresherIntakeM-Physically" hidden>Physically Challenged</label>
+                                  <input type="number" id="fresherIntakeM-Physically" name="fresherIntakeM-Physically">
+                              </td>
+                             </div>
+                            
+                          </tr>
+                          <tr>
+                              <!-- Female row -->
+                            <td>F</td>
+                            <div>
+                              <td><label for="fresherIntakeF-Hearing" hidden>Hearing Impaired</label>
+                                  <input type="number" id="fresherIntakeF-Hearing" name="fresherIntakeF-Hearing">
+                              </td>
+                            </div>
+                              <div>
+                                  <td><label for="fresherIntakeF-Visually" hidden>Visually Impaired</label>
+                                      <input type="number" id="fresherIntakeF-Visually" name="fresherIntakeF-Visually">
+                                  </td>
+                              </div>
+                             <div>
+                              <td><label for="fresherIntakeF-Learning" hidden>Learning Difficulties</label>
+                                  <input type="number" id="fresherIntakeF-Learning" name="fresherIntakeF-Learning">
+                              </td>
+                             </div>
+                              <div>
+                                  <td><label for="fresherIntakeF-Mentally" hidden>Mentally Challenged</label>
+                                      <input type="number" id="fresherIntakeF-Mentally" name="fresherIntakeF-Mentally">
+                                  </td>
+                              </div>
+                             <div>
+                              <td><label for="fresherIntakeF-Multiple" hidden>Multiple Handicaps</label>
+                                  <input type="number" id="fresherIntakeF-Multiple" name="fresherIntakeF-Multiple">
+                              </td>
+                             </div>
+                             <div>
+                              <td><label for="fresherIntakeF-Autistic" hidden>Autistic</label>
+                                  <input type="number" id="fresherIntakeF-Autistic" name="fresherIntakeF-Autistic">
+                              </td>
+                             </div>
+                               <div>
+                                  <td><label for="fresherIntakeF-Physically" hidden>Physically Challenged</label>
+                                      <input type="number" id="fresherIntakeF-Physically" name="fresherIntakeF-Physically">
+                                  </td>
+                               </div>
+                            
+                          </tr>
+                          <tr>
+                              <!-- Rows for Repeaters Intake -->
+                              <td rowspan="2">Repeaters</td>
+                              <!-- Male  row-->
+                            <td>M</td>
+                            <div>
+                              <td><label for="RepeatersM-Hearing" hidden>Hearing Impaired</label>
+                                  <input type="number" id="RepeatersM-Hearing" name="RepeatersM-Hearing">
+                              </td>
+                            </div>
+                                 <div>
+                                  <td><label for="RepeatersM-Visually" hidden>Visually Impaired</label>
+                                      <input type="number" id="RepeatersM-Visually" name="RepeatersM-Visually">
+                                  </td>
+                                 </div>
+                            <div>
+                              <td><label for="RepeatersM-Learning" hidden>Learning Difficulties</label>
+                                  <input type="number" id="RepeatersM-Learning" name="RepeatersM-Learning">
+                              </td>
+                            </div>
+                            <div>
+                              <td><label for="RepeatersM-Mentally" hidden>Mentally Challenged</label>
+                                  <input type="number" id="RepeatersM-Mentally" name="RepeatersM-Mentally">
+                              </td>
+                            </div>
+                            <div>
+                              <td><label for="RepeatersM-Multiple" hidden>Multiple Handicaps</label>
+                                  <input type="number" id="RepeatersM-Multiple" name="RepeatersM-Multiple">
+                              </td>
+                            </div>
+                             <div>
+                              <td><label for="RepeatersM-Autistic" hidden>Autistic</label>
+                                  <input type="number" id="RepeatersM-Autistic" name="RepeatersM-Autistic">
+                              </td>
+                             </div>
+                             <div>
+                              <td><label for="RepeatersM-Physically" hidden>Physically Challenged</label>
+                                  <input type="number" id="RepeatersM-Physically" name="RepeatersM-Physically">
+                              </td>
+                             </div>
+                            
+                          </tr>
+                          <tr>
+                              <!-- Female  row-->
+                            <td>F</td>
+                            <div>
+                              <td><label for="RepeatersF-Hearing" hidden>Hearing Impaired</label>
+                                  <input type="number" id="RepeatersF-Hearing" name="RepeatersF-Hearing">
+                              </td>
+                            </div>
+                              <div>
+                                  <td><label for="RepeatersF-Visually" hidden>Visually Impaired</label>
+                                      <input type="number" id="RepeatersF-Visually" name="RepeatersF-Visually">
+                                  </td>
+                              </div>
+                             <div>
+                              <td><label for="RepeatersF-Learning" hidden>Learning Difficulties</label>
+                                  <input type="number" id="RepeatersF-Learning" name="RepeatersF-Learning">
+                              </td>
+                             </div>
+                              <div>
+                                  <td><label for="RepeatersF-Mentally" hidden>Mentally Challenged</label>
+                                      <input type="number" id="RepeatersF-Mentally" name="RepeatersF-Mentally">
+                                  </td>
+                              </div>
+                             <div>
+                              <td><label for="RepeatersF-Multiple" hidden>Multiple Handicaps</label>
+                                  <input type="number" id="RepeatersF-Multiple" name="RepeatersF-Multiple">
+                              </td>
+                             </div>
+                             <div>
+                              <td><label for="RepeatersF-Autistic" hidden>Autistic</label>
+                                  <input type="number" id="RepeatersF-Autistic" name="RepeatersF-Autistic">
+                              </td>
+                             </div>
+                               <div>
+                                  <td><label for="RepeatersF-Physically" hidden>Physically Challenged</label>
+                                      <input type="number" id="RepeatersF-Physically" name="RepeatersF-Physically">
+                                  </td>
+                               </div>
+                          </tr>
+                          <!-- Rows for Total -->
+                          <td rowspan="2"> Total </td>
+                          <!-- Row for Male -->
+                            <td>M</td>
+                            <div>
+                              <td><label for="totalM-Hearing" hidden>Hearing Impaired</label>
+                                  <input type="number" id="totalM-Hearing" name="totalM-Hearing" readonly>
+                              </td>
+                            </div>
+                                 <div>
+                                  <td><label for="totalM-Visually" hidden>Visually Impaired</label>
+                                      <input type="number" id="totalM-Visually" name="totalM-Visually" readonly>
+                                  </td>
+                                 </div>
+                            <div>
+                              <td><label for="totalM-Learning" hidden>Learning Difficulties</label>
+                                  <input type="number" id="totalM-Learning" name="totalM-Learning" readonly>
+                              </td>
+                            </div>
+                            <div>
+                              <td><label for="totalM-Mentally" hidden>Mentally Challenged</label>
+                                  <input type="number" id="totalM-Mentally" name="totalM-Mentally" readonly>
+                              </td>
+                            </div>
+                            <div>
+                              <td><label for="totalM-Multiple" hidden>Multiple Handicaps</label>
+                                  <input type="number" id="totalM-Multiple" name="totalM-Multiple" readonly>
+                              </td>
+                            </div>
+                             <div>
+                              <td><label for="totalM-Autistic" hidden>Autistic</label>
+                                  <input type="number" id="totalM-Autistic" name="totalM-Autistic" readonly>
+                              </td>
+                             </div>
+                             <div>
+                              <td><label for="totalM-Physically" hidden>Physically Challenged</label>
+                                  <input type="number" id="totalM-Physically" name="totalM-Physically">
+                              </td>
+                             </div>
+                            
+                          </tr>
+                          <tr>
+                              <!-- Row for Female -->
+                            <td>F</td>
+                            <div>
+                              <td><label for="totalF-Hearing" hidden>Hearing Impaired</label>
+                                  <input type="number" id="totalF-Hearing" name="totalF-Hearing" readonly>
+                              </td>
+                            </div>
+                              <div>
+                                  <td><label for="totalF-Visually" hidden>Visually Impaired</label>
+                                      <input type="number" id="totalF-Visually" name="totalF-Visually" readonly>
+                                  </td>
+                              </div>
+                             <div>
+                              <td><label for="totalF-Learning" hidden>Learning Difficulties</label>
+                                  <input type="number" id="totalF-Learning" name="totalF-Learning" readonly>
+                              </td>
+                             </div>
+                              <div>
+                                  <td><label for="totalF-Mentally" hidden>Mentally Challenged</label>
+                                      <input type="number" id="totalF-Mentally" name="totalF-Mentally" readonly>
+                                  </td>
+                              </div>
+                             <div>
+                              <td><label for="totalF-Multiple" hidden>Multiple Handicaps</label>
+                                  <input type="number" id="totalF-Multiple" name="totalF-Multiple" readonly>
+                              </td>
+                             </div>
+                             <div>
+                              <td><label for="totalF-Autistic" hidden>Autistic</label>
+                                  <input type="number" id="totalF-Autistic" name="totalF-Autistic" readonly>
+                              </td>
+                             </div>
+                               <div>
+                                  <td><label for="totalF-Physically" hidden>Physically Challenged</label>
+                                      <input type="number" id="totalF-Physically" name="totalF-Physically" readonly>
+                                  </td>
+                               </div>
+                        </tbody>
+                      </table>
+                </fieldset>
+                <fieldset class="se_fieldset">
+                    <legend> Student Enrolment By Class ,Gender and Age (Total should match that in 1.12)</legend>
+                     
+ 
+               <table class="se_form_tables">
+              <thead>
+                <tr>
+                    <th rowspan="2">Age as of October 15th (2018)</th>
+                    <th rowspan="2">Gender</th>
+                    <th colspan="7">Classes</th>
+                </tr>
+                <tr>
+                    <th>Hearing Impaired</th>
+                    <th>Visually Impaired</th>
+                    <th>Learning Difficulties</th>
+                    <th>Mentally Challenged</th>
+                    <th>Multiple Handicaps</th>
+                    <th>Autistic</th>
+                    <th>Physically Challenged</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Row 1 to 5 -->
+                <tr> 
+                    <td rowspan="2"> &lt; 5</td>
+                    <!-- Male -->
+                    <td>M</td>
+                    <div>
+                        <td><label for="hearing_impaired_m_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_m_lt5" id="hearing_impaired_m_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="visually_impaired_m_lt5" hidden >Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_m_lt5" id="visually_impaired_m_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="learning_difficulties_m_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_m_lt5" id="learning_difficulties_m_lt5"></td>
+                     </div>
+                      <div>
+                        <td><label for="mentally_challenged_m_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_m_lt5" id="mentally_challenged_m_lt5"></td>
+                      </div>
+                        <div>
+                            <td><label for="multiple_handicaps_m_lt5" hidden>Multiple Handicaps:</label>
+                                <input type="number" name="multiple_handicaps_m_lt5" id="multiple_handicaps_m_lt5"></td>
+                        </div>
+                      <div>
+                        <td><label for="autistic_m_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_m_lt5" id="autistic_m_lt5"></td>
+                      </div>
+                       <div>
+                        <td><label for="physically_challenged_m_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_m_lt5" id="physically_challenged_m_lt5"></td>
+                       </div>
+                    
+                </tr>
+                <tr>
+                    <!-- Female -->
+                    <td>F</td>
+                    <div>
+                        <td><label for="hearing_impaired_f_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_f_lt5" id="hearing_impaired_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="visually_impaired_f_lt5" hidden>Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_f_lt5" id="visually_impaired_f_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="learning_difficulties_f_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_f_lt5" id="learning_difficulties_f_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="mentally_challenged_f_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_f_lt5" id="mentally_challenged_f_lt5"></td>
+                     </div>
+                    <div>
+                        <td><label for="multiple_handicaps_f_lt5" hidden>Multiple Handicaps:</label>
+                            <input type="number" name="multiple_handicaps_f_lt5" id="multiple_handicaps_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="autistic_f_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_f_lt5" id="autistic_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="physically_challenged_f_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_f_lt5" id="physically_challenged_f_lt5"></td>
+                    </div>
+                    
+                </tr>
+                <!-- Row 5 -->
+                <tr> 
+                    <td rowspan="2">  5</td>
+                    <!-- Male -->
+                    <td>M</td>
+                    <div>
+                        <td><label for="hearing_impaired_m_5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_m_5" id="hearing_impaired_m_5"></td>
+                    </div>
+                     <div>
+                        <td><label for="visually_impaired_m_5" hidden >Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_m_5" id="visually_impaired_m_5"></td>
+                     </div>
+                     <div>
+                        <td><label for="learning_difficulties_m_5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_m_5" id="learning_difficulties_m_5"></td>
+                     </div>
+                      <div>
+                        <td><label for="mentally_challenged_m_5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_m_5" id="mentally_challenged_m_5"></td>
+                      </div>
+                        <div>
+                            <td><label for="multiple_handicaps_m_5" hidden>Multiple Handicaps:</label>
+                                <input type="number" name="multiple_handicaps_m_5" id="multiple_handicaps_m_5"></td>
+                        </div>
+                      <div>
+                        <td><label for="autistic_m_5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_m_5" id="autistic_m_5"></td>
+                      </div>
+                       <div>
+                        <td><label for="physically_challenged_m_5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_m_5" id="physically_challenged_m_5"></td>
+                       </div>
+                    
+                </tr>
+                <tr>
+                    <!-- Female -->
+                    <td>F</td>
+                    <div>
+                        <td><label for="hearing_impaired_f_5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_f_5" id="hearing_impaired_f_5"></td>
+                    </div>
+                    <div>
+                        <td><label for="visually_impaired_f_5" hidden>Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_f_5" id="visually_impaired_f_5"></td>
+                    </div>
+                     <div>
+                        <td><label for="learning_difficulties_f_5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_f_5" id="learning_difficulties_f_5"></td>
+                     </div>
+                     <div>
+                        <td><label for="mentally_challenged_f_5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_f_5" id="mentally_challenged_f_5"></td>
+                     </div>
+                    <div>
+                        <td><label for="multiple_handicaps_f_5" hidden>Multiple Handicaps:</label>
+                            <input type="number" name="multiple_handicaps_f_5" id="multiple_handicaps_f_5"></td>
+                    </div>
+                    <div>
+                        <td><label for="autistic_f_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_f_5" id="autistic_f_5"></td>
+                    </div>
+                    <div>
+                        <td><label for="physically_challenged_f_5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_f_5" id="physically_challenged_f_5"></td>
+                    </div>
+                    
+                </tr>
+                <!-- Row 6 -->
+                <tr> 
+                    <td rowspan="2"> 6</td>
+                    <!-- Male -->
+                    <td>M</td>
+                    <div>
+                        <td><label for="hearing_impaired_m_6" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_m_ 6" id="hearing_impaired_m_6"></td>
+                    </div>
+                     <div>
+                        <td><label for="visually_impaired_m_6" hidden >Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_m_6" id="visually_impaired_m_6"></td>
+                     </div>
+                     <div>
+                        <td><label for="learning_difficulties_m_6" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_m_6" id="learning_difficulties_m_6"></td>
+                     </div>
+                      <div>
+                        <td><label for="mentally_challenged_m_6" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_m_6" id="mentally_challenged_m_6"></td>
+                      </div>
+                        <div>
+                            <td><label for="multiple_handicaps_m_6" hidden>Multiple Handicaps:</label>
+                                <input type="number" name="multiple_handicaps_m_6" id="multiple_handicaps_m_6"></td>
+                        </div>
+                      <div>
+                        <td><label for="autistic_m_6" hidden>Autistic:</label>
+                            <input type="number" name="autistic_m_6" id="autistic_m_6"></td>
+                      </div>
+                       <div>
+                        <td><label for="physically_challenged_m_6" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_m_6" id="physically_challenged_m_6"></td>
+                       </div>
+                    
+                </tr>
+                <tr>
+                    <!-- Female -->
+                    <td>F</td>
+                    <div>
+                        <td><label for="hearing_impaired_f_6" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_f_6" id="hearing_impaired_f_6"></td>
+                    </div>
+                    <div>
+                        <td><label for="visually_impaired_f_6" hidden>Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_f_6" id="visually_impaired_f_6"></td>
+                    </div>
+                     <div>
+                        <td><label for="learning_difficulties_f_6" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_f_6" id="learning_difficulties_f_6"></td>
+                     </div>
+                     <div>
+                        <td><label for="mentally_challenged_f_6" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_f_6" id="mentally_challenged_f_6"></td>
+                     </div>
+                    <div>
+                        <td><label for="multiple_handicaps_f_6" hidden>Multiple Handicaps:</label>
+                            <input type="number" name="multiple_handicaps_f_6" id="multiple_handicaps_f_6"></td>
+                    </div>
+                    <div>
+                        <td><label for="autistic_f_6" hidden>Autistic:</label>
+                            <input type="number" name="autistic_f_6" id="autistic_f_6"></td>
+                    </div>
+                    <div>
+                        <td><label for="physically_challenged_f_6" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_f_6" id="physically_challenged_f_6"></td>
+                    </div>
+                    
+                </tr>
+                <!-- Row 7 -->
+                <tr> 
+                    <td rowspan="2"> 7 </td>
+                    <!-- Male -->
+                    <td>M</td>
+                    <div>
+                        <td><label for="hearing_impaired_m_7" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_m_7" id="hearing_impaired_m_7"></td>
+                    </div>
+                     <div>
+                        <td><label for="visually_impaired_m_7" hidden >Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_m_7" id="visually_impaired_m_7"></td>
+                     </div>
+                     <div>
+                        <td><label for="learning_difficulties_m_7" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_m_7" id="learning_difficulties_m_7"></td>
+                     </div>
+                      <div>
+                        <td><label for="mentally_challenged_m_7" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_m_7" id="mentally_challenged_m_7"></td>
+                      </div>
+                        <div>
+                            <td><label for="multiple_handicaps_m_7" hidden>Multiple Handicaps:</label>
+                                <input type="number" name="multiple_handicaps_m_7" id="multiple_handicaps_m_7"></td>
+                        </div>
+                      <div>
+                        <td><label for="autistic_m_7" hidden>Autistic:</label>
+                            <input type="number" name="autistic_m_7" id="autistic_m_7"></td>
+                      </div>
+                       <div>
+                        <td><label for="physically_challenged_m_7" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_m_7" id="physically_challenged_m_7"></td>
+                       </div>
+                    
+                </tr>
+                <tr>
+                    <!-- Female -->
+                    <td>F</td>
+                    <div>
+                        <td><label for="hearing_impaired_f_7" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_f_7" id="hearing_impaired_f_7"></td>
+                    </div>
+                    <div>
+                        <td><label for="visually_impaired_f_7" hidden>Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_f_7" id="visually_impaired_f_7"></td>
+                    </div>
+                     <div>
+                        <td><label for="learning_difficulties_f_7" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_f_7" id="learning_difficulties_f_7"></td>
+                     </div>
+                     <div>
+                        <td><label for="mentally_challenged_f_7" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_f_7" id="mentally_challenged_f_7"></td>
+                     </div>
+                    <div>
+                        <td><label for="multiple_handicaps_f_7" hidden>Multiple Handicaps:</label>
+                            <input type="number" name="multiple_handicaps_f_7" id="multiple_handicaps_f_7"></td>
+                    </div>
+                    <div>
+                        <td><label for="autistic_f_7" hidden>Autistic:</label>
+                            <input type="number" name="autistic_f_7" id="autistic_f_7"></td>
+                    </div>
+                    <div>
+                        <td><label for="physically_challenged_f_7" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_f_7" id="physically_challenged_f_7"></td>
+                    </div>
+                    
+                </tr>
+                <!-- Row 8 -->
+                <tr> 
+                    <td rowspan="2"> 8 </td>
+                    <!-- Male -->
+                    <td>M</td>
+                    <div>
+                        <td><label for="hearing_impaired_m_8" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_m_8" id="hearing_impaired_m_8"></td>
+                    </div>
+                     <div>
+                        <td><label for="visually_impaired_m_8" hidden >Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_m_8" id="visually_impaired_m_8"></td>
+                     </div>
+                     <div>
+                        <td><label for="learning_difficulties_m_8" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_m_8" id="learning_difficulties_m_8"></td>
+                     </div>
+                      <div>
+                        <td><label for="mentally_challenged_m_8" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_m_8" id="mentally_challenged_m_8"></td>
+                      </div>
+                        <div>
+                            <td><label for="multiple_handicaps_m_8" hidden>Multiple Handicaps:</label>
+                                <input type="number" name="multiple_handicaps_m_8" id="multiple_handicaps_m_8"></td>
+                        </div>
+                      <div>
+                        <td><label for="autistic_m_8" hidden>Autistic:</label>
+                            <input type="number" name="autistic_m_8" id="autistic_m_8"></td>
+                      </div>
+                       <div>
+                        <td><label for="physically_challenged_m_8" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_m_8" id="physically_challenged_m_8"></td>
+                       </div>
+                    
+                </tr>
+                <tr>
+                    <!-- Female -->
+                    <td>F</td>
+                    <div>
+                        <td><label for="hearing_impaired_f_8" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_f_8" id="hearing_impaired_f_8"></td>
+                    </div>
+                    <div>
+                        <td><label for="visually_impaired_f_8" hidden>Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_f_8" id="visually_impaired_f_8"></td>
+                    </div>
+                     <div>
+                        <td><label for="learning_difficulties_f_8" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_f_8" id="learning_difficulties_f_8"></td>
+                     </div>
+                     <div>
+                        <td><label for="mentally_challenged_f_8" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_f_8" id="mentally_challenged_f_8"></td>
+                     </div>
+                    <div>
+                        <td><label for="multiple_handicaps_f_8" hidden>Multiple Handicaps:</label>
+                            <input type="number" name="multiple_handicaps_f_8" id="multiple_handicaps_f_8"></td>
+                    </div>
+                    <div>
+                        <td><label for="autistic_f_8" hidden>Autistic:</label>
+                            <input type="number" name="autistic_f_8" id="autistic_f_8"></td>
+                    </div>
+                    <div>
+                        <td><label for="physically_challenged_f_8" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_f_8" id="physically_challenged_f_8"></td>
+                    </div>
+                    
+                </tr>
+                <!-- Row 9 -->
+                <tr> 
+                    <td rowspan="2"> 9 </td>
+                    <!-- Male -->
+                    <td>M</td>
+                    <div>
+                        <td><label for="hearing_impaired_m_9" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_m_9" id="hearing_impaired_m_9"></td>
+                    </div>
+                     <div>
+                        <td><label for="visually_impaired_m_9" hidden >Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_m_9" id="visually_impaired_m_9"></td>
+                     </div>
+                     <div>
+                        <td><label for="learning_difficulties_m_9" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_m_9" id="learning_difficulties_m_9"></td>
+                     </div>
+                      <div>
+                        <td><label for="mentally_challenged_m_9" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_m_9" id="mentally_challenged_m_9"></td>
+                      </div>
+                        <div>
+                            <td><label for="multiple_handicaps_m_9" hidden>Multiple Handicaps:</label>
+                                <input type="number" name="multiple_handicaps_m_9" id="multiple_handicaps_m_9"></td>
+                        </div>
+                      <div>
+                        <td><label for="autistic_m_9" hidden>Autistic:</label>
+                            <input type="number" name="autistic_m_9" id="autistic_m_9"></td>
+                      </div>
+                       <div>
+                        <td><label for="physically_challenged_m_9" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_m_9" id="physically_challenged_m_9"></td>
+                       </div>
+                    
+                </tr>
+                <tr>
+                    <!-- Female -->
+                    <td>F</td>
+                    <div>
+                        <td><label for="hearing_impaired_f_9" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_f_9" id="hearing_impaired_f_9"></td>
+                    </div>
+                    <div>
+                        <td><label for="visually_impaired_f_9" hidden>Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_f_9" id="visually_impaired_f_9"></td>
+                    </div>
+                     <div>
+                        <td><label for="learning_difficulties_f_9" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_f_9" id="learning_difficulties_f_9"></td>
+                     </div>
+                     <div>
+                        <td><label for="mentally_challenged_f_9" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_f_9" id="mentally_challenged_f_9"></td>
+                     </div>
+                    <div>
+                        <td><label for="multiple_handicaps_f_9" hidden>Multiple Handicaps:</label>
+                            <input type="number" name="multiple_handicaps_f_9" id="multiple_handicaps_f_9"></td>
+                    </div>
+                    <div>
+                        <td><label for="autistic_f_9" hidden>Autistic:</label>
+                            <input type="number" name="autistic_f_9" id="autistic_f_9"></td>
+                    </div>
+                    <div>
+                        <td><label for="physically_challenged_f_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_f_lt5" id="physically_challenged_f_lt5"></td>
+                    </div>
+                    
+                </tr>
+                <!-- Row 10 -->
+                <tr> 
+                    <td rowspan="2"> 10 </td>
+                    <!-- Male -->
+                    <td>M</td>
+                    <div>
+                        <td><label for="hearing_impaired_m_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_m_lt5" id="hearing_impaired_m_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="visually_impaired_m_lt5" hidden >Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_m_lt5" id="visually_impaired_m_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="learning_difficulties_m_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_m_lt5" id="learning_difficulties_m_lt5"></td>
+                     </div>
+                      <div>
+                        <td><label for="mentally_challenged_m_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_m_lt5" id="mentally_challenged_m_lt5"></td>
+                      </div>
+                        <div>
+                            <td><label for="multiple_handicaps_m_lt5" hidden>Multiple Handicaps:</label>
+                                <input type="number" name="multiple_handicaps_m_lt5" id="multiple_handicaps_m_lt5"></td>
+                        </div>
+                      <div>
+                        <td><label for="autistic_m_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_m_lt5" id="autistic_m_lt5"></td>
+                      </div>
+                       <div>
+                        <td><label for="physically_challenged_m_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_m_lt5" id="physically_challenged_m_lt5"></td>
+                       </div>
+                    
+                </tr>
+                <tr>
+                    <!-- Female -->
+                    <td>F</td>
+                    <div>
+                        <td><label for="hearing_impaired_f_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_f_lt5" id="hearing_impaired_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="visually_impaired_f_lt5" hidden>Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_f_lt5" id="visually_impaired_f_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="learning_difficulties_f_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_f_lt5" id="learning_difficulties_f_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="mentally_challenged_f_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_f_lt5" id="mentally_challenged_f_lt5"></td>
+                     </div>
+                    <div>
+                        <td><label for="multiple_handicaps_f_lt5" hidden>Multiple Handicaps:</label>
+                            <input type="number" name="multiple_handicaps_f_lt5" id="multiple_handicaps_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="autistic_f_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_f_lt5" id="autistic_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="physically_challenged_f_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_f_lt5" id="physically_challenged_f_lt5"></td>
+                    </div>
+                    
+                </tr>
+                <!-- Row 11 -->
+                <tr> 
+                    <td rowspan="2"> 11</td>
+                    <!-- Male -->
+                    <td>M</td>
+                    <div>
+                        <td><label for="hearing_impaired_m_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_m_lt5" id="hearing_impaired_m_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="visually_impaired_m_lt5" hidden >Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_m_lt5" id="visually_impaired_m_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="learning_difficulties_m_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_m_lt5" id="learning_difficulties_m_lt5"></td>
+                     </div>
+                      <div>
+                        <td><label for="mentally_challenged_m_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_m_lt5" id="mentally_challenged_m_lt5"></td>
+                      </div>
+                        <div>
+                            <td><label for="multiple_handicaps_m_lt5" hidden>Multiple Handicaps:</label>
+                                <input type="number" name="multiple_handicaps_m_lt5" id="multiple_handicaps_m_lt5"></td>
+                        </div>
+                      <div>
+                        <td><label for="autistic_m_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_m_lt5" id="autistic_m_lt5"></td>
+                      </div>
+                       <div>
+                        <td><label for="physically_challenged_m_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_m_lt5" id="physically_challenged_m_lt5"></td>
+                       </div>
+                    
+                </tr>
+                <tr>
+                    <!-- Female -->
+                    <td>F</td>
+                    <div>
+                        <td><label for="hearing_impaired_f_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_f_lt5" id="hearing_impaired_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="visually_impaired_f_lt5" hidden>Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_f_lt5" id="visually_impaired_f_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="learning_difficulties_f_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_f_lt5" id="learning_difficulties_f_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="mentally_challenged_f_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_f_lt5" id="mentally_challenged_f_lt5"></td>
+                     </div>
+                    <div>
+                        <td><label for="multiple_handicaps_f_lt5" hidden>Multiple Handicaps:</label>
+                            <input type="number" name="multiple_handicaps_f_lt5" id="multiple_handicaps_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="autistic_f_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_f_lt5" id="autistic_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="physically_challenged_f_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_f_lt5" id="physically_challenged_f_lt5"></td>
+                    </div>
+                    
+                </tr>
+                <!-- Row 12 -->
+                <tr> 
+                    <td rowspan="2"> 12 </td>
+                    <!-- Male -->
+                    <td>M</td>
+                    <div>
+                        <td><label for="hearing_impaired_m_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_m_lt5" id="hearing_impaired_m_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="visually_impaired_m_lt5" hidden >Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_m_lt5" id="visually_impaired_m_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="learning_difficulties_m_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_m_lt5" id="learning_difficulties_m_lt5"></td>
+                     </div>
+                      <div>
+                        <td><label for="mentally_challenged_m_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_m_lt5" id="mentally_challenged_m_lt5"></td>
+                      </div>
+                        <div>
+                            <td><label for="multiple_handicaps_m_lt5" hidden>Multiple Handicaps:</label>
+                                <input type="number" name="multiple_handicaps_m_lt5" id="multiple_handicaps_m_lt5"></td>
+                        </div>
+                      <div>
+                        <td><label for="autistic_m_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_m_lt5" id="autistic_m_lt5"></td>
+                      </div>
+                       <div>
+                        <td><label for="physically_challenged_m_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_m_lt5" id="physically_challenged_m_lt5"></td>
+                       </div>
+                    
+                </tr>
+                <tr>
+                    <!-- Female -->
+                    <td>F</td>
+                    <div>
+                        <td><label for="hearing_impaired_f_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_f_lt5" id="hearing_impaired_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="visually_impaired_f_lt5" hidden>Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_f_lt5" id="visually_impaired_f_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="learning_difficulties_f_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_f_lt5" id="learning_difficulties_f_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="mentally_challenged_f_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_f_lt5" id="mentally_challenged_f_lt5"></td>
+                     </div>
+                    <div>
+                        <td><label for="multiple_handicaps_f_lt5" hidden>Multiple Handicaps:</label>
+                            <input type="number" name="multiple_handicaps_f_lt5" id="multiple_handicaps_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="autistic_f_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_f_lt5" id="autistic_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="physically_challenged_f_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_f_lt5" id="physically_challenged_f_lt5"></td>
+                    </div>
+                    
+                </tr>
+                <!-- Row 13 -->
+                <tr> 
+                    <td rowspan="2"> 13</td>
+                    <!-- Male -->
+                    <td>M</td>
+                    <div>
+                        <td><label for="hearing_impaired_m_lt5" hidden>Hearing Impaired:</label>
+                    </div>
+                     <div>
+                        <td><label for="visually_impaired_m_lt5" hidden >Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_m_lt5" id="visually_impaired_m_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="learning_difficulties_m_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_m_lt5" id="learning_difficulties_m_lt5"></td>
+                     </div>
+                      <div>
+                        <td><label for="mentally_challenged_m_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_m_lt5" id="mentally_challenged_m_lt5"></td>
+                      </div>
+                        <div>
+                            <td><label for="multiple_handicaps_m_lt5" hidden>Multiple Handicaps:</label>
+                                <input type="number" name="multiple_handicaps_m_lt5" id="multiple_handicaps_m_lt5"></td>
+                        </div>
+                      <div>
+                        <td><label for="autistic_m_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_m_lt5" id="autistic_m_lt5"></td>
+                      </div>
+                       <div>
+                        <td><label for="physically_challenged_m_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_m_lt5" id="physically_challenged_m_lt5"></td>
+                       </div>
+                    
+                </tr>
+                <tr>
+                    <!-- Female -->
+                    <td>F</td>
+                    <div>
+                        <td><label for="hearing_impaired_f_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_f_lt5" id="hearing_impaired_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="visually_impaired_f_lt5" hidden>Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_f_lt5" id="visually_impaired_f_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="learning_difficulties_f_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_f_lt5" id="learning_difficulties_f_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="mentally_challenged_f_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_f_lt5" id="mentally_challenged_f_lt5"></td>
+                     </div>
+                    <div>
+                        <td><label for="multiple_handicaps_f_lt5" hidden>Multiple Handicaps:</label>
+                            <input type="number" name="multiple_handicaps_f_lt5" id="multiple_handicaps_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="autistic_f_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_f_lt5" id="autistic_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="physically_challenged_f_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_f_lt5" id="physically_challenged_f_lt5"></td>
+                    </div>
+                    
+                </tr>
+                <!-- Row 14 -->
+                <tr> 
+                    <td rowspan="2"> 14 </td>
+                    <!-- Male -->
+                    <td>M</td>
+                    <div>
+                        <td><label for="hearing_impaired_m_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_m_lt5" id="hearing_impaired_m_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="visually_impaired_m_lt5" hidden >Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_m_lt5" id="visually_impaired_m_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="learning_difficulties_m_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_m_lt5" id="learning_difficulties_m_lt5"></td>
+                     </div>
+                      <div>
+                        <td><label for="mentally_challenged_m_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_m_lt5" id="mentally_challenged_m_lt5"></td>
+                      </div>
+                        <div>
+                            <td><label for="multiple_handicaps_m_lt5" hidden>Multiple Handicaps:</label>
+                                <input type="number" name="multiple_handicaps_m_lt5" id="multiple_handicaps_m_lt5"></td>
+                        </div>
+                      <div>
+                        <td><label for="autistic_m_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_m_lt5" id="autistic_m_lt5"></td>
+                      </div>
+                       <div>
+                        <td><label for="physically_challenged_m_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_m_lt5" id="physically_challenged_m_lt5"></td>
+                       </div>
+                    
+                </tr>
+                <tr>
+                    <!-- Female -->
+                    <td>F</td>
+                    <div>
+                        <td><label for="hearing_impaired_f_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_f_lt5" id="hearing_impaired_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="visually_impaired_f_lt5" hidden>Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_f_lt5" id="visually_impaired_f_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="learning_difficulties_f_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_f_lt5" id="learning_difficulties_f_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="mentally_challenged_f_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_f_lt5" id="mentally_challenged_f_lt5"></td>
+                     </div>
+                    <div>
+                        <td><label for="multiple_handicaps_f_lt5" hidden>Multiple Handicaps:</label>
+                            <input type="number" name="multiple_handicaps_f_lt5" id="multiple_handicaps_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="autistic_f_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_f_lt5" id="autistic_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="physically_challenged_f_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_f_lt5" id="physically_challenged_f_lt5"></td>
+                    </div>
+                    
+                </tr>
+                <!-- Row 15 -->
+                <tr> 
+                    <td rowspan="2"> 15</td>
+                    <!-- Male -->
+                    <td>M</td>
+                    <div>
+                        <td><label for="hearing_impaired_m_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_m_lt5" id="hearing_impaired_m_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="visually_impaired_m_lt5" hidden >Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_m_lt5" id="visually_impaired_m_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="learning_difficulties_m_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_m_lt5" id="learning_difficulties_m_lt5"></td>
+                     </div>
+                      <div>
+                        <td><label for="mentally_challenged_m_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_m_lt5" id="mentally_challenged_m_lt5"></td>
+                      </div>
+                        <div>
+                            <td><label for="multiple_handicaps_m_lt5" hidden>Multiple Handicaps:</label>
+                                <input type="number" name="multiple_handicaps_m_lt5" id="multiple_handicaps_m_lt5"></td>
+                        </div>
+                      <div>
+                        <td><label for="autistic_m_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_m_lt5" id="autistic_m_lt5"></td>
+                      </div>
+                       <div>
+                        <td><label for="physically_challenged_m_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_m_lt5" id="physically_challenged_m_lt5"></td>
+                       </div>
+                    
+                </tr>
+                <tr>
+                    <!-- Female -->
+                    <td>F</td>
+                    <div>
+                        <td><label for="hearing_impaired_f_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_f_lt5" id="hearing_impaired_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="visually_impaired_f_lt5" hidden>Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_f_lt5" id="visually_impaired_f_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="learning_difficulties_f_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_f_lt5" id="learning_difficulties_f_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="mentally_challenged_f_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_f_lt5" id="mentally_challenged_f_lt5"></td>
+                     </div>
+                    <div>
+                        <td><label for="multiple_handicaps_f_lt5" hidden>Multiple Handicaps:</label>
+                            <input type="number" name="multiple_handicaps_f_lt5" id="multiple_handicaps_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="autistic_f_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_f_lt5" id="autistic_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="physically_challenged_f_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_f_lt5" id="physically_challenged_f_lt5"></td>
+                    </div>
+                    
+                </tr>
+                <!-- Row 16-->
+                <tr> 
+                    <td rowspan="2"> 16</td>
+                    <!-- Male -->
+                    <td>M</td>
+                    <div>
+                        <td><label for="hearing_impaired_m_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_m_lt5" id="hearing_impaired_m_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="visually_impaired_m_lt5" hidden >Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_m_lt5" id="visually_impaired_m_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="learning_difficulties_m_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_m_lt5" id="learning_difficulties_m_lt5"></td>
+                     </div>
+                      <div>
+                        <td><label for="mentally_challenged_m_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_m_lt5" id="mentally_challenged_m_lt5"></td>
+                      </div>
+                        <div>
+                            <td><label for="multiple_handicaps_m_lt5" hidden>Multiple Handicaps:</label>
+                                <input type="number" name="multiple_handicaps_m_lt5" id="multiple_handicaps_m_lt5"></td>
+                        </div>
+                      <div>
+                        <td><label for="autistic_m_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_m_lt5" id="autistic_m_lt5"></td>
+                      </div>
+                       <div>
+                        <td><label for="physically_challenged_m_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_m_lt5" id="physically_challenged_m_lt5"></td>
+                       </div>
+                    
+                </tr>
+                <tr>
+                    <!-- Female -->
+                    <td>F</td>
+                    <div>
+                        <td><label for="hearing_impaired_f_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_f_lt5" id="hearing_impaired_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="visually_impaired_f_lt5" hidden>Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_f_lt5" id="visually_impaired_f_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="learning_difficulties_f_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_f_lt5" id="learning_difficulties_f_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="mentally_challenged_f_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_f_lt5" id="mentally_challenged_f_lt5"></td>
+                     </div>
+                    <div>
+                        <td><label for="multiple_handicaps_f_lt5" hidden>Multiple Handicaps:</label>
+                            <input type="number" name="multiple_handicaps_f_lt5" id="multiple_handicaps_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="autistic_f_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_f_lt5" id="autistic_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="physically_challenged_f_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_f_lt5" id="physically_challenged_f_lt5"></td>
+                    </div>
+                    
+                </tr>
+                <!-- Row 17-->
+                <tr> 
+                    <td rowspan="2"> 17</td>
+                    <!-- Male -->
+                    <td>M</td>
+                    <div>
+                        <td><label for="hearing_impaired_m_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_m_lt5" id="hearing_impaired_m_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="visually_impaired_m_lt5" hidden >Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_m_lt5" id="visually_impaired_m_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="learning_difficulties_m_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_m_lt5" id="learning_difficulties_m_lt5"></td>
+                     </div>
+                      <div>
+                        <td><label for="mentally_challenged_m_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_m_lt5" id="mentally_challenged_m_lt5"></td>
+                      </div>
+                        <div>
+                            <td><label for="multiple_handicaps_m_lt5" hidden>Multiple Handicaps:</label>
+                                <input type="number" name="multiple_handicaps_m_lt5" id="multiple_handicaps_m_lt5"></td>
+                        </div>
+                      <div>
+                        <td><label for="autistic_m_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_m_lt5" id="autistic_m_lt5"></td>
+                      </div>
+                       <div>
+                        <td><label for="physically_challenged_m_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_m_lt5" id="physically_challenged_m_lt5"></td>
+                       </div>
+                    
+                </tr>
+                <tr>
+                    <!-- Female -->
+                    <td>F</td>
+                    <div>
+                        <td><label for="hearing_impaired_f_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_f_lt5" id="hearing_impaired_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="visually_impaired_f_lt5" hidden>Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_f_lt5" id="visually_impaired_f_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="learning_difficulties_f_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_f_lt5" id="learning_difficulties_f_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="mentally_challenged_f_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_f_lt5" id="mentally_challenged_f_lt5"></td>
+                     </div>
+                    <div>
+                        <td><label for="multiple_handicaps_f_lt5" hidden>Multiple Handicaps:</label>
+                            <input type="number" name="multiple_handicaps_f_lt5" id="multiple_handicaps_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="autistic_f_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_f_lt5" id="autistic_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="physically_challenged_f_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_f_lt5" id="physically_challenged_f_lt5"></td>
+                    </div>
+                    
+                </tr>
+                <!-- Row 18 -->
+                <tr> 
+                    <td rowspan="2"> 18</td>
+                    <!-- Male -->
+                    <td>M</td>
+                    <div>
+                        <td><label for="hearing_impaired_m_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_m_lt5" id="hearing_impaired_m_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="visually_impaired_m_lt5" hidden >Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_m_lt5" id="visually_impaired_m_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="learning_difficulties_m_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_m_lt5" id="learning_difficulties_m_lt5"></td>
+                     </div>
+                      <div>
+                        <td><label for="mentally_challenged_m_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_m_lt5" id="mentally_challenged_m_lt5"></td>
+                      </div>
+                        <div>
+                            <td><label for="multiple_handicaps_m_lt5" hidden>Multiple Handicaps:</label>
+                                <input type="number" name="multiple_handicaps_m_lt5" id="multiple_handicaps_m_lt5"></td>
+                        </div>
+                      <div>
+                        <td><label for="autistic_m_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_m_lt5" id="autistic_m_lt5"></td>
+                      </div>
+                       <div>
+                        <td><label for="physically_challenged_m_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_m_lt5" id="physically_challenged_m_lt5"></td>
+                       </div>
+                    
+                </tr>
+                <tr>
+                    <!-- Female -->
+                    <td>F</td>
+                    <div>
+                        <td><label for="hearing_impaired_f_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_f_lt5" id="hearing_impaired_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="visually_impaired_f_lt5" hidden>Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_f_lt5" id="visually_impaired_f_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="learning_difficulties_f_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_f_lt5" id="learning_difficulties_f_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="mentally_challenged_f_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_f_lt5" id="mentally_challenged_f_lt5"></td>
+                     </div>
+                    <div>
+                        <td><label for="multiple_handicaps_f_lt5" hidden>Multiple Handicaps:</label>
+                            <input type="number" name="multiple_handicaps_f_lt5" id="multiple_handicaps_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="autistic_f_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_f_lt5" id="autistic_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="physically_challenged_f_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_f_lt5" id="physically_challenged_f_lt5"></td>
+                    </div>
+                    
+                </tr>
+                <!-- Row 19 -->
+                <tr> 
+                    <td rowspan="2"> 19</td>
+                    <!-- Male -->
+                    <td>M</td>
+                    <div>
+                        <td><label for="hearing_impaired_m_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_m_lt5" id="hearing_impaired_m_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="visually_impaired_m_lt5" hidden >Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_m_lt5" id="visually_impaired_m_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="learning_difficulties_m_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_m_lt5" id="learning_difficulties_m_lt5"></td>
+                     </div>
+                      <div>
+                        <td><label for="mentally_challenged_m_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_m_lt5" id="mentally_challenged_m_lt5"></td>
+                      </div>
+                        <div>
+                            <td><label for="multiple_handicaps_m_lt5" hidden>Multiple Handicaps:</label>
+                                <input type="number" name="multiple_handicaps_m_lt5" id="multiple_handicaps_m_lt5"></td>
+                        </div>
+                      <div>
+                        <td><label for="autistic_m_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_m_lt5" id="autistic_m_lt5"></td>
+                      </div>
+                       <div>
+                        <td><label for="physically_challenged_m_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_m_lt5" id="physically_challenged_m_lt5"></td>
+                       </div>
+                    
+                </tr>
+                <tr>
+                    <!-- Female -->
+                    <td>F</td>
+                    <div>
+                        <td><label for="hearing_impaired_f_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_f_lt5" id="hearing_impaired_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="visually_impaired_f_lt5" hidden>Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_f_lt5" id="visually_impaired_f_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="learning_difficulties_f_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_f_lt5" id="learning_difficulties_f_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="mentally_challenged_f_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_f_lt5" id="mentally_challenged_f_lt5"></td>
+                     </div>
+                    <div>
+                        <td><label for="multiple_handicaps_f_lt5" hidden>Multiple Handicaps:</label>
+                            <input type="number" name="multiple_handicaps_f_lt5" id="multiple_handicaps_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="autistic_f_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_f_lt5" id="autistic_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="physically_challenged_f_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_f_lt5" id="physically_challenged_f_lt5"></td>
+                    </div>
+                    
+                </tr>
+                <!-- Row 20+ -->
+                <tr> 
+                    <td rowspan="2"> 20+</td>
+                    <!-- Male -->
+                    <td>M</td>
+                    <div>
+                        <td><label for="hearing_impaired_m_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_m_lt5" id="hearing_impaired_m_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="visually_impaired_m_lt5" hidden >Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_m_lt5" id="visually_impaired_m_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="learning_difficulties_m_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_m_lt5" id="learning_difficulties_m_lt5"></td>
+                     </div>
+                      <div>
+                        <td><label for="mentally_challenged_m_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_m_lt5" id="mentally_challenged_m_lt5"></td>
+                      </div>
+                        <div>
+                            <td><label for="multiple_handicaps_m_lt5" hidden>Multiple Handicaps:</label>
+                                <input type="number" name="multiple_handicaps_m_lt5" id="multiple_handicaps_m_lt5"></td>
+                        </div>
+                      <div>
+                        <td><label for="autistic_m_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_m_lt5" id="autistic_m_lt5"></td>
+                      </div>
+                       <div>
+                        <td><label for="physically_challenged_m_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_m_lt5" id="physically_challenged_m_lt5"></td>
+                       </div>
+                    
+                </tr>
+                <tr>
+                    <!-- Female -->
+                    <td>F</td>
+                    <div>
+                        <td><label for="hearing_impaired_f_lt5" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_f_lt5" id="hearing_impaired_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="visually_impaired_f_lt5" hidden>Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_f_lt5" id="visually_impaired_f_lt5"></td>
+                    </div>
+                     <div>
+                        <td><label for="learning_difficulties_f_lt5" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_f_lt5" id="learning_difficulties_f_lt5"></td>
+                     </div>
+                     <div>
+                        <td><label for="mentally_challenged_f_lt5" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_f_lt5" id="mentally_challenged_f_lt5"></td>
+                     </div>
+                    <div>
+                        <td><label for="multiple_handicaps_f_lt5" hidden>Multiple Handicaps:</label>
+                            <input type="number" name="multiple_handicaps_f_lt5" id="multiple_handicaps_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="autistic_f_lt5" hidden>Autistic:</label>
+                            <input type="number" name="autistic_f_lt5" id="autistic_f_lt5"></td>
+                    </div>
+                    <div>
+                        <td><label for="physically_challenged_f_lt5" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_f_lt5" id="physically_challenged_f_lt5"></td>
+                    </div>
+                    
+                </tr>
+                <!-- Total -->
+                <tr> 
+                    <td rowspan="2"> Total</td>
+                    <!-- Male -->
+                    <td>M</td>
+                    <div>
+                        <td><label for="hearing_impaired_m_total" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_m_total" id="hearing_impaired_m_total"></td>
+                    </div>
+                     <div>
+                        <td><label for="visually_impaired_m_total" hidden >Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_m_total" id="visually_impaired_m_total"></td>
+                     </div>
+                     <div>
+                        <td><label for="learning_difficulties_m_total" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_m_total" id="learning_difficulties_m_total"></td>
+                     </div>
+                      <div>
+                        <td><label for="mentally_challenged_m_total" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_m_total" id="mentally_challenged_m_total"></td>
+                      </div>
+                        <div>
+                            <td><label for="multiple_handicaps_m_total" hidden>Multiple Handicaps:</label>
+                                <input type="number" name="multiple_handicaps_m_total" id="multiple_handicaps_m_total"></td>
+                        </div>
+                      <div>
+                        <td><label for="autistic_m_total" hidden>Autistic:</label>
+                            <input type="number" name="autistic_m_total" id="autistic_m_total"></td>
+                      </div>
+                       <div>
+                        <td><label for="physically_challenged_m_total" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_m_total" id="physically_challenged_m_total"></td>
+                       </div>
+                    
+                </tr>
+                <tr>
+                    <!-- Female -->
+                    <td>F</td>
+                    <div>
+                        <td><label for="hearing_impaired_f_total" hidden>Hearing Impaired:</label>
+                            <input type="number" name="hearing_impaired_f_total" id="hearing_impaired_f_total"></td>
+                    </div>
+                    <div>
+                        <td><label for="visually_impaired_f_total" hidden>Visually Impaired:</label>
+                            <input type="number" name="visually_impaired_f_total" id="visually_impaired_f_total"></td>
+                    </div>
+                     <div>
+                        <td><label for="learning_difficulties_f_total" hidden>Learning Difficulties:</label>
+                            <input type="number" name="learning_difficulties_f_total" id="learning_difficulties_f_total"></td>
+                     </div>
+                     <div>
+                        <td><label for="mentally_challenged_f_total" hidden>Mentally Challenged:</label>
+                            <input type="number" name="mentally_challenged_f_total" id="mentally_challenged_f_total"></td>
+                     </div>
+                    <div>
+                        <td><label for="multiple_handicaps_f_total" hidden>Multiple Handicaps:</label>
+                            <input type="number" name="multiple_handicaps_f_total" id="multiple_handicaps_f_total"></td>
+                    </div>
+                    <div>
+                        <td><label for="autistic_f_total" hidden>Autistic:</label>
+                            <input type="number" name="autistic_f_total" id="autistic_f_total"></td>
+                    </div>
+                    <div>
+                        <td><label for="physically_challenged_f_total" hidden>Physically Challenged:</label>
+                            <input type="number" name="physically_challenged_f_total" id="physically_challenged_f_total">
+                        </td>
+                    </div>
+                    
+                </tr>
+            </tbody>
+        </table>
+         
+   
+
+                </fieldset>
+            </form>
+        </div>
+    </section>
 </body>
 </html>

@@ -48,6 +48,7 @@
   display: flex;
   margin-top: 5rem;
   
+  
 }
  /* headings */
  .se_headings{
@@ -58,7 +59,8 @@
 .se_nav{
   background-color: rgb(193, 193, 193);
   padding: .5rem;
-  
+   
+ 
 }
  
 .se_nav ul li{
@@ -98,4 +100,27 @@
 background-color: aliceblue;
 
   }
+  /* forms styles */
+  .se_form_tables {
+      margin: 1rem;
+      border-collapse: collapse;
+     
+     
+  }
+ .se_form_tables tr, th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+  }
+   .se_form_tables th {
+      background-color: #f2f2f2;
+  }
+  .se_form_tables td input{
+    width: 100%;
+  }
+  .se_fieldset{
+    margin: 2rem;
+  }
+   
+  
   
