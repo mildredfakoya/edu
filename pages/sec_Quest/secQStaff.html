@@ -37,12 +37,12 @@
         <a href="secQStudent.html">Student</a>
         <a href="secQStaff.html">Staff</a>
         <a href="secQAgeDistribution.html">Age Distribution</a>
+        <a href="secQICT.html">ICT</a>
         <a href="secQCXC.html">CXC</a>
         <a href="secQCVQ.html">CVQ</a>
-        <a href="secQICT.html">ICT</a>
         <a href="secQBuildingFacility.html">Building and Facilities</a>
         <a href="#">Classifications and Definitions</a>
-        <a href="#">Confirmation Page</a>
+        
     </div>
     </section>
     <section class="col-10">
@@ -55,10 +55,10 @@
                     - Please refere to the <a href="secQClassification.html" target="_blank">Classification table</a>.</legend>
                     <div>
                       <nav class="sq-hori-nav"  >
-                        <a class="nav-link" href="#">New</a>
-                        <a class="nav-link" href="#">View</a>
-                        <a class="nav-link" href="#">Update</a>
-                        <a class="nav-link" href="#">Delete</a>
+                        <a class="nav-link" href="#">New Staff Entry</a>
+                        <a class="nav-link" href="#">View Staff</a>
+                        <a class="nav-link" href="#">Update Staff</a>
+                        <a class="nav-link" href="#">Delete Staff</a>
                     </nav>
                     </div>
 
@@ -74,31 +74,138 @@
                     <label for="staff-classification">Classification: &nbsp;</label>
                     <select name="staff-classification" id="staff-classification" class="sq-form-input"> 
                       <option selected>Select staff-classification  &nbsp; </option>
-                      <option value="staff-classification 1">staff-classification 1</option>
-                      <option value="staff-classification 2">staff-classification 2</option>
-                      <option value="staff-classification 3">staff-classification 3</option>
-                      <option value="staff-classification 4">staff-classification 4</option>
-                      <option value="staff-classification 5">staff-classification 5</option>
-                      <option value="staff-classification 6">staff-classification 6</option>
-                      <option value="staff-classification 7">staff-classification 7</option>
-                      <option value="staff-classification 8">staff-classification 8</option>
+                      <option value="HOD">HOD- Head of Department</option>
+                      <option value="PR">PR- Principal</option>
+                      <option value="VP">VP- Vice Principal</option>
+                      <option value="SEC">SEC- Secretary</option>
+                      <option value="GC">GC- Guidance Counsellor</option>
+                      <option value="LC">LC- Literacy Coordinator</option>
+                      <option value="EMIS">EMIS- Emis Coordinator</option>
+                      <option value="LRC">LRC- LRC Coordinator</option>
+                      <option value="LB">LB- Librarian</option>
+                      <option value="SE">SE- Special Education Teacher</option>
+                      <option value="CT">CT- Class Teacher</option>
+                      <option value="MT">MT- Management Team</option>
                     </select><br>
 
                     <label for="tr-type">Teacher Type: &nbsp;</label>
                     <select name="tr-type" id="tr-type" class="sq-form-input">
                       <option selected>Select Teacher Type</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                    </select><br>
+                      <option value="NT">NT- Non Graduate Trained</option>
+                      <option value="NU">NU- Non Graduate Untrained</option>
+                      <option value="GT">GT- Graduate Trained</option>
+                      <option value="GU">GU- Graduate Untrained</option>
+                      <option value="SUB">SUB- Substitute</option>
+                      <option value="TA">TA- Teacher Assistant</option>
+                    </select><br><br>
+                    
+                      <label for="subject-taught">Subjects Taught <i>(Select all which applies)</i> </label> <br>
+                      
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="ENA">ENA- English A 
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="ENB">ENB- English B <br>
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="MAT">MAT- MATHEMATICS 
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="AGR">AGR- Agricultural Science <br>
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="BIO">BIO- Biology
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="HSB">HSB- Human & Social Biology <br>
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="CAH">CAH- Caribbean History
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="CHM">CHM- Chemistry <br>
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="C&T">C&T- Clothing & Textile 
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="ELC">ELC- Electricity <br>
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="F&N">F&N- Food & Nutrition
+                      
+                      
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="FRN">FRN- French <br>
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="GEO">GEO- Geography
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="HEC">HEC- Home Economics <br>
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="IT">IT- Information Technology 
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="HFL">HFL- Health & Family Life <br>
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="IS">IS- Integrated Science
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="OA">OA- Office Administrative <br>
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="PHY">PHY- Physics
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="MUS">MUS- Music <br>
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="POA">POA- Priniciples of Account 
+                      
+                      
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="POB">POB- Principles of Business <br>
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="SS">SS- Social Studies 
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="SP">SP- Spanish <br>
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="TD">TD- Technical Drawing 
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="VA">VA- Visual Arts <br>
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="TA">TA- Theatre Arts 
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="ECN">ECN- Economics <br>
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="BT">BT- Building Technology 
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="EDP">EDP- EDPM <br>
+                      <input type="checkbox" name="subject-taught" id="subject-taught" value="PE">PE- Physical Education <br><br>
 
+                      <label for="tr-exp-yrs">Teaching Experience Years</label>
+                      <input type="number" name="tr-exp-yrs" id="tr-exp-yrs" class="sq-form-input"><br>
+
+                      <label for="tr-age-range">Age Range as of </label>
+                      <input type="number" name="tr-age-range" id="tr-age-range" class="sq-form-input"><br>
+                      (use if actual age is unknown) <br>
+                      <input type="radio" name="tr-age-range" id="tr-age-range" value="A less than 25"> Less than 25
+                      <input type="radio" name="tr-age-range" id="tr-age-range" value="B 25-29"> 25 - 29
+                      <input type="radio" name="tr-age-range" id="tr-age-range" value="C 30-34"> 30 - 34 <br>
+                      <input type="radio" name="tr-age-range" id="tr-age-range" value="D 35-39"> 35 - 39
+                      <input type="radio" name="tr-age-range" id="tr-age-range" value="E 40-44"> 40 - 44 <br>
+                      <input type="radio" name="tr-age-range" id="tr-age-range" value="F 45-49"> 45 - 49
+                      <input type="radio" name="tr-age-range" id="tr-age-range" value="G 50 and over"> 50 and over <br><br>
+                      
+                      <label for="tr-nationality">Nationality</label>
+                      <select name="tr-nationality" id="tr-nationality" class="sq-form-input">
+                          <option selected>Select Nationality</option>
+                          <option value="SLU">SLU- St. Lucian</option>
+                          <option value="OECS">OECS- Other OECS Nationality</option>
+                          <option value="CAR">CAR- Other Caricom</option>
+                          <option value="INT">INT- Non Caricom</option>
+                      </select><br><br>
+
+                      <label for="tr-high-qua">Highest Qualification</label>
+                      <select name="tr-high-qua" id="tr-high-qua" class="sq-form-input">
+                          <option selected>Select Qualification</option>
+                          <option value="BA">BA- Bachelor of Arts</option>
+                          <option value="BSc">BSc- Bachelor of Science</option>
+                          <option value="MA">MA- Masters of Arts</option>
+                          <option value="MSc">MSc- Masters of Science</option>
+                          <option value="MPhills">Masters of Philosophy</option>
+                          <option value="DIP">DIP- Diploma</option>
+                          <option value="CERT">CERT- Certificate</option>
+                          <option value="ASSOC">ASSOC- Associate Degree</option>
+                          <option value="OLEVEL">OLEVEL-GCE/CXC O Level</option>
+                          <option value="ALEVEL">ALEVEL- GCE/CAPE A' Levels</option>
+                          <option value="Phd">Phd- Doctor of Philosophy</option>
+                          <option value="EdD">EdD- Doctor of Education</option>
+                          <option value="BEd">BEd- Bachelor of Education</option>
+                          <option value="CVQ">CVQ- Caribbean Vocational Qualification</option>
+                          <option value="NVQ">NVQ- National Vocational Qualification</option>
+                      </select> <br><br>
+
+                      <label for="tr-spe-qua">Area of Specialization of Highest Qualification</label>
+                     <input type="text" name="tr-spe-qua" id="tr-spe-qua" class="sq-form-input"><br><br>
+
+                     <label for="tr-other-qua">Other Qualification</label>
+                     <input type="text" name="tr-other-qua" id="tr-other-qua" class="sq-form-input"><br><br>
+
+                     <label for="tr-cpd-past">Number of Hours CPD in past year</label>
+                     <input type="number" name="tr-cpd-past" id="tr-cpd-past" class="sq-form-input"><br><br>
+
+                     <label for="tr-appraisal">Was Appraised last School Year?</label>
+                     <input type="radio" name="tr-appraisal" id="tr-appraisal" value="yes" class="sq-form-input">Yes &nbsp;
+                     <input type="radio" name="tr-appraisal" id="tr-appraisal" value="no" class="sq-form-input">No
                 </fieldset>
+                <div>
+                  <input type="submit" name="save" value="Save" class="sq-form-button">
+                </div>
             </form>
         </div>
     </section>
   </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 SOP EDU Forms. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
