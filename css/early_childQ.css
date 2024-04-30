@@ -1,3 +1,4 @@
+/* header styling*/
 .header-nav ul{
     display: inline-flex;
     list-style-type: none;
@@ -32,6 +33,19 @@
     margin-left: 10px;
 }
 
+.header-nav ul li.active > a::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid white;
+    margin-left: 10px; 
+    vertical-align: middle;
+    
+  }
+
 .header-nav ul li:hover .sub-nav-1 ul{
     display: inline-flex;
     margin-top: 10px;
@@ -39,8 +53,8 @@
 
 /* Form Styles*/
 .form-container-ecq{
-    margin: 0 auto;
-    padding: 20px;
+    margin: 10px auto;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -93,19 +107,30 @@ fieldset{
     background-color: #082B64;
 }
 
-/*style for table*/
-table{
-    border-collapse: collapse;
+.form-table1{
+    display: blockss;
 }
 
-th, td{
-    border: 2px ridge;
+
+/* welcome address styling */
+.welcome-address .instructions{
+    margin: 5px;
+    padding: 10px;
+    display: block;
+    margin-bottom: 20px;
+}
+.welcome-address h1  {text-align: center;}
+
+.welcome-address h4 {
     text-align: center;
-    padding: 5px;
-    margin:auto;
-    width: 10px;
+    font-weight: bold;
+    font-family:cursive;
+    
 }
 
-.form-table{
-    width:auto;
+.welcome-address p{
+    text-align: center;
 }
+
+/*style for building evaluation forms*/
+.evaluation-form{display: block;}

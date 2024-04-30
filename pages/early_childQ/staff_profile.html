@@ -80,6 +80,7 @@
                 <legend> Staff Age Range</legend>
                 <label for="age_range" class="form-label"> Age_Range </label>
                 <select name="age_range" id="age_range">
+                    <option value="select one"> Select One</option>
                     <option value="Less than 25"> Less than 25</option>
                     <option value="25-29"> 25-29</option>
                     <option value="30-34">30-34</option>
@@ -94,12 +95,14 @@
                 <div class="form-group-ecq">
                 <fieldset>
                 <legend>Children Age Group Under Care</legend>
-                  <label for="age_grp_care" class="form-label"> Children Age Group: </label>
-                  <select id="age_grp_care" name="age_grp_care">
-                    <option> Birth-2yrs </option>
-                    <option> 3-5+ yrs </option>
-                    <option> Birth-5+yrs </option>
-                  </select>
+                  
+                    <p>Please thick:</p>
+                  <label for="age_grp_care">Birth-2yrs</label>
+                  <input type="checkbox" id="age_grp_care" name="age_grp_care" >
+                  <label for="above3_care">3-5+ yrs</label>
+                  <input type="checkbox" name="above3_care" id="above3_care">
+                  <label for="above5_care">Birth-5+yrs</label>
+                  <input type="checkbox" id="above5_care" name="above5_care"> 
                 </fieldset>
                 </div>
 
