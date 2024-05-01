@@ -7,13 +7,13 @@
   <link rel="stylesheet" href="../../css/main.css">
   <link rel="stylesheet" href="../../css/sec_Quest.css">
 </head>
-<body>
 
+<body>
   <header class="header">
     <h1>Welcome to EDU Forms Project Page</h1>
     <!-- Navigation -->
     <nav class="nav">
-      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="../../index.html">Home</a>
       <a class="nav-link" href="#">About</a>
       <a class="nav-link" href="#">Logout</a>
     </nav>
@@ -29,11 +29,13 @@
 
 <section class="row">
   <div class="sq-cover">
-    <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Annual Education Census Questionnaire 
+    <br><h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Annual Education Census Questionnaire 
       Secondary School 2020-21 Academic Year</h3>
+     
     <form action="secQSchool.html" method="post" autocomplete="off">
-      <fieldset class="sq-cover-fieldset">
-        <label for="district">Select District: &nbsp;</label>
+      <!--<fieldset class="sq-cover-fieldset" style="margin: auto;">-->
+      <div class="sq-form-group">
+        <label for="district" class=" form-label">Select District: &nbsp;</label>
         <select name="district" id="district" class="sq-form-input"> 
           <option selected>Select District  &nbsp; </option>
           <option value="district 1">District 1</option>
@@ -44,33 +46,44 @@
           <option value="district 6">District 6</option>
           <option value="district 7">District 7</option>
           <option value="district 8">District 8</option>
-        </select><br>
+        </select>
+      
+
         <!--School list should change as per the district selection-->
-        <label for="schoolname">Name of the School: &nbsp;</label>
+      
+        <label for="schoolname" class="sq-form-label">Name of the School: &nbsp;</label>
         <select name="schoolname" id="schoolname" class="sq-form-input"> 
               <option selected>Select School</option>
               <option value="babonneau secondary">Babonneau Secondary</option>
               <option value="corinth secondary">Corinth Secondary</option>
               <option value="saint lucia sports academy">Saint Luica Sports Academy</option>
-        </select><br><br>
-        <h4 style="text-align: justify; font-style: oblique;">Instructions:</h4>
-          
-            <p>1. &nbsp;All data furnished in this questionnaire should refer to the day of <b>October 15, 2020.</b>
+        </select>
+      </div>
+
+      <h4 style="text-align: center; font-style: oblique;">Instructions:</h4>
+          <p class="sq-cover-para">1. &nbsp;All data furnished in this questionnaire should refer to the day of <b>October 15, 2020.</b>
             The completed questionnaire should reach your <b>District Office</b> by <b>November 20, 2020.</b></p>
-            <p>2. &nbsp;Please refer to the <i style="color: blue;">classifications</i> for teachers and explanatory notes provided on the 
+          <p class="sq-cover-para">2. &nbsp;Please refer to the <i style="color: blue;">classifications</i> for teachers and explanatory notes provided on the 
               last two pages before completing the questionnaire. You may contact officers of the Department
             of Education, Innovation and Gender Relations at <b>468-3220/3221</b> or at the <i>educationstats@gmail.com</i> 
           for any assistance required in completing the questionnaire.</p><br>
           
-        <label for="principal-name">Name of the Principal: &nbsp;</label>
-        <input type="text" name="principal-name" id="principal-name" class="sq-form-input"><br>
-        <label for="date">Completed Date: &nbsp;</label>
+      <div class="sq-form-group">
+        <label for="principal-name" class="form-label">Name of the Principal: &nbsp;</label>
+        <input type="text" name="principal-name" id="principal-name" class="sq-form-input">
+     
+        <label for="date" class="sq-form-label">Completed Date: &nbsp;</label>
         <input type="date" name="date" id="date" class="sq-form-input"><br><br>
+      </div>
 
         <!--<button type="submit" class="sq-form-button">Continue</button>-->
+      <div class="sq-form-group">
         <input type="submit" name="continue" value="Continue" class="sq-form-button">
-      </fieldset>
+      </div>
+
+      <!--</fieldset>-->
     </form>
+     
   </div>
 </section>
 
