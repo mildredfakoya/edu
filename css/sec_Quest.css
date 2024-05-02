@@ -56,8 +56,6 @@
     display: inline-flex;
     justify-content:center;
     align-items: center;
-    
-
 }
 .sq-form{
     height: auto;
@@ -70,7 +68,7 @@
     /*display:block;*/
     font-weight: bold;
     margin-left: 10px;
-  }
+}
 .sq-form-input
 {
     width:auto;
