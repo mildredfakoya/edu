@@ -48,12 +48,12 @@
     <section class="col-10">
     <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Student Enrollment Form</h3>
     <div>  
-      
+      <form action="" method="post" autocomplete="on">
       <table class="sq-table sq-form" >
         <caption class="sq-table-caption">T2:Distribution of Current Enrollment according to New Entrants,
           Repeaters and Transfers in the school.
         </caption>
-          <form action="" method="post" autocomplete="on">
+         
             <tr>
               <th rowspan="2"></th>
               <th rowspan="2">Gender</th>
@@ -185,7 +185,7 @@
               <td><input type="number" name="totalcurrentstud" id="totalcurrentstud" class="sq-table-input"></td>
               
             </tr>
-            <tr>
+           <!-- <tr>
               <td colspan="11">
                 <div>
                   <input type="submit" name="save" value="Save" class="sq-form-button">
@@ -193,11 +193,12 @@
                 </div>
               </td>
             </tr>
-          </form>
+          </form>-->
   </table><br>
+  <!--<form action="" method="post" autocomplete="on">-->
   <table class="sq-table" >
     <caption class="sq-table-caption">T3: School Leavers during the Last School Year (Students Outflow)</caption>
-      <form action="" method="post" autocomplete="on">
+      
         <tr>
           <th rowspan="2"></th>
           <th rowspan="2">Gender</th>
@@ -333,7 +334,7 @@
           <td><input type="number" name="totaldropouts" id="totaldropouts" class="sq-table-input"></td>
           <td></td>
         </tr>
-        <tr>
+        <!--<tr>
           <td colspan="11">
             <div>
               <input type="submit" name="save" value="Save" class="sq-form-button">
@@ -341,12 +342,12 @@
             </div>
           </td>
         </tr>
-      </form>
-    </table><br>
+      </form>-->
+   <br> </table><br>
     <table class="sq-table" >
       <br>
       <caption class="sq-table-caption">T4: Reasons for Dropouts in the Last Year</caption>
-        <form action="" method="post" autocomplete="on">
+       <!-- <form action="" method="post" autocomplete="on">-->
           <tr>
             <th rowspan="2">Reason</th>
             <th rowspan="2">Gender</th>
@@ -528,8 +529,8 @@
           </tr>
           <tr>
             <th><input type="checkbox" name="unknown-reason" id="unknown-reason" value="F" class="sq-table-input">F</th>
-          </tr>
-            <tr>
+        </tr>
+            <!--  <tr>
             <td colspan="11">
               <div>
                 <input type="submit" name="save" value="Save" class="sq-form-button">
@@ -537,8 +538,13 @@
               </div>
             </td>
           </tr>
-          </form>
+          </form>-->
     </table>
+    <div>
+      <input type="submit" name="save" value="Save" class="sq-form-button">
+      <input type="submit" name="next" value="Next" class="sq-form-button">
+    </div>
+  </form>
   </div>
     </section>
 </section>
