@@ -17,358 +17,424 @@
           <a class="nav-link" href="#">About</a>
           <a class="nav-link" href="#">Logout</a>
         </nav>
-      </header>
+    </header>
 
-  <section class="row">
-    <div class="col-3">
-        <div class="form_sidenav_ecq">
-        <h3>Side Navigation </h3>
-        <nav><a href="ecQ_home.html">Home</a></nav>
-        <nav><a href="demography.html">Demography</a></nav>
-        <nav><a href="staff_profile.html"> Staff Profile</a></nav>
-        <nav><a href="children_profile.html">Children Profile</a></nav>
+    <section class="row">
+        <div >
+          <h2 class="ecq-section-heading">Government of St. Lucia</h2>
+          <h3 class="ecq-section-heading">Ministry of Education, Innovation Gender Relations 
+            and Sustainable Development</h3>
+            <h3 class="ecq-section-heading" style="font-style: italic; padding: 5px;">Annual Education Census Questionnaire 
+              Secondary School 2020-21 Academic Year</h3>
         </div>
+    </section>
 
-    </div>
-
-    <div class="col-9 form-body">
-        
-          <div><h2> Children Profile Form</h2></div>
+    <!--Side navigation of the form sections-->
+    <section class="row">
+        <section class="col-2">
+            <div class="ecq-sidenav">
+          <nav><a href="ecQ_home.html">Home</a></nav>
+          <nav><a href="demographics.html">Demography</a></nav>
+          <nav><a href="staff_profile.html">Staff Profile</a></nav>
+          <nav><a href="children_profile.html">children Profile</a></nav>
+            </div>  
+        </section>
+ 
+        <!--main form section-->    
+        <section class="col-10">
+            <div class="ecq-form">
+                <div> <h2 class="ecq-section-heading"> Children Profile </h2> </div>
               
-         <form action="" method="POST">
+                <form action="" method="POST" autocomplete="off">
 
-            <div class="form-group-ecq">
-                <fieldset>
-                    <legend><h2>Enrollment by Age and Sex</h2></legend>
-                    <div>
-                        <h4>&lt; 1 year</h4>
-                        <label for="less_year1_male" class="form-label">Male:</label>
-                        <input type="number" id="less_year1_male" name="less_year1_male">
-                    </div>
-                    <div>
+                    <div class="form-group-ecq">
+                    <fieldset>
+                        <legend><h2>Enrollment by Age and Sex</h2></legend>
                         
-                        <label for="less_year1_female">Female:</label>
+                        <div>
+                        <h4>&lt; 1 year</h4>
+                        <label for="less_year1_male">Male:</label>
+                        <input type="number" id="less_year1_male" name="less_year1_male">
+                    
+                       <label for="less_year1_female">Female:</label>
                         <input type="number" id="less_year1_female" name="less_year1_female">
-                    <div>
+                    
                         <label for="less_year1_total">Total</label>
                         <input type="text" id="less_year1_total" name="less_year1_total">                    
-                    </div>
+                        </div>
                
-                    <h4>1 year</h4>
-                    <div>
+                    
+                        <div>
+                        <h4>1 year</h4>
                         <label for="less_year1_male">Male:</label>
                         <input type="number" id="less_year1_male" name="less_year1_male">
-                    </div>
-                    <div>
+                    
                         <label for="less_year1_female">Female:</label>
                         <input type="number" id="less_year1_female" name="less_year1_female">
-                    <div>
+                    
                         <label for="less_year1_total">Total</label>
                         <input type="text" id="less_year1_total" name="less_year1_total">                    
-                    </div>
+                        </div>
                 
                 
                 
-                    <h4>2 year</h4>
-                    <div>
+                    
+                        <div>
+                        <h4>2 year</h4>
                         <label for="less_year1_male">Male:</label>
                         <input type="number" id="less_year1_male" name="less_year1_male">
-                    </div>
-                    <div>
+                   
                         <label for="less_year1_female">Female:</label>
                         <input type="number" id="less_year1_female" name="less_year1_female">
-                    <div>
+                    
                         <label for="less_year1_total">Total</label>
                         <input type="text" id="less_year1_total" name="less_year1_total">                    
-                    </div>
+                        </div>
                 
                
-                    <h4>3 year</h4>
-                    <div>
+                        <div>
+                        <h4> 3 year</h4>
                         <label for="less_year1_male">Male:</label>
                         <input type="number" id="less_year1_male" name="less_year1_male">
-                    </div>
-                    <div>
+                    
                         <label for="less_year1_female">Female:</label>
                         <input type="number" id="less_year1_female" name="less_year1_female">
-                    <div>
+                    
                         <label for="less_year1_total">Total</label>
                         <input type="text" id="less_year1_total" name="less_year1_total">                    
-                    </div>
+                        </div>
                 
-                    <h4>4 year</h4>
-                    <div>
+                        <div>
+                        <h4> 4 year</h4>
                         <label for="less_year1_male">Male:</label>
                         <input type="number" id="less_year1_male" name="less_year1_male">
-                    </div>
-                    <div>
+                
                         <label for="less_year1_female">Female:</label>
                         <input type="number" id="less_year1_female" name="less_year1_female">
-                    <div>
+                            
                         <label for="less_year1_total">Total</label>
                         <input type="text" id="less_year1_total" name="less_year1_total">                    
-                    </div>
+                        </div>
                 
-                    <h4>Above 5 Year</h4>
-                    <div>
+                    
+                        <div>
+                        <h4>Above 5 Year</h4>
                         <label for="less_year1_male">Male:</label>
                         <input type="number" id="less_year1_male" name="less_year1_male">
-                    </div>
-                    <div>
+                   
                         <label for="less_year1_female">Female:</label>
                         <input type="number" id="less_year1_female" name="less_year1_female">
-                    <div>
+                    
                         <label for="less_year1_total">Total</label>
                         <input type="text" id="less_year1_total" name="less_year1_total">                    
-                    </div>
-                
-                
-                    <h4>Total Enrolment by Sex</h4>
-                    <div>
+                        </div>
+                    
+                    
+                        <div>
+                        <h4>Total Enrolment by Sex</h4>
                         <label for="total-sex-male">Total male Enrolled:</label>
                         <input type="number" id="total-sex-male" name="total-sex-male">
-                    <div>
-                    <div>
+                    
                         <label for="total-sex-female">Total Female Enrolled:</label>
                         <input type="number" id="total-sex-female" name="total-sex-female">
-                    <div>
+                    
                         <label for="total_gender-enrolled">Total Gender Enrolled</label>
                         <input type="text" id="total_gender-enrolled" name="total_gender-enrolled">                    
+                        </div>
+                    </fieldset>
                     </div>
-                </fieldset>
-            </div>
-        </form>    
+
+
+                    <div class="form-table">
+                        <fieldset>
+                            <legend>Distribution of Current Enrolment According to  Areas of Impairment by Sex:</legend>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Area of Impairment</th>
+                                        <th colspan="2" class="table-heading">Speech</th>
+                                        <th colspan="2" class="table-heading">Vision</th>
+                                        <th colspan="2" class="table-heading">Hearing</th>
+                                        <th colspan="2" class="table-heading">Physical Challenged</th>                                
+                                    </tr>
+                                    <tr>
+                                        <th>Gender</th>
+                                        <th>Observed</th>
+                                        <th>Diagnosed</th>
+                                        <th>Observed</th>
+                                        <th>Diagnosed</th>
+                                        <th>Observed</th>
+                                        <th>Diagnosed</th>
+                                        <th>Observed</th>
+                                        <th>Diagnosed</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><label for="male_no"></label> Male</td>
+                                        <td><input type="text" name="male_no" id="male_no" class="table-input"></td>
+                                        <td><input type="text" name="male_no" id="male_no"></td>
+                                        <td><input type="text" name="male_no" id="male_no"></td>
+                                        <td><input type="text" name="male_no" id="male_no"></td>
+                                        <td><input type="text" name="male_no" id="male_no"></td>
+                                        <td><input type="text" name="male_no" id="male_no"></td>
+                                        <td><input type="text" name="male_no" id="male_no"></td>
+                                        <td><input type="text" name="male_no" id="male_no"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="female_no"></label> Female</td>
+                                        <td><input type="text" name="female_no" id="female_no"></td>
+                                        <td><input type="text" name="female_no" id="female_no"></td>
+                                        <td><input type="text" name="female_no" id="female_no"></td>
+                                        <td><input type="text" name="female_no" id="female_no"></td>
+                                        <td><input type="text" name="female_no" id="female_no"></td>
+                                        <td><input type="text" name="female_no" id="female_no"></td>
+                                        <td><input type="text" name="female_no" id="female_no"></td>
+                                        <td><input type="text" name="female_no" id="female_no"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="total_no_1"></label> Total</td>
+                                        <td><input type="text" name="total_no_1" id="total_no_1"></td>
+                                        <td><input type="text" name="total_no_1" id="total_no_1"></td>
+                                        <td><input type="text" name="total_no_1" id="total_no_1"></td>
+                                        <td><input type="text" name="total_no_1" id="total_no_1"></td>
+                                        <td><input type="text" name="total_no_1" id="total_no_1"></td>
+                                        <td><input type="text" name="total_no_1" id="total_no_1"></td>
+                                        <td><input type="text" name="total_no_1" id="total_no_1"></td>
+                                        <td><input type="text" name="total_no_1" id="total_no_1"></td>
+                                    </tr>
+                                </tbody>
+                            </table>                    
+        
+                        </fieldset>
+                    </div>
+                
+                   
+                    <div class="form-group-ecq"> 
+                        <form action="" method="post">
+                        <fieldset>
+                            <legend>Distribution of Current Enrolment According to  Areas of Impairment by Sex</legend>
+                            <fieldset>
+                                <legend>Speech Area of Impairment</legend>
+                                    <div><h4> Speech Observed: </h4></div>  
+                    
+                                <div>
+                                <label for="speech_male_o"> Male: </label>
+                                <input type="number" name="speech_male_o" id="speech_male_o">
+                                
+                            
+                                <label for="speech_female_o"> Female: </label>
+                                <input type="number" name="speech_female_o" id="speech_female_o">
+                                
+                                <label for="speech_total_o">Total: </label>
+                                <input type="number" name="speech_total_o" id="speech_total_o">
+                                </div> 
+
+                                <div>
+                                <div><h4> Speech Diagnosed: </h4></div>                       
+                    
+                                <div>
+                                <label for="speech_male_d"> Male: </label>
+                                <input type="number" name="speech_male_d" id="speech_male_d">
+                    
+                                
+                                <label for="speech_female_d"> Female: </label>
+                                <input type="number" name="speech_female_d" id="speech_female_d">
+        
+                                <label for="speech_total_d">Total: </label>
+                                <input type="number" name="speech_total_d" id="speech_total_d">
+                                </div> 
+                            </fieldset> 
+
+                            <fieldset>
+                                <legend>Vision Area of Impairment</legend>
+                                <div><p> Vision Observed: </p></div>
+                                <div>
+                                <label for="vision_male_o"> Male: </label>
+                                <input type="number" name="vision_male_o" id="vision_male_o">
+                  
+                                <label for="vision_female_o"> Female: </label>
+                                <input type="number" name="vision_female_o" id="vision_female_o">
+                    
+                                <label for="vision_total_o">Total: </label>
+                                <input type="number" name="vision_total_o" id="vision_total_o">
+                                </div> 
+
+                                <div><p>Vision Diagnosed: </p></div>                       
+                    
+                                <div>
+                                <label for="vision_male_d"> Male: </label>
+                                <input type="number" name="vision_male_d" id="vision_male_d">
                
-
-
-        <div class="form-group-ecq"> 
-            <form action="" method="post">
-            <fieldset>
-                <legend>Distribution of Current Enrolment According to  Areas of Impairment by Sex</legend>
-                <fieldset>
-                    <legend>Speech Area of Impairment</legend>
-                    <div>
-                        <h4> Speech Observed: </h4>
-                            <p></p>
-                    </div>  
+                                <label for="vision_female_d"> Female: </label>
+                                <input type="number" name="vision_female_d" id="vision_female_d">
                     
-                    <div>
-                    <label for="speech_male_o"> Male: </label>
-                    <input type="number" name="speech_male_o" id="speech_male_o">
-                    </div>
-                            
-                    <div class="form-table1">
-                            <label for="speech_female_o"> Female: </label>
-                            <input type="number" name="speech_female_o" id="speech_female_o">
-                    </div>
+                                <label for="vision_total_d">Total: </label>
+                                <input type="number" name="vision_total_d" id="vision_total_d">
+                                </div> 
+                            </fieldset> 
 
-                    <div>
-                            <label for="speech_total_o">Total: </label>
-                            <input type="number" name="speech_total_o" id="speech_total_o">
-                    </div> 
-
-                    <div>
-                                <h4> Speech Diagnosed: </h4>
-                                <p></p>
-                    </div>                       
+                            <fieldset>
+                                <legend>Physically Challenged Area of Impairment</legend>
+                                <div><p> Physical Challenged Observed: </p></div>  
                     
-                    <div>
-                            <label for="speech_male_d"> Male: </label>
-                            <input type="number" name="speech_male_d" id="speech_male_d">
-                    </div>
+                                <div>
+                                <label for="pcm_o"> Male: </label>
+                                <input type="number" name="pcm_o" id="pcm_o">
+                   
+                                <label for="pc_female_o"> Female: </label>
+                                <input type="number" name="pc_female_o" id="pc_female_o">
+                   
+                                <label for="pct_o">Total: </label>
+                                <input type="number" name="pct_o" id="pc_o">
+                                </div> 
+
+                                <div><p>Physical Challenged Diagnosed: </p></div>                       
                     
-                    <div class="form-table1">
-                            <label for="speech_female_d"> Female: </label>
-                            <input type="number" name="speech_female_d" id="speech_female_d">
-                    </div>
+                                <div>
+                                <label for="pc_male_d"> Male: </label>
+                                <input type="number" name="pc_male_d" id="pc_male_d">
+                  
+                                <label for="pc_female_d"> Female: </label>
+                                <input type="number" name="pc_female_d" id="pc_female_d">
+                   
+                                <label for="pc_total_d">Total: </label>
+                                <input type="number" name="pc_total_d" id="pc_total_d">
+                                </div> 
+                            </fieldset> 
 
-                    <div class="form-table1">
-                            <label for="speech_total_d">Total: </label>
-                            <input type="number" name="speech_total_d" id="speech_total_d">
-                    </div> 
-                </fieldset> 
-
-                <fieldset>
-                    <legend>Vision Area of Impairment</legend>
-                    <div><p> Vision Observed: </p></div>  
+                            <fieldset>
+                                <legend>Hearing Area of Impairment</legend>
+                                <div><p>Hearing Observed:</p></div>  
                     
-                    <div>
-                    <label for="vision_male_o"> Male: </label>
-                    <input type="number" name="vision_male_o" id="vision_male_o">
-                    </div>
-                            
-                    <div class="form-table1">
-                            <label for="vision_female_o"> Female: </label>
-                            <input type="number" name="vision_female_o" id="vision_female_o">
-                    </div>
-
-                    <div>
-                            <label for="vision_total_o">Total: </label>
-                            <input type="number" name="vision_total_o" id="vision_total_o">
-                    </div> 
-
-                    <div>
-                    <p>Vision Diagnosed: </p>
-                    </div>                       
+                                <div>
+                                <label for="HMO"> Male: </label>
+                                <input type="number" name="HMO" id="HMO">
+                 
+                                <label for="hfo"> Female: </label>
+                                <input type="number" name="hfo" id="hfo">
                     
-                    <div>
-                            <label for="vision_male_d"> Male: </label>
-                            <input type="number" name="vision_male_d" id="vision_male_d">
-                    </div>
+                                <label for="hto">Total: </label>
+                                <input type="number" name="hto" id="hto">
+                                </div> 
+
+                                <div><p>Hearing Diagnosed: </p></div>                       
                     
-                    <div class="form-table1">
-                            <label for="vision_female_d"> Female: </label>
-                            <input type="number" name="vision_female_d" id="vision_female_d">
-                    </div>
-
-                    <div class="form-table1">
-                            <label for="vision_total_d">Total: </label>
-                            <input type="number" name="vision_total_d" id="vision_total_d">
-                    </div> 
-                </fieldset> 
-
-                <fieldset>
-                    <legend>Physically Challenged Area of Impairment</legend>
-                    <div><p> Physical Challenged Observed: </p></div>  
+                                <div>
+                                <label for="hmd"> Male: </label>
+                                <input type="number" name="hmd" id="hmd">
                     
-                    <div>
-                    <label for="pcm_o"> Male: </label>
-                    <input type="number" name="pcm_o" id="pcm_o">
-                    </div>
-                            
-                    <div class="form-table1">
-                            <label for="pc_female_o"> Female: </label>
-                            <input type="number" name="pc_female_o" id="pc_female_o">
-                    </div>
-
-                    <div>
-                            <label for="pct_o">Total: </label>
-                            <input type="number" name="pct_o" id="pc_o">
-                    </div> 
-
-                    <div>
-                    <p>Physical Challenged Diagnosed: </p>
-                    </div>                       
-                    
-                    <div>
-                            <label for="pc_male_d"> Male: </label>
-                            <input type="number" name="pc_male_d" id="pc_male_d">
-                    </div>
-                    
-                    <div class="form-table1">
-                            <label for="pc_female_d"> Female: </label>
-                            <input type="number" name="pc_female_d" id="pc_female_d">
-                    </div>
-
-                    <div class="form-table1">
-                            <label for="pc_total_d">Total: </label>
-                            <input type="number" name="pc_total_d" id="pc_total_d">
-                    </div> 
-                </fieldset> 
-
-                <fieldset>
-                    <legend>Hearing Area of Impairment</legend>
-                    <div><p>Hearing Observed:</p></div>  
-                    
-                    <div>
-                    <label for="HMO"> Male: </label>
-                    <input type="number" name="HMO" id="HMO">
-                    </div>
-                            
-                    <div class="form-table1">
-                            <label for="hfo"> Female: </label>
-                            <input type="number" name="hfo" id="hfo">
-                    </div>
-
-                    <div>
-                            <label for="hto">Total: </label>
-                            <input type="number" name="hto" id="hto">
-                    </div> 
-
-                    <div></div><p>Vision Diagnosed: </p></div>                       
-                    
-                    <div>
-                            <label for="hmd"> Male: </label>
-                            <input type="number" name="hmd" id="hmd">
-                    </div>
-                    
-                    <div class="form-table1">
-                            <label for="hfd"> Female: </label>
-                            <input type="number" name="hfd" id="hfd">
-                    </div>
-
-                    <div class="form-table1">
-                            <label for="htd">Total: </label>
-                            <input type="htd" name="htd" id="htd">
-                    </div> 
-                </fieldset> 
-
-            </fieldset>
-            </form>
-        </div>
-       
-        <div class="form-group-ecq"> 
+                                <label for="hfd"> Female: </label>
+                                <input type="number" name="hfd" id="hfd">
+                
+                                <label for="htd">Total: </label>
+                                <input type="htd" name="htd" id="htd">
+                                </div> 
+                            </fieldset>
+                        </fieldset>    
             
-            <form>               
-            <fieldset>
-                <legend>Other Areas of Impairment </legend>
-                <div>
-                    <label for="other_impairment">Area of Impairment: </label>
-                    <input type="text" name="other_impairment" id="other_impairment">
-               </div>
+                    </div>
+       
+                    <div class="form-group-ecq"> 
+                        <fieldset>
+                        <legend>Other Areas of Impairment </legend>
+                        <div>
+                        <label for="other_impairment">Area of Impairment: </label>
+                        <input type="text" name="other_impairment" id="other_impairment">
+                        </div>
 
-                <div>
-                    <label for="other_male_impair_observed">Observed Male:</label>
-                    <input type="text" name="other_male_impair_observed" id="other_male_impair_observed" placeholder="Enter no of male observed">
-               </div>
+                        <div>
+                        <label for="other_male_impair_observed">Observed Male:</label>
+                        <input type="text" name="other_male_impair_observed" id="other_male_impair_observed" placeholder="Enter no of male observed">
+                        </div>
 
-               <div>
-                    <label for="other_female_impair_observed">Observed female:</label>
-                    <input type="text" name="other_female_impair_observed" id="other_female_impair_observed" placeholder="Enter no of female observed">
-                </div>
+                        <div>
+                        <label for="other_female_impair_observed">Observed female:</label>
+                        <input type="text" name="other_female_impair_observed" id="other_female_impair_observed" placeholder="Enter no of female observed">
+                        </div>
 
-               <div>
-                    <label for="total_impair_observed">Total Observed:</label>
-                    <input type="text" name="total_impair_observed" id="total_impair_observed" placeholder="Enter the total no observed">
-               </div>
+                        <div>
+                        <label for="total_impair_observed">Total Observed:</label>
+                        <input type="text" name="total_impair_observed" id="total_impair_observed" placeholder="Enter the total no observed">
+                        </div>
 
-                <div>
-                    <label for="male_impair_diagnosed">Diagnosed Male:</label>
-                    <input type="text" name="male_impair_diagnosed" id="male_impair_diagnosed" placeholder="Enter no of male Diagnosed">
-               </div>
+                        <div>
+                        <label for="male_impair_diagnosed">Diagnosed Male:</label>
+                        <input type="text" name="male_impair_diagnosed" id="male_impair_diagnosed" placeholder="Enter no of male Diagnosed">
+                        </div>
 
-               <div>
-                    <label for="female_impair_diagnosed">Diagnosed female:</label>
-                    <input type="text" name="female_impair_diagnosed" id="female_impair_diagnosed" placeholder="Enter no of female Diagnosed">
-               </div>
+                        <div>
+                        <label for="female_impair_diagnosed">Diagnosed female:</label>
+                        <input type="text" name="female_impair_diagnosed" id="female_impair_diagnosed" placeholder="Enter no of female Diagnosed">
+                        </div>
 
-                <div>
-                    <label for="total_impair_diagnosed">Total Diagnosed:</label>
-                    <input type="text" name="total_impair_diagnosed" id="total_impair_diagnosed" placeholder="Enter the total no Diagnosed">
-               </div>
+                        <div>
+                        <label for="total_impair_diagnosed">Total Diagnosed:</label>
+                        <input type="text" name="total_impair_diagnosed" id="total_impair_diagnosed" placeholder="Enter the total no Diagnosed">
+                        </div>
+                    
+                        </fieldset>
+                    </div>
+
+                    <fieldset>
+                        <legend>Other Areas of Impairment </legend>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="3" class="table-heading"></th>
+                                    <th colspan="3" class="table-heading">Observed</th>
+                                    <th colspan="3" class="table-heading">Diagnosed</th>
+                                     
+                                </tr>
+                                <tr>
+                                    <tr>
+                                        <th colspan="3"> Area of Impairment</th>
+                                        <th>Male</th>
+                                        <th>Female</th>
+                                        <th>Total</th>
+                                        <th>Male</th>
+                                        <th>Female</th>
+                                        <th>Total</th>    
+                                    </tr>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                        <td><label for="male_no"></label> Male</td>
+                                        <td><input type="text" name="male_no" id="male_no" class="table-input"></td>
+                                        <td><input type="text" name="male_no" id="male_no"></td>
+                                        <td><input type="text" name="male_no" id="male_no"></td>
+                                        <td><input type="text" name="male_no" id="male_no"></td>
+                                        <td><input type="text" name="male_no" id="male_no"></td>
+                                        <td><input type="text" name="male_no" id="male_no"></td>
+                                        <td><input type="text" name="male_no" id="male_no"></td>
+                                        <td><input type="text" name="male_no" id="male_no"></td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
 
 
-            </fieldset>
-            </form>
 
-        </div>    
 
+
+
+                </form>
+            
+            </div>
+
+        </section>
+           
+
+    </section>
+
+
+    <footer class="footer">
+    <div class="container">
+      <p>© 2024 SOP EDU Forms. All rights reserved.</p>
     </div>
-</section>
-
-<footer class="row">
-    <div class="col-12">
-        <ul>
-                <li><a href="../early_childQ/ecQ_home.html"> Home</a></li>
-                <li><a href="../early_childQ/demography.html"> Demography</a></li>
-                <li><a href="../early_childQ/children_profile.html"> Children</a></li>
-                <li><a href="../early_childQ/staff_profile.html"> Staff</a></li>
-            </ul>
-    </div>
-
-    <div>
-            &copy;
-    </div>
-</footer>
+    </footer>
 </body>
+
 </html>  
