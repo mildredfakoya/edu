@@ -1,3 +1,6 @@
+
+/* Side navigation style*/
+
 .sq-sidenav
 {
     height: 100%;
@@ -14,11 +17,14 @@
 .sq-sidenav li
 {
     list-style-type: none;
+    border-radius: 5px;
+    border: 1px groove  rgb(204, 204, 200);
+    
 }
-
 .sq-sidenav a
 {
     text-decoration: none;
+     
     font-size: 15px;
     padding: 5px;
     display: block;
@@ -27,8 +33,10 @@
 .sq-sidenav a:hover
 {
     text-decoration: none;
-    color: white;  
+    color: white 
 }
+/* Body style*/
+
 .sq-section-heading
 {
     text-align: center;
@@ -41,15 +49,18 @@
     border-radius: 5px;
     background-color: rgb(231, 231, 228);
 }
-.sq-cover-fieldset{
-    border: 0px;
-}
-
 .sq-cover-para
 {
     margin: 25px;
 }
-.sq-form-group{
+.sq-cover-fieldset{
+    border: 0px;
+}
+
+/* Forms styling*/
+
+.sq-form-group
+{
     width: 100%;
     height: auto;
     margin: 20px;
@@ -57,15 +68,16 @@
     justify-content:center;
     align-items: center;
 }
-.sq-form{
+.sq-form
+{
     height: auto;
     width: 100%;
     position: relative;
     border-radius: 5px;
     /*background-color: rgb(231, 231, 228);*/
 }
-.sq-form-label{
-    /*display:block;*/
+.sq-form-label
+{
     font-weight: bold;
     margin-left: 10px;
 }
@@ -73,15 +85,10 @@
 {
     width:auto;
     margin-bottom: 3px;
-   /* margin-left: 3px;*/
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-/*.sq-form label
-{
-    font-weight: bold;
-}*/
 .sq-form-button{
     width: max-content;
     padding: 10px;
@@ -104,6 +111,7 @@
     font-style: italic;
     color: gray;
 }
+/* table styling*/
 .sq-table
 {
   height: auto;
@@ -145,4 +153,33 @@
 }
 .sq-hori-nav a{
     color: black;
+}
+/* New table style*/
+.sq_form_tables {
+    /*margin: 1rem;*/
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse:collapse;
+    background-color: rgb(231, 231, 228);
+}
+.sq_form_tables tr, th, td {
+    border: groove 1px rgb(118, 119, 114);
+    padding: 8px;
+    text-align: center;
+}
+ .sq_form_tables th {
+    background-color: #f2f2f2;
+}
+.sq_form_tables td input{
+  width:100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.sq-focus
+{
+    background-color: rgb(129, 134, 140);
+    color: white ;
+    border-radius: 5px;
+    text-decoration: none;
+    
 }
