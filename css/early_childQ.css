@@ -1,55 +1,80 @@
-/* header styling*/
-/*.header-nav ul{
+/*section heading styles*/
+
+.ecq-section-heading{
+    text-align: center;
+    margin: 0;
+}
+
+
+.ecq-dist-cover{
+    height: auto;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: rgb(231, 231, 228);
+}
+
+.ecq-form-group{
+    width: 100%;
+    height: auto;
+    margin: 20px;
     display: inline-flex;
-    list-style-type: none;
-  }
-
-.header-nav ul li{
-    width: 100px;
-    margin: 10px;
+    justify-content:center;
+    align-items: center;
+}
+.ecq-form-input
+{
+    width:auto;
+    margin-bottom: 3px;
+    /*margin-left: 3px;*/
     padding: 10px;
-}  
-
-.header-nav ul li a{
-    text-decoration: none;
-    color: white;
-
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.active, .header-nav ul li:hover{
-    background-color: darkblue;
-    border-radius: 3px;
-}
-
-.sub-nav-1{
-    display: none;
-    color: black;
-}
-
-.header-nav ul li:hover .sub-nav-1{
-    display: block;
-    position: absolute;
-    margin-top: 5px;
+.ecq-form-label{
+   /* display: block;
+    font-weight: bold;*/
+    font-weight: bold;
     margin-left: 10px;
 }
 
-.header-nav ul li.active > a::after {
-    content: '';
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid white;
-    margin-left: 10px; 
-    vertical-align: middle;
+.ecq-label {
+   font-style:oblique;
+   font-weight: 700px;
+}
+.ecq-inst-para
+{
+    margin: 25px;
     
-  }
+}
 
-.header-nav ul li:hover .sub-nav-1 ul{
-    display: inline-flex;
-    margin-top: 10px;
-}*/
+.ecq-cover-fieldset{
+    border: 0px;
+}
+
+.ecq-form-fieldset{
+    border: 1px solid #ccc;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.ecq-form{
+    height: auto;
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    /*background-color: rgb(231, 231, 228);*/
+}
+
+.form-group-ecq{
+    margin-bottom: 20px;
+}
+
+#add-style{font-style: italic;
+     padding: 5px;
+}
 
 /* Form Styles*/
 .form-container-ecq{
@@ -59,9 +84,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.form-group-ecq{
-    margin-bottom: 20px;
-}
+
 
 .form-select{
     width: 20%;
@@ -112,54 +135,30 @@
     border: 1px solid #ddd;
 }
 
-.table-heading{
-
+/* coverpage instruction*/
+.form-instruction{
+    text-align: center; 
+    font-style: oblique;
 }
 
 
-/* welcome address styling */
-.welcome-address .instructions{
-    margin: 5px;
-    padding: 10px;
-    display: block;
-    margin-bottom: 20px;
-}
-.welcome-address h1  {text-align: center;}
 
-.welcome-address h4 {
-    text-align: center;
-    font-weight: bold;
-    font-family:cursive;
-    
-}
 
 .welcome-address p{
     text-align: center;
 }
 
 /*style for building evaluation forms*/
-.evaluation-form{display: block;}
+.evaluation-form{display:inline-block;}
 
 
 
-/*styling cover pager*/
 
-.ecq-section-heading{
-    text-align: center;
-    margin: 0;
-    /*margin-top: 5px;*/
- }
 
-.ecq-cover{
-    height: auto;
-    width: 100%;
-    margin: auto;
-    border-radius: 5px;
-    background-color: rgb(231, 231, 228);
-}
-.ecq-cover-fieldset{
-    border: 0px;
-}
+
+
+
+
 .ecq-form{
     height: auto;
     width: 100%;
@@ -168,15 +167,7 @@
     /*background-color: rgb(231, 231, 228);*/
 }
 
-.ecq-form-input
-{
-    width:max-content;
-    margin-bottom: 3px;
-    margin-left: 3px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+
 
 .form-instruction{
     text-align:center; 
@@ -244,27 +235,3 @@
     background-color: rgb(231, 231, 228);
 }
 
-.ecq-form-fieldset{
-    border: 1px solid #ccc;
-    margin-left: 5px;
-    margin-bottom: 10px;
-    padding: 5px;
-}
-
-
-.ecq-form-input
-{
-    width:max-content;
-    margin-bottom: 3px;
-    margin-left: 3px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.ecq-form-label{
-    display: block;
-    font-weight: bold;
-  }
-
- 
