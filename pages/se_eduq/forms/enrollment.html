@@ -291,7 +291,7 @@
                              </div>
                              <div>
                               <td><label for="totalM-Physically" hidden>Physically Challenged</label>
-                                  <input type="number" id="totalM-Physically" name="totalM-Physically">
+                                  <input type="number" id="totalM-Physically" name="totalM-Physically" readonly>
                               </td>
                              </div>
                             
@@ -978,6 +978,7 @@
                     <td>M</td>
                     <div>
                         <td><label for="hearing_impaired_m_lt5" hidden>Hearing Impaired:</label>
+                            <input type="text" name="hearing_impaired_m_1t5" id="hearing_impaired_m_1t5">
                     </div>
                      <div>
                         <td><label for="visually_impaired_m_lt5" hidden >Visually Impaired:</label>
@@ -1585,10 +1586,336 @@
                 </tr>
             </tbody>
         </table>
-         
-   
+          </fieldset>
+          <!-- School leavers form -->
+          <fieldset> 
+            <legend>School Leavers During Last School Year</legend>
+            <table class="se_form_tables">
+                <thead>
+                    <tr>
+                        <th rowspan="2">Type of Leavers</th>
+                        <th rowspan="2">Gender</th>
+                        <th colspan="7">Classes</th>
+                    </tr>
+                    <tr>
+                        <th>Hearing Impaired</th>
+                        <th>Visually Impaired</th>
+                        <th>Learning Difficulties</th>
+                        <th>Mentally Challenged</th>
+                        <th>Multiple Handicaps</th>
+                        <th>Autistic</th>
+                        <th>Physically Challenged</th>
+                    </tr>
+                </thead>
+                <tbody>
+                     <!-- Dropouts -->
+                    <tr>
+                        <td rowspan="2">Dropouts</td>
+                        <td>M</td>
+                        <td><label for="dropout-male-hearing" hidden>Hearing:</label>
+                            <input type="number" id="dropout-male-hearing" name="dropout-male-hearing">
+                        </td>
+                        <td><label for="dropout-male-vision" hidden>Vision:</label>
+                            <input type="number" id="dropout-male-vision" name="dropout-male-vision">
+                        </td>
+                        <td><label for="dropout-male-learning" hidden>Learning:</label>
+                            <input type="number" id="dropout-male-learning" name="dropout-male-learning
+                            ">
+                        </td>
+                        <td><label for="dropout-male-mental" hidden>Mental:</label>
+                            <input type="number" id="dropout-male-mental" name="dropout-male-mental">
+                        </td>
+                        <td><label for="dropout-male-multiple" hidden>Multiple:</label>
+                            <input type="number" id="dropout-male-multiple" name="dropout-male-multiple">
+                        </td>
+                        <td><label for="dropout-male-autistic" hidden>Autistic:</label>
+                            <input type="number" id="dropout-male-autistic" name="dropout-male-autistic">
+                        </td>
+                        <td><label for="dropout-male-physical" hidden>Physical:</label>
+                            <input type="number" id="dropout-male-physical" name="dropout-male-physical">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td><label for="dropout-female-hearing" hidden>Hearing:</label>
+                            <input type="number" id="dropout-female-hearing" name=" dropout-female-hearing">
+                        </td>
+                        <td><label for="dropout-female-vision" hidden>Vision:</label>
+                            <input type="number" id="dropout-female-vision" name="dropout-female-vision">
+                        </td>
+                        <td><label for="dropout-female-learning" hidden>Learning:</label>
+                            <input type="number" id="dropout-female-learning" name="dropout-female-learning">
+                        </td>
+                        <td><label for="dropout-female-mental" hidden>Mental:</label>
+                            <input type="number" id="dropout-female-mental" name="dropout-female-mental">
+                        </td>
+                        <td><label for="dropout-female-multiple" hidden>Multiple:</label>
+                            <input type="number" id="dropout-female-multiple" name="dropout-female-multiple">
+                        </td>
+                        <td><label for="dropout-female-autistic" hidden>Autistic:</label>
+                            <input type="number" id="dropout-female-autistic" name="dropout-female-autistic">
+                        </td>
+                        <td><label for="dropout-female-physical" hidden>Physical:</label>
+                            <input type="number" id="dropout-female-physical" name="dropout-female-physical">
+                        </td>
+                    </tr>
+                    <!-- Transfers to other schools -->
+                    <tr>
+                        <td rowspan="2">Transfers to other schools</td>
+                        <td>M</td>
+                        <td><label for="transfers-other-schools-male-hearing" hidden>Hearing:</label>
+                            <input type="number" id="transfers-other-schools-male-hearing" name="transfers-other-schools-male-hearing">
+                        </td>
+                        <td><label for="transfers-other-schools-male-vision" hidden>Vision:</label>
+                            <input type="number" id="transfers-other-schools-male-vision" name="transfers-other-schools-male-vision">
+                        </td>
+                        <td><label for="transfers-other-schools-male-learning" hidden>Learning:</label>
+                            <input type="number" id="transfers-other-schools-male-learning" name="transfers-other-schools-male-learning">
+                        </td>
+                        <td><label for="transfers-other-schools-male-mental" hidden>Mental:</label>
+                            <input type="number" id="transfers-other-schools-male-mental" name="transfers-other-schools-male-mental">
+                        </td>
+                        <td><label for="transfers-other-schools-male-multiple" hidden>Multiple:</label>
+                            <input type="number" id="transfers-other-schools-male-multiple" name="transfers-other-schools-male-multiple">
+                        </td>
+                        <td><label for="transfers-other-schools-male-autistic" hidden>Autistic:</label>
+                            <input type="number" id="transfers-other-schools-male-autistic" name="transfers-other-schools-male-autistic">
+                        </td>
+                        <td><label for="transfers-other-schools-male-physical" hidden>Physical:</label>
+                            <input type="number" id="transfers-other-schools-male-physical" name="transfers-other-schools-male-physical">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td><label for="transfers-other-schools-female-hearing" hidden>Hearing:</label>
+                            <input type="number" id="transfers-other-schools-female-hearing" name="transfers-other-schools-female-hearing">
+                        </td>
+                        <td><label for="transfers-other-schools-female-vision" hidden>Vision:</label>
+                            <input type="number" id="transfers-other-schools-female-vision" name="transfers-other-schools-female-vision">
+                        </td>
+                        <td><label for="transfers-other-schools-female-learning" hidden>Learning:</label>
+                            <input type="number" id="transfers-other-schools-female-learning" name="transfers-other-schools-female-learning">
+                        </td>
+                        <td><label for="transfers-other-schools-female-mental" hidden>Mental:</label>
+                            <input type="number" id="transfers-other-schools-female-mental" name="transfers-other-schools-female-mental">
+                        </td>
+                        <td><label for="transfers-other-schools-female-multiple" hidden>Multiple:</label>
+                            <input type="number" id="transfers-other-schools-female-multiple" name="transfers-other-schools-female-multiple">
+                        </td>
+                        <td><label for="transfers-other-schools-female-autistic" hidden>Autistic:</label>
+                            <input type="number" id="transfers-other-schools-female-autistic" name="transfers-other-schools-female-autistic">
+                        </td>
+                        <td><label for="transfers-other-schools-female-physical" hidden>Physical:</label>
+                            <input type="number" id="transfers-other-schools-female-physical" name="transfers-other-schools-female-physical">
+                        </td>
+                    </tr>
+                    <!-- Transfers to overseas -->
+                    <tr>
+                        <td rowspan="2">Transfers to Overseas</td>
+                        <td>M</td>
+                        <td><label for="transfers-overseas-male-hearing" hidden>Hearing:</label>
+                            <input type="number" id="transfers-overseas-male-hearing" name="transfers-overseas-male-hearing">
+                        </td>
+                        <td><label for="transfers-overseas-male-vision" hidden>Vision:</label>
+                            <input type="number" id="transfers-overseas-male-vision" name="transfers-overseas-male-vision">
+                        </td>
+                        <td><label for="transfers-overseas-male-learning" hidden>Learning:</label>
+                            <input type="number" id="transfers-overseas-male-learning" name="transfers-overseas-male-learning">
+                        </td>
+                        <td><label for="transfers-overseas-male-mental" hidden>Mental:</label>
+                            <input type="number" id="transfers-overseas-male-mental" name="transfers-overseas-male-mental">
+                        </td>
+                        <td><label for="transfers-overseas-male-multiple" hidden>Multiple:</label>
+                            <input type="number" id="transfers-overseas-male-multiple" name="transfers-overseas-male-multiple">
+                        </td>
+                        <td><label for="transfers-overseas-male-autistic" hidden>Autistic:</label>
+                            <input type="number" id="transfers-overseas-male-autistic" name="transfers-overseas-male-autistic">
+                        </td>
+                        <td><label for="transfers-overseas-male-physical" hidden>Physical:</label>
+                            <input type="number" id="transfers-overseas-male-physical" name="transfers-overseas-male-physical">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td><label for="transfers-overseas-female-hearing" hidden>Hearing:</label>
+                            <input type="number" id="transfers-overseas-female-hearing" name="transfers-overseas-female-hearing">
+                        </td>
+                        <td><label for="transfers-overseas-female-vision" hidden>Vision:</label>
+                            <input type="number" id="transfers-overseas-female-vision" name="transfers-overseas-female-vision">
+                        </td>
+                        <td><label for="transfers-overseas-female-learning" hidden>Learning:</label>
+                            <input type="number" id="transfers-overseas-female-learning" name="transfers-overseas-female-learning">
+                        </td>
+                        <td><label for="transfers-overseas-female-mental" hidden>Mental:</label>
+                            <input type="number" id="transfers-overseas-female-mental" name="transfers-overseas-female-mental">
+                        </td>
+                        <td><label for="transfers-overseas-female-multiple" hidden>Multiple:</label>
+                            <input type="number" id="transfers-overseas-female-multiple" name="transfers-overseas-female-multiple">
+                        </td>
+                        <td><label for="transfers-overseas-female-autistic" hidden>Autistic:</label>
+                            <input type="number" id="transfers-overseas-female-autistic" name="transfers-overseas-female-autistic">
+                        </td>
+                        <td><label for="transfers-overseas-female-physical" hidden>Physical:</label>
+                            <input type="number" id="transfers-overseas-female-physical" name="transfers-overseas-female-physical">
+                        </td>
+                    </tr>
+                    <!-- Graduates -->
+                    <tr>
+                        <td rowspan="2">Graduates</td>
+                        <td>M</td>
+                        <td><label for="graduates-male-hearing" hidden>Hearing:</label>
+                            <input type="number" id="graduates-male-hearing" name="graduates-male-hearing">
+                        </td>
+                        <td><label for="graduates-male-vision" hidden>Vision:</label>
+                            <input type="number" id="graduates-male-vision" name="graduates-male-vision">
+                        </td>
+                        <td><label for="graduates-male-learning" hidden>Learning:</label>
+                            <input type="number" id="graduates-male-learning" name="graduates-male-learning">
+                        </td>
+                        <td><label for="graduates-male-mental" hidden>Mental:</label>
+                            <input type="number" id="graduates-male-mental" name="graduates-male-mental">
+                        </td>
+                        <td><label for="graduates-male-multiple" hidden>Multiple:</label>
+                            <input type="number" id="graduates-male-multiple" name="graduates-male-multiple">
+                        </td>
+                        <td><label for="graduates-male-autistic" hidden>Autistic:</label>
+                            <input type="number" id="graduates-male-autistic" name="graduates-male-autistic">
+                        </td>
+                        <td><label for="graduates-male-physical" hidden>Physical:</label>
+                            <input type="number" id="graduates-male-physical" name="graduates-male-physical">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td><label for="graduates-female-hearing" hidden>Hearing:</label>
+                            <input type="number" id="graduates-female-hearing" name="graduates-female-hearing">
+                        </td>
+                        <td><label for="graduates-female-vision" hidden>Vision:</label>
+                            <input type="number" id="graduates-female-vision" name="graduates-female-vision">
+                        </td>
+                        <td><label for="graduates-female-learning" hidden>Learning:</label>
+                            <input type="number" id="graduates-female-learning" name="graduates-female-learning">
+                        </td>
+                        <td><label for="graduates-female-mental" hidden>Mental:</label>
+                            <input type="number" id="graduates-female-mental" name="graduates-female-mental">
+                        </td>
+                        <td><label for="graduates-female-multiple" hidden>Multiple:</label>
+                            <input type="number" id="graduates-female-multiple" name="graduates-female-multiple">
+                        </td>
+                        <td><label for="graduates-female-autistic" hidden>Autistic:</label>
+                            <input type="number" id="graduates-female-autistic" name="graduates-female-autistic">
+                        </td>
+                        <td><label for="graduates-female-physical" hidden>Physical:</label>
+                            <input type="number" id="graduates-female-physical" name="graduates-female-physical">
+                        </td>
+                    </tr>
+                    <!-- Other -->
+                    <tr>
+                        <td rowspan="2">Other</td>
+                        <td>M</td>
+                        <td><label for="other-male-hearing" hidden>Hearing:</label>
+                            <input type="number" id="other-male-hearing" name="other-male-hearing">
+                        </td>
+                        <td><label for="other-male-vision" hidden>Vision:</label>
+                            <input type="number" id="other-male-vision" name="other-male-vision">
+                        </td>
+                        <td><label for="other-male-learning" hidden>Learning:</label>
+                            <input type="number" id="other-male-learning" name="other-male-learning">
+                        </td>
+                        <td><label for="other-male-mental" hidden>Mental:</label>
+                            <input type="number" id="other-male-mental" name="other-male-mental">
+                        </td>
+                        <td><label for="other-male-multiple" hidden>Multiple:</label>
+                            <input type="number" id="other-male-multiple" name="other-male-multiple">
+                        </td>
+                        <td><label for="other-male-autistic" hidden>Autistic:</label>
+                            <input type="number" id="other-male-autistic" name="other-male-autistic">
+                        </td>
+                        <td><label for="other-male-physical" hidden>Physical:</label>
+                            <input type="number" id="other-male-physical" name="other-male-physical">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td><label for="other-female-hearing" hidden>Hearing:</label>
+                            <input type="number" id="other-female-hearing" name="other-female-hearing">
+                        </td>
+                        <td><label for="other-female-vision" hidden>Vision:</label>
+                            <input type="number" id="other-female-vision" name="other-female-vision">
+                        </td>
+                        <td><label for="other-female-learning" hidden>Learning:</label>
+                            <input type="number" id="other-female-learning" name="other-female-learning">
+                        </td>
+                        <td><label for="other-female-mental" hidden>Mental:</label>
+                            <input type="number" id="other-female-mental" name="other-female-mental">
+                        </td>
+                        <td><label for="other-female-multiple" hidden>Multiple:</label>
+                            <input type="number" id="other-female-multiple" name="other-female-multiple">
+                        </td>
+                        <td>
+                            <label for="other-female-autistic" hidden>Autistic:</label>
+                            <input type="number" id="other-female-autistic" name="other-female-autistic">
+                        </td>
+                        <td><label for="other-female-physical" hidden>Physical:</label>
+                            <input type="number" id="other-female-physical" name="other-female-physical">
+                        </td>
+                    </tr>
+                    <!-- Total -->
+                    <tr>
+                        <td rowspan="2">Total</td>
+                        <td>M</td>
+                        <td><label for="total-male-hearing" hidden>Hearing:</label>
+                            <input type="number" id="total-male-hearing" name="total-male-hearing" readonly>
+                        </td>
+                        <td><label for="total-male-vision" hidden>Vision:</label>
+                            <input type="number" id="total-male-vision" name="total-male-vision" readonly>
+                        </td>
+                        <td><label for="total-male-learning" hidden>Learning:</label>
+                            <input type="number" id="total-male-learning" name="total-male-learning" readonly>
+                        </td>
+                        <td><label for="total-male-mental" hidden>Mental:</label>
+                            <input type="number" id="total-male-mental" name="total-male-mental" readonly>
+                        </td>
+                        <td><label for="total-male-multiple" hidden>Multiple:</label>
+                            <input type="number" id="total-male-multiple" name="total-male-multiple" readonly>
+                        </td>
+                        <td><label for="total-male-autistic" hidden>Autistic:</label>
+                            <input type="number" id="total-male-autistic" name="total-male-autistic" readonly>
+                        </td>
+                        <td><label for="total-male-physical" hidden>Physical:</label>
+                            <input type="number" id="total-male-physical" name="total-male-physical" readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td><label for="total-female-hearing" hidden>Hearing:</label>
+                            <input type="number" id="total-female-hearing" name="total-female-hearing" readonly>
+                        </td>
+                        <td><label for="total-female-vision" hidden>Vision:</label>
+                            <input type="number" id="total-female-vision" name="total-female-vision" readonly>
+                        </td>
+                        <td><label for="total-female-learning" hidden>Learning:</label>
+                            <input type="number" id="total-female-learning" name="total-female-learning" readonly>
+                        </td>
+                        <td><label for="total-female-mental" hidden>Mental:</label>
+                            <input type="number" id="other-female-mental" name="total-female-mental" readonly>
+                        </td>
+                        <td><label for="total-female-multiple" hidden>Multiple:</label>
+                            <input type="number" id="total-female-multiple" name="total-female-multiple" readonly>
+                        </td>
+                        <td>
+                            <label for="total-female-autistic" hidden>Autistic:</label>
+                            <input type="number" id="total-female-autistic" name="total-female-autistic" readonly>
+                        </td>
+                        <td><label for="total-female-physical" hidden>Physical:</label>
+                            <input type="number" id="total-female-physical" name="total-female-physical" readonly>
+                        </td>
+                    </tr>
 
-                </fieldset>
+                </tbody>
+            </table>
+        
+          </fieldset>
             </form>
         </div>
     </section>
