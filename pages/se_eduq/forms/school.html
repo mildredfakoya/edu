@@ -9,10 +9,13 @@
     <h3 class="se_headings">School Background Information</h3>
     <section>
         <div class="">
+          <fieldset>
+            <legend> School information</legend>
+          
             <!-- School information form -->
             <div class="form-container">
             
-              <form action="#">
+              <div action="#">
                 <div class="form-group">
                   <label for="school-code" class="form-label">School Code:</label>
                   <input type="text" id="school-code" name="school-code" class="form-input">
@@ -52,7 +55,12 @@
                     </select>
                      
                   </div>
+                  </div>
+                </fieldset>
                   <!-- school management -->
+                  <fieldset>
+                    <legend>Achool Management</legend>
+                  
                   <div class="form-group">
                     <label for="management" class="form-label">Management:</label>
                     <input type="checkbox" id="ministry_of_education" name="management[]" value="Ministry of Education" class="form-input">
@@ -63,7 +71,11 @@
                     <label for="others" class="form-label">Others</label>
                     <input type="text" id="others_input" name="others_input" placeholder="Please specify" class="form-input">
                   </div>
+                </fieldset>
                   <!-- school Ownership -->
+                  <fieldset>
+                     <legend>School Ownership</legend>
+                
                   <div class="form-group">
                     <label for="ownership" class="form-label">Ownership:</label>
                     <input type="checkbox" id="government" name="ownership[]" value="Government" class="form-input">
@@ -85,7 +97,11 @@
                         <label for="number_staff" class="form-label">Total Number of Teaching Staff:</label>
                         <input type="number" id="number_staff" name="number_staff" class="form-input">
                       </div>
+                    </fieldset>
                       <!-- Type of School -->
+                      <fieldset>
+                        <legend>Type of School</legend>
+                      
                       <div class="form-group">
                         <label for="school_type" class="form-label">Type of School:</label>
                         <input type="checkbox" id="hearing_impaired" name="school_type[]" value="hearing impaired" class="form-input">
@@ -104,7 +120,11 @@
                         <label for="mentally_challenged" class="form-label">Mentally Challenged</label>
                          
                       </div>
+                    </fieldset>
                       <!-- Information about the playing field -->
+                      <fieldset>
+                        <legend>Information about the playing field</legend>
+                      
                       <div class="form-group">
                         <label for="playing_field" class="form-label">Playing Field:</label>
                         <input type="checkbox" id="community" name="playing_field[]" value="Community Owned" class="form-input">
@@ -115,6 +135,7 @@
                         <label for="others" class="form-label">Others</label>
                         <input type="text" id="others_input" name="others_input" placeholder="Please specify" class="form-input">
                       </div>
+                    </fieldset>
               </form>
             </div>
           </div>

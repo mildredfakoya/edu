@@ -100,7 +100,7 @@
 background-color: aliceblue;
 
   }
-  /* forms styles */
+  /*  Enrolment forms styles */
   .se_form_tables {
       margin: 1rem;
       border-collapse: collapse;
@@ -116,7 +116,7 @@ background-color: aliceblue;
       background-color: #f2f2f2;
   }
   .se_form_tables td input{
-    width: 100%;
+     width: 100%;
   }
   .se_fieldset{
     margin: 2rem;
