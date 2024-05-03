@@ -1,4 +1,5 @@
 
+/*
 .pq-container {
   background: #808080;
   color: white;
@@ -51,7 +52,7 @@
   margin-bottom: 50px;
 }
 
- /* Form Styles*/
+ /* Form Styles 
  .article-formcont {
   max-width: 600px;
   margin: 0 auto;
@@ -107,7 +108,7 @@
 }
 .student-cont {
   width: 100%;
-  max-width: 900px; /* Adjust as needed */
+  max-width: 900px; /* Adjust as needed 
   margin: 0 auto;
 }
 
@@ -140,4 +141,193 @@
   padding: 5px;
   font-weight: bold;
   text-align: center;
+}
+*/
+.pq-sidenav
+{
+    height: 100%;
+    width:fit-content; 
+    border-radius: 5px;
+    /*margin-top: auto;*/
+    padding: 20px;
+    background-color: rgb(204, 204, 200);  
+}
+.pq-sticky{
+    margin-top: 0;
+    position: fixed;
+}
+.pq-sidenav li
+{
+    list-style-type: none;
+}
+
+.pq-sidenav a
+{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px;
+    display: block;
+    color: black;  
+}
+.pq-sidenav a:hover
+{
+    text-decoration: none;
+    color: white;  
+}
+.pq-section-heading
+{
+    text-align: center;
+    margin: 0;
+    /*margin-top: 5px;*/
+}
+.pq-cover{
+    height: auto;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: rgb(231, 231, 228);
+}
+.pq-cover-fieldset{
+    border: 0px;
+}
+.pq-form{
+    height: auto;
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    /*background-color: rgb(231, 231, 228);*/
+}
+.pq-form-input
+{
+    width:auto;
+    margin-bottom: 3px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.pq-form-label
+{
+    font-weight: bold;
+    margin-left: 10px;
+}
+.pq-form-button{
+    width: max-content;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.pq-form-fieldset{
+    border: 1px solid #ccc;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.pq-form-fieldset legend
+{
+    font-size:medium;
+    font-style: italic;
+    color: gray;
+}
+.pq-table
+{
+  height: auto;
+  width: max-content;
+  position: relative;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(231, 231, 228);
+}
+.pq-table td{
+  border: groove 1px rgb(118, 119, 114);
+  text-align: center;
+  font-style: normal; 
+  width: min-content;
+}
+.pq-table th{
+    border: groove 1px rgb(118, 119, 114);
+    text-align: center;
+    font-style: normal; 
+    width:max-content;
+}
+.pq-table-caption
+{
+  font-size:medium;
+  font-style: italic;
+  color: gray;
+}
+.pq-table-input{
+    width: fit-content;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.pq-hori-nav{
+    background-color: rgb(237, 240, 240);
+    margin: 15px;
+    text-align: center;
+}
+.pq-hori-nav a{
+    color: black;
+}
+
+.pq-cover-para {
+  margin: 25px;
+}
+
+.pq-form-group{
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+}
+
+ /* forms styles */
+ .pq-form-tables {
+  margin: 1rem;
+  border-collapse: collapse;
+ 
+ 
+}
+.pq-form-tables tr, th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+.pq-form-tables th {
+  background-color: #f2f2f2;
+}
+.pq-form-tables td input{
+width: 100%;
+}
+.pq_fieldset{
+margin: 32px;
+}
+
+
+
+.pq-more legend {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pq-more {
+  margin-bottom: 20px;
+}
+
+.pq-more label {
+  font-weight: bold;
+}
+
+.pq-more p {
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: #555;
 }
