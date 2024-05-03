@@ -19,28 +19,35 @@
             <a class="nav-link" href="#">Logout</a>
         </nav>
     </header>
-    <section class="row pq-container struct">
-        <div class="pqc-container">
-            <div class="pqc-navcontainer">
-                <nav class="col-3">
-                    <h2 class="pqc-navlinks">Questionnaire Links</h2>
-                    <ul>
-                        <li><a class="pqnav-link" href="./pq_structure.html">Structure</a></li>
-                        <li><a class="pqnav-link" href="./pq_students.html">Students</a></li>
-                        <li><a class="pqnav-link" href="./pq_staff.html">Staff</a></li>
-                        <li><a class="pqnav-link" href="./pq_more.html">More</a></li>
-                    </ul>
-                </nav>
+    <section class="row">
+        <div >
+          <h2 class="pq-section-heading">Government of St. Lucia</h2>
+          <h3 class="pq-section-heading">Ministry of Education, Innovation Gender Relations 
+            and Sustainable Development</h3>
+            <h3 class="pq-section-heading" style="font-style: italic; padding: 5px;">Annual Education Census Questionnaire 
+              Primary School 2020-21 Academic Year</h3>
+        </div>
+    </section>
+    <section class="row">
+        <section class="col-2">
+            <div class="pq-sidenav ">
+                <a class="pqnav-link" href="./pq_structure.html">Structure</a>
+                <a class="pqnav-link" href="./pq_students.html">Students</a>
+                <a class="pqnav-link" href="./pq_staff.html">Staff</a>
+                <a class="pqnav-link" href="./pq_building.html">Building</a>
+                <a class="pqnav-link" href="./pq_more.html">Classifications & Definitions</a>
+            
             </div>
-            <div class="col-9">
-                <div><h2>Staff (Administrative and Teaching) Profile & Qualification</h2></div>
-                <div class="">
-                <form action="#" method="post">
-                    <fieldset>
+        </section>
+        <section class="col-10">
+            <div class="pq-form">  
+              <h3 class="pq-section-heading" style="font-style: italic; padding: 5px;">Staff Profile and Qualifications</h3>
+              <form action="#" method="post" autocomplete="off" >
+                    <fieldset class="pq-form-fieldset">
                         <legend>Staff Profile</legend>
                         <div class="form-group">
-                            <label for="surname_name">Surname, Name:</label>
-                            <input type="text" id="surname_name" name="surname_name">
+                            <label for="surname_name" class="pq-form-label">Surname, Name:</label>
+                            <input type="text" id="surname_name" name="surname_name" class="pq-form-input">
                         </div>
                         <div class="form-group">
                             <label for="sex">Sex:</label>
@@ -50,8 +57,8 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="classification">Classification:</label>
-                            <select id="classification" name="classification">
+                            <label for="classification" class="pq-form-label">Classification:</label>
+                            <select id="classification" name="classification" class="pq-form-input">
                                 <option value="HOD">Head of Department</option>
                                 <option value="VP">Vice Principal</option>
                                 <option value="PR">Principal</option>
@@ -72,8 +79,8 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="teacher_type">Teacher Type:</label>
-                            <select id="teacher_type" name="teacher_type">
+                            <label for="teacher_type" class="pq-form-label">Teacher Type:</label>
+                            <select id="teacher_type" name="teacher_type" class="pq-form-input">
                                 <option value="NT">Non Graduate Trained Teacher</option>
                                 <option value="NU">Non Graduate Untrained Teacher</option>
                                 <option value="GT">Graduate Trained</option>
@@ -82,8 +89,8 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="grade_taught">Grade Taught:</label>
-                            <select id="grade_taught" name="grade_taught">
+                            <label for="grade_taught" class="pq-form-label">Grade Taught:</label>
+                            <select id="grade_taught" name="grade_taught" class="pq-form-input">
                                 <option value="K">Kindergarten</option>
                                 <option value="1">Grade 1</option>
                                 <option value="2">Grade 2</option>
@@ -95,8 +102,8 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="teaching_experience">Teaching Experience (Years):</label>
-                            <select id="teaching_experience" name="teaching_experience">
+                            <label for="teaching_experience" class="pq-form-label">Teaching Experience (Years):</label>
+                            <select id="teaching_experience" name="teaching_experience" class="pq-form-input">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -104,8 +111,8 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="age_range">Age (range) as of October 15th:</label>
-                            <select id="age_range" name="age_range">
+                            <label for="age_range" class="pq-form-label">Age (range) as of October 15th:</label>
+                            <select id="age_range" name="age_range" class="pq-form-input">
                                 <option value="A">Less than 25</option>
                                 <option value="B">25-29</option>
                                 <option value="C">30-34</option>
@@ -116,12 +123,12 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="nationality">Nationality:</label>
-                            <input type="text" id="nationality" name="nationality">
+                            <label for="nationality" class="pq-form-label">Nationality:</label>
+                            <input type="text" id="nationality" name="nationality" class="pq-form-input">
                         </div>
                         <div class="form-group">
-                            <label for="highest_qualification">Highest Qualification:</label>
-                            <select id="highest_qualification" name="highest_qualification">
+                            <label for="highest_qualification" class="pq-form-label">Highest Qualification:</label>
+                            <select id="highest_qualification" name="highest_qualification" class="pq-form-input">
                                 <option value="BA">Bachelor of Arts</option>
                                 <option value="BSC">Bachelor of Science</option>
                                 <option value="MA">Masters of Arts</option>
@@ -141,16 +148,16 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="area_of_specialization">Area of Specialization of Highest Qualification:</label>
-                            <input type="text" id="area_of_specialization" name="area_of_specialization">
+                            <label for="area_of_specialization" class="pq-form-label">Area of Specialization of Highest Qualification:</label>
+                            <input type="text" id="area_of_specialization" name="area_of_specialization" class="pq-form-input">
                         </div>
                         <div class="form-group">
-                            <label for="other_qualifications">Other Qualifications:</label>
-                            <input type="text" id="other_qualifications" name="other_qualifications">
+                            <label for="other_qualifications" class="pq-form-label">Other Qualifications:</label>
+                            <input type="text" id="other_qualifications" name="other_qualifications" class="pq-form-input">
                         </div>
                         <div class="form-group">
-                            <label for="cpd_hours">No. of Hours of CPD in past school year:</label>
-                            <select id="cpd_hours" name="cpd_hours">
+                            <label for="cpd_hours" class="pq-form-label">No. of Hours of CPD in past school year:</label>
+                            <select id="cpd_hours" name="cpd_hours" class="pq-form-input">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -158,8 +165,8 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="appraised">Was appraised in last school year:</label>
-                            <select id="appraised" name="appraised">
+                            <label for="appraised" class="pq-form-label">Was appraised in last school year:</label>
+                            <select id="appraised" name="appraised" class="pq-form-input">
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
                             </select>
@@ -170,26 +177,26 @@
                             <fieldset>
                                 <legend>Teaching Staff (excluding Principal) by Gender, Training</legend>
                                 <div class="form-group">
-                                    <label for="grad_male_trained">GRADUATES:</label>
-                                    <input type="text" id="grad_male_trained" name="grad_male_trained" placeholder="No. Trained (Male)">
-                                    <input type="text" id="grad_female_trained" name="grad_female_trained" placeholder="No. Trained (Female)">
+                                    <label for="grad_male_trained" class="pq-form-label">GRADUATES:</label>
+                                    <input type="text" id="grad_male_trained" name="grad_male_trained" placeholder="No. Trained (Male)" class="pq-form-input">
+                                    <input type="text" id="grad_female_trained" name="grad_female_trained" placeholder="No. Trained (Female)" class="pq-form-input">
                                 </div>
                                 <div class="form-group">
-                                    <label for="non_grad_male_trained">NON-GRADUATES:</label>
-                                    <input type="text" id="non_grad_male_trained" name="non_grad_male_trained" placeholder="No. Trained (Male)">
-                                    <input type="text" id="non_grad_female_trained" name="non_grad_female_trained" placeholder="No. Trained (Female)">
-                                </div>
-            
-                                <div class="form-group">
-                                    <label for="grand_total_male">Grand Total:</label>
-                                    <input type="text" id="grand_total_male" name="grand_total_male" placeholder="Male">
-                                    <input type="text" id="grand_total_female" name="grand_total_female" placeholder="Female">
+                                    <label for="non_grad_male_trained" class="pq-form-label">NON-GRADUATES:</label>
+                                    <input type="text" id="non_grad_male_trained" name="non_grad_male_trained" placeholder="No. Trained (Male)" class="pq-form-input">
+                                    <input type="text" id="non_grad_female_trained" name="non_grad_female_trained" placeholder="No. Trained (Female)" class="pq-form-input">
                                 </div>
             
                                 <div class="form-group">
-                                    <label for="specialists_male">Out of which are Specialists:</label>
-                                    <input type="text" id="specialists_male" name="specialists_male" placeholder="Male">
-                                    <input type="text" id="specialists_female" name="specialists_female" placeholder="Female">
+                                    <label for="grand_total_male" class="pq-form-label">Grand Total:</label>
+                                    <input type="text" id="grand_total_male" name="grand_total_male" placeholder="Male" class="pq-form-input">
+                                    <input type="text" id="grand_total_female" name="grand_total_female" placeholder="Female" class="pq-form-input">
+                                </div>
+            
+                                <div class="form-group">
+                                    <label for="specialists_male" class="pq-form-label">Out of which are Specialists:</label>
+                                    <input type="text" id="specialists_male" name="specialists_male" placeholder="Male" class="pq-form-input">
+                                    <input type="text" id="specialists_female" name="specialists_female" placeholder="Female" class="pq-form-input">
                                 </div>
                             </fieldset>
                         </form>
@@ -197,132 +204,130 @@
                 
                     <div class=" ">
                         <form action="#" method="post">
-                            <fieldset>
+                            <fieldset class="pq-form-fieldset">
                                 <legend>Teachers who left in the past year</legend>
                     
                                 <div class="form-group">
-                                    <label for="resignation_male">Resignation:</label>
-                                    <input type="text" id="resignation_male" name="resignation_male" placeholder="Male">
-                                    <input type="text" id="resignation_female" name="resignation_female" placeholder="Female">
+                                    <label for="resignation_male" class="pq-form-label">Resignation:</label>
+                                    <input type="text" id="resignation_male" name="resignation_male" placeholder="Male" class="pq-form-input">
+                                    <input type="text" id="resignation_female" name="resignation_female" placeholder="Female" class="pq-form-input">
                                 </div>
                         
                                 <div class="form-group">
-                                    <label for="termination_male">Termination:</label>
-                                    <input type="text" id="termination_male" name="termination_male" placeholder="Male">
-                                    <input type="text" id="termination_female" name="termination_female" placeholder="Female">
+                                    <label for="termination_male" class="pq-form-label">Termination:</label>
+                                    <input type="text" id="termination_male" name="termination_male" placeholder="Male" class="pq-form-input">
+                                    <input type="text" id="termination_female" name="termination_female" placeholder="Female" class="pq-form-input">
                                 </div>
                         
                                 <div class="form-group">
-                                    <label for="secondment_male">Secondment:</label>
-                                    <input type="text" id="secondment_male" name="secondment_male" placeholder="Male">
-                                    <input type="text" id="secondment_female" name="secondment_female" placeholder="Female">
+                                    <label for="secondment_male" class="pq-form-label">Secondment:</label>
+                                    <input type="text" id="secondment_male" name="secondment_male" placeholder="Male" class="pq-form-input">
+                                    <input type="text" id="secondment_female" name="secondment_female" placeholder="Female" class="pq-form-input">
                                 </div>
                         
                                 <div class="form-group">
-                                    <label for="retirement_male">Retirement:</label>
-                                    <input type="text" id="retirement_male" name="retirement_male" placeholder="Male">
-                                    <input type="text" id="retirement_female" name="retirement_female" placeholder="Female">
+                                    <label for="retirement_male" class="pq-form-label">Retirement:</label>
+                                    <input type="text" id="retirement_male" name="retirement_male" placeholder="Male" class="pq-form-input">
+                                    <input type="text" id="retirement_female" name="retirement_female" placeholder="Female" class="pq-form-input">
                                 </div>
                         
                                 <div class="form-group">
-                                    <label for="other_male">Other:</label>
-                                    <input type="text" id="other_male" name="other_male" placeholder="Male">
-                                    <input type="text" id="other_female" name="other_female" placeholder="Female">
+                                    <label for="other_male" class="pq-form-label">Other:</label>
+                                    <input type="text" id="other_male" name="other_male" placeholder="Male" class="pq-form-input">
+                                    <input type="text" id="other_female" name="other_female" placeholder="Female" class="pq-form-input">
                                 </div>
                             </fieldset>
                         </div>
             
                     <div class=" ">
                         <form action="#" method="post">
-                            <fieldset>
+                            <fieldset class="pq-form-fieldset">
                                 <legend>Teachers on Study Leave</legend>
                         
                                 <div class="form-group">
-                                    <label for="with_pay_male">With Pay:</label>
-                                    <input type="text" id="with_pay_male" name="with_pay_male" placeholder="Male">
-                                    <input type="text" id="with_pay_female" name="with_pay_female" placeholder="Female">
+                                    <label for="with_pay_male" class="pq-form-label">With Pay:</label>
+                                    <input type="text" id="with_pay_male" name="with_pay_male" placeholder="Male" class="pq-form-input">
+                                    <input type="text" id="with_pay_female" name="with_pay_female" placeholder="Female" class="pq-form-input">
                                 </div>
                         
                                 <div class="form-group">
-                                    <label for="without_pay_male">Without Pay:</label>
-                                    <input type="text" id="without_pay_male" name="without_pay_male" placeholder="Male">
-                                    <input type="text" id="without_pay_female" name="without_pay_female" placeholder="Female">
+                                    <label for="without_pay_male" class="pq-form-label">Without Pay:</label>
+                                    <input type="text" id="without_pay_male" name="without_pay_male" placeholder="Male" class="pq-form-input">
+                                    <input type="text" id="without_pay_female" name="without_pay_female" placeholder="Female" class="pq-form-input">
                                 </div>
                             </fieldset>
                         </form>
                     
                     <div class=" ">
                         <form action="#" method="post">
-                            <fieldset>
+                            <fieldset class="pq-form-fieldset">
                                 <legend>Non-Teaching Staff</legend>
         
                                 <div class="form-group">
-                                    <label for="secretary_male">Secretary:</label>
-                                    <input type="text" id="secretary_male" name="secretary_male" placeholder="Male">
-                                    <input type="text" id="secretary_female" name="secretary_female" placeholder="Female">
+                                    <label for="secretary_male" class="pq-form-label">Secretary:</label>
+                                    <input type="text" id="secretary_male" name="secretary_male" placeholder="Male" class="pq-form-input">
+                                    <input type="text" id="secretary_female" name="secretary_female" placeholder="Female" class="pq-form-input">
                                 </div>
                     
                                 <div class="form-group">
-                                    <label for="typist_male">Typist:</label>
-                                    <input type="text" id="typist_male" name="typist_male" placeholder="Male">
-                                    <input type="text" id="typist_female" name="typist_female" placeholder="Female">
+                                    <label for="typist_male" class="pq-form-label">Typist:</label>
+                                    <input type="text" id="typist_male" name="typist_male" placeholder="Male" class="pq-form-input">
+                                    <input type="text" id="typist_female" name="typist_female" placeholder="Female" class="pq-form-input">
                                 </div>
                                 <div class="form-group">
-                                    <label for="Bursar_male">Bursar:</label>
-                                    <input type="text" id="bursar_male" name="typist_male" placeholder="Male">
-                                    <input type="text" id="bursar_female" name="typist_female" placeholder="Female">
+                                    <label for="Bursar_male"class="pq-form-label">Bursar:</label>
+                                    <input type="text" id="bursar_male" name="typist_male" placeholder="Male" class="pq-form-input">
+                                    <input type="text" id="bursar_female" name="typist_female" placeholder="Female" class="pq-form-input">
                                 </div>
                                 <div class="form-group">
-                                    <label for="Shop Director_male">Shop Director:</label>
-                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male">
-                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female">
+                                    <label for="Shop Director_male" class="pq-form-label">Shop Director:</label>
+                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male" class="pq-form-input">
+                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female" class="pq-form-input">
                                 </div>
                                 <div class="form-group">
-                                    <label for="Shop Di_male">Lab Assistants:</label>
-                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male">
-                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female">
+                                    <label for="Shop Di_male" class="pq-form-label">Lab Assistants:</label>
+                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male" class="pq-form-input">
+                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female" class="pq-form-input">
                                 </div>
                                 <div class="form-group">
-                                    <label for="Shop Director_male">Librarian/LRC Coordinator:</label>
-                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male">
-                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female">
+                                    <label for="Shop Director_male" class="pq-form-label">Librarian/LRC Coordinator:</label>
+                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male" class="pq-form-input">
+                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female" class="pq-form-input">
                                 </div>
                                 <div class="form-group">
-                                    <label for="Shop Director_male">Counsellor:</label>
-                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male">
-                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female">
+                                    <label for="Shop Director_male" class="pq-form-label">Counsellor:</label>
+                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male" class="pq-form-input">
+                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female" class="pq-form-input">
                                 </div>
                                 <div class="form-group">
-                                    <label for="Shop Director_male">Watchman/Security:</label>
-                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male">
-                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female">
+                                    <label for="Shop Director_male" class="pq-form-label">Watchman/Security:</label>
+                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male" class="pq-form-input">
+                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female" class="pq-form-input">
                                 </div>
                                 <div class="form-group">
-                                    <label for="Shop Director_male">Cleaner:</label>
-                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male">
-                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female">
+                                    <label for="Shop Director_male" class="pq-form-label">Cleaner:</label>
+                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male" class="pq-form-input">
+                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female" class="pq-form-input">
                                 </div>
                                 <div class="form-group">
-                                    <label for="Shop Director_male">Groundsman:</label>
-                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male">
-                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female">
+                                    <label for="Shop Director_male" class="pq-form-label">Groundsman:</label>
+                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male" class="pq-form-input">
+                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female" class="pq-form-input">
                                 </div>
                                 <div class="form-group">
-                                    <label for="Shop Director_male">others(specify):</label>
-                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male">
-                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female">
+                                    <label for="Shop Director_male" class="pq-form-label">others(specify):</label>
+                                    <input type="text" id="Shop Director_male" name="typist_male" placeholder="Male" class="pq-form-input">
+                                    <input type="text" id="Shop Director_female" name="typist_female" placeholder="Female" class="pq-form-input">
                                 </div>
                                 
                             </fieldset>
                         </form>
                     </div>
+                    <div>
+                        <input type="submit" name="save" value="Save" class="pq-form-button">
+                    </div>
             </div>
-        </div>
-        <div>
-            <button type="previous">Go Back</button>
-            <button type="submit">Submit</button>
-            <button type="next">Next</button>
-        </div>    
+        </div>   
     </section>
     <footer class="footer">
         <div class="container">
