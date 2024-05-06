@@ -41,7 +41,8 @@
         <a href="secQCXC.html">CXC</a>
         <a href="secQCVQ.html">CVQ</a>
         <a href="secQBuildingFacility.html">Building and Facilities</a>
-        <a href="#">Classifications and Definitions</a>
+        <a href="secQClassification.html">Classifications and Definitions</a>
+        <a href="secQConfirmation.html">Confirmation Page</a>
         
     </div>
     </section>
@@ -59,46 +60,56 @@
                         <a class="nav-link" href="#">View Staff</a>
                         <a class="nav-link" href="#">Update Staff</a>
                         <a class="nav-link" href="#">Delete Staff</a>
-                    </nav>
+                      </nav>
                     </div>
-
-                    <label for="staff-seq">Sequence No: &nbsp;</label>
-                    <input type="number" name="staff-seq" id="staff-seq" class="sq-form-input"><br>
-                    <label for="staff-surname">Surname: &nbsp;</label>
-                    <input type="text" name="staff-surname" id="staff-surname" class="sq-form-input"><br>
-                    <label for="staff-firstname">Firstname: &nbsp;</label>
-                    <input type="text" name="staff-firstname" id="staff-firstname" class="sq-form-input"><br>
-                    <label for="staff-gender">Gender: &nbsp;</label>
-                    <input type="radio" name="staff-gender" id="staff-gender" value="male" class="sq-form-input">Male
-                    <input type="radio" name="staff-gender" id="staff-gender" value="female" class="sq-form-input">Female <br>
-                    <label for="staff-classification">Classification: &nbsp;</label>
-                    <select name="staff-classification" id="staff-classification" class="sq-form-input"> 
-                      <option selected>Select staff-classification  &nbsp; </option>
-                      <option value="HOD">HOD- Head of Department</option>
-                      <option value="PR">PR- Principal</option>
-                      <option value="VP">VP- Vice Principal</option>
-                      <option value="SEC">SEC- Secretary</option>
-                      <option value="GC">GC- Guidance Counsellor</option>
-                      <option value="LC">LC- Literacy Coordinator</option>
-                      <option value="EMIS">EMIS- Emis Coordinator</option>
-                      <option value="LRC">LRC- LRC Coordinator</option>
-                      <option value="LB">LB- Librarian</option>
-                      <option value="SE">SE- Special Education Teacher</option>
-                      <option value="CT">CT- Class Teacher</option>
-                      <option value="MT">MT- Management Team</option>
-                    </select><br>
-
-                    <label for="tr-type">Teacher Type: &nbsp;</label>
-                    <select name="tr-type" id="tr-type" class="sq-form-input">
-                      <option selected>Select Teacher Type</option>
-                      <option value="NT">NT- Non Graduate Trained</option>
-                      <option value="NU">NU- Non Graduate Untrained</option>
-                      <option value="GT">GT- Graduate Trained</option>
-                      <option value="GU">GU- Graduate Untrained</option>
-                      <option value="SUB">SUB- Substitute</option>
-                      <option value="TA">TA- Teacher Assistant</option>
-                    </select><br><br>
-                    
+                    <div>
+                      <label for="staff-seq">Sequence No: &nbsp;</label>
+                      <input type="number" name="staff-seq" id="staff-seq">
+                    </div>
+                    <div>
+                      <label for="staff-surname">Surname: &nbsp;</label>
+                      <input type="text" name="staff-surname" id="staff-surname">
+                    </div>
+                    <div>
+                      <label for="staff-firstname">Firstname: &nbsp;</label>
+                      <input type="text" name="staff-firstname" id="staff-firstname">
+                    </div>
+                    <div>
+                      <label for="staff-gender">Gender: &nbsp;</label>
+                      <input type="radio" name="staff-gender" id="staff-gender" value="male">Male
+                      <input type="radio" name="staff-gender" id="staff-gender" value="female">Female
+                    </div>
+                    <div>
+                      <label for="staff-classification">Classification: &nbsp;</label>
+                      <select name="staff-classification" id="staff-classification"> 
+                        <option selected>Select staff-classification  &nbsp; </option>
+                        <option value="HOD">HOD- Head of Department</option>
+                        <option value="PR">PR- Principal</option>
+                        <option value="VP">VP- Vice Principal</option>
+                        <option value="SEC">SEC- Secretary</option>
+                        <option value="GC">GC- Guidance Counsellor</option>
+                        <option value="LC">LC- Literacy Coordinator</option>
+                        <option value="EMIS">EMIS- Emis Coordinator</option>
+                        <option value="LRC">LRC- LRC Coordinator</option>
+                        <option value="LB">LB- Librarian</option>
+                        <option value="SE">SE- Special Education Teacher</option>
+                        <option value="CT">CT- Class Teacher</option>
+                        <option value="MT">MT- Management Team</option>
+                      </select><br>
+                    </div>
+                    <div>
+                      <label for="tr-type">Teacher Type: &nbsp;</label>
+                      <select name="tr-type" id="tr-type">
+                        <option selected>Select Teacher Type</option>
+                        <option value="NT">NT- Non Graduate Trained</option>
+                        <option value="NU">NU- Non Graduate Untrained</option>
+                        <option value="GT">GT- Graduate Trained</option>
+                        <option value="GU">GU- Graduate Untrained</option>
+                        <option value="SUB">SUB- Substitute</option>
+                        <option value="TA">TA- Teacher Assistant</option>
+                      </select><br><br>
+                    </div>
+                    <div>
                       <label for="subject-taught">Subjects Taught <i>(Select all which applies)</i> </label> <br><br>
                          
                       <input type="checkbox" name="subject-taught" id="subject-taught" value="ENA">ENA- English A 
@@ -132,12 +143,14 @@
                       <input type="checkbox" name="subject-taught" id="subject-taught" value="BT">BT- Building Technology 
                       <input type="checkbox" name="subject-taught" id="subject-taught" value="EDP">EDP- EDPM <br>
                       <input type="checkbox" name="subject-taught" id="subject-taught" value="PE">PE- Physical Education <br><br>
-                  
+                    </div>
+                    <div>
                       <label for="tr-exp-yrs">Teaching Experience Years</label>
-                      <input type="number" name="tr-exp-yrs" id="tr-exp-yrs" class="sq-form-input"><br>
-
+                      <input type="number" name="tr-exp-yrs" id="tr-exp-yrs"><br>
+                    </div>
+                    <div>
                       <label for="tr-age-range">Age Range as of </label>
-                      <input type="number" name="tr-age-range" id="tr-age-range" class="sq-form-input"><br>
+                      <input type="number" name="tr-age-range" id="tr-age-range"><br>
                       (use if actual age is unknown) <br>
                       <input type="radio" name="tr-age-range" id="tr-age-range" value="A less than 25"> Less than 25
                       <input type="radio" name="tr-age-range" id="tr-age-range" value="B 25-29"> 25 - 29
@@ -146,18 +159,20 @@
                       <input type="radio" name="tr-age-range" id="tr-age-range" value="E 40-44"> 40 - 44 <br>
                       <input type="radio" name="tr-age-range" id="tr-age-range" value="F 45-49"> 45 - 49
                       <input type="radio" name="tr-age-range" id="tr-age-range" value="G 50 and over"> 50 and over <br><br>
-                      
+                    </div>
+                    <div> 
                       <label for="tr-nationality">Nationality</label>
-                      <select name="tr-nationality" id="tr-nationality" class="sq-form-input">
+                        <select name="tr-nationality" id="tr-nationality">
                           <option selected>Select Nationality</option>
                           <option value="SLU">SLU- St. Lucian</option>
                           <option value="OECS">OECS- Other OECS Nationality</option>
                           <option value="CAR">CAR- Other Caricom</option>
                           <option value="INT">INT- Non Caricom</option>
-                      </select><br><br>
-
+                        </select><br><br>
+                    </div>
+                    <div>
                       <label for="tr-high-qua">Highest Qualification</label>
-                      <select name="tr-high-qua" id="tr-high-qua" class="sq-form-input" >
+                        <select name="tr-high-qua" id="tr-high-qua" >
                           <option selected>Select Qualification</option>
                           <option value="BA">BA- Bachelor of Arts</option>
                           <option value="BSc">BSc- Bachelor of Science</option>
@@ -174,23 +189,29 @@
                           <option value="BEd">BEd- Bachelor of Education</option>
                           <option value="CVQ">CVQ- Caribbean Vocational Qualification</option>
                           <option value="NVQ">NVQ- National Vocational Qualification</option>
-                      </select> <br><br>
-
+                        </select> <br><br>
+                    </div>
+                    <div>
                       <label for="tr-spe-qua">Area of Specialization of Highest Qualification</label>
-                     <input type="text" name="tr-spe-qua" id="tr-spe-qua" class="sq-form-input"><br><br>
-
+                      <input type="text" name="tr-spe-qua" id="tr-spe-qua"><br><br>
+                    </div>
+                    <div>
                      <label for="tr-other-qua">Other Qualification</label>
-                     <input type="text" name="tr-other-qua" id="tr-other-qua" class="sq-form-input"><br><br>
-
+                     <input type="text" name="tr-other-qua" id="tr-other-qua"><br><br>
+                    </div>
+                    <div>
                      <label for="tr-cpd-past">Number of Hours CPD in past year</label>
-                     <input type="number" name="tr-cpd-past" id="tr-cpd-past" class="sq-form-input"><br><br>
-
+                     <input type="number" name="tr-cpd-past" id="tr-cpd-past"><br><br>
+                    </div>
+                    <div>
                      <label for="tr-appraisal">Was Appraised last School Year?</label>
-                     <input type="radio" name="tr-appraisal" id="tr-appraisal" value="yes" class="sq-form-input">Yes &nbsp;
-                     <input type="radio" name="tr-appraisal" id="tr-appraisal" value="no" class="sq-form-input">No
-                </fieldset>
+                     <input type="radio" name="tr-appraisal" id="tr-appraisal" value="yes">Yes &nbsp;
+                     <input type="radio" name="tr-appraisal" id="tr-appraisal" value="no">No
+                    </div>
+                  </fieldset>
                 <div>
                   <input type="submit" name="save" value="Save" class="sq-form-button">
+                  <input type="submit" name="save" value="Next" class="sq-form-button">
                 </div>
             </form>
         </div>

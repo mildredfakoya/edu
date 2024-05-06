@@ -10,10 +10,11 @@
     padding: 20px;
     background-color: rgb(204, 204, 200);  
 }
-.sq-sticky{
+/*figuring out the fixed position for navigation bar while scrolling up and down*/
+/*.sq-sticky{
     margin-top: 0;
     position: fixed;
-}
+}*/
 .sq-sidenav li
 {
     list-style-type: none;
@@ -33,7 +34,17 @@
 .sq-sidenav a:hover
 {
     text-decoration: none;
-    color: white 
+    color: white ;
+    text-align: left;
+}
+.sq-focus
+{
+    background-color: rgb(129, 134, 140);
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none; 
 }
 /* Body style*/
 
@@ -46,6 +57,7 @@
     height: auto;
     width: 90%;
     margin: auto;
+    padding: 10px;
     border-radius: 5px;
     background-color: rgb(231, 231, 228);
 }
@@ -59,7 +71,7 @@
 
 /* Forms styling*/
 
-.sq-form-group
+.sq-form-group /* for cover page*/
 {
     width: 100%;
     height: auto;
@@ -68,20 +80,11 @@
     justify-content:center;
     align-items: center;
 }
-.sq-form
+.sq-form-group label /* cover page*/
 {
-    height: auto;
-    width: 100%;
-    position: relative;
-    border-radius: 5px;
-    /*background-color: rgb(231, 231, 228);*/
+    margin-left: 5px;
 }
-.sq-form-label
-{
-    font-weight: bold;
-    margin-left: 10px;
-}
-.sq-form-input
+.sq-form-group input
 {
     width:auto;
     margin-bottom: 3px;
@@ -89,6 +92,44 @@
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+.sq-cvq-form /* this class has been used only in secQCVQ file */
+{
+    margin-left: 20px;
+    padding: 20px;
+    text-align: center;
+    width:50%;
+    position: relative;
+    border-radius: 5px;
+    background-color: rgb(242, 248, 248);
+}
+.sq-cvq-form-checklist
+{
+    margin-left: 5px;
+}
+
+.sq-cvq-form-checklist label
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: block;
+}
+.sq-form /* other forms */
+{
+    height: auto;
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+/*.sq-form-input
+{
+    width:auto;
+    margin-bottom: 3px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}*/
 .sq-form-button{
     width: max-content;
     padding: 10px;
@@ -111,6 +152,15 @@
     font-style: italic;
     color: gray;
 }
+.sq-form-fieldset input, select
+{
+    width:auto;
+    margin-bottom: 3px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 /* table styling*/
 .sq-table
 {
@@ -122,45 +172,36 @@
   margin-right: auto;
   background-color: rgb(231, 231, 228);
 }
-.sq-table td{
-  border: groove 1px rgb(118, 119, 114);
-  text-align: center;
-  font-style: normal; 
-  width: min-content;
-}
-.sq-table th{
-    border: groove 1px rgb(118, 119, 114);
-    text-align: center;
-    font-style: normal; 
-    width:max-content;
-}
-.sq-table-caption
+.sq-table-input
 {
-  font-size:medium;
-  font-style: italic;
-  color: gray;
-}
-.sq-table-input{
     width: fit-content;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-.sq-hori-nav{
+.sq-hori-nav
+{
     background-color: rgb(237, 240, 240);
     margin: 15px;
     text-align: center;
 }
-.sq-hori-nav a{
+.sq-hori-nav a
+{
     color: black;
 }
+
 /* New table style*/
-.sq_form_tables {
-    /*margin: 1rem;*/
+.sq_form_tables 
+{    
     margin-left: auto;
     margin-right: auto;
     border-collapse:collapse;
     background-color: rgb(231, 231, 228);
+}
+.sq_form_tables caption{
+    font-size:medium;
+    font-style: italic;
+    color: gray;
 }
 .sq_form_tables tr, th, td {
     border: groove 1px rgb(118, 119, 114);
@@ -175,11 +216,5 @@
   border-radius: 5px;
   border: 1px solid #ccc;
 }
-.sq-focus
-{
-    background-color: rgb(129, 134, 140);
-    color: white ;
-    border-radius: 5px;
-    text-decoration: none;
-    
-}
+
+
