@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOP Internship forms Page</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/sec_Quest.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>Welcome to EDU Forms Project Page</h1>
+    <!-- Navigation -->
+    <nav class="nav">
+      <a class="nav-link" href="../../index.html">Home</a>
+      <a class="nav-link" href="#">About</a>
+      <a class="nav-link" href="#">Logout</a>
+    </nav>
+  </header>
+
+  <section class="row">
+    <div >
+      <h2 class="sq-section-heading">Government of St. Lucia</h2>
+      <h3 class="sq-section-heading">Ministry of Education, Innovation Gender Relations 
+        and Sustainable Development</h3>
+        <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Annual Education Census Questionnaire 
+          Secondary School 2020-21 Academic Year</h3>
+    </div>
+  </section>
+
+  <section class="row">
+    <section class="col-2">
+      <div class="sq-sidenav ">
+        <a href="secQHome.html">Cover</a>
+        <a href="secQSchool.html">School</a>
+        <a href="secQStudent.html">Student</a>
+        <a href="secQStaff.html">Staff</a>
+        <a href="secQAgeDistribution.html" >Age Distribution</a>
+        <a href="secQICT.html">ICT</a>
+        <a href="secQCXC.html">CXC</a>
+        <a href="secQCVQ.html">CVQ</a>
+        <a href="secQBuildingFacility.html">Building and Facilities</a>
+        <a href="secQClassification.html">Classifications and Definitions</a>
+        <a href="secQConfirmation.html" class="sq-focus">Confirmation Page</a>
+      </div>
+    </section>
+    <section class="col-10">
+        <div class="sq-cover">
+            <br><h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Annual Education Census Questionnaire 
+                Secondary School 2020-21 Academic Year</h3>
+     
+            <form action="secQSchool.html" method="post" autocomplete="off">
+      
+               <div class="sq-form-group">
+                <!--input values will be taken from cover page-->
+
+                    <label for="district" class="form-label">Select District: &nbsp;</label>
+                   <input type="text" name="district" id="district" readonly>
+      
+                   <label for="schoolname" class="form-label">Name of the School: &nbsp;</label>
+                    <input type="text" name="schoolname" id="schoolname" readonly>
+                </div>
+                <div class="sq-form-group">
+                    <label for="principal-name" class="form-label">Name of the Principal: &nbsp;</label>
+                    <input type="text" name="principal-name" id="principal-name" readonly>
+     
+                    <label for="date" class="form-label">Completed Date: &nbsp;</label>
+                    <input type="date" name="date" id="date" readonly><br><br>
+                </div>
+
+                <h4 style="text-align: center; font-style: oblique;">Instructions:</h4>
+                <p class="sq-cover-para">1. &nbsp;All data furnished in this questionnaire should refer to the day of <b>October 15, 2020.</b>
+                    The completed questionnaire should reach your <b>District Office</b> by <b>November 20, 2020.</b></p>
+                <p class="sq-cover-para">2. &nbsp;Please refer to the 
+                    <i style="color: blue;">explanatory notes</i> provided on the 
+                    last page before completing the questionnaire. You may contact officers of the Department
+                    of Education, Innovation and Gender Relations at <b>468-3220/3221</b> or at the <i>educationstats@gmail.com</i> 
+                    for any assistance required in completing the questionnaire.</p><br>
+          
+                <div class="sq-form-group">
+                    <input type="submit" name="submit" value="Confirm & Submit" class="sq-form-button"> 
+                </div>
+            </form>
+         </div>
+    </section>
+  </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 SOP EDU Forms. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
