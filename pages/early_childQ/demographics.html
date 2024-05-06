@@ -52,10 +52,14 @@
             <div>
             <fieldset class="ecq-form-fieldset"> 
               <legend class="ecq-legend"> Centre details: </legend> 
+                <div>
                <label for="centre_name"> Name of Centre:&nbsp; </label>
-               <input id="centre_name" name="centre_name" type="text" placeholder="Enter name of centre" class="ecq-form-input"><br>
+               <input id="centre_name" name="centre_name" type="text" placeholder="Enter name of centre" class="ecq-form-input" required>
+                </div>
+                <div>
                <label for="location"> Location:&nbsp; </label>
-               <input id="location" name="location" type="text" placeholder="Enter the address of centre" class="ecq-form-input"><br>               
+               <input id="location" name="location" type="text" placeholder="Enter the address of centre" class="ecq-form-input" required>               
+                </div>
               </fieldset>
             
                   
@@ -68,23 +72,23 @@
               </div>
               <div>
               <label for="mail_add"> Mailing Address: </label>
-              <textarea id="mail_add" name="mail_add" maxlength="1000"> </textarea> 
+              <textarea id="mail_add" name="mail_add" maxlength="1000" required> </textarea> 
               </div>
               <div>
               <label for="landline" >Landline: </label>
-              <input type="text" id="Landline" name="landline" class="ecq-form-input" placeholder="Enter landline no">
+              <input type="text" id="Landline" name="landline" class="ecq-form-input" placeholder="Enter landline no" required>
               </div>
               <div>
               <label for="mobile" >Mobile: </label>
-              <input type="text" id="mobile" name="mobile" class="ecq-form-input" placeholder="Enter mobile no">
+              <input type="text" id="mobile" name="mobile" class="ecq-form-input" placeholder="Enter mobile no" required>
               </div>
               <div>
               <label for="fax"> Fax: </label>
-              <input type="text" id="fax" name="fax" class="ecq-form-input" placeholder="Enter fax no">
+              <input type="text" id="fax" name="fax" class="ecq-form-input" placeholder="Enter fax no" required>
               </div>
               <div>
               <label for="email">Email Address: </label>
-              <input type="email" id="email" name="email" class="ecq-form-input" placeholder="Enter email address">
+              <input type="email" id="email" name="email" class="ecq-form-input" placeholder="Enter email address" required>
               </div>
               <div>
               <label for="admin_name">Administrator Name: </label>

@@ -119,6 +119,7 @@
     text-align:justify;
     margin: 0px 2px;
     margin-left: 50px;
+    font-style: italic;
     
 }
 
@@ -219,4 +220,15 @@
     background-color: rgb(231, 231, 228);
 }
 
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
 
+.table th td {
+    border: 2px solid #1C2833 ;
+}
+
+.col-input{
+    margin-left: 5px;
+}
