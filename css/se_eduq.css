@@ -1,9 +1,6 @@
 
  /* Landing page styles */
- .welcome-info{
-  margin: 6rem 0 4rem 0;
-  text-align: center;
-}
+  
 /* container styles */
 .se_container {
   max-width: 600px;
@@ -56,6 +53,16 @@
  margin-top: .6rem;
  }
 /* side navigation Styles */
+
+.sq-sidenav a
+{
+    text-decoration: none;
+     
+    font-size: 15px;
+    padding: 5px;
+    display: block;
+    color: black;  
+}
 .se_nav{
   background-color: rgb(193, 193, 193);
   padding: .5rem;
@@ -100,6 +107,14 @@
 background-color: aliceblue;
 
   }
+  .sq-form
+{
+    height: auto;
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    background-color: rgb(231, 231, 228);
+}
   /*  Enrolment forms styles */
   .se_form_tables {
       margin: 1rem;
