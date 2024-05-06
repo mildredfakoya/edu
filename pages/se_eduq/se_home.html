@@ -1,52 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/main.css">
-  <link rel="stylesheet" href="../../css/se_eduq.css">
-    <title>Special Education Questionnaire </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOP Internship forms Page</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/sec_Quest.css">
+  <link rel="stylesheet" href="/css/se_eduq.css">
 </head>
+
 <body>
   <header class="header">
     <h1>Welcome to EDU Forms Project Page</h1>
     <!-- Navigation -->
     <nav class="nav">
-      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="../../index.html">Home</a>
       <a class="nav-link" href="#">About</a>
       <a class="nav-link" href="#">Logout</a>
     </nav>
   </header>
-  <!-- introduction Section -->
-  <div class="welcome-info">
-    <h3>GOVERNMENT OF ST.LUCIA</h3>
-    <h3>
-      MINISTRY OF EDUCATION, INNOVATION, GENDER RELATIONS AND SUSTAINABLE DEVELOPMENT</h3>
-      <h4>Special Education (V/Fort) Questionnaire for the Academic Year 2020/21</h4>
-  </div>
-  <div class="se_container">
-      <h3 class="se_headings">Select Your School</h3>
-   
-    <!-- Dropdown Menu to select schools -->
-    <form class="se_myForm" action="" method="post">
-      <label for="school" class="school-select" hidden> Select Your School </label><br>
-      <select id="school" name="option"  > <br>
-        <option value="" selected disabled required> Select School</option>
-        <option value="school1">School 1</option>
-        <option value="school2">School 2</option>
-        <option value="school3">School 3</option>
-        <option value="school4">School 4</option>
-      </select>
-      <br><br>
-      <button type="button"><a href="/pages/se_eduq/se_forms.html">Next</a></button>
-    </form>
-  </div>
-  
-  <footer class="footer">
-    <div class="container">
-      <p>© 2024 SOP EDU Forms. All rights reserved.</p>
+
+  <section class="row">
+    <div >
+      <h2 class="sq-section-heading">Government of St. Lucia</h2>
+      <h3 class="sq-section-heading">Ministry of Education, Innovation Gender Relations 
+        and Sustainable Development</h3>
     </div>
-  </footer>
+  </section>
+
+<section class="row">
+  <div class="sq-cover">
+    <br><h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">
+      Special Education (V/Fort) Questionnaire for the Academic Year 2020/21
+    </h3>
+     
+    <form action="" method="post" autocomplete="off">
+      <!--<fieldset class="sq-cover-fieldset" style="margin: auto;">-->
+      <div class="sq-form-group">
+        <label for="district" class=" form-label">Select District: &nbsp;</label>
+        <select name="district" id="district" class="sq-form-input"> 
+          <option selected>Select District  &nbsp; </option>
+          <option value="district 1">District 1</option>
+          <option value="district 2">District 2</option>
+          <option value="district 3">District 3</option>
+          <option value="district 4">District 4</option>
+          <option value="district 5">District 5</option>
+          <option value="district 6">District 6</option>
+          <option value="district 7">District 7</option>
+          <option value="district 8">District 8</option>
+        </select>
+      
+
+        <!--School list should change as per the district selection-->
+      
+        <label for="schoolname" class="sq-form-label">Name of the School: &nbsp;</label>
+        <select name="schoolname" id="schoolname" class="sq-form-input"> 
+              <option selected>Select School</option>
+              <option value="babonneau secondary">Babonneau Secondary</option>
+              <option value="corinth secondary">Corinth Secondary</option>
+              <option value="saint lucia sports academy">Saint Luica Sports Academy</option>
+        </select>
+      </div>
+
+      <h4 style="text-align: center; font-style: oblique;">Instructions:</h4>
+          <p class="sq-cover-para">1. &nbsp;All data furnished in this questionnaire should refer to the day of <b>October 15, 2020.</b>
+            The completed questionnaire should reach your <b>District Office</b> by <b>November 20, 2020.</b></p>
+          <p class="sq-cover-para">2. &nbsp; For any questions, comments or querries please contact the statistical 
+            officers of the Corporate Planning Unit at <a href="tel:468-3220/3221/3257" style="text-decoration: none;" >468-3220/3221/3257</a>.</p><br>
+          
+      <div class="sq-form-group">
+        <label for="principal-name" class="form-label">Name of the Principal: &nbsp;</label>
+        <input type="text" name="principal-name" id="principal-name" class="sq-form-input">
+     
+        <label for="date" class="sq-form-label">Completed Date: &nbsp;</label>
+        <input type="date" name="date" id="date" class="sq-form-input"><br><br>
+      </div>
+
+        <!--<button type="submit" class="sq-form-button">Continue</button>-->
+      <div class="sq-form-group">
+       <a href="/pages/se_eduq/se_school.html " target="_self"><input type="button"  value="Continue" class="sq-form-button"></a> 
+        
+      </div>
+
+      <!--</fieldset>-->
+    </form>
+     
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2024 SOP EDU Forms. All rights reserved.</p>
+  </div>
+</footer>
+
+
 </body>
- 
 </html>

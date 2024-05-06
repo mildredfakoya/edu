@@ -1,48 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>School buildings</title>
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/se_eduq.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOP Internship forms Page</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/sec_Quest.css">
+  <link rel="stylesheet" href="/css/se_eduq.css">
 </head>
 <body>
-    <h3 class="se_headings">Buildings</h3>
-    <form action="" method="post">
-        <fieldset class="se_fieldset">
-            <legend>Class Structure</legend>
-            <div><label for="number_classes">Total Number of Classes</label>
-                <input type="number" name="number_classes" id="number_classes">
-            </div>
-            <div>       <label for="">Total Number of Classrooms</label>
-                <input type="number" name="number_classrooms" id="number_classrooms">
-            </div>
-            <div>            <label for="number_halls">Total Number of Halls</label>
-                <input type="number" name="number_halls" id="number_halls">
-            </div>
-            <div><label for="number_of_single_classes">Number of Single Classes in Single Classrooms</label>
-                <input type="number" name="number_of_single_classes" id="number_of_single_classes">
-            </div>
-            <div> <label for="number_classes_sharing_classrooms">Number of Classes sharing classrooms</label>
-                <input type="number" name="number_classes_sharing_classrooms" id="number_classes_sharing_classrooms">
-            </div>
-            <div><label for=" classes_in_hall_type_space">Number of Classes in Hall-Type Space</label>
-                <input type="number" name="classes_in_hall_type_space" id="classes_in_hall_type_space">
-            </div>
-            <div><label for="capacity_whole_school">Maximum Enrolment Capacity of Whole School</label>
-                <input type="number" name="capacity_whole_school" id="capacity_whole_school">
-            </div>
 
+  <header class="header">
+    <h1>Welcome to EDU Forms Project Page</h1>
+    <!-- Navigation -->
+    <nav class="nav">
+      <a class="nav-link" href="../../index.html">Home</a>
+      <a class="nav-link" href="#">About</a>
+      <a class="nav-link" href="#">Logout</a>
+    </nav>
+  </header>
+
+  <section class="row">
+    <div >
+      <h2 class="sq-section-heading">Government of St. Lucia</h2>
+      <h3 class="sq-section-heading">Ministry of Education, Innovation Gender Relations 
+        and Sustainable Development</h3>
+        <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">
+            Special Education (V/Fort) Questionnaire for the Academic Year 2020/21</h3>
+    </div>
+  </section>
+
+<section class="row">
+  <section class="col-2">
+    <div class="sq-sidenav ">
+        <a href="/pages/se_eduq/se_home.html">Cover</a>
+        <a href="/pages/se_eduq/se_school.html" class="sq-focus">School</a>
+        <a href="/pages/se_eduq/forms/staff.html">Staff</a>
+        <a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a>
+        <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a>
+        <a href="/pages/se_eduq/forms/enrollment.html">Enrolment</a>
+        <a href="/pages/se_eduq/forms/furniture.html">Furniture</a>
+        <a href="/pages/se_eduq/forms/buildings.html">Buildings</a>
+        <a href="/pages/se_eduq/forms/equipments.html">Equipments</a>
+        <a href="/pages/se_eduq/forms/funds.html">Funds Raised</a>
+       
+    </div>
+  </section>
+
+  <section class="col-10">
+  <div class="sq-form">  
+    <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Buildings Information</h3>
+    <div>
+        <form action="" method="post">
+            <fieldset class="se_fieldset">
+                <legend>Class Structure</legend>
+                <div><label for="number_classes">Total Number of Classes</label>
+                    <input type="number" name="number_classes" id="number_classes">
+                </div>
+                <div>       <label for="">Total Number of Classrooms</label>
+                    <input type="number" name="number_classrooms" id="number_classrooms">
+                </div>
+                <div>            <label for="number_halls">Total Number of Halls</label>
+                    <input type="number" name="number_halls" id="number_halls">
+                </div>
+                <div><label for="number_of_single_classes">Number of Single Classes in Single Classrooms</label>
+                    <input type="number" name="number_of_single_classes" id="number_of_single_classes">
+                </div>
+                <div> <label for="number_classes_sharing_classrooms">Number of Classes sharing classrooms</label>
+                    <input type="number" name="number_classes_sharing_classrooms" id="number_classes_sharing_classrooms">
+                </div>
+                <div><label for=" classes_in_hall_type_space">Number of Classes in Hall-Type Space</label>
+                    <input type="number" name="classes_in_hall_type_space" id="classes_in_hall_type_space">
+                </div>
+                <div><label for="capacity_whole_school">Maximum Enrolment Capacity of Whole School</label>
+                    <input type="number" name="capacity_whole_school" id="capacity_whole_school">
+                </div>
+    
+                
+    
+    
+                
+               
+                
+    
+            </fieldset>
+            <fieldset>
+              <legend> Conditions of Buildings, Toilets ,Plumbing , Electricity and Security</legend>
+              <div>
+                <label for="floors-satisfactory">Floors (Satisfactory):</label>
+                <input type="checkbox" id="floors-satisfactory" name="floors-satisfactory">
+                <label for="floors-poor">Floors (Poor):</label>
+                <input type="checkbox" id="floors-poor" name="floors-poor">
+                <label for="floors-repairs">Floors (Repairs/Additional Requirements):</label>
+                <input type="text" id="floors-repairs" name="floors-repairs"><br>
+            </div>
+        
+            <div>
+                <label for="walls-satisfactory">Walls (Satisfactory):</label>
+                <input type="checkbox" id="walls-satisfactory" name="walls-satisfactory">
+                <label for="walls-poor">Walls (Poor):</label>
+                <input type="checkbox" id="walls-poor" name="walls-poor">
+                <label for="walls-repairs">Walls (Repairs/Additional Requirements):</label>
+                <input type="text" id="walls-repairs" name="walls-repairs"><br>
+            </div>
+        
+            <div>
+                <label for="partitions-satisfactory">Partitions (Satisfactory):</label>
+                <input type="checkbox" id="partitions-satisfactory" name="partitions-satisfactory">
+                <label for="partitions-poor">Partitions (Poor):</label>
+                <input type="checkbox" id="partitions-poor" name="partitions-poor">
+                <label for="partitions-repairs">Partitions (Repairs/Additional Requirements):</label>
+                <input type="text" id="partitions-repairs" name="partitions-repairs"><br>
+            </div>
+        
             
-
-
+            <div>
+              <label for="windows-satisfactory">Windows (Satisfactory):</label>
+              <input type="checkbox" id="windows-satisfactory" name="windows-satisfactory">
+              <label for="windows-poor">Windows (Poor):</label>
+              <input type="checkbox" id="windows-poor" name="windows-poor">
+              <label for="windows-repairs">Windows (Repairs/Additional Requirements):</label>
+              <input type="text" id="windows-repairs" name="windows-repairs"><br>
+          </div>
+      
+          <div>
+              <label for="doors-satisfactory">Doors (Satisfactory):</label>
+              <input type="checkbox" id="doors-satisfactory" name="doors-satisfactory">
+              <label for="doors-poor">Doors (Poor):</label>
+              <input type="checkbox" id="doors-poor" name="doors-poor">
+              <label for="doors-repairs">Doors (Repairs/Additional Requirements):</label>
+              <input type="text" id="doors-repairs" name="doors-repairs"><br>
+          </div>
+      
+          <div>
+              <label for="ceilings-satisfactory">Ceilings (Satisfactory):</label>
+              <input type="checkbox" id="ceilings-satisfactory" name="ceilings-satisfactory">
+              <label for="ceilings-poor">Ceilings (Poor):</label>
+              <input type="checkbox" id="ceilings-poor" name="ceilings-poor">
+              <label for="ceilings-repairs">Ceilings (Repairs/Additional Requirements):</label>
+              <input type="text" id="ceilings-repairs" name="ceilings-repairs"><br>
+          </div>
+      
+          <div>
+              <label for="roofs-satisfactory">Roofs (Satisfactory):</label>
+              <input type="checkbox" id="roofs-satisfactory" name="roofs-satisfactory">
+              <label for="roofs-poor">Roofs (Poor):</label>
+              <input type="checkbox" id="roofs-poor" name="roofs-poor">
+              <label for="roofs-repairs">Roofs (Repairs/Additional Requirements):</label>
+              <input type="text" id="roofs-repairs" name="roofs-repairs"><br>
+          </div>
+      
+          <div>
+              <label for="staff-toilets-satisfactory">Staff Toilets (Satisfactory):</label>
+              <input type="checkbox" id="staff-toilets-satisfactory" name="staff-toilets-satisfactory">
+              <label for="staff-toilets-poor">Staff Toilets (Poor):</label>
+              <input type="checkbox" id="staff-toilets-poor" name="staff-toilets-poor">
+              <label for="staff-toilets-repairs">Staff Toilets (Repairs/Additional Requirements):</label>
+              <input type="text" id="staff-toilets-repairs" name="staff-toilets-repairs"><br>
+          </div>
+      
+          <div>
+              <label for="student-toilets-satisfactory">Student Toilets (Satisfactory):</label>
+              <input type="checkbox" id="student-toilets-satisfactory" name="student-toilets-satisfactory">
+              <label for="student-toilets-poor">Student Toilets (Poor):</label>
+              <input type="checkbox" id="student-toilets-poor" name="student-toilets-poor">
+              <label for="student-toilets-repairs">Student Toilets (Repairs/Additional Requirements):</label>
+              <input type="text" id="student-toilets-repairs" name="student-toilets-repairs"><br>
+          </div>
+      
+          <div>
+              <label for="urinals-satisfactory">Urinals (Satisfactory):</label>
+              <input type="checkbox" id="urinals-satisfactory" name="urinals-satisfactory">
+              <label for="urinals-poor">Urinals (Poor):</label>
+              <input type="checkbox" id="urinals-poor" name="urinals-poor">
+              <label for="urinals-repairs">Urinals (Repairs/Additional Requirements):</label>
+              <input type="text" id="urinals-repairs" name="urinals-repairs"><br>
+          </div>
+      
+          <div>
+              <label for="water-supply-satisfactory">Water Supply (Satisfactory):</label>
+              <input type="checkbox" id="water-supply-satisfactory" name="water-supply-satisfactory">
+              <label for="water-supply-poor">Water Supply (Poor):</label>
+              <input type="checkbox" id="water-supply-poor" name="water-supply-poor">
+              <label for="water-supply-repairs">Water Supply (Repairs/Additional Requirements):</label>
+              <input type="text" id="water-supply-repairs" name="water-supply-repairs"><br>
+          </div>
+      
+          <div>
+              <label for="water-storage-tanks-satisfactory">Water Storage Tanks (Satisfactory):</label>
+              <input type="checkbox" id="water-storage-tanks-satisfactory" name="water-storage-tanks-satisfactory">
+              <label for="water-storage-tanks-poor">Water Storage Tanks (Poor):</label>
+              <input type="checkbox" id="water-storage-tanks-poor" name="water-storage-tanks-poor">
+              <label for="water-storage-tanks-repairs">Water Storage Tanks (Repairs/Additional Requirements):</label>
+              <input type="text" id="water-storage-tanks-repairs" name="water-storage-tanks-repairs"><br>
+          </div>
+      
+          <div>
+              <label for="light-bulbs-satisfactory">Light Bulbs (Satisfactory):</label>
+              <input type="checkbox" id="light-bulbs-satisfactory" name="light-bulbs-satisfactory">
+              <label for="light-bulbs-poor">Light Bulbs (Poor):</label>
+              <input type="checkbox" id="light-bulbs-poor" name="light-bulbs-poor">
+              <label for="light-bulbs-repairs">Light Bulbs (Repairs/Additional Requirements):</label>
+              <input type="text" id="light-bulbs-repairs" name="light-bulbs-repairs"><br>
+          </div>
+      
+          <div>
+              <label for="electricity-outlets-satisfactory">Electricity Outlets (Satisfactory):</label>
+              <input type="checkbox" id="electricity-outlets-satisfactory" name="electricity-outlets-satisfactory">
+              <label for="electricity-outlets-poor">Electricity Outlets (Poor):</label>
+              <input type="checkbox" id="electricity-outlets-poor" name="electricity-outlets-poor">
+              <label for="electricity-outlets-repairs">Electricity Outlets (Repairs/Additional Requirements):</label>
+              <input type="text" id="electricity-outlets-repairs" name="electricity-outlets-repairs"><br>
+          </div>
+      
+          <div>
+              <label for="electricity-wirings-satisfactory">Electricity Wirings (Satisfactory):</label>
+              <input type="checkbox" id="electricity-wirings-satisfactory" name="electricity-wirings-satisfactory">
+              <label for="electricity-wirings-poor">Electricity Wirings (Poor):</label>
+              <input type="checkbox" id="electricity-wirings-poor" name="electricity-wirings-poor">
+              <label for="electricity-wirings-repairs">Electricity Wirings (Repairs/Additional Requirements):</label>
+              <input type="text" id="electricity-wirings-repairs" name="electricity-wirings-repairs"><br>
+          </div>
+      
+          <div>
+              <label for="fencing-satisfactory">Fencing (Satisfactory):</label>
+              <input type="checkbox" id="fencing-satisfactory" name="fencing-satisfactory">
+              <label for="fencing-poor">Fencing (Poor):</label>
+              <input type="checkbox" id="fencing-poor" name="fencing-poor">
+              <label for="fencing-repairs">Fencing (Repairs/Additional Requirements):</label>
+              <input type="text" id="fencing-repairs" name="fencing-repairs"><br>
+          </div>
             
-           
+            <div>
+                <label for="gates-satisfactory">Gates (Satisfactory):</label>
+                <input type="checkbox" id="gates-satisfactory" name="gates-satisfactory">
+                <label for="gates-poor">Gates (Poor):</label>
+                <input type="checkbox" id="gates-poor" name="gates-poor">
+                <label for="gates-repairs">Gates (Repairs/Additional Requirements):</label>
+                <input type="text" id="gates-repairs" name="gates-repairs"><br>
+            </div>
             
+            <div>
+                <label for="others-specify-satisfactory">Others (Specify) (Satisfactory):</label>
+                <input type="checkbox" id="others-specify-satisfactory" name="others-specify-satisfactory">
+                <label for="others-specify-poor">Others (Specify) (Poor):</label>
+                <input type="checkbox" id="others-specify-poor" name="others-specify-poor">
+                <label for="others-specify-repairs">Others (Specify) (Repairs/Additional Requirements):</label>
+                <input type="text" id="others-specify-repairs" name="others-specify-repairs"><br>
+            </div>
+            </fieldset>
+        </form>
+    </div>
+ 
+</section>
 
-        </fieldset>
-    </form>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2024 SOP EDU Forms. All rights reserved.</p>
+  </div>
+</footer>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staff</title>
-    <link rel="stylesheet" href="/css/se_eduq.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOP Internship forms Page</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/sec_Quest.css">
+  <link rel="stylesheet" href="/css/se_eduq.css">
 </head>
 <body>
-    <h3 class="se_headings">Staff Information</h3>
-</body>
-<section>
+
+  <header class="header">
+    <h1>Welcome to EDU Forms Project Page</h1>
+    <!-- Navigation -->
+    <nav class="nav">
+      <a class="nav-link" href="../../index.html">Home</a>
+      <a class="nav-link" href="#">About</a>
+      <a class="nav-link" href="#">Logout</a>
+    </nav>
+  </header>
+
+  <section class="row">
+    <div >
+      <h2 class="sq-section-heading">Government of St. Lucia</h2>
+      <h3 class="sq-section-heading">Ministry of Education, Innovation Gender Relations 
+        and Sustainable Development</h3>
+        <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">
+            Special Education (V/Fort) Questionnaire for the Academic Year 2020/21</h3>
+    </div>
+  </section>
+
+<section class="row">
+  <section class="col-2">
+    <div class="sq-sidenav ">
+        <a href="/pages/se_eduq/se_home.html">Cover</a>
+        <a href="/pages/se_eduq/se_school.html" class="sq-focus">School</a>
+        <a href="/pages/se_eduq/forms/staff.html">Staff</a>
+        <a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a>
+        <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a>
+        <a href="/pages/se_eduq/forms/enrollment.html">Enrolment</a>
+        <a href="/pages/se_eduq/forms/furniture.html">Furniture</a>
+        <a href="/pages/se_eduq/forms/buildings.html">Buildings</a>
+        <a href="/pages/se_eduq/forms/equipments.html">Equipments</a>
+        <a href="/pages/se_eduq/forms/funds.html">Funds Raised</a>
+       
+    </div>
+  </section>
+
+  <section class="col-10">
+  <div class="sq-form">  
+    <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Staff Information</h3>
     <div>
         <form action="">
             <fieldset>
@@ -159,61 +199,187 @@
             </fieldset>
             <fieldset>
                 <legend>Nationality of Teaching Staff</legend>
-                <table class="se_form_tables">
-                    <thead>
-                        <tr>
-                            <th rowspan="3">Status/Grade</th>
-                            <th colspan="6">Nationality of Teaching Staff</th>
-                        </tr>
-                        <tr>
-                            <th colspan="2">National</th>
-                            <th colspan="2">Caricom</th>
-                            <th colspan="2">Other</th>
-                        </tr>
-                        <tr>
-                            <th>M</th>
-                            <th>F</th>
-                            <th>M</th>
-                            <th>F</th>
-                            <th>M</th>
-                            <th>F</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><label for="T-I">T I</label></td>
-                            <td><input type="number" name="T-I-m" id="T-I-m"></td>
-                            <td><input type="number" name="T-I-f" id="T-I-f"></td>
-                            <td><input type="number" name="T-I-caricom-m" id="T-I-caricom-m"></td>
-                            <td><input type="number" name="T-I-caricom-f" id="T-I-caricom-f"></td>
-                            <td><input type="number" name="T-I-other-m" id="T-I-other-m"></td>
-                            <td><input type="number" name="T-I-other-f" id="T-I-other-f"></td>
-                        </tr>
-                        <tr>
-                            <td><label for="T-II-c">T II(c)</label></td>
-                            <td><input type="number" name="T-II-c-m" id="T-II-c-m"></td>
-                            <td><input type="number" name="T-II-c-f" id="T-II-c-f"></td>
-                            <td><input type="number" name="T-II-c-caricom-m" id="T-II-c-caricom-m"></td>
-                            <td><input type="number" name="T-II-c-caricom-f" id="T-II-c-caricom-f"></td>
-                            <td><input type="number" name="T-II-c-other-m" id="T-II-c-other-m"></td>
-                            <td><input type="number" name="T-II-c-other-f" id="T-II-c-other-f"></td>
-                        </tr>
-                        <!-- Space for more Rows -->
-                        <tr>
-                            <td><label for="total">Total</label></td>
-                            <td><input type="number" name="total-m" id="total-m"></td>
-                            <td><input type="number" name="total-f" id="total-f"></td>
-                            <td><input type="number" name="total-caricom-m" id="total-caricom-m"></td>
-                            <td><input type="number" name="total-caricom-f" id="total-caricom-f"></td>
-                            <td><input type="number" name="total-other-m" id="total-other-m"></td>
-                            <td><input type="number" name="total-other-f" id="total-other-f"></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <table  class="se_form_tables">
+                  <thead>
+                      <tr>
+                          <th rowspan="3">Status/Grade</th>
+                          <th colspan="6">Nationality of Teaching Staff</th>
+                      </tr>
+                      <tr>
+                          <th colspan="2">National</th>
+                          <th colspan="2">Caricom</th>
+                          <th colspan="2">Other</th>
+                      </tr>
+                      <tr>
+                          <th>M</th>
+                          <th>F</th>
+                          <th>M</th>
+                          <th>F</th>
+                          <th>M</th>
+                          <th>F</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><label for="t1-male">T I</label></td>
+                      <td><input type="text" id="t1-male" name="t1-male" aria-label="T I Male"></td>
+                      <td><input type="text" id="t1-female" name="t1-female" aria-label="T I Female"></td>
+                      <td><input type="text" id="t1-caricom-male" name="t1-caricom-male" aria-label="T I Caricom Male"></td>
+                      <td><input type="text" id="t1-caricom-female" name="t1-caricom-female" aria-label="T I Caricom Female"></td>
+                      <td><input type="text" id="t1-other-male" name="t1-other-male" aria-label="T I Other Male"></td>
+                      <td><input type="text" id="t1-other-female" name="t1-other-female" aria-label="T I Other Female"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="t2c-male">T II(c)</label></td>
+                    <td><input type="number" id="t2c-male" name="t2c-male" aria-label="T II(c) Male"></td>
+                    <td><input type="number " id="t2c-female" name="t2c-female" aria-label="T II(c) Female"></td>
+                    <td><input type="number" id="t2c-caricom-male" name="t2c-caricom-male" aria-label="T II(c) Caricom Male"></td>
+                    <td><input type="number" id="t2c-caricom-female" name="t2c-caricom-female" aria-label="T II(c) Caricom Female"></td>
+                    <td><input type="number" id="t2c-other-male" name="t2c-other-male" aria-label="T II(c) Other Male"></td>
+                    <td><input type="number" id="t2c-other-female" name="t2c-other-female" aria-label="T II(c) Other Female"></td>
+                </tr>
+                <tr>
+                    <td><label for="t2b-male">T II(b)</label></td>
+                    <td><input type="number" id="t2b-male" name="t2b-male" aria-label="T II(b) Male"></td>
+                    <td><input type="number" id="t2b-female" name="t2b-female" aria-label="T II(b) Female"></td>
+                    <td><input type="number" id="t2b-caricom-male" name="t2b-caricom-male" aria-label="T II(b) Caricom Male"></td>
+                    <td><input type="number" id="t2b-caricom-female" name="t2b-caricom-female" aria-label="T II(b) Caricom Female"></td>
+                    <td><input type="number" id="t2b-other-male" name="t2b-other-male" aria-label="T II(b) Other Male"></td>
+                    <td><input type="number" id="t2b-other-female" name="t2b-other-female" aria-label="T II(b) Other Female"></td>
+                </tr>
+                <tr>
+                    <td><label for="t2a-male">T II(a)</label></td>
+                    <td><input type="number" id="t2a-male" name="t2a-male" aria-label="T II(a) Male"></td>
+                    <td><input type="number" id="t2a-female" name="t2a-female" aria-label="T II(a) Female"></td>
+                    <td><input type="number" id="t2a-caricom-male" name="t2a-caricom-male" aria-label="T II(a) Caricom Male"></td>
+                    <td><input type="number" id="t2a-caricom-female" name="t2a-caricom-female" aria-label="T II(a) Caricom Female"></td>
+                    <td><input type="number" id="t2a-other-male" name="t2a-other-male" aria-label="T II(a) Other Male"></td>
+                    <td><input type="number" id="t2a-other-female" name="t2a-other-female" aria-label="T II(a) Other Female"></td>
+                </tr>
+                <tr>
+                  <td><label for="t3b-male">T III(b)</label></td>
+                  <td><input type="number" id="t3b-male" name="t3b-male" aria-label="T III(b) Male"></td>
+                  <td><input type="number" id="t3b-female" name="t3b-female" aria-label="T III(b) Female"></td>
+                  <td><input type="number" id="t3b-caricom-male" name="t3b-caricom-male" aria-label="T III(b) Caricom Male"></td>
+                  <td><input type="number" id="t3b-caricom-female" name="t3b-caricom-female" aria-label="T III(b) Caricom Female"></td>
+                  <td><input type="number" id="t3b-other-male" name="t3b-other-male" aria-label="T III(b) Other Male"></td>
+                  <td><input type="number" id="t3b-other-female" name="t3b-other-female" aria-label="T III(b) Other Female"></td>
+              </tr>
+              <tr>
+                  <td><label for="t3a-male">T III(a)</label></td>
+                  <td><input type="number" id="t3a-male" name="t3a-male" aria-label="T III(a) Male"></td>
+                  <td><input type="number" id="t3a-female" name="t3a-female" aria-label="T III(a) Female"></td>
+                  <td><input type="number" id="t3a-caricom-male" name="t3a-caricom-male" aria-label="T III(a) Caricom Male"></td>
+                  <td><input type="number" id="t3a-caricom-female" name="t3a-caricom-female" aria-label="T III(a) Caricom Female"></td>
+                  <td><input type="number" id="t3a-other-male" name="t3a-other-male" aria-label="T III(a) Other Male"></td>
+                  <td><input type="number" id="t3a-other-female" name="t3a-other-female" aria-label="T III(a) Other Female"></td>
+              </tr>
+              <tr>
+                  <td><label for="st1-male">Special Teacher I</label></td>
+                  <td><input type="number" id="st1-male" name="st1-male" aria-label="Special Teacher I Male"></td>
+                  <td><input type="number" id="st1-female" name="st1-female" aria-label="Special Teacher I Female"></td>
+                  <td><input type="number" id="st1-caricom-male" name="st1-caricom-male" aria-label="Special Teacher I Caricom Male"></td>
+                  <td><input type="number" id="st1-caricom-female" name="st1-caricom-female" aria-label="Special Teacher I Caricom Female"></td>
+                  <td><input type="number" id="st1-other-male" name="st1-other-male" aria-label="Special Teacher I Other Male"></td>
+                  <td><input type="number" id="st1-other-female" name="st1-other-female" aria-label="Special Teacher I Other Female"></td>
+              </tr>
+              <tr>
+                  <td><label for="st2-male">Special Teacher II</label></td>
+                  <td><input type="number" id="st2-male" name="st2-male" aria-label="Special Teacher II Male"></td>
+                  <td><input type="number" id="st2-female" name="st2-female" aria-label="Special Teacher II Female"></td>
+                  <td><input type="number" id="st2-caricom-male" name="st2-caricom-male" aria-label="Special Teacher II Caricom Male"></td>
+                  <td><input type="number" id="st2-caricom-female" name="st2-caricom-female" aria-label="Special Teacher II Caricom Female"></td>
+                  <td><input type="number" id="st2-other-male" name="st2-other-male" aria-label="Special Teacher II Other Male"></td>
+                  <td><input type="number" id="st2-other-female" name="st2-other-female" aria-label="Special Teacher II Other Female"></td>
+              </tr>
+              <tr>
+                  <td><label for="t4-male">T IV</label></td>
+                  <td><input type="number" id="t4-male" name="t4-male" aria-label="T IV Male"></td>
+                  <td><input type="number" id="t4-female" name="t4-female" aria-label="T IV Female"></td>
+                  <td><input type="number" id="t4-caricom-male" name="t4-caricom-male" aria-label="T IV Caricom Male"></td>
+                  <td><input type="number" id="t4-caricom-female" name="t4-caricom-female" aria-label="T IV Caricom Female"></td>
+                  <td><input type="number" id="t4-other-male" name="t4-other-male" aria-label="T IV Other Male"></td>
+                  <td><input type="number" id="t4-other-female" name="t4-other-female" aria-label="T IV Other Female"></td>
+              </tr>
+              <tr>
+                  <td><label for="gt1-male">GT (I)</label></td>
+                  <td><input type="number" id="gt1-male" name="gt1-male" aria-label="GT (I) Male"></td>
+                  <td><input type="number" id="gt1-female" name="gt1-female" aria-label="GT (I) Female"></td>
+                  <td><input type="number" id="gt1-caricom-male" name="gt1-caricom-male" aria-label="GT (I) Caricom Male"></td>
+                  <td><input type="number" id="gt1-caricom-female" name="gt1-caricom-female" aria-label="GT (I) Caricom Female"></td>
+                  <td><input type="number" id="gt1-other-male" name="gt1-other-male" aria-label="GT (I) Other Male"></td>
+                  <td><input type="number" id="gt1-other-female" name="gt1-other-female" aria-label="GT (I) Other Female"></td>
+              </tr>
+              <tr>
+                  <td><label for="gt2-male">GT (II)</label></td>
+                  <td><input type="number" id="gt2-male" name="gt2-male" aria-label="GT (II) Male"></td>
+                  <td><input type="number" id="gt2-female" name="gt2-female" aria-label="GT (II) Female"></td>
+                  <td><input type="number" id="gt2-caricom-male" name="gt2-caricom-male" aria-label="GT (II) Caricom Male"></td>
+                  <td><input type="number" id="gt2-caricom-female" name="gt2-caricom-female" aria-label="GT (II) Caricom Female"></td>
+                  <td><input type="number" id="gt2-other-male" name="gt2-other-male" aria-label="GT (II) Other Male"></td>
+                  <td><input type="number" id="gt2-other-female" name="gt2-other-female" aria-label="GT (II) Other Female"></td>
+              </tr>
+              <tr>
+                  <td><label for="gt3-male">GT (III)</label></td>
+                  <td><input type="number" id="gt3-male" name="gt3-male" aria-label="GT (III) Male"></td>
+                  <td><input type="number" id="gt3-female" name="gt3-female" aria-label="GT (III) Female"></td>
+                  <td><input type="number" id="gt3-caricom-male" name="gt3-caricom-male" aria-label="GT (III) Caricom Male"></td>
+                  <td><input type="number" id="gt3-caricom-female" name="gt3-caricom-female" aria-label="GT (III) Caricom Female"></td>
+                  <td><input type="number" id="gt3-other-male" name="gt3-other-male" aria-label="GT (III) Other Male"></td>
+                  <td><input type="number" id="gt3-other-female" name="gt3-other-female" aria-label="GT (III) Other Female"></td>
+              </tr>
+              <tr>
+                  <td><label for="gt4-male">GT (IV)</label></td>
+                  <td><input type="number" id="gt4-male" name="gt4-male" aria-label="GT (IV) Male"></td>
+                  <td><input type="number" id="gt4-female" name="gt4-female" aria-label="GT (IV) Female"></td>
+                  <td><input type="number" id="gt4-caricom-male" name="gt4-caricom-male" aria-label="GT (IV) Caricom Male"></td>
+                  <td><input type="number" id="gt4-caricom-female" name="gt4-caricom-female" aria-label="GT (IV) Caricom Female"></td>
+                  <td><input type="number" id="gt4-other-male" name="gt4-other-male" aria-label="GT (IV) Other Male"></td>
+                  <td><input type="number" id="gt4-other-female" name="gt4-other-female" aria-label="GT (IV) Other Female"></td>
+              </tr>
+              <tr>
+                  <td><label for="gt5-male">GT (V)</label></td>
+                  <td><input type="number" id="gt5-male" name="gt5-male" aria-label="GT (V) Male"></td>
+                  <td><input type="number" id="gt5-female" name="gt5-female" aria-label="GT (V) Female"></td>
+                  <td><input type="number" id="gt5-caricom-male" name="gt5-caricom-male" aria-label="GT (V) Caricom Male"></td>
+                  <td><input type="number" id="gt5-caricom-female" name="gt5-caricom-female" aria-label="GT (V) Caricom Female"></td>
+                  <td><input type="number" id="gt5-other-male" name="gt5-other-male" aria-label="GT (V) Other Male"></td>
+                  <td><input type="number" id="gt5-other-female" name="gt5-other-female" aria-label="GT (V) Other Female"></td>
+              </tr>
+              <tr>
+                  <td><label for="ta-male">Teacher Aide</label></td>
+                  <td><input type="number" id="ta-male" name="ta-male" aria-label="Teacher Aide Male"></td>
+                  <td><input type="number" id="ta-female" name="ta-female" aria-label="Teacher Aide Female"></td>
+                  <td><input type="number" id="ta-caricom-male" name="ta-caricom-male" aria-label="Teacher Aide Caricom Male"></td>
+                  <td><input type="number" id="ta-caricom-female" name="ta-caricom-female" aria-label="Teacher Aide Caricom Female"></td>
+                  <td><input type="number" id="ta-other-male" name="ta-other-male" aria-label="Teacher Aide Other Male"></td>
+                  <td><input type="number" id="ta-other-female" name="ta-other-female" aria-label="Teacher Aide Other Female"></td>
+              </tr>
+              <tr>
+                  <td><label for="other-male">Other</label></td>
+                  <td><input type="number" id="other-male" name="other-male" aria-label="Other Male"></td>
+                  <td><input type="number" id="other-female" name="other-female" aria-label="Other Female"></td>
+                  <td><input type="number" id="other-caricom-male" name="other-caricom-male" aria-label="Other Caricom Male"></td>
+                  <td><input type="number" id="other-caricom-female" name="other-caricom-female" aria-label="Other Caricom Female"></td>
+                  <td><input type="number" id="other-other-male" name="other-other-male" aria-label="Other Other Male"></td>
+                  <td><input type="number" id="other-other-female" name="other-other-female" aria-label="Other Other Female"></td>
+              </tr>
+              <tr>
+                  <td><label for="total">Total</label></td>
+                  <td><input type="number" id="total" name="total" aria-label="Total" readonly></td>
+                  <td><input type="number" id="total" name="total" aria-label="Total" readonly></td>
+                  <td><input type="number" id="total" name="total" aria-label="Total" readonly></td>
+                  <td><input type="number" id="total" name="total" aria-label="Total" readonly></td>
+                  <td><input type="number" id="total" name="total" aria-label="Total" readonly></td>
+                  <td><input type="number" id="total" name="total" aria-label="Total" readonly></td>
+              </tr>
+                      
+                  </tbody>
+              </table>
             
             </fieldset>
             <fieldset>
-                <legend>New Appointment Information</legend>
+                <legend>New Appointment Information according to Grades</legend>
                 <form>
                     <label for="status-grade-T-I">T I:</label>
                     <label for="status-grade-T-I-m">Male:</label>
@@ -233,7 +399,84 @@
                     <label for="status-grade-T-II-b-f">Female:</label>
                     <input type="number" id="status-grade-T-II-b-f" name="status-grade-T-II-b-f" ><br><br>
                 
-                    <!-- Space for other grades -->
+                     
+                    <label for="status-grade-T-II-a">T II(a):</label>
+                    <label for="status-grade-T-II-a-m">Male:</label>
+                    <input type="number" id="status-grade-T-II-a-m" name="status-grade-T-II-a-m" >
+                    <label for="status-grade-T-II-a-f">Female:</label>
+                    <input type="number" id="status-grade-T-II-a-f" name="status-grade-T-II-a-f"><br><br>
+                
+                    <label for="status-grade-T-III-b">T III(b):</label>
+                    <label for="status-grade-T-III-b-m">Male:</label>
+                    <input type="number" id="status-grade-T-III-b-m" name="status-grade-T-III-b-m" >
+                    <label for="status-grade-T-III-b-f">Female:</label>
+                    <input type="number" id="status-grade-T-III-b-f" name="status-grade-T-III-b-f" ><br><br>
+                
+                    <label for="status-grade-T-III-a">T III(a):</label>
+                    <label for="status-grade-T-III-a-m">Male:</label>
+                    <input type="number" id="status-grade-T-III-a-m" name="status-grade-T-III-a-m" >
+                    <label for="status-grade-T-III-a-f">Female:</label>
+                    <input type="number" id="status-grade-T-III-a-f" name="status-grade-T-III-a-f"><br><br>
+                
+                    <label for="status-grade-Special-Teacher-I">Special Teacher I:</label>
+                    <label for="status-grade-Special-Teacher-I-m">Male:</label>
+                    <input type="number" id="status-grade-Special-Teacher-I-m" name="status-grade-Special-Teacher-I-m">
+                    <label for="status-grade-Special-Teacher-I-f">Female:</label>
+                    <input type="number" id="status-grade-Special-Teacher-I-f" name="status-grade-Special-Teacher-I-f"><br><br>
+                
+                    <label for="status-grade-Special-Teacher-II">Special Teacher II:</label>
+                    <label for="status-grade-Special-Teacher-II-m">Male:</label>
+                    <input type="number" id="status-grade-Special-Teacher-II-m" name="status-grade-Special-Teacher-II-m">
+                    <label for="status-grade-Special-Teacher-II-f">Female:</label>
+                    <input type="number" id="status-grade-Special-Teacher-II-f" name="status-grade-Special-Teacher-II-f" ><br><br>
+                
+                    <label for="status-grade-T-IV">T IV:</label>
+                    <label for="status-grade-T-IV-m">Male:</label>
+                    <input type="number" id="status-grade-T-IV-m" name="status-grade-T-IV-m" >
+                    <label for="status-grade-T-IV-f">Female:</label>
+                    <input type="number" id="status-grade-T-IV-f" name="status-grade-T-IV-f" ><br><br>
+                
+                    <label for="status-grade-GT-I">GT (I):</label>
+                    <label for="status-grade-GT-I-m">Male:</label>
+                    <input type="number" id="status-grade-GT-I-m" name="status-grade-GT-I-m" >
+                    <label for="status-grade-GT-I-f">Female:</label>
+                    <input type="number" id="status-grade-GT-I-f" name="status-grade-GT-I-f" ><br><br>
+                
+                    <label for="status-grade-GT-II">GT (II):</label>
+                    <label for="status-grade-GT-II-m">Male:</label>
+                    <input type="number" id="status-grade-GT-II-m" name="status-grade-GT-II-m" >
+                    <label for="status-grade-GT-II-f">Female:</label>
+                    <input type="number" id="status-grade-GT-II-f" name="status-grade-GT-II-f" ><br><br>
+                
+                    <label for="status-grade-GT-III">GT (III):</label>
+                    <label for="status-grade-GT-III-m">Male:</label>
+                    <input type="number" id="status-grade-GT-III-m" name="status-grade-GT-III-m" >
+                    <label for="status-grade-GT-III-f">Female:</label>
+                    <input type="number" id="status-grade-GT-III-f" name="status-grade-GT-III-f" ><br><br>
+                
+                    <label for="status-grade-GT-IV">GT (IV):</label>
+                    <label for="status-grade-GT-IV-m">Male:</label>
+                    <input type="number" id="status-grade-GT-IV-m" name="status-grade-GT-IV-m" >
+                    <label for="status-grade-GT-IV-f">Female:</label>
+                    <input type="number" id="status-grade-GT-IV-f" name="status-grade-GT-IV-f" ><br><br>
+                
+                    <label for="status-grade-GT-V">GT (V):</label>
+                    <label for="status-grade-GT-V-m">Male:</label>
+                    <input type="number" id="status-grade-GT-V-m" name="status-grade-GT-V-m" >
+                    <label for="status-grade-GT-V-f">Female:</label>
+                    <input type="number" id="status-grade-GT-V-f" name="status-grade-GT-V-f" ><br><br>
+                
+                    <label for="status-grade-Teacher-Aide">Teacher Aide:</label>
+                    <label for="status-grade-Teacher-Aide-m">Male:</label>
+                    <input type="number" id="status-grade-Teacher-Aide-m" name="status-grade-Teacher-Aide-m" >
+                    <label for="status-grade-Teacher-Aide-f">Female:</label>
+                    <input type="number" id="status-grade-Teacher-Aide-f" name="status-grade-Teacher-Aide-f" ><br><br>
+                
+                    <label for="status-grade-Other">Other:</label>
+                    <label for="status-grade-Other-m">Male:</label>
+                    <input type="number" id="status-grade-Other-m" name="status-grade-Other-m" >
+                    <label for="status-grade-Other-f">Female:</label>
+                    <input type="number" id="status-grade-Other-f" name="status-grade-Other-f" ><br><br>
                 
                     <label for="total">Total:</label>
                     <label for="total-m">Male:</label>
@@ -241,12 +484,108 @@
                     <label for="total-f">Female:</label>
                     <input type="number" id="total-f" name="total-f" ><br><br>
                 
+                
                      
-                </form>
+                
+                     
+                 
                 
             </fieldset>
             </fieldset>
+            <fieldset>
+              <legend>Teachers Status According to Specialization, Professional Qualifications and Gender</legend>
+            
+            <label for="specialization-deaf-education">Deaf Education:</label> <br>
+            <label for="specialization-deaf-education-certificate-m">Male Teachers specializing in Deaf Education With Certicate:</label> <br>
+    <input type="number" id="specialization-deaf-education-certificate-m" name="specialization-deaf-education-certificate-m" placeholder=" Male with Certificate " ><br>
+    <label for="specialization-deaf-education-certificate-f">Female Teachers specializing in Deaf Education With Certicate:</label><br> 
+    <input type="number" id="specialization-deaf-education-certificate-f" name="specialization-deaf-education-certificate-f" placeholder=" Female with Certificate " ><br>
+    <label for=" specialization-deaf-education-diploma-m">Male Teachers specializing in Deaf Education With Diploma:</label><br> 
+    <input type="number" id="specialization-deaf-education-diploma-m" name="specialization-deaf-education-diploma-m"  ><br>
+    <label for=" specialization-deaf-education-diploma-f">Female Teachers specializing in Deaf Education With Diploma:</label><br> 
+    <input type="number" id="specialization-deaf-education-diploma-f" name="specialization-deaf-education-diploma-f"  ><br>
+    <label for=" specialization-deaf-education-degree-m">Male Teachers specializing in Deaf Education With a Degree:</label><br>
+    <input type="number" id="specialization-deaf-education-degree-m" name="specialization-deaf-education-degree-m"  > <br>
+    <label for=" specialization-deaf-education-degree-f">Female Teachers specializing in Deaf Education With a Degree:</label><br>
+    <input type="number" id="specialization-deaf-education-degree-f" name="specialization-deaf-education-degree-f"  ><br><br>
+
+    <label for="specialization-learning-disabilities">Learning Disabilities:</label> <br>
+    <label for="specialization-learning-disabilities-certificate-m">Male Teachers specializing in Learning Disabilities with a Certificate</label> <br>
+    <input type="number" id="specialization-learning-disabilities-certificate-m" name="specialization-learning-disabilities-certificate-m"   ><br>
+    <label for="specialization-learning-disabilities-certificate-f">Female Teachers specializing in Learning Disabilities with a Certificate</label> <br>
+
+    <input type="number" id="specialization-learning-disabilities-certificate-f" name="specialization-learning-disabilities-certificate-f"   > <br>
+    <label for="specialization-learning-disabilities-diploma-m">Male Teachers specializing in Learning Disabilities with a Diploma</label><br>
+    <input type="number" id="specialization-learning-disabilities-diploma-m" name="specialization-learning-disabilities-diploma-m"   ><br>
+    <label for="specialization-learning-disabilities-diploma-f">Female Teachers specializing in Learning Disabilities with a Diploma</label> <br>
+    <input type="number" id="specialization-learning-disabilities-diploma-f" name="specialization-learning-disabilities-diploma-f"   > <br>
+    <label for="specialization-learning-disabilities-degree-m">Male Teachers specializing in Learning Disabilities with a Degree</label> <br>
+    <input type="number" id="specialization-learning-disabilities-degree-m" name="specialization-learning-disabilities-degree-m"   > <br>
+    <label for="specialization-learning-disabilities-degree-f">Female Teachers specializing in Learning Disabilities with a Degree.</label> <br>
+    <input type="number" id="specialization-learning-disabilities-degree-f" name="specialization-learning-disabilities-degree-f"   ><br><br>
+
+    <label for="specialization-blind-education">Blind Education:</label> <br>
+    <label for="specialization-blind-education-certificate-m"> Male Teachers in Blind Education With Certificate</label> <br>
+    <input type="number" id="specialization-blind-education-certificate-m" name="specialization-blind-education-certificate-m" ><br>
+    <label for="specialization-blind-education-certificate-f">Female Teachers in Blind Education With Certificate</label> <br>
+    
+    <input type="number" id="specialization-blind-education-certificate-f" name="specialization-blind-education-certificate-f"  ><br>
+    <label for="specialization-blind-education-diploma-m">Male Teachers in Blind Education With Diploma </label><br>
+    <input type="number" id="specialization-blind-education-diploma-m" name="specialization-blind-education-diploma-m"  ><br>
+    <label for="specialization-blind-education-diploma-f"> Female Teachers in Blind Education With Diploma </label> <br>
+    <input type="number" id="specialization-blind-education-diploma-f" name="specialization-blind-education-diploma-f"  ><br>
+    <label for="specialization-blind-education-degree-m">Male Teachers in Blind Education With Degree</label> <br>
+    <input type="number" id="specialization-blind-education-degree-m" name="specialization-blind-education-degree-m"  > <br>
+    <label for="specialization-blind-education-degree-f"> Female Teachers in Blind Education With Diploma</label> <br>
+    <input type="number" id="specialization-blind-education-degree-f" name="specialization-blind-education-degree-f"  ><br><br>
+
+    <!-- Add similar input fields for the remaining specializations -->
+
+    <label for="specialization-total">Total:</label> <br>
+    <label for="specialization-total-certificate-m">Total of Male teachers with Certifacte</label> <br>
+    <input type="number" id="specialization-total-certificate-m" name="specialization-total-certificate-m"  > <br>
+    <label for="specialization-total-certificate-f">Total of Female teachers with Certifacte</label><br>
+    <input type="number" id="specialization-total-certificate-f" name="specialization-total-certificate-f"  > <br>
+    <label for="specialization-total-diploma-m"> Total of Male teachers with Diploma </label> <br>
+    <input type="number" id="specialization-total-diploma-m" name="specialization-total-diploma-m"  ><br>
+    <label for="specialization-total-diploma-f"> Total of Female teachers with Diploma </label> <br>
+    <input type="number" id="specialization-total-diploma-f" name="specialization-total-diploma-f"  > <br>
+    <label for=" specialization-total-degree-m"> Total of Male teachers with Degree </label> <br>
+    <input type="number" id="specialization-total-degree-m" name="specialization-total-degree-m"  > <br>
+    <label for="  specialization-total-degree-f"> Total of Female teachers with Degree </label> <br>
+    <input type="number" id="specialization-total-degree-f" name="specialization-total-degree-f"  ><br><br>
+  </fieldset>
         </form>
     </div>
 </section>
+
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2024 SOP EDU Forms. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
 </html>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
