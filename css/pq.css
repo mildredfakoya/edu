@@ -148,7 +148,6 @@
     height: 100%;
     width:fit-content; 
     border-radius: 5px;
-    /*margin-top: auto;*/
     padding: 20px;
     background-color: rgb(204, 204, 200);  
 }
@@ -290,7 +289,7 @@
 
  /* forms styles */
  .pq-form-tables {
-  margin: 1rem;
+  margin: 16px;
   border-collapse: collapse;
  
  
@@ -309,8 +308,6 @@ width: 100%;
 .pq_fieldset{
 margin: 32px;
 }
-
-
 
 .pq-more legend {
   font-size: 24px;

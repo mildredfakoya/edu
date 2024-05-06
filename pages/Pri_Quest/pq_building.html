@@ -32,6 +32,7 @@
     <section class="row">
         <section class="col-2">
         <div class="pq-sidenav ">
+            <a class="pqnav-link" href="./pq_home.html">Cover</a>
             <a class="pqnav-link" href="./pq_structure.html">Structure</a>
             <a class="pqnav-link" href="./pq_students.html">Students</a>
             <a class="pqnav-link" href="./pq_staff.html">Staff</a>
@@ -44,7 +45,7 @@
         <section class="col-10">
             <div class="pq-form">  
               <h3 class="pq-section-heading" style="font-style: italic; padding: 5px;">Buiding and Facilities Form</h3>
-              <form action="#" method="post">
+              <form action="#" method="post" autocomplete="off">
                 <div class="pq-form-group">
                 <fieldset class="pq-form-fieldset">
                     <legend>Building Status</legend>
@@ -56,88 +57,88 @@
                                 <th>Comments</th>
                             </tr>
                             <tr>
-                                <td>Floors</td>
-                                <td><input type="checkbox" name="floors_satisfactory"></td>
-                                <td><input type="checkbox" name="floors_repair"></td>
-                                <td><input type="text" name="floors_comments"></td>
+                                <td><label class="pq-form-label">Floors</label></td>
+                                <td><input type="checkbox" id="floors_satisfactory" name="floor[]" value="floors_satisfactory" class="pq-form-input"></td>
+                                <td><input type="checkbox" id="floors_repair" name="floor[]" value="floors_repair" class="pq-form-input"></td>
+                                <td><input type="text" id="floors_comments" name="floors_comments" class="pq-form-input"></td>
                             </tr>
                             <tr>
-                                <td>Walls</td>
-                                <td><input type="checkbox" name="walls_satisfactory"></td>
-                                <td><input type="checkbox" name="walls_repair"></td>
-                                <td><input type="text" name="walls_comments"></td>
+                                <td><label class="pq-form-label">Walls</label></td>
+                                <td><input type="checkbox" id="walls_satisfactory" name="wall[]" value="walls_satisfactory" class="pq-form-input"></td>
+                                <td><input type="checkbox" id="walls_repair" name="wall[]" value="walls_repair" class="pq-form-input"></td>
+                                <td><input type="text" id="walls_comments" name="walls_comments" class="pq-form-input"></td>
                             </tr>
                             <tr>
-                                <td>Partitions</td>
-                                <td><input type="checkbox" name="walls_satisfactory"></td>
-                                <td><input type="checkbox" name="walls_repair"></td>
-                                <td><input type="text" name="walls_comments"></td>
+                                <td><label class="pq-form-label">Partitions</label></td>
+                                <td><input type="checkbox" id="partitions_satisfactory" name="partition" value="partitions_satisfactory" class="pq-form-input"></td>
+                                <td><input type="checkbox" id="partitions_repair" name="partition" value="partitions_repair" class="pq-form-input"></td>
+                                <td><input type="text" id="partitions_comments name="partitions_comments" class="pq-form-input"></td>
                             </tr>
                             <tr>
-                                <td>Windows</td>
-                                <td><input type="checkbox" name="walls_satisfactory"></td>
-                                <td><input type="checkbox" name="walls_repair"></td>
-                                <td><input type="text" name="walls_comments"></td>
+                                <td><label class="pq-form-label">Windows</label></td>
+                                <td><input type="checkbox" id="windows_satisfactory" name="window[]" value="walls_satisfactory" class="pq-form-input"></td>
+                                <td><input type="checkbox" id="windows_repair" name="window[]"="windows_repair" class="pq-form-input"></td>
+                                <td><input type="text" id="windows_comments" name="windows_comments" class="pq-form-input"></td>
                             </tr>
                             <tr>
-                                <td>Doors</td>
-                                <td><input type="checkbox" name="walls_satisfactory"></td>
-                                <td><input type="checkbox" name="walls_repair"></td>
-                                <td><input type="text" name="walls_comments"></td>
+                                <td><label class="pq-form-label">Doors</label></td>
+                                <td><input type="checkbox" id="doors_satisfactory" name="door[]" value="doors_satisfactory" class="pq-form-input"></td>
+                                <td><input type="checkbox" id="doors_repair" name="door[]"="doors_repair" class="pq-form-input"></td>
+                                <td><input type="text" id="doors_comments" name="doors_comments" class="pq-form-input"></td>
                             </tr>
                             <tr>
-                                <td>Ceilings</td>
-                                <td><input type="checkbox" name="walls_satisfactory"></td>
-                                <td><input type="checkbox" name="walls_repair"></td>
-                                <td><input type="text" name="walls_comments"></td>
+                                <td><label class="pq-form-label">Ceilings</label></td>
+                                <td><input type="checkbox" id="ceilings_satisfactory" name="ceiling[]" value="ceilings_satisfactory" class="pq-form-input"></td>
+                                <td><input type="checkbox" id="ceilings_repair" name="ceiling[]" value="ceilings_repair" class="pq-form-input"></td>
+                                <td><input type="text" id="ceilings_comments" name="ceilings_comments" class="pq-form-input"></td>
                             </tr>
                             <tr>
-                                <td>Roofs</td>
-                                <td><input type="checkbox" name="walls_satisfactory"></td>
-                                <td><input type="checkbox" name="walls_repair"></td>
-                                <td><input type="text" name="walls_comments"></td>
+                                <td><label class="pq-form-label">Roofs</label></td>
+                                <td><input type="checkbox" id="roofs_satisfactory" name="roof[]" value="roofs_satisfactory" class="pq-form-input"></td>
+                                <td><input type="checkbox" d="roofs_repair" name="roof[]" value="roofs_repair" class="pq-form-input"></td>
+                                <td><input type="text" id="roofs_comments" name="roofs_comments" class="pq-form-input"></td>
                             </tr>
                             <tr>
-                                <td>Water Supply</td>
-                                <td><input type="checkbox" name="walls_satisfactory"></td>
-                                <td><input type="checkbox" name="walls_repair"></td>
-                                <td><input type="text" name="walls_comments"></td>
+                                <td><label class="pq-form-label">Water Supply</label></td>
+                                <td><input type="checkbox" id="watersuppy_satisfactory" name="watersuppy_satisfactory" class="pq-form-input"></td>
+                                <td><input type="checkbox" id="watersupply_repair" name="watersupply_repair" class="pq-form-input"></td>
+                                <td><input type="text"id="watersupply_comments" name="watersupply_comments" class="pq-form-input"></td>
                             </tr>
                             <tr>
-                                <td>Water Storage Tanks</td>
-                                <td><input type="checkbox" name="walls_satisfactory"></td>
-                                <td><input type="checkbox" name="walls_repair"></td>
-                                <td><input type="text" name="walls_comments"></td>
+                                <td><label class="pq-form-label">Water Storage Tanks</label></td>
+                                <td><input type="checkbox" id="Water_Storage_Tanks_satisfactory" name="Water_Storage_Tanks_satisfactory" class="pq-form-input"></td>
+                                <td><input type="checkbox" id="Water_Storage_Tanks_repair" name="Water_Storage_Tanks_repair" class="pq-form-input"></td>
+                                <td><input type="text" id="Water_Storage_Tanks_comments" name="Water_Storage_Tanks_comments" class="pq-form-input"></td>
                             </tr>
                             <tr>
-                                <td>Light Bulbs</td>
-                                <td><input type="checkbox" name="walls_satisfactory"></td>
-                                <td><input type="checkbox" name="walls_repair"></td>
-                                <td><input type="text" name="walls_comments"></td>
+                                <td><label class="pq-form-label">Light Bulbs</label></td>
+                                <td><input type="checkbox" id="Light_Bulbs_satisfactory" name="Light_Bulbs_satisfactory" class="pq-form-input"></td>
+                                <td><input type="checkbox" id="Light_Bulbs_repair" name="Light_Bulbs_repair" class="pq-form-input"></td>
+                                <td><input type="text" id="Light_Bulbs_comments" name="Light_Bulbs_comments" class="pq-form-input"></td>
                             </tr>
                             <tr>
-                                <td>Electricity outlets</td>
-                                <td><input type="checkbox" name="walls_satisfactory"></td>
-                                <td><input type="checkbox" name="walls_repair"></td>
-                                <td><input type="text" name="walls_comments"></td>
+                                <td><label class="pq-form-label">Electricity outlets</label></td>
+                                <td><input type="checkbox" id="Electricity_outlets_satisfactory" name="Electricity_outlets_satisfactory" class="pq-form-input"></td>
+                                <td><input type="checkbox" id="Electricity_outlets_repair" name="Electricity_outlets_repair" class="pq-form-input"></td>
+                                <td><input type="text" id="Electricity_outlets_comments" name="Electricity_outlets_comments" class="pq-form-input"></td>
                             </tr>
                             <tr>
-                                <td>Fencing</td>
-                                <td><input type="checkbox" name="walls_satisfactory"></td>
-                                <td><input type="checkbox" name="walls_repair"></td>
-                                <td><input type="text" name="walls_comments"></td>
+                                <td><label class="pq-form-label">Fencing</label></td>
+                                <td><input type="checkbox" id="Fencing_satisfactory" name="Fencing_satisfactory" class="pq-form-input"></td>
+                                <td><input type="checkbox" id="Fencing_repairname="Fencing_repair" class="pq-form-input"></td>
+                                <td><input type="text"id="Fencing_comments" name="Fencing_comments" class="pq-form-input"></td>
                             </tr>
                             <tr>
-                                <td>Gates</td>
-                                <td><input type="checkbox" name="walls_satisfactory"></td>
-                                <td><input type="checkbox" name="walls_repair"></td>
-                                <td><input type="text" name="walls_comments"></td>
+                                <td><label class="pq-form-label">Gates<label></td>
+                                <td><input type="checkbox"id="gates_satisfactory" name="gates_satisfactory" class="pq-form-input"></td>
+                                <td><input type="checkbox" id="gates_repair name="gates_repair" class="pq-form-input"></td>
+                                <td><input type="text" id="gates_comments" name="gates_comments" class="pq-form-input"></td>
                             </tr>
                             <tr>
-                                <td>Ramps/Rails</td>
-                                <td><input type="checkbox" name="walls_satisfactory"></td>
-                                <td><input type="checkbox" name="walls_repair"></td>
-                                <td><input type="text" name="walls_comments"></td>
+                                <td><label class="pq-form-label">Ramps/Rails</label></td>
+                                <td><input type="checkbox" id="Ramps_Rails_satisfactory" name="Ramps_Rails_satisfactory" class="pq-form-input"></td>
+                                <td><input type="checkbox" id="Ramps_Rails_repair" name="Ramps_Rails_repair" class="pq-form-input"></td>
+                                <td><input type="text" id="Ramps_Rails_comments" name="Ramps_Rails_comments" class="pq-form-input"></td>
                             </tr>
                         </table>
                 </fieldset>
@@ -157,123 +158,123 @@
                             <th>Condition</th>
                         </tr>
                         <tr>
-                            <td>Photocopiers</td>
-                            <td><input type="number" name="photocopiers_quantity"></td>
+                            <td><label class="pq-form-label">Photocopiers</label></td>
+                            <td><input type="number" id="photocopiers_quantity" name="photocopiers_quantity" class="pq-form-input"></td>
                             <td>
-                                <input type="checkbox" name="photocopiers_satisfactory"> Satisfactory
-                                <input type="checkbox" name="photocopiers_repair"> In need of Repair
+                                <input type="checkbox" id="photocopiers_satisfactory" name="photocopiers_satisfactory" class="pq-form-input"> Satisfactory
+                                <input type="checkbox" id="photocopiers_repair" name="photocopiers_repair" class="pq-form-input"> In need of Repair
                             </td>
                         </tr>
                         <tr>
-                            <td>Bells</td>
-                            <td><input type="number" name="bells_quantity"></td>
+                            <td><label class="pq-form-label">Bells</label></td>
+                            <td><input type="number" id="bells_quantity" name="bells_quantity" class="pq-form-input"></td>
                             <td>
-                                <input type="checkbox" name="bells_satisfactory"> Satisfactory
-                                <input type="checkbox" name="bells_repair"> In need of Repair
+                                <input type="checkbox" id="bells_satisfactory" name="bells_satisfactory" class="pq-form-input"> Satisfactory
+                                <input type="checkbox" id="bells_repair" name="bells_repair" class="pq-form-input"> In need of Repair
                             </td>
                         </tr>
                         <tr>
-                            <td>Fans</td>
-                            <td><input type="number" name="bells_quantity"></td>
+                            <td><label class="pq-form-label">Fans</label></td>
+                            <td><input type="number" id="Fans_quantity" name="Fans_quantity" class="pq-form-input"></td>
                             <td>
-                                <input type="checkbox" name="bells_satisfactory"> Satisfactory
-                                <input type="checkbox" name="bells_repair"> In need of Repair
+                                <input type="checkbox" id="Fans_satisfactory" name="Fans_satisfactory" class="pq-form-input"> Satisfactory
+                                <input type="checkbox" id="Fans_repair" name="Fans_repair" class="pq-form-input"> In need of Repair
                             </td>
                         </tr>
                         <tr>
-                            <td>Printers</td>
-                            <td><input type="number" name="bells_quantity"></td>
+                            <td><label class="pq-form-label">Printers</label></td>
+                            <td><input type="number" id="Printers_quantity" name="Printers_quantity" class="pq-form-input"></td>
                             <td>
-                                <input type="checkbox" name="bells_satisfactory"> Satisfactory
-                                <input type="checkbox" name="bells_repair"> In need of Repair
+                                <input type="checkbox" id="Printers_satisfactory" name="Printers_satisfactory" class="pq-form-input"> Satisfactory
+                                <input type="checkbox" id="Printers_repair" name="Printers_repair" class="pq-form-input"> In need of Repair
                             </td>
                         </tr>
                         <tr>
-                            <td>Scanners</td>
-                            <td><input type="number" name="bells_quantity"></td>
+                            <td><label class="pq-form-label">Scanners</label></td>
+                            <td><input type="number"id="Scanners_quantity" name="Scanners_quantity" class="pq-form-input"></td>
                             <td>
-                                <input type="checkbox" name="bells_satisfactory"> Satisfactory
-                                <input type="checkbox" name="bells_repair"> In need of Repair
+                                <input type="checkbox" id="Scanners_satisfactory" name="Scanners_satisfactory" class="pq-form-input"> Satisfactory
+                                <input type="checkbox" id="Scanners_repair" name="Scanners_repair" class="pq-form-input"> In need of Repair
                             </td>
                         </tr>
                         <tr>
-                            <td>Fire Extinguishers</td>
-                            <td><input type="number" name="bells_quantity"></td>
+                            <td><label class="pq-form-label">Fire Extinguishers</label></td>
+                            <td><input type="number" id="Fire_Extinguishers_quantity" name="Fire_Extinguishers_quantity" class="pq-form-input"></td>
                             <td>
-                                <input type="checkbox" name="bells_satisfactory"> Satisfactory
-                                <input type="checkbox" name="bells_repair"> In need of Repair
+                                <input type="checkbox" id="Fire_Extinguishers_satisfactory" name="Fire_Extinguishers_satisfactory" class="pq-form-input"> Satisfactory
+                                <input type="checkbox" id="Fire_Extinguishers_repair" name="Fire_Extinguishers_repair" class="pq-form-input"> In need of Repair
                             </td>
                         </tr>
                         <tr>
-                            <td>First Aid Kits</td>
-                            <td><input type="number" name="bells_quantity"></td>
+                            <td><label class="pq-form-label">First Aid Kits</label></td>
+                            <td><input type="number" id="First_Aid_Kits_quantity" name="First_Aid_Kits_quantity" class="pq-form-input"></td>
                             <td>
-                                <input type="checkbox" name="bells_satisfactory"> Satisfactory
-                                <input type="checkbox" name="bells_repair"> In need of Repair
+                                <input type="checkbox" id="First_Aid_Kits_satisfactory" name="First_Aid_Kits_satisfactory" class="pq-form-input"> Satisfactory
+                                <input type="checkbox" id="First_Aid_Kits_repair" name="First_Aid_Kits_repair" class="pq-form-input"> In need of Repair
                             </td>
                         </tr>
                         <tr>
-                            <td>Overhead Projector</td>
-                            <td><input type="number" name="bells_quantity"></td>
+                            <td><label class="pq-form-label">Overhead Projector</label></td>
+                            <td><input type="number" id="Overhead_Projector_quantity" name="Overhead_Projector_quantity" class="pq-form-input"></td>
                             <td>
-                                <input type="checkbox" name="bells_satisfactory"> Satisfactory
-                                <input type="checkbox" name="bells_repair"> In need of Repair
+                                <input type="checkbox" id="Overhead_Projector_satisfactory" name="Overhead_Projector_satisfactory" class="pq-form-input"> Satisfactory
+                                <input type="checkbox" id="Overhead_Projector_repair" name="Overhead_Projector_repair" class="pq-form-input"> In need of Repair
                             </td>
                         </tr>
                         <tr>
-                            <td>Computers</td>
-                            <td><input type="number" name="bells_quantity"></td>
+                            <td><label class="pq-form-label">Computers</label></td>
+                            <td><input type="number" id="Computers_quantity" name="Computers_quantity" class="pq-form-input"></td>
                             <td>
-                                <input type="checkbox" name="bells_satisfactory"> Satisfactory
-                                <input type="checkbox" name="bells_repair"> In need of Repair
+                                <input type="checkbox" id="Computers_satisfactory" name="Computers_satisfactory" class="pq-form-input"> Satisfactory
+                                <input type="checkbox" id="Computers_repair" name="Computers_repair" class="pq-form-input"> In need of Repair
                             </td>
                         </tr>
                         <tr>
-                            <td>Duplicators</td>
-                            <td><input type="number" name="bells_quantity"></td>
+                            <td><label class="pq-form-label">Duplicators</label></td>
+                            <td><input type="number" id="Duplicators_quantity" name="Duplicators_quantity" class="pq-form-input"></td>
                             <td>
-                                <input type="checkbox" name="bells_satisfactory"> Satisfactory
-                                <input type="checkbox" name="bells_repair"> In need of Repair
+                                <input type="checkbox" id="Duplicators_satisfactory" name="Duplicators_satisfactory" class="pq-form-input"> Satisfactory
+                                <input type="checkbox" id="Duplicators_repair" name="Duplicators_repair" class="pq-form-input"> In need of Repair
                             </td>
                         </tr>
                         <tr>
-                            <td>Refrigerators</td>
-                            <td><input type="number" name="bells_quantity"></td>
+                            <td><label class="pq-form-label">Refrigerators</label></td>
+                            <td><input type="number" id="Refrigerators_quantity name="Refrigerators_quantity" class="pq-form-input"></td>
                             <td>
-                                <input type="checkbox" name="bells_satisfactory"> Satisfactory
-                                <input type="checkbox" name="bells_repair"> In need of Repair
+                                <input type="checkbox" id="Refrigerators_satisfactory name="Refrigerators_satisfactory" class="pq-form-input"> Satisfactory
+                                <input type="checkbox"id="Refrigerators_repair" name="Refrigerators_repair" class="pq-form-input"> In need of Repair
                             </td>
                         </tr>
                         <tr>
-                            <td>Freezers</td>
-                            <td><input type="number" name="bells_quantity"></td>
+                            <td><label class="pq-form-label">Freezers</label></td>
+                            <td><input type="number" id="Freezers_quantity" name="Freezers_quantity" class="pq-form-input"></td>
                             <td>
-                                <input type="checkbox" name="bells_satisfactory"> Satisfactory
-                                <input type="checkbox" name="bells_repair"> In need of Repair
+                                <input type="checkbox" id="Freezers_satisfactory" name="Freezers_satisfactory" class="pq-form-input"> Satisfactory
+                                <input type="checkbox" id="Freezers_repair" name="Freezers_repair" class="pq-form-input"> In need of Repair
                             </td>
                         </tr>
                         <tr>
-                            <td>Television</td>
-                            <td><input type="number" name="bells_quantity"></td>
+                            <td><label class="pq-form-label">Television</label></td>
+                            <td><input type="number" id="Television_quantity name="Television_quantity" class="pq-form-input"></td>
                             <td>
-                                <input type="checkbox" name="bells_satisfactory"> Satisfactory
-                                <input type="checkbox" name="bells_repair"> In need of Repair
+                                <input type="checkbox" id="Television_satisfactory" name="Television_satisfactory" class="pq-form-input"> Satisfactory
+                                <input type="checkbox" id="Television_repair" name="Television_repair" class="pq-form-input"> In need of Repair
                             </td>
                         </tr>
                         <tr>
-                            <td>Whiteboards</td>
-                            <td><input type="number" name="bells_quantity"></td>
+                            <td><label class="pq-form-label">Whiteboards</label></td>
+                            <td><input type="number" id="Whiteboards_quantity" name="Whiteboards_quantity" class="pq-form-input"></td>
                             <td>
-                                <input type="checkbox" name="bells_satisfactory"> Satisfactory
-                                <input type="checkbox" name="bells_repair"> In need of Repair
+                                <input type="checkbox" id="Whiteboards_satisfactory" name="Whiteboards_satisfactory" class="pq-form-input"> Satisfactory
+                                <input type="checkbox" id="Whiteboards_repair name="Whiteboards_repair" class="pq-form-input"> In need of Repair
                             </td>
                         </tr>
                         <tr>
-                            <td>VCRs/DVD/Players</td>
-                            <td><input type="number" name="bells_quantity"></td>
+                            <td><label class="pq-form-label">VCRs/DVD/Players</label></td>
+                            <td><input type="number" id="VCRs_DVD_Player_quantity" name="VCRs_DVD_Player_quantity" class="pq-form-input"></td>
                             <td>
-                                <input type="checkbox" name="bells_satisfactory"> Satisfactory
-                                <input type="checkbox" name="bells_repair"> In need of Repair
+                                <input type="checkbox" id="VCRs_DVD_Player_satisfactory" name="VCRs_DVD_Player_satisfactory" class="pq-form-input"> Satisfactory
+                                <input type="checkbox" id="VCRs_DVD_Player_repair" name="VCRs_DVD_Player_repair" class="pq-form-input"> In need of Repair
                             </td>
                         </tr>
                     </table>
@@ -292,70 +293,68 @@
                             <th>No</th>
                         </tr>
                         <tr>
-                            <td>Improved drinking water source</td>
+                            <td><label class="pq-form-label">Improved drinking water source</label></td>
                             <td><input type="radio" name="drinking_water" value="yes"></td>
                             <td><input type="radio" name="drinking_water" value="no"></td>
                         </tr>
                         <tr>
-                            <td>Water currently available from the source</td>
+                            <td><label class="pq-form-label">Water currently available from the source</label></td>
                             <td><input type="radio" name="water_available" value="yes"></td>
                             <td><input type="radio" name="water_available" value="no"></td>
                         </tr>
                         <tr>
-                            <td>Accessible handwashing facilities</td>
+                            <td><label class="pq-form-label">Accessible handwashing facilities</label></td>
                             <td><input type="radio" name="water_available" value="yes"></td>
                             <td><input type="radio" name="water_available" value="no"></td>
                         </tr>
                         <tr>
-                            <td>Accessible handwashing with soapand water<br>currently available</td>
+                            <td><label class="pq-form-label">Accessible handwashing with soapand water<br>currently available</label></td>
                             <td><input type="radio" name="water_available" value="yes"></td>
                             <td><input type="radio" name="water_available" value="no"></td>
                         </tr>
                         <tr>
-                            <td>Single-sex children toilets (Girls' only)</td>
-                            <td><input type="number" name="girls_toilets"></td>
+                            <td><label class="pq-form-label">Single-sex children toilets (Girls' only)</label></td>
+                            <td><input type="number" name="girls_toilets" class="pq-form-input"></td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td>Single-sex children toilets (Boys' only)</td>
-                            <td><input type="number" name="boys_toilets"></td>
+                            <td><label class="pq-form-label">Single-sex children toilets (Boys' only)</label>l</td>
+                            <td><input type="number" name="boys_toilets" class="pq-form-input"></td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td>Common use toilets</td>
-                            <td><input type="number" name="common_toilets"></td>
+                            <td><label class="pq-form-label">Common use toilets</label></td>
+                            <td><input type="number" name="common_toilets" class="pq-form-input"></td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td>Total number</td>
-                            <td><input type="number" name="total_toilets"></td>
+                            <td><label class="pq-form-label">Total number</label></td>
+                            <td><input type="number" name="total_toilets" class="pq-form-input"></td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td>Staff Toilets</td>
-                            <td><input type="number" name="staff_toilets"></td>
+                            <td><label class="pq-form-label">Staff Toilets</label></td>
+                            <td><input type="number" name="staff_toilets" class="pq-form-input"></td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td>Urinals</td>
-                            <td><input type="number" name="urinals"></td>
+                            <td><label class="pq-form-label">Urinals</label></td>
+                            <td><input type="number" name="urinals" class="pq-form-input"></td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td>Washrooms facilities for children with disabilities</td>
-                            <td><input type="number" name="washrooms_disabilities"></td>
+                            <td><label class="pq-form-label">Washrooms facilities for children with disabilities</label></td>
+                            <td><input type="number" name="washrooms_disabilities" class="pq-form-input"></td>
                             <td></td>
                         </tr>
                     </table>
                 </fieldset>
                 </div>
+                <div>
+                    <input type="submit" name="next" value="Next" class="pq-form-button">
+                  </div>
             </form>
         </div>
-    </div>
-    <div>
-        <button type="previous">Go Back</button>
-        <button type="submit">Submit</button>
-        <button type="next">Next</button>
     </div>
 </section>
 
