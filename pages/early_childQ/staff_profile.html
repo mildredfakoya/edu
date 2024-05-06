@@ -37,6 +37,7 @@
         <nav><a href="demographics.html">Demography</a></nav>
         <nav><a href="staff_profile.html">Staff Profile</a></nav>
         <nav><a href="children_profile.html">children Profile</a></nav>
+        <nav><a href="Technical_note.html">Technical Note</a></nav>
     </div>  
   </section>
 
@@ -44,15 +45,28 @@
 
     <div class="col-10">
         <div class="ecq-form">
+
+          <h2 class="ecq-section-heading" id="add-style">Staff Profile Form </legend></h2>
+               
         
             <form>
-        
-                <h2 class="ecq-section-heading" id="add-style">Staff Profile Form </legend></h2>
-                <h4 class="ecq-section-heading" id="add-style">Distribution by Sex, Teaching Experience, Training and Qualification</h4>
+              <fieldset>
+
+                <legend>Distribution by Sex, Teaching Experience, Training and Qualification</legend>
+                
+                <div class="hori-nav-container">
+                  <nav class="ecq-hori-nav"  >
+                    <a class="nav-link" href="#">New Staff Entry</a>
+                    <a class="nav-link" href="#">View Staff</a>
+                    <a class="nav-link" href="#">Update Staff</a>
+                    <a class="nav-link" href="#">Delete Staff</a>
+                </nav>
+                </div>              
 
                 <div class="form-group-ecq">
                 <fieldset>
                     <legend>Staff Classification</legend>
+                    <div>
                     <label for=" staff_classification"> Staff Classification:</label>
                     <select name="staff_classification" id="staff_classification" class="ecq-form-input">
                     <option value="Select staff classification">Select staff classification</option>
@@ -65,26 +79,30 @@
                     <option value="CL-Cleaner"> CL-Cleaner</option>
                     <option value="DA-Domestic Assistant"> DA-Domestic</option>
                     </select>
+                    </div>
                 </fieldset>
                 </div>
                 
                 <div class="form-group-ecq">
                 <fieldset>
                 <legend>Staff full Name </legend>
+                <div>
                 <label for="staff_name" >Name : </label>
-                <input type="text" id="staff_name" name="staff_name" placeholder="Enter Name" class="ecq-form-input"><br>
+                <input type="text" id="staff_name" name="staff_name" placeholder="Enter Name" class="ecq-form-input">
+                </div>
+                <div>
                 <label for="staff_surname" >Surame :</label>
                 <input type="text" id="staff_surname" name="staff_surname" placeholder="Enter surame" class="ecq-form-input">
+                </div>
                 </fieldset>
 
                 <div class="form-group-ecq">
                 <fieldset>
                 <legend> Staff Gender </legend>
-                <label for="male_sex">sex: </label><br>
                 <label for="male_sex"> Male </label>
-                <input type="radio" id="male_sex" name="male_sex" class="ecq-form-input">
+                <input type="radio" id="male_sex" name="sex" class="ecq-form-input">
                 <label for="female_sex"> Female</label>
-                <input type="radio" id="female_sex" name="female_sex" class="ecq-form-input">
+                <input type="radio" id="female_sex" name="sex" class="ecq-form-input">
                 </fieldset>
                 </div>
 
@@ -128,12 +146,12 @@
 
                 <div class="form-group-ecq">
                 <fieldset> 
-                    <legend></legend>
-                    <label for="childhood_trained">Early Childhood Trained</label>
+                    <legend>Early Childhood Trained</legend>
+                    <p><small><i>indicate if staff have undergo childhood training programme </i></small></p>
                     <label for="childhood_trained_yes"> Yes </label>
-                    <input type="radio" id="childhood_trained_yes" name="childhood_trained_yes" class="ecq-form-input">
+                    <input type="radio" id="childhood_trained_yes" name="childhood_trained" class="ecq-form-input">
                     <label for="childhood_trained_no"> No </label>
-                    <input type="radio" id="childhood_trained_no" name="childhood_trained_no" class="ecq-form-input">
+                    <input type="radio" id="childhood_trained_no" name="childhood_trained" class="ecq-form-input">
                 </fieldset>
                 </div>
 
@@ -142,6 +160,7 @@
                     <legend>Highest Qualification: </legend>
                     <label for="highest_qualification">Highest Qualification:</label>
                     <select name="highest_qualification" id="highest_qualification" class="ecq-form-input">
+                    <option value="Please select">Please Select</option> 
                     <option value="BA  Bachelor of Arts">BA  Bachelor of Arts</option>
                     <option value="BSC Bac. of Science">BSC Bac. of Science </option>
                     <option value="MA Master">MA Master </option>
@@ -178,7 +197,7 @@
                   </fieldset>
                 </div>
 
-                <div>
+                <div class="form-group-ecq">
                   <fieldset>
                     <legend>No. of Hours engaged in CPD in past academic year</legend>
                     <label for="hour-engaged"> Hours engaged </label>
@@ -196,10 +215,12 @@
                     <input type="radio" name="appraisal" id="appraisal-no" class="ecq-form-input">
                   </fieldset>
                 </div>
+
                 <div class="ecq-form-group">
-                  <input type="submit" name="continue" value="Continue" class="ecq-form-button">
+                  <input type="submit" name="Next" value="Next" class="ecq-form-button">
                 </div>
 
+              </fieldset>
             </form>
         
         </div>

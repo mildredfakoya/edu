@@ -5,15 +5,6 @@
     margin: 0;
 }
 
-
-.ecq-dist-cover{
-    height: auto;
-    width: 90%;
-    margin: auto;
-    border-radius: 5px;
-    background-color: rgb(231, 231, 228);
-}
-
 .ecq-form-group{
     width: 100%;
     height: auto;
@@ -22,6 +13,7 @@
     justify-content:center;
     align-items: center;
 }
+
 .ecq-form-input
 {
     width:auto;
@@ -32,25 +24,11 @@
     border-radius: 5px;
 }
 
+
 .ecq-form-label{
-   /* display: block;
-    font-weight: bold;*/
+    display: block;
     font-weight: bold;
-    margin-left: 10px;
-}
-
-.ecq-label {
-   font-style:oblique;
-   font-weight: 700px;
-}
-.ecq-inst-para
-{
-    margin: 25px;
-    
-}
-
-.ecq-cover-fieldset{
-    border: 0px;
+    margin-left: 10px;  
 }
 
 .ecq-form-fieldset{
@@ -58,7 +36,27 @@
     margin-left: 5px;
     margin-bottom: 10px;
     padding: 5px;
+    
 }
+.ecq-form-feildset label{
+    display: block;
+}
+
+.ecq-label {
+    font-style:oblique;
+    font-weight: 700px;
+}
+ 
+
+.ecq-dist-cover{
+    height: auto;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: rgb(231, 231, 228);
+}
+
+
 
 .ecq-form{
     height: auto;
@@ -105,58 +103,33 @@
     border-radius: 3px;
 }
 
-.form-body{
-   /* background-color: #E8E8E8 ;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 3px;
-    padding: 10px;*/
-
-    height: auto;
-    width: 100%;
-    position: relative;
-    border-radius: 5px;
-}
-
-/*.form_sidenav_ecq{
-    background-color: rgb(123, 119, 119);
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 3rem;
-    padding: 5rem;
-}*/
-
-.subnav_list{
-    background-color: #082B64;
-}
-
-.form-table1{
-    display: block;
-    width: 100%;
-    border-collapse: collapse;
-    border: 1px solid #ddd;
-}
-
 /* coverpage instruction*/
 .form-instruction{
     text-align: center; 
     font-style: oblique;
 }
+.ecq-inst-para
+{ 
+    margin: 25px;
 
+}
+.text-cover p{
+    display: block;
+    /*font-weight: bold;*/
+    text-align:justify;
+    margin: 0px 2px;
+    margin-left: 50px;
+    
+}
 
-
-
-.welcome-address p{
-    text-align: center;
+.form-instruction{
+    text-align:center; 
+    font-style: oblique; 
+    font-size: 20px;
 }
 
 /*style for building evaluation forms*/
 .evaluation-form{display:inline-block;}
-
-
-
-
-
-
-
 
 
 .ecq-form{
@@ -169,11 +142,6 @@
 
 
 
-.form-instruction{
-    text-align:center; 
-    font-style: oblique; 
-    font-size: 20px;
-}
 .ecq-form-button{
     width: max-content;
     padding: 10px;
@@ -185,14 +153,7 @@
     position: relative;
 }
 
-.text-cover p{
-    display: block;
-    font-weight: bold;
-    text-align:justify;
-    margin: 0px 2px;
-    margin-left: 50px;
-    
-}
+
 
 /*styling form side navigations*/
 .ecq-sidenav
@@ -201,7 +162,9 @@
     width:fit-content; 
     border-radius: 5px;
     padding: 20px;
-    background-color: rgb(204, 204, 200);  
+    background-color: rgb(204, 204, 200); 
+    position: sticky; 
+    
 }
 
 .ecq-sidenav li{
@@ -222,11 +185,32 @@
     color: white;  
 }
 
+.ecq-hori-nav a{
+    color: black;
+    margin: 10px;
+}
+
+.hori-nav-container{
+    text-align: center; 
+    border: 2px solid rgba(0, 0, 0, 0.2); 
+    margin-top: 10px; 
+    margin-bottom: 20px;
+}
 /*fieldset styling*/
 .ecq-cover-fieldset{
     border: 0px;
 }
 
+
+.ecq-cover-fieldset{
+    border: 0px;
+}
+
+.ecq-legend{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+}
 .ecq-form{
     height: auto;
     width: 100%;
@@ -234,4 +218,5 @@
     border-radius: 5px;
     background-color: rgb(231, 231, 228);
 }
+
 
