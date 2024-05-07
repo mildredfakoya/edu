@@ -18,60 +18,41 @@
       <a class="nav-link" href="#">Logout</a>
     </nav>
   </header>
-  
+
   <section class="about section">
     <div class="container">
       <h2 class="section-heading">About Us</h2>
       <p class="section-content">We are on a mission to collect information from schools to better understand their needs and improve educational experiences.</p>
     </div>
   </section>
-  
+
   <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
-    <div class="col-6">
-      <!-- Login Form -->
-      <div class="form-container">
-        <h2>Login</h2>
-        <form action="#">
-          <div class="form-group">
-            <label for="username" class="form-label">Username:</label>
-            <input type="text" id="username" name="username" class="form-input">
-          </div>
-          <div class="form-group">
-            <label for="password" class="form-label">Password:</label>
-            <input type="password" id="password" name="password" class="form-input">
-          </div>
-          <button type="submit" class="form-button">Login</button>
-        </form>
-      </div>
+    <div class="col-2"></div>
+    <div class="col-8">
+      <form method ="post" name = "choices">
+        <input type = "radio" name ="type" value = "earlychild"/>Earlychild Hood education Questionaire<br/><br/>
+        <input type = "radio" name ="type" value = "pri"/>Primary Questionaire<br/><br/>
+        <input type = "radio" name ="type" value = "sec"/>Secondary Questionaire<br/><br/>
+        <input type = "radio" name ="type" value = "Special"/>Special Education Questionaire<br/><br/>
+        <input type = submit name = submit value = GO>
+      </form>
+
     </div>
-    <div class="col-6">
-      <!-- Register Form -->
-      <div class="form-container">
-        <h2>Register</h2>
-        <form action="#">
-          <div class="form-group">
-            <label for="fullname" class="form-label">Full Name:</label>
-            <input type="text" id="fullname" name="fullname" class="form-input">
-          </div>
-          <div class="form-group">
-            <label for="email" class="form-label">Email:</label>
-            <input type="email" id="email" name="email" class="form-input">
-          </div>
-          <div class="form-group">
-            <label for="password" class="form-label">Password:</label>
-            <input type="password" id="password" name="password" class="form-input">
-          </div>
-          <button type="submit" class="form-button">Register</button>
-        </form>
-      </div>
-    </div>
+    <div class="col-2"></div>
+
   </div>
-  
+
+
   <footer class="footer">
     <div class="container">
       <p>© 2024 SOP EDU Forms. All rights reserved.</p>
     </div>
   </footer>
+<script>
+let formvalue = document.forms.choices.type.value;
+if(formvalue == earlychild){
   
+}
+</script>
   </body>
   </html>
