@@ -5,54 +5,151 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SOP Internship Forms Page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #007bff;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+    .nav {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .nav a:hover {
+      color: #f0f0f0;
+    }
+    .section {
+      padding: 50px 0;
+      text-align: center;
+    }
+    .about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    .about p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+    .form-container {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    #submit-btn {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 40px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    #submit-btn:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      background-color: #343a40;
+      padding: 20px 0;
+      color: #fff;
+      text-align: center;
+    }
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
 
-  <header class="header">
-    <h1>Welcome to EDU Forms Project Page</h1>
-    <!-- Navigation -->
-    <nav class="nav">
-      <a class="nav-link" href="#">Home</a>
-      <a class="nav-link" href="#">About</a>
-      <a class="nav-link" href="#">Logout</a>
-    </nav>
-  </header>
+<header class="header">
+  <h1 style="font-size: 3rem;">Welcome to <span style="font-family: 'Pacifico', cursive;">EDU Forms</span> Project Page</h1>
+  <!-- Navigation -->
+  <nav class="nav">
+    <a class="nav-link" href="#">Home</a>
+    <a class="nav-link" href="#">About</a>
+    <a class="nav-link" href="#">Logout</a>
+  </nav>
+</header>
 
-  <section class="about section">
-    <div class="container">
-      <h2 class="section-heading">About Us</h2>
-      <p class="section-content">We are on a mission to collect information from schools to better understand their needs and improve educational experiences.</p>
-    </div>
-  </section>
-
-  <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
-    <div class="col-2"></div>
-    <div class="col-8">
-      <form method ="post" name = "choices">
-        <input type = "radio" name ="type" value = "earlychild"/>Earlychild Hood education Questionaire<br/><br/>
-        <input type = "radio" name ="type" value = "pri"/>Primary Questionaire<br/><br/>
-        <input type = "radio" name ="type" value = "sec"/>Secondary Questionaire<br/><br/>
-        <input type = "radio" name ="type" value = "Special"/>Special Education Questionaire<br/><br/>
-        <input type = submit name = submit value = GO>
-      </form>
-
-    </div>
-    <div class="col-2"></div>
-
+<section class="about section">
+  <div class="container">
+    <h2 class="section-heading">About Us</h2>
+    <p class="section-content">We are dedicated to gathering valuable insights from educational institutions to enhance the quality of education and student experiences.</p>
   </div>
+</section>
 
-
-  <footer class="footer">
-    <div class="container">
-      <p>© 2024 SOP EDU Forms. All rights reserved.</p>
+<div class="container form-container">
+  <h2 style="font-size: 2.5rem; margin-bottom: 30px;">Choose a Questionnaire</h2>
+  <form method="post" name="choices">
+    <div class="form-group">
+      <input type="radio" id="earlychild" name="type" value="earlychild">
+      <label for="earlychild" style="font-size: 1.2rem;">Early Childhood Education Questionnaire</label><br>
     </div>
-  </footer>
+    <div class="form-group">
+      <input type="radio" id="pri" name="type" value="pri">
+      <label for="pri" style="font-size: 1.2rem;">Primary Questionnaire</label><br>
+    </div>
+    <div class="form-group">
+      <input type="radio" id="sec" name="type" value="sec">
+      <label for="sec" style="font-size: 1.2rem;">Secondary Questionnaire</label><br>
+    </div>
+    <div class="form-group">
+      <input type="radio" id="special" name="type" value="Special">
+      <label for="special" style="font-size: 1.2rem;">Special Education Questionnaire</label><br>
+    </div>
+    <button type="submit" id="submit-btn" name="submit">GO</button>
+  </form>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2024 SOP EDU Forms. All rights reserved.</p>
+  </div>
+</footer>
+
 <script>
-let formvalue = document.forms.choices.type.value;
-if(formvalue == earlychild){
-  
-}
+  const submitBtn = document.getElementById("submit-btn");
+  submitBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    const formValue = document.querySelector('input[name="type"]:checked').value;
+    switch (formValue) {
+      case "earlychild":
+        window.location.href = "pages/early_childQ/ecQ_home.html";
+        break;
+      case "pri":
+        window.location.href = "pages/Pri_Quest/pq_home.html";
+        break;
+      case "sec":
+        window.location.href = "pages/sec_Quest/secQHome.html";
+        break;
+      case "Special":
+        window.location.href = "pages/se_eduq/se_home.html";
+        break;
+      default:
+        alert("Please select a module.");
+    }
+  });
 </script>
-  </body>
-  </html>
+
+</body>
+</html>
