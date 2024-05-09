@@ -6,6 +6,7 @@
   <title>Early Child Questionnaire</title>
   <link rel="stylesheet" href="../../css/main.css">
   <link rel="stylesheet" href="../../css/early_childQ.css">
+  <link rel="stylesheet" href="../early_childQ/font-awesome-4.7.0/css/font-awesome.min.css">
 </head> 
 
 <body>
@@ -32,638 +33,740 @@
       
   <!--Side navigation of the form sections-->
   <section class="row">
-        <section class="col-2">
-          <div class="ecq-sidenav">
-              <nav><a href="ecQ_home.html">Home</a></nav>
-              <nav><a href="demographics.html">Demography</a></nav>
-              <nav><a href="staff_profile.html">Staff Profile</a></nav>
-              <nav><a href="children_profile.html">children Profile</a></nav>
-              <nav><a href="Technical_note.html">Technical Note</a></nav>
-          </div>  
-        </section>
+    <section class="col-2">
+      <div class="ecq-sidenav">
+        <nav class="navbox"><i class="fa fa-home" aria-hidden="true"></i><a href="ecQ_home.html">Home</a></nav>
+        <nav class="navbox"><i class="fa fa-database" aria-hidden="true"></i><a href="demographics.html">Demographics</a></nav>
+        <nav class="navbox"><i class="fa fa-users" aria-hidden="true"></i><a href="staff_profile.html">Staff Profile</a></nav>
+        <nav class="navbox"><i class="fa fa-child" aria-hidden="true"></i><a href="children_profile.html">children Profile</a></nav>
+        <nav class="navbox"><i class="fa fa-sticky-note" aria-hidden="true"></i><a href="Technical_note.html">Technical Note</a></nav>
+      </div>  
+    </section>
 
 
     <!--main form section-->    
     <section class="col-10">
       <div class="ecq-form">
-          <h2 class="ecq-section-heading" id="add-style"> School Demographics </h2> 
+        <h2 class="ecq-section-heading" id="add-style"> School Demographics </h2> 
 
+        <div>
           <form action="" method="post" autocomplete="off">
-            <div>
-            <fieldset class="ecq-form-fieldset"> 
-              <legend class="ecq-legend"> Centre details: </legend> 
+              <div  class="form-group-ecq">
+
+                <fieldset> 
+                <legend class="ecq-legend"> Centre details: </legend> 
                 <div>
-               <label for="centre_name"> Name of Centre:&nbsp; </label>
-               <input id="centre_name" name="centre_name" type="text" placeholder="Enter name of centre" class="ecq-form-input" required>
+                <label for="centre_name" class="ecq-form-label"> Name of Centre:&nbsp; </label>
+                <input id="centre_name" name="centre_name" type="text" placeholder="Enter name of centre" class="ecq-form-input" required>
                 </div>
                 <div>
-               <label for="location"> Location:&nbsp; </label>
-               <input id="location" name="location" type="text" placeholder="Enter the address of centre" class="ecq-form-input" required>               
+                <label for="location" class="ecq-form-label"> Location:&nbsp; </label>
+                <input id="location" name="location" type="text" placeholder="Enter the address of centre" class="ecq-form-input" required>               
                 </div>
-              </fieldset>
+                </fieldset>
+              </div>
             
                   
-            <div class="form-group-ecq">
-            <fieldset class="ecq-form-fieldset">
-              <legend class="ecq-legend">Background Information</legend>
-              <div>
-              <label for="date_establish">Establishment Date </label>
-              <input type="date" id="date_establish" name="date_establish" class="ecq-form-input" required>
-              </div>
-              <div>
-              <label for="mail_add"> Mailing Address: </label>
-              <textarea id="mail_add" name="mail_add" maxlength="1000" required> </textarea> 
-              </div>
-              <div>
-              <label for="landline" >Landline: </label>
-              <input type="text" id="Landline" name="landline" class="ecq-form-input" placeholder="Enter landline no" required>
-              </div>
-              <div>
-              <label for="mobile" >Mobile: </label>
-              <input type="text" id="mobile" name="mobile" class="ecq-form-input" placeholder="Enter mobile no" required>
-              </div>
-              <div>
-              <label for="fax"> Fax: </label>
-              <input type="text" id="fax" name="fax" class="ecq-form-input" placeholder="Enter fax no" required>
-              </div>
-              <div>
-              <label for="email">Email Address: </label>
-              <input type="email" id="email" name="email" class="ecq-form-input" placeholder="Enter email address" required>
-              </div>
-              <div>
-              <label for="admin_name">Administrator Name: </label>
-              <input type="text" id="admin_name" name="admin_name" class="ecq-form-input">
-              </div>
-              <div>
-              <label for="admin_sex">Sex: </label>
-              <select id="admin_sex" name="admin_sex">
-                <option value="select">Please select</option>
-                <option value="male" name="admin_sex"> Male </option>
-                <option value="female" name="admin_sex">Female </option>
-              </select>
-            </div>
-            </fieldset>
-            </div>
+              <div class="form-group-ecq">
+                <fieldset>
+                  <legend class="ecq-legend">Background Information</legend>
+                  <div>
+                  <label for="date_establish" class="ecq-form-label">Establishment Date </label>
+                  <input type="date" id="date_establish" name="date_establish" class="ecq-form-input"  required>
+                  </div>
+                  <div>
+                  <label for="mail_add" class="ecq-form-label"> Mailing Address: </label>
+                  <textarea id="mail_add" name="mail_add" maxlength="1000" required class="ecq-form-input"> </textarea> 
+                  </div>
 
-            <div>
-            <fieldset class="ecq-form-fieldset">
-              <legend class="ecq-legend">Practitioners Details </legend>
-                <p>Number of Practitioners (Do not include administrator)</p>
-              <div>  
-              <label for="male_pract"> Male Practitioners: </label>
-              <input type="number" id="male_pract" name="male_pract" placeholder="Enter No. of male Practitioners" class="ecq-form-input" required>
+                  <div>
+                  <label for="landline"  class="ecq-form-label">Landline: </label>
+                  <input type="text" id="Landline" name="landline" class="ecq-form-input" placeholder="Enter landline no" required>
+                  </div>
+                  <div>
+                  <label for="mobile" class="ecq-form-label" >Mobile: </label>
+                  <input type="text" id="mobile" name="mobile" class="ecq-form-input" placeholder="Enter mobile no" required>
+                  </div>
+                  <div>
+                  <label for="fax" class="ecq-form-label"> Fax: </label>
+                  <input type="text" id="fax" name="fax" class="ecq-form-input" placeholder="Enter fax no" required>
+                  </div>
+                  <div>
+                  <label for="email" class="ecq-form-label" >Email Address: </label>
+                  <input type="email" id="email" name="email" class="ecq-form-input" placeholder="Enter email address" required>
+                  </div>
+                  <div>
+                  <label for="admin_name" class="ecq-form-label">Administrator Name: </label>
+                  <input type="text" id="admin_name" name="admin_name" class="ecq-form-input">
+                  </div>
+                  <div>
+                  <label for="admin_sex" class="ecq-form-label">Sex: </label>
+                  <select id="admin_sex" name="admin_sex" class="ecq-form-input">
+                    <option value="select" name="admin_sex" class="ecq-form-label">Please select</option>
+                    <option value="male" name="admin_sex" class="ecq-form-label"> Male </option>
+                    <option value="female" name="admin_sex" class="ecq-form-label">Female </option>
+                  </select>
+                  </div>
+                </fieldset>
               </div>
-              <div>
-              <label for="female_pract" > Female Practitioners: </label>
-              <input type="number" id="female_pract" name="female_pract" placeholder="Enter No. of female Practitioners" class="ecq-form-input" required>
-              </div>
-              <div>
-              <label for="total_pract"> Total Practitioners: </label>
-              <input type="number" id="total_pract" name="total_pract" placeholder="Enter Number of Total Practitioners" class="ecq-form-input" required>
-              </div>
-            </fieldset>
-            </div> 
 
-            
-            <fieldset class="ecq-form-fieldset">
-            <legend class="ecq-legend">Non-Practioners Details</legend>
-            <div class="ecq-form-label">
-            <label for="male_nonpract" > Male Non-Practitioners: </label>
-            <input class="ecq-form-input" type="number" id="male_nonpract" name="male_nonpract" placeholder="Enter No. of male Non-Practitioners" required>
-            </div>
-            <div class="ecq-form-label">
-            <label for="female_nonpract"> Female Non-Practitioners: </label>
-            <input class="ecq-form-input" type="number" id="female_nonpract" name="female_nonpract" placeholder="Enter No. of female Non-Practitioners" required>
-            </div>
-            <div class="ecq-form-label">
-            <label for="total_nonpract" > Total Non-Practitioners: </label>
-            <input class="ecq-form-input" type="number" id="total_nonpract" name="total_nonpract" placeholder="Enter Number of Total Non-Practitioners" required>
-            </div>
-          </fieldset>
-            </div>
+              <div class="ecq-table-container">
+                <fieldset>
+                  <legend class="ecq-legend">Practitioners Details </legend>
+                  <div class="ecq-table-container">
+                  <p style="margin-left: 50px;">Number of Practitioners (Do not include administrator)</p>
+                  <table> 
+                    <tr>
+                      <td><label for="male_pract" class="ecq-form-label"> Male Practitioners: </label></td>
+                      <td><input type="number" id="male_pract" name="male_pract" placeholder="Enter No. of male Practitioners" class="ecq-form-input" required></td>
+
+                    </tr>
+                    <tr>
+                      <td> <label for="female_pract" class="ecq-form-label" > Female Practitioners: </label></td>
+                      <td> <input type="number" id="female_pract" name="female_pract" placeholder="Enter No. of female Practitioners" class="ecq-form-input" required></td>
+                    </tr>
+                    <tr>
+                      <td><label for="total_pract" class="ecq-form-label"> Total Practitioners: </label></td>
+                      <td> <input type="number" id="total_pract" name="total_pract" placeholder="Enter Number of Total Practitioners" class="ecq-form-input" required></td>
+                    </tr>
+                                 
+                  </table>
+                  </div>
+                </fieldset>
+              </div> 
+
+              <div class="ecq-table-container">
+                <fieldset>
+                  <legend class="ecq-legend">Non-Practioners Details</legend>
+                  <table>
+                    <tr>
+                      <td> <label for="male_nonpract" class="ecq-form-label"> Male Non-Practitioners: </label> </td>
+                      <td><input class="ecq-form-input" type="number" id="male_nonpract" name="male_nonpract" placeholder="Enter No. of male Non-Practitioners" required></td>
+                    </tr>
+                    <tr>
+                      <td><label for="female_nonpract" class="ecq-form-label"> Female Non-Practitioners: </label></td>
+                      <td><input class="ecq-form-input" type="number" id="female_nonpract" name="female_nonpract" placeholder="Enter No. of female Non-Practitioners" required></td>
+                    </tr>
+                    <td><label for="total_nonpract" class="ecq-form-label" > Total Non-Practitioners: </label></td>
+                    <td><input class="ecq-form-input" type="number" id="total_nonpract" name="total_nonpract" placeholder="Enter Number of Total Non-Practitioners" required></td>
+                  </table>
+                </fieldset>
+              </div>
     
-            <div> 
-            <fieldset class="ecq-form-fieldset">
-            <legend class="ecq-legend">Enrolment :</legend>
-            <div>
-            <label for="male_enrol" >No. of Male Enrolled</label>
-            <input type="number" id="male_enrol" name="male_enrol" class="ecq-form-input" placeholder="Enter no of male enrolled" required>
-            </div>
-            <div>
-            <label for="female_enrol" >No. of Female Enrolled</label>
-            <input type="number" id="female_enrol" name="female_enrol" class="ecq-form-input" placeholder="Enter no of female enrolled">
-            </div>
-            <div>
-            <label for="total_enrol">Total Enrolment</label>
-            <input type="number" id="total_enrol" name="total_enrol" class="ecq-form-input" required placeholder="Enter total enrolled ">
-            </div>
-            <div>
-            <label for="capacity" class="form-label">Enrolment Capacity:</label>
-            <input type="number" id="capacity" name="capacity" class="ecq-form-input" placeholder="Enter the enrollment capacity no">
-            </div>
-            </fieldset>
-            </div>
-
-            <div>
-            <fieldset class="ecq-form-fieldset">
-            <legend class="ecq-legend">Participating Children</legend>
-            
-            <label for="age_grp"> Children Age Group(<b>&nbsp; Please thick </b> appropriately): </label>
-            <label for="age_grp">Birth-2yrs</label>
-            <input type="checkbox" id="age_grp" name="age_grp" >
-            <label for="above3">3-5+ yrs</label>
-            <input type="checkbox" name="above3" id="above3">
-            <label for="above5">Birth-5+yrs</label>
-            <input type="checkbox" id="above5" name="above5">  
-            </fieldset> 
-            </div>
-
-            <div>
-            <fieldset class="ecq-form-fieldset">
-            <legend class="ecq-legend">Register Centre</legend>
-            <label for="centre">Centre Registered as:</label>
-            <select id="centre" name="centre" class="ecq-form-input">
-                <option>Select register centre</option>
-                <option>Daycare</option>
-                <option>Preschool</option>
-            </select>
-            </fieldset>
-            </div>
-
-            <div>
-            <fieldset class="ecq-form-fieldset">
-            <legend class="ecq-legend"> Management</legend>
-            <div>
-            <label for="Disaster_plan">Any Available Disaster Management Plan?</label>
-            <label for="Disaster_plan_yes">Yes</label>
-            <input type="radio" id="Disaster_plan_yes" name="Disaster_plan" value="Yes" >
-            <label for="Disaster_plan_no">NO</label>
-            <input type="radio" id="Disaster_plan_no" name="Disaster_plan" value="no">
-            </div>
-            <div>
-            <label for="emergency_drill"> Were any Emergency Drills conducted in the past year?</label>
-            <label for="emergency_drill_yes"> Yes </label>
-            <input type="radio" id="emergency_drill_yes" name="emergency_drill" value="yes" >
-            <label for="emergency_drill_no"> No </label>
-            <input type="radio" id="emergency_drill_no" name="emergency_drill" value="no">
-            </div>
-            <div>
-            <label for="how_many"> If yes, how many? </label>
-            <input type="number" id="how_many" name="how_many" class="ecq-form-input" > 
-            </div>
-            <div>
-            <label for="education_govt">Which of the following are present at the school</label>
-            <label for="education_govt_pta">Active PTA</label>
-            <input type="checkbox" id="education_govt_pta" name="education_govt_pta">
-            <label for="education_govt_bm"> Board of Management</label>
-            <input type="checkbox" id="education_govt_bm" name="education_govt_bm">
-            <label for="education_govt_dc"> Development Committee</label>
-            <input type="checkbox" id="education_govt_dc" name="education_govt_dc">
-            </div>
-            </fieldset>
-            </div>
-
-            <div>
-            <fieldset class="ecq-form-fieldset">
-            <legend class="ecq-legend">School Ownership</legend>
-            <div>
-            <label for="sch_owner" > School Ownership <small><i>(select appropriate value)</i></small>: </label>
-            <label for="private_own"> Private</label>
-            <input type="radio" id="private_own" name="sch_owner">
-            <label for="church_own">Church Assisted</label>
-            <input type="radio" id="church_own" name="sch_owner">
-            <label for="govt_own"> Government</label>
-            <input type="radio" id="govt_own" name="sch_owner">
-            <label for="other_own">Other: </label>
-            <input type="text" id="other_own" name="sch_owner" placeholder="Please specify" class="ecq-form-input"> 
-            </div>
-            </fieldset>
-            </div>
-
-            <div>
-            <fieldset class="ecq-form-fieldset">
-              <legend class="ecq-legend">School Building </legend>
-              <div>
-              <label for="own"> Building used<small><i>(Check all that apply)</i></small></label>
+              <div class="ecq-table-container"> 
+                <fieldset>
+                  <legend class="ecq-legend">Enrolment :</legend>
+                  <table>
+                    <tr>
+                      <td><label for="male_enrol" class="ecq-form-label">No. of Male Enrolled</label></td>
+                      <td><input type="number" id="male_enrol" name="male_enrol" class="ecq-form-input" placeholder="Enter no of male enrolled" required></td>
+                    </tr>
+                    <tr>
+                      <td><label for="female_enrol" class="ecq-form-label" >No. of Female Enrolled</label></td>
+                      <td><input type="number" id="female_enrol" name="female_enrol" class="ecq-form-input" placeholder="Enter no of female enrolled"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="total_enrol" class="ecq-form-label">Total Enrolment</label></td>
+                      <td><input type="number" id="total_enrol" name="total_enrol" class="ecq-form-input" required placeholder="Enter total enrolled "></td>
+                    </tr>
+                    <tr>
+                      <td><label for="capacity" class="ecq-form-label">Enrolment Capacity:</label></td>
+                      <td><input type="number" id="capacity" name="capacity" class="ecq-form-input" placeholder="Enter the enrollment capacity no"></td>
+                    </tr>
+                  </table>
+                </fieldset>
               </div>
-              <div>
-              <label for="own"> Own</label>
-              <input type="checkbox" id="own" name="own">
-              <label for="rent">Rent</label>
-              <input type="checkbox" id="rent" name="rent">
-              <label for="home"> Home </label>
-              <input type="checkbox" id="home" name="home">
-              <label for="church">Church </label>
-              <input type="checkbox" id="church" name="church">
-              <label for="govt_sch"> Government School</label>
-              <input type="checkbox" id="govt_sch" name="govt_sch">
-              <label for="comm_centre">Community Centre</label>
-              <input type="checkbox" id="comm_centre" name="comm_centre">
-              <label for="purpose"> Purpose Built </label>
-              <input type="checkbox" id="purpose" name="purpose">
-              <label for="other_pur">Other: </label>
-              <input type="text" id="other_pur" name="other_pur" placeholder="Please specify" class="ecq-form-input"> 
+
+              <div class="ecq-table-container">
+                <fieldset>
+                  <legend class="ecq-legend">Participating Children</legend>
+                  <div>
+                  <p>Children Age Group(<b>&nbsp; Please thick </b> appropriately): </p>
+                  <table>
+                    <tr>
+                      <td><label for="age_grp" class="ecq-form-label">Birth-2yrs</label></td>
+                      <td><input type="checkbox" id="age_grp" name="age_grp"></td>
+                    </tr>
+                    <tr>
+                     <td><label for="above3" class="ecq-form-label">3-5+ yrs</label></td>
+                      <td><input type="checkbox" name="above3" id="above3"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="above5" class="ecq-form-label">Birth-5+yrs</label></td>
+                      <td><input type="checkbox" id="above5" name="above5">  </td>
+                    </tr>
+                  </table>
+                </fieldset> 
               </div>
-            </fieldset>
-            </div>
-
-            <div>
-            <fieldset class="ecq-form-fieldset">
-              <legend class="ecq-legend">Outdoor Space Used by school </legend>
+    
               <div>
-              <label for="centre_owned" > Outdoor Space Used<small><i>(Check all that apply)</i></small>:  </label>
+                <fieldset>
+                  <legend class="ecq-legend">Register Centre</legend>
+                  <div>
+                  <label for="centre" class="ecq-form-label">Centre Registered as:</label>
+                  <select id="centre" name="centre" class="ecq-form-input">
+                    <option>Select register centre</option>
+                    <option>Daycare</option>
+                    <option>Preschool</option>
+                  </select>
+                  </div>
+                </fieldset>
               </div>
-              <div>
-              <label for="centre_owned"> Centre Owned </label>
-              <input type="checkbox" id="centre_owned" name="centre_owned">
-              <label for="comm_owned">Community Owned</label>
-              <input type="checkbox" id="comm_owned" name="comm_owned">
-              <label for="playing_field"> Playing Field</label>
-              <input type="checkbox" id="playing_field" name="playing_field">
-              <label for="none"> None </label>
-              <input type="checkbox" id="none" name="none">
-              <label for="other_outdoor">Other: </label>
-              <input type="text" id="other_door" name="other_door" placeholder="Please specify" class="ecq-form-input">
+    
+              <div class="ecq-table-container">
+                <fieldset>
+                  <legend class="ecq-legend"> Management</legend>
+                  <p>Any Available Disaster Management Plan?</p>
+                  <table>
+                    <tr>
+                      <td><label for="Disaster_plan_yes" class="ecq-form-label">Yes</label></td>
+                      <td><input type="radio" id="Disaster_plan_yes" name="Disaster_plan" value="Yes" ></td>
+                    </tr>
+                    <tr>
+                      <td><label for="Disaster_plan_no" class="ecq-form-label">NO</label></td>
+                      <td> <input type="radio" id="Disaster_plan_no" name="Disaster_plan" value="no" ></td>
+                    </tr>
+                  </table>
+                  
+                  
+                  <table>
+                    <p> Were any Emergency Drills conducted in the past year?</p>
+                    <tr>
+                      <td><label for="emergency_drill_yes" class="ecq-form-label"> Yes </label></td>
+                      <td><input type="radio" id="emergency_drill_yes" name="emergency_drill" value="yes" ></td>
+                    </tr>
+                    <tr>
+                      <td><label for="emergency_drill_no" class="ecq-form-label"> No </label></td>
+                      <td><input type="radio" id="emergency_drill_no" name="emergency_drill" value="no"></td>
+                    </tr>
+                  </table>
+                  <table>
+                    <tr>
+                      <td><label for="how_many" class="ecq-form-label"> If yes, how many? </label></td>
+                      <td><input type="number" id="how_many" name="how_many" class="ecq-form-input" > </td>
+                    </tr>
+                  </table>
+                  <table>
+                    <p>Which of the following are present at the school</p>
+                    <tr>
+                      <td><label for="education_govt_pta" class="ecq-form-label">Active PTA</label></td>
+                      <td><input type="checkbox" id="education_govt_pta" name="education_govt_pta"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="education_govt_bm" class="ecq-form-label"> Board of Management</label></td>
+                      <td><input type="checkbox" id="education_govt_bm" name="education_govt_bm"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="education_govt_dc" class="ecq-form-label"> Development Committee</label></td>
+                      <td><input type="checkbox" id="education_govt_dc" name="education_govt_dc"></td>
+                    </tr>
+                  </table>
+                </fieldset>
               </div>
-            </fieldset>
-            </div>
 
-            <div class="form-group-ecq">
-            <fieldset class="ecq-form-fieldset">
-            <legend class="ecq-legend">Staff Turn Over</legend>
-            <div>
-            <label for="staff_hired">Number of Staff Hired :</label>
-            <input type="number" id="staff_hired" name="staff_hired" class="ecq-form-input" placeholder="Enter total no of staff hired">
-            </div>
-            <div>
-            <label for="resign_staff">Number of resigned Staff :</label>
-            <input type="number" id="resign_staff" name="resign_staff" class="ecq-form-input" placeholder="Enter total no of resigned staff">
-            </div>
-            </fieldset>
-            </div>
+              <div class="ecq-table-container">
+                <fieldset class="ecq-form-fieldset">
+                  <legend class="ecq-legend">School Ownership</legend>
+                  <div class="ecq-table-container">
+                  <table>
+                    <p> School Ownership <small><i>(select appropriate value)</i></small>: </p>
+                    <tr>
+                      <td><label for="private_own" class="ecq-form-label"> Private</label></td>
+                      <td><input type="radio" id="private_own" name="sch_owner"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="church_own" class="ecq-form-label">Church Assisted</label></td>
+                      <td><input type="radio" id="church_own" name="sch_owner"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="govt_own" class="ecq-form-label"> Government</label></td>
+                      <td><input type="radio" id="govt_own" name="sch_owner"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="other_own" class="ecq-form-label">Other: </label></td>
+                      <td><input type="text" id="other_own" name="sch_owner" placeholder="Please specify" class="ecq-form-input"></td>
+                    </tr>
+                  </table>
+                  </div>
+                </fieldset>
+              </div>
 
-            <div class="form-group-ecq">
-            <fieldset class="ecq-form-fieldset">
-            <legend> ICT Access</legend>
-            <h4>No of working Items:</h4>
-            <div>
-            <label for="no_computers" >Computers:</label>
-            <input type="number" name="no_computers" id="no_computers" class="ecq-form-input" placeholder="Enter no of working computers in the centre">
-            </div>
+              <div class="ecq-table-container">
+                <fieldset class="ecq-form-fieldset">
+                  <legend class="ecq-legend">School Building </legend>
+                  <table>
+                    <p> Building used<small><i>(Check all that apply)</i></small></p>
+                    <tr>
+                    <td><label for="own" class="ecq-form-label"> Own</label></td>
+                    <td> <input type="checkbox" id="own" name="own"></td>
+                    </tr>
+                    <tr>
+                    <td><label for="rent" class="ecq-form-label">Rent</label></td>
+                    <td><input type="checkbox" id="rent" name="rent"></td>
+                    </tr>
+                    <tr>
+                    <td><label for="home" class="ecq-form-label"> Home </label></td>
+                    <td><input type="checkbox" id="home" name="home"></td>
+                    </tr>
+                    <tr>
+                    <td><label for="church" class="ecq-form-label">Church </label></td>
+                    <td><input type="checkbox" id="church" name="church"></td>
+                    </tr>
+                    <tr>
+                    <td><label for="govt_sch" class="ecq-form-label"> Government School</label></td>
+                    <td><input type="checkbox" id="govt_sch" name="govt_sch"></td>
+                    </tr>
+                    <tr>
+                    <td><label for="comm_centre" class="ecq-form-label">Community Centre</label></td>
+                    <td><input type="checkbox" id="comm_centre" name="comm_centre"></td>
+                    </tr>
+                    <tr>
+                    <td> <label for="purpose" class="ecq-form-label"> Purpose Built </label></td>
+                    <td><input type="checkbox" id="purpose" name="purpose"></td>
+                    </tr>
+                    <tr>
+                    <td><label for="other_pur" class="ecq-form-label">Other: </label></td>
+                    <td><input type="text" id="other_pur" name="other_pur" placeholder="Please specify" class="ecq-form-input"> </td>
+                    </tr>
+                  </table>  
+                </fieldset>
+              </div>
 
-            <div>
-            <label for="laptops_no" >Laptops:</label>
-            <input type="number" name="laptops_no" id="laptops_no" class="ecq-form-input" placeholder="Enter no of working laptops">
-            </div>
+              <div class="ecq-table-container">
+                <caption>Outdoor Space Used by school</caption>
+               
+                  <table>
+                    <p> Outdoor Space Used<small><i>(Check all that apply)</i></small>:  </p>
+                    <tr>
+                      <td><label for="centre_owned" class="ecq-form-label"> Centre Owned </label></td>
+                      <td><input type="checkbox" id="centre_owned" name="centre_owned"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="comm_owned" class="ecq-form-label">Community Owned</label></td>
+                      <td><input type="checkbox" id="comm_owned" name="comm_owned"></td>
+                    </tr>
+                    <tr>
+                      <td> <label for="playing_field" class="ecq-form-label"> Playing Field</label></td>
+                      <td><input type="checkbox" id="playing_field" name="playing_field"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="none" class="ecq-form-label"> None </label></td>
+                      <td><input type="checkbox" id="none" name="none"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="other_outdoor">Other: </label></td>
+                      <td><input type="text" id="other_door" name="other_door" placeholder="Please specify" class="ecq-form-input"></td>
+                    </tr>
+                  </table>
+                </fieldset>
+              </div>
 
-            <div>
-            <label for="tablets_no" >Tablets/Ipads:</label>
-            <input type="number" name="tablets_no" id="tablets_no" class="ecq-form-input" placeholder="Enter no of working tablets">
-            </div>
+              <div class="ecq-table-container">
+                <fieldset class="ecq-form-fieldset">
+                  <legend class="ecq-legend">Staff Turn Over</legend>
+                  <table>
+                    <tr>
+                      <td> <label for="staff_hired" class="ecq-form-label">Number of Staff Hired :</label></td>
+                      <td> <input type="number" id="staff_hired" name="staff_hired" class="ecq-form-input" placeholder="Enter total no of staff hired"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="resign_staff">Number of resigned Staff :</label></td>
+                      <td><input type="number" id="resign_staff" name="resign_staff" class="ecq-form-input" placeholder="Enter total no of resigned staff"></td>
+                    </tr>
+                  </table>
+                </fieldset>
+              </div>
 
-            <div>
-            <label for="television_no" >Television sets:</label>
-            <input type="number" name="television_no" id="television_no" class="ecq-form-input" placeholder="Enter no of working televisions">
-            </div>
+              <div class="form-group-ecq">
+                <fieldset class="ecq-form-fieldset">
+                  <legend> ICT Access</legend>
+                  <h4>No of working Items:</h4>
+                  <div>
+                  <label for="no_computers" class="ecq-form-label">Computers:</label>
+                  <input type="number" name="no_computers" id="no_computers" class="ecq-form-input" placeholder="Enter no of working computers in the centre">
+                  </div>
 
-            <div>
-            <label for="dvd_no">DVD Players:</label>
-            <input type="number" name="dvd_no" id="dvd_no" class="ecq-form-input" placeholder="Enter no of working DVD Players">
-            </div>
+                  <div>
+                  <label for="laptops_no" class="ecq-form-label">Laptops:</label>
+                  <input type="number" name="laptops_no" id="laptops_no" class="ecq-form-input" placeholder="Enter no of working laptops">
+                  </div>
+        
+                  <div>
+                  <label for="tablets_no" class="ecq-form-label">Tablets/Ipads:</label>
+                  <input type="number" name="tablets_no" id="tablets_no" class="ecq-form-input" placeholder="Enter no of working tablets">
+                  </div>
 
-            <div>
-            <label for="vcr_no" >VCRs:</label>
-            <input type="number" name="vcr_no" id="vcr_no" class="ecq-form-input" placeholder="Enter no of working VCRs">
-            </div>
+                  <div>
+                  <label for="television_no" class="ecq-form-label">Television sets:</label>
+                  <input type="number" name="television_no" id="television_no" class="ecq-form-input" placeholder="Enter no of working televisions">
+                  </div>
 
-            <div>
-            <label for="radios_no" >Radios/Stereo sets:</label>
-            <input type="number" name="radios_no" id="radios_no" class="ecq-form-input" placeholder="Enter no of Radios/Stereo Sets">
-            </div>
+                  <div>
+                  <label for="dvd_no" class="ecq-form-label">DVD Players:</label>
+                  <input type="number" name="dvd_no" id="dvd_no" class="ecq-form-input" placeholder="Enter no of working DVD Players">
+                  </div>
 
-            <div >
-            <label for="cdplayer_no" >CD Players:</label>
-            <input type="number" name="cdplayer_no" id="cdplayer_no" class="ecq-form-input" placeholder="Enter no of CD Players">  
-            </div>         
-            </fieldset>
-            </div>
+                  <div>
+                  <label for="vcr_no" class="ecq-form-label" >VCRs:</label>
+                  <input type="number" name="vcr_no" id="vcr_no" class="ecq-form-input" placeholder="Enter no of working VCRs">
+                  </div>
 
-            <div class="form-group-ecq">
-            <fieldset class="ecq-form-fieldset">
-            <legend class="ecq-legend">Internet Access:</legend>
-            <label for="internet_access" >Does the centre have internet access?</label><br>
-            <select name="internet_access" id="internet_access" class="ecq-form-input">
-              <option value="Choose_one">choose One</option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
-            </fieldset>
-            </div>
+                  <div>
+                  <label for="radios_no" class="ecq-form-label">Radios/Stereo sets:</label>
+                  <input type="number" name="radios_no" id="radios_no" class="ecq-form-input" placeholder="Enter no of Radios/Stereo Sets">
+                  </div>
 
-            <div class="form-group-ecq">
-            <fieldset class="ecq-form-fieldset">
-                <legend class="ecq-legend">Building Status</legend>
-                <h4>Building Evaluation</h4>
+                  <div >
+                  <label for="cdplayer_no"class="ecq-form-label" >CD Players:</label>
+                  <input type="number" name="cdplayer_no" id="cdplayer_no" class="ecq-form-input" placeholder="Enter no of CD Players">  
+                  </div>         
+                </fieldset>
+              </div>
+
+              <div class="ecq-table-container">
+                <fieldset class="ecq-form-fieldset">
+                  <legend class="ecq-legend">Internet Access:</legend>
+                  <table>
+                    <tr>
+                      <td><label for="internet_access" class="ecq-form-label" >Does the centre have internet access?:</label></td>
+                      <td>
+                        <select name="internet_access" id="internet_access" class="ecq-form-input">
+                          <option value="Choose_one">choose One</option>
+                          <option value="yes">Yes</option>
+                          <option value="no">No</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </table>
+                </fieldset>
+              </div>
+
+              <div class="form-group-ecq">
+                <fieldset class="ecq-form-fieldset">
+                  <legend class="ecq-legend">Building Status</legend>
+                  <h4>Building Evaluation</h4>
                     <div >
                     <div><label for="floor-sats-cond" class="ecq-label" >Floor: </label></div>
-                    <label for="floor-sats-cond" class="evaluation-form"> Satisfactory Condition : </label>
-                    <input type="text" name="floor-sats-cond" id="floor-sats-cond" class="ecq-form-input">
+                    <label for="floor-sats-cond" class="evaluation-form"> Satisfactory Condition: </label>
+                    <input type="text" name="floor-sats-cond" id="floor-sats-cond" class="buildeva-input">
                     <label for="floor-repair"class="evaluation-form"> Needed Repair: </label>
-                    <input type="text" name="floor-repair" id="floor-repair" class="ecq-form-input">
+                    <input type="text" name="floor-repair" id="floor-repair" class="buildeva-input">
                     <label for="floor-comment"class="evaluation-form">Comment:</label>
-                    <input type="text" name="floor-comment" id="floor-comment" class="ecq-form-input">
+                    <input type="text" name="floor-comment" id="floor-comment" class="buildeva-input">
                     </div>
                     <div>
                     <div><label for="walls-sats-cond" class="ecq-label">Walls: </label></div>
                     <label for="walls-sats-cond" class="evaluation-form"> Satisfactory Condition:</label>
-                    <input type="text" name="walls-sats-cond" id="walls-sats-cond" class="ecq-form-input">
+                    <input type="text" name="walls-sats-cond" id="walls-sats-cond" class="buildeva-input">
                     <label for="walls-repair" class="evaluation-form"> Needed Repair: </label>
-                    <input type="text" name="walls-repair" id="walls-repair" class="ecq-form-input">
+                    <input type="text" name="walls-repair" id="walls-repair" class="buildeva-input">
                     <label for="wall-comment" class="evaluation-form">Comment: </label>
-                    <input type="text" name="wall-comment" id="wall-comment" class="ecq-form-input">
+                    <input type="text" name="wall-comment" id="wall-comment" class="buildeva-input">
                     </div>
                     <div>
                         <div><label for="Partitions-sats-cond" class="ecq-label">Partitions: </label></div>
                         <label for="Partitions-sats-cond" class="evaluation-form"> Satisfactory Condition:</label>
-                        <input type="text" name="Partitions-sats-cond" id="Partitions-sats-cond" class="ecq-form-input">
+                        <input type="text" name="Partitions-sats-cond" id="Partitions-sats-cond" class="buildeva-input">
                         <label for="Partitions-repair" class="evaluation-form"> Needed Repair: </label>
-                        <input type="text" name="Partitions-repair" id="Partitions-repair" class="ecq-form-input">
+                        <input type="text" name="Partitions-repair" id="Partitions-repair" class="buildeva-input">
                         <label for="Partitions-comment" class="evaluation-form"> Comment:</label>
-                        <input type="text" name="Partitions-comment" id="Partitions-comment" class="ecq-form-input">
+                        <input type="text" name="Partitions-comment" id="Partitions-comment" class="buildeva-input">
                     </div>
                     <div>
                         <div> <label for="windows-sats-cond" class="ecq-label" >Windows: </label></div>
                         <label for="windows-sats-cond" class="evaluation-form"> Satisfactory Condition:</label>
-                        <input type="text" name="windows" id="windows-sats-cond" class="ecq-form-input">
+                        <input type="text" name="windows" id="windows-sats-cond" class="buildeva-input">
                         <label for="windows-repair" class="evaluation-form"> Needed Repair: </label>
-                        <input type="text" name="windows-repair" id="windows-repair" class="ecq-form-input">
+                        <input type="text" name="windows-repair" id="windows-repair" class="buildeva-input">
                         <label for="windows-comment" class="evaluation-form">Comment:</label>
-                        <input type="text" name="windows-comment" id="windows-comment" class="ecq-form-input">
+                        <input type="text" name="windows-comment" id="windows-comment" class="buildeva-input">
                     </div>
                     <div>
                         <div> <label for="doors-sats-cond" class="ecq-label">Doors: </label></div>
                         <label for="doors-sats-cond" class="evaluation-form"> Satisfactory Condition:</label>
-                        <input type="text" name="doors-sats-cond" id="doors-sats-cond" class="ecq-form-input">
+                        <input type="text" name="doors-sats-cond" id="doors-sats-cond" class="buildeva-input">
                         <label for="doors-repair" class="evaluation-form"> Needed Repair: </label>
-                        <input type="text" name="doors-repair" id="doors-repair" class="ecq-form-input">
-                        <label for="doors-comment" class="evaluation-form">Comment</label>
-                        <input type="text" name="doors-comment" id="doors-comment" class="ecq-form-input">
+                        <input type="text" name="doors-repair" id="doors-repair"class="buildeva-input">
+                        <label for="doors-comment" class="evaluation-form">Comment:</label>
+                        <input type="text" name="doors-comment" id="doors-comment" class="buildeva-input">
                     </div>
                     <div>
                         <div><label for="ceilings-sats-cond" class="ecq-label">Ceilings: </label></div>
                         <label for="ceilings-sats-cond" class="evaluation-form"> Satisfactory Condition:</label>
-                        <input type="text" name="ceilings-sats-cond" id="ceilings-sats-cond" class="ecq-form-input" >
+                        <input type="text" name="ceilings-sats-cond" id="ceilings-sats-cond"class="buildeva-input" >
                         <label for="ceiling-repair" class="evaluation-form" > Needed Repair: </label>
-                        <input type="text" name="ceiling-repair" id="ceiling-repair" class="ecq-form-input" >
+                        <input type="text" name="ceiling-repair" id="ceiling-repair" class="buildeva-input" >
                         <label for="ceiling-comment" class="evaluation-form">Comment:</label>
-                        <input type="text" name="ceiling-comment" id="ceiling-comment" class="ecq-form-input" >
+                        <input type="text" name="ceiling-comment" id="ceiling-comment" class="buildeva-input" >
                     </div>
                     <div>
                         <div> <label for="rofs-sats-cond" class="ecq-label">Roofs: </label></div>
                         <label for="roofs-sats-cond" class="evaluation-form"> Satisfactory Condition:</label>
-                        <input type="text" name="rofs-sats-cond" id="roofs-sats-cond" class="ecq-form-input">
+                        <input type="text" name="rofs-sats-cond" id="roofs-sats-cond" class="buildeva-input">
                         <label for="roofs-repair" class="evaluation-form"> Needed Repair: </label>
-                        <input type="text" name="roofs-repair" id="roofs-repair" class="ecq-form-input">
+                        <input type="text" name="roofs-repair" id="roofs-repair" class="buildeva-input">
                         <label for="roofs-comment" class="evaluation-form">Comment:</label>
-                        <input type="text" name="roofs-comment" id="roofs-comment" class="ecq-form-input">
+                        <input type="text" name="roofs-comment" id="roofs-comment" class="buildeva-input">
                     </div>
                     <div>
                         <div> <label for="rs-sats-cond" class="ecq-label">Running Supply: </label></div>
                         <label for="rs-sats-cond" class="evaluation-form"> Satisfactory Condition:</label>
-                        <input type="text" name="rs-sats-cond" id="rs-sats-cond" class="ecq-form-input">
+                        <input type="text" name="rs-sats-cond" id="rs-sats-cond" class="buildeva-input">
                         <label for="rs-repair" class="evaluation-form"> Needed Repair: </label>
-                        <input type="text" name="rs-repair" id="rs-repair" class="ecq-form-input">
+                        <input type="text" name="rs-repair" id="rs-repair" class="buildeva-input">
                         <label for="floor-comment" class="evaluation-form">Comment: </label>
-                        <input type="text" name="rs-comment" id="rs-comment" class="ecq-form-input">
+                        <input type="text" name="rs-comment" id="rs-comment" class="buildeva-input">
                     </div>
                     <div>
                         <div><label for="wst-sats-cond" class="ecq-label">Water Storage Tanks: </label></div>
                         <label for="wst-sats-cond" class="evaluation-form"> Satisfactory Condition:</label>
-                        <input type="text" name="wst-sats-cond" id="wst-sats-cond" class="ecq-form-input">
+                        <input type="text" name="wst-sats-cond" id="wst-sats-cond" class="buildeva-input">
                         <label for="wst-repair" class="evaluation-form"> Needed Repair: </label>
-                        <input type="text" name="wst-repair" id="wst-repair" class="ecq-form-input">
+                        <input type="text" name="wst-repair" id="wst-repair" class="buildeva-input">
                         <label for="wst-repair" class="evaluation-form">Comment:</label>
-                        <input type="text" name="wst-repair" id="wst-repair" class="ecq-form-input">
+                        <input type="text" name="wst-repair" id="wst-repair" class="buildeva-input">
                     </div>
                     <div>
                         <div><label for="light-bulbs-cond" class="ecq-label">Light Bulbs: </label></div>
                         <label for="light-bulbs-cond" class="evaluation-form"> Satisfactory Condition:</label>
-                        <input type="text" name="light-bulbs-cond" id="light-bulbs-cond" class="ecq-form-input">
+                        <input type="text" name="light-bulbs-cond" id="light-bulbs-cond" class="buildeva-input">
                         <label for="light-bulbs-repair" class="evaluation-form"> Needed Repair: </label>
-                        <input type="text" name="light-bulbs-repair" id="light-bulbs-repair" class="ecq-form-input">
-                        <label for="light-bulbs-comment" class="evaluation-form">Comment</label>
-                        <input type="text" name="light-bulbs-comment" id="light-bulbs-comment" class="ecq-form-input">
+                        <input type="text" name="light-bulbs-repair" id="light-bulbs-repair" class="buildeva-input">
+                        <label for="light-bulbs-comment" class="evaluation-form">Comment:</label>
+                        <input type="text" name="light-bulbs-comment" id="light-bulbs-comment" class="buildeva-input">
                     </div>
                     <div>
                         <div> <label for="elect-outlet-cond" class="ecq-label">Electricity outlets: </label></div>
                         <label for="elect-outlet-cond" class="evaluation-form"> Satisfactory Condition:</label>
-                        <input type="text" name="elect-outlet-cond" id="elect-outlet-cond" class="ecq-form-input">
+                        <input type="text" name="elect-outlet-cond" id="elect-outlet-cond" class="buildeva-input">
                         <label for="elect-outlet-repair" class="evaluation-form"> Needed Repair: </label>
-                        <input type="text" name="elect-outlet-repair" id="elect-outlet-repair" class="ecq-form-input">
-                        <label for="elect-outlet-comment" class="evaluation-form">Comment</label>
-                        <input type="text" name="elect-outlet-comment" id="elect-outlet-comment" class="ecq-form-input">
+                        <input type="text" name="elect-outlet-repair" id="elect-outlet-repair" class="buildeva-input">
+                        <label for="elect-outlet-comment" class="evaluation-form">Comment:</label>
+                        <input type="text" name="elect-outlet-comment" id="elect-outlet-comment"class="buildeva-input">
                     </div>
                     <div>
                         <div><label for="fencing-cond" class="ecq-label">Fencing: </label></div>
                         <label for="fencing-cond" class="evaluation-form"> Satisfactory Condition: </label>
-                        <input type="text" name="fencing-cond" id="fencing-sats-cond" class="ecq-form-input">
+                        <input type="text" name="fencing-cond" id="fencing-sats-cond" class="buildeva-input">
                         <label for="fencing-repair" class="evaluation-form"> Needed Repair: </label>
-                        <input type="text" name="fencing-repair" id="fencing-repair" class="ecq-form-input">
-                        <label for="fencing-comment" class="evaluation-form">Comment</label>
-                        <input type="text" name="fencing-comment" id="fencing-comment" class="ecq-form-input">
+                        <input type="text" name="fencing-repair" id="fencing-repair"class="buildeva-input">
+                        <label for="fencing-comment" class="evaluation-form">Comment:</label>
+                        <input type="text" name="fencing-comment" id="fencing-comment" class="buildeva-input">
                     </div>  
 
                     <div>
                       <div><label for="gates-sats-cond" class="ecq-label">Gates: </label></div>
                       <label for="gates-sats-cond" class="evaluation-form"> Satisfactory Condition:</label>
-                      <input type="text" name="gates-sats-cond" id="gates-sats-cond" class="ecq-form-input">
+                      <input type="text" name="gates-sats-cond" id="gates-sats-cond" class="buildeva-input">
                       <label for="gates-repair" class="evaluation-form"> Needed Repair: </label>
-                      <input type="text" name="gates-repair" id="gates-repair" class="ecq-form-input">
+                      <input type="text" name="gates-repair" id="gates-repair" class="buildeva-input">
                       <label for="gates-comment" class="evaluation-form">Comment:</label>
-                    <input type="text" name="gates-comment" id="gates-comment" class="ecq-form-input">
+                    <input type="text" name="gates-comment" id="gates-comment" class="buildeva-input">
                   </div> 
 
                   <div>
                     <div> <label for="ramps-rails-sats-cond" class="ecq-label">Ramps/Rails: </label></div>
                     <label for="ramps-rails-sats-cond" class="evaluation-form"> Satisfactory Condition:</label>
-                    <input type="text" name="ramps-rails-sats-cond" id="ramps-rails-sats-cond" class="ecq-form-input">
+                    <input type="text" name="ramps-rails-sats-cond" id="ramps-rails-sats-cond" class="buildeva-input">
                     <label for="ramps-rails-repair" class="evaluation-form"> Needed Repair: </label>
-                    <input type="text" name="ramps-rails-repair" id="ramps-rails-repair" class="ecq-form-input">
+                    <input type="text" name="ramps-rails-repair" id="ramps-rails-repair" class="buildeva-input">
                     <label for="ramps-rails-comment" class="evaluation-form">Comment:</label>
-                    <input type="text" name="ramps-rails-comment" id="ramps-rails-comment" class="ecq-form-input">
+                    <input type="text" name="ramps-rails-comment" id="ramps-rails-comment" class="buildeva-input">
                   </div> 
 
-                  <div>
+                  <div style="margin-top: 20px;">
                     <div><label for="wheelchair-accesibility" class="form-label ecq-label">Is the width of the main school entrance sufficient for wheelchair accessibility?: </label></div>
                     <label for="wheelchair-accesibility"> Satisfactory Condition:</label>
-                    <input type="text" name="wheelchair-accesibility" id="wheelchair-accesibility" class="ecq-form-input">
+                    <input type="text" name="wheelchair-accesibility" id="wheelchair-accesibility" class="buildeva-input">
                     <label for="wheelchair-access-repair"> Needed Repair: </label>
-                    <input type="text" name="wheelchair-access-repair" id="wheelchair-access-repair" class="ecq-form-input">
+                    <input type="text" name="wheelchair-access-repair" id="wheelchair-access-repair" class="buildeva-input">
                     <label for="wheelchair-access-comment">Comment:</label>
-                    <input type="text" name="wheelchair-access-comment" id="wheelchair-access-comment" class="ecq-form-input">
+                    <input type="text" name="wheelchair-access-comment" id="wheelchair-access-comment" class="buildeva-input">
                   </div> 
 
-                  <div>
+                  <div style="margin-top: 20px;">
                     <div><label for="sch-path" class="form-label ecq-label">Is the path to the school wheelchair-accessible, even during the rainy season?: </label></div>
                     <label for="sch-path"> Satisfactory Condition:</label>
-                    <input type="text" name="sch-path" id="sch-path" class="ecq-form-input">
+                    <input type="text" name="sch-path" id="sch-path" class="buildeva-input">
                     <label for="sch-path-repair"> Needed Repair: </label>
-                    <input type="text" name="sch-path-repair" id="sch-path-repair" class="ecq-form-input">
+                    <input type="text" name="sch-path-repair" id="sch-path-repair" class="buildeva-input">
                     <label for="sch-path-comment">Comment:</label>
-                    <input type="text" name="sch-path-comment" id="sch-path-comment" class="ecq-form-input">
+                    <input type="text" name="sch-path-comment" id="sch-path-comment"class="buildeva-input">
                   </div> 
-            </fieldset>
-            </div>
-
-            <div class="form-group-ecq">
-              <fieldset class="ecq-form-fieldset">
-              <legend class="ecq-legend">Water, Sanitation and Hygiene</legend>
-              <div>
-              <label for=""><strong>Note:</strong> <P class="ecq-label"><small>Yes = piped, protected well/spring, rainwater catchment, delivered or packaged (bottled) water </small></P></label>
-              <p class="ecq-label"><small> No = unprotected well/spring, lake/river/stream, none</small></p>
-              </div>
-              <div>
-              <label for="drinking-water" >Improved drinking water source:</label>
-              <label for="drinking-water-yes">Yes</label>
-              <input type="radio" name="drinking-water" id="drinking-water-yes">
-              <label for="drinking-water-no">No</label>
-              <input type="radio" name="drinking-water" id="drinking-water-no">
+                </fieldset>
               </div>
 
-              <div>
-                <label for="water-availability" >Water currently available from the source: </label>
-                
-                <label for="water-availability-yes">Yes</label>
-                <input type="radio" name="water-availability" id="water-availability-yes">
-                <label for="water-availability-no">No</label>
-                <input type="radio" name="water-availability" id="water-availability-no">
-                
+              <div class="form-group-ecq">
+                <fieldset class="ecq-form-fieldset">
+                  <legend class="ecq-legend">Water, Sanitation and Hygiene</legend>
+                  <p><strong>Note:</strong> <P class="ecq-label"><small>Yes = piped, protected well/spring, rainwater catchment, delivered or packaged (bottled) water </small></P>
+                  <p class="ecq-label"><small> No = unprotected well/spring, lake/river/stream, none</small>
+                  <table>
+                    <div>
+                     <p>Improved drinking water source:</p>
+                    <tr>
+                      <td><label for="drinking-water-yes" class="ecq-form-label">Yes</label></td>
+                      <td> <input type="radio" name="drinking-water" id="drinking-water-yes"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="drinking-water-no" class="ecq-form-label" >No</label></td>
+                      <td><input type="radio" name="drinking-water" id="drinking-water-no"></td>
+                    </tr>
+                    </div>
+                  </table>
+                  <table>
+                    <div>
+                    <p>Water currently available from the source: </p>
+                    <tr>
+                      <td><label for="water-availability-yes" class="ecq-form-label">Yes</label></td>
+                      <td><input type="radio" name="water-availability" id="water-availability-yes"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="water-availability-no" class="ecq-form-label">No</label></td>
+                      <td><input type="radio" name="water-availability" id="water-availability-no"></td>
+                    </tr>
+                    </div>
+                  </table>
+                  <table>
+                    <div>
+                    <p>Accessible handwashing facilities: </p>
+                    <tr>
+                      <td><label for="handwashing-yes" class="ecq-form-label">Yes </label></td>
+                      <td><input type="radio" name="handwashing" id="handwashing-yes"></td>
+                    </tr>
+                  
+                    <tr>
+                      <td><label for="handwashing-no" class="ecq-form-label"> No </label></td>
+                      <td><input type="radio" name="handwashing" id="handwashing-no"></td>
+                    </tr>
+                    </div>
+                  </table>
+
+                  <table>
+                    <div>
+                      <p>Accessible handwashing with soap and water currently available</p>
+                      <tr>
+                        <td><label for="Accessible-handwash-yes" class="ecq-form-label"> Yes</label></td>
+                        <td><input type="radio" name="Accessible-handwash" id="Accessible-handwash-yes"></td>
+                      </tr>
+
+                      <tr>
+                        <td><label for="Accessible-handwash-no" class="ecq-form-label"> No </label></td>
+                        <td><input type="radio" name="Accessible-handwash" id="Accessible-handwash-no"></td>
+                      </tr>
+                    </div>
+                  </table>
+                </fieldset>
               </div>
 
-              <div>
-                <label for="handwashing">Accessible handwashing facilities: </label>
-                <label for="handwashing-yes">Yes </label>
-                <input type="radio" name="handwashing" id="handwashing-yes">
-                <label for="handwashing-no"> No </label>
-                <input type="radio" name="handwashing" id="handwashing-no">
-              </div>
-
-              <div>
-                <label for="Accessible-handwash">Accessible handwashing with soap and water currently available</label>
-                <label for="Accessible-handwash-yes"> Yes</label>
-                <input type="radio" name="Accessible-handwash" id="Accessible-handwash-yes">
-                <label for="Accessible-handwash-no"> No </label>
-                <input type="radio" name="Accessible-handwash" id="Accessible-handwash-no">
-              </div>
-            </fieldset>
-            </div>
-
-            <div class="form-group-ecq">
-              <fieldset class="ecq-form-fieldset">
-              <Legend class="ecq-legend">Single-sex children toilets:</Legend>           
-              <div>
-              <label for="no-girls-toilet">No of Girls'toilets: </label>
-              <input type="number" name="no-girls-toilet" id="no-girls-toilet"  class="ecq-form-input" placeholder="Enter the no of girls tolet">
-              </div>
-              <div>
-              
-              <label for="no-boys-toilet">No of Boys' toilets:</label>
-              <input type="number" name="no-boys-toilet" id="no-boys-toilet"  class="ecq-form-input" placeholder="Enter the no of boys tolet">  
-              </div>
-              <div>
-              <label for="no-common-toilet">No of commonly toilets:</label>
-              <input type="number" name="no-common-toilet" id="no-common-toilet" class="ecq-form-input" placeholder="Enter no of commonly used">
-              </div>
-              <label for="tct">No of commonly used toilets:</label>
-              <input type="number" name="tct" id="tct" class="ecq-form-input" readonly >
-              </fieldset>
+              <div class="form-group-ecq">
+                <fieldset class="ecq-form-fieldset">
+                  <Legend class="ecq-legend">Single-sex children toilets:</Legend>           
+                    <div>
+                      <label for="no-girls-toilet" class="ecq-form-label">No of Girls'toilets: </label>
+                      <input type="number" name="no-girls-toilet" id="no-girls-toilet"  class="ecq-form-input" placeholder="Enter the no of girls tolet">
+                    </div>
+                    <div>
+                      <label for="no-boys-toilet" class="ecq-form-label">No of Boys' toilets:</label>
+                      <input type="number" name="no-boys-toilet" id="no-boys-toilet"  class="ecq-form-input" placeholder="Enter the no of boys tolet">  
+                    </div>
+                    <div>
+                      <label for="no-common-toilet" class="ecq-form-label">No of commonly toilets:</label>
+                      <input type="number" name="no-common-toilet" id="no-common-toilet" class="ecq-form-input" placeholder="Enter no of commonly used">
+                    </div>
+                    <div>
+                      <label for="tct" class="ecq-form-label">No of commonly used toilets:</label>
+                      <input type="number" name="tct" id="tct" class="ecq-form-input" readonly >
+                    </div>
+                </fieldset>
               </div>
 
               
               <div class="form-group-ecq">
-              <fieldset class="ecq-form-fieldset">
-              <legend class="ecq-legend"> Number Staff Toilets: </legend>   
-              <div>           
-              <label for="staff-toilet-female" >Female staff toilets:</label>
-              <input type="number" name="staff-toilet-female" id="staff-toilet-female" class="ecq-form-input" placeholder="no of female staff toilet">              
-              </div>
-              <div>
-              <label for="staff-toilet-male" >Male staff toilets:</label>
-              <input type="number" name="staff-toilet-male" id="staff-toilet-male" class="ecq-form-input" placeholder="No of male staff toilet">             
-              </div>
-              <div>
-              <label for="common-staff-toilet">Common staff toilets:</label>
-              <input type="number" name="common-staff-toilet" id="common-staff-toilet" class="ecq-form-input" placeholder="Enter no of common staff toilet">
-              </div>
-              <div>
-                <label for="tst">Total staff toilets:</label>
-                <input type="number" name="tst" id="tst" class="ecq-form-input"readonly>
-                </div>
-              </fieldset>
+                <fieldset class="ecq-form-fieldset">
+                  <legend class="ecq-legend"> Number Staff Toilets: </legend>   
+                  <div>           
+                  <label for="staff-toilet-female" class="ecq-form-label" >Female staff toilets:</label>
+                  <input type="number" name="staff-toilet-female" id="staff-toilet-female" class="ecq-form-input" placeholder="no of female staff toilet">              
+                  </div>
+                  <div>
+                  <label for="staff-toilet-male" class="ecq-form-label">Male staff toilets:</label>
+                  <input type="number" name="staff-toilet-male" id="staff-toilet-male" class="ecq-form-input" placeholder="No of male staff toilet">             
+                  </div>
+                  <div>
+                  <label for="common-staff-toilet" class="ecq-form-label">Common staff toilets:</label>
+                  <input type="number" name="common-staff-toilet" id="common-staff-toilet" class="ecq-form-input" placeholder="Enter no of common staff toilet">
+                  </div>
+                  <div>
+                  <label for="tst" class="ecq-form-label">Total staff toilets:</label>
+                  <input type="number" name="tst" id="tst" class="ecq-form-input"readonly>
+                  </div>
+                </fieldset>
               </div>
               
              
               <div class="form-group-ecq">
-              <fieldset class="ecq-form-fieldset">
+                <fieldset class="ecq-form-fieldset">
                 <legend class="ecq-legend"> Number of Urinals: </legend>   
                 <div>         
-                <label for="urinals-boys">Boys' only urinals:</label>
+                <label for="urinals-boys" class="ecq-form-label">Boys' only urinals:</label>
                 <input type="number" name="urinals-boys" id="urinals-boys" class="ecq-form-input">            
                 </div>
                 <div>
-                <label for="urinals-staff" >Stafs' only Urinals;</label>
+                <label for="urinals-staff" class="ecq-form-label" >Stafs' only Urinals;</label>
                 <input type="number" name="urinals-staff" id="urinals-staff" class="ecq-form-input" >              
                 </div>
                 <div>
-                <label for="common-urinals" >Commonly Used:</label>
+                <label for="common-urinals" class="ecq-form-label" >Commonly Used:</label>
                 <input type="number" name="common-urinals" id="common-urinals" class="ecq-form-input">
                 </div>
                 <div>
-                  <label for="turinal" >Total no of Urinals:</label>
+                  <label for="turinal" class="ecq-form-label" >Total no of Urinals:</label>
                   <input type="number" name="turinal" id="turinal" class="ecq-form-input" readonly>
                   </div>
                 </fieldset>
-                </div>
+              </div>
             
               
-                <div class="form-group-ecq">
+              <div class="form-group-ecq">
                 <fieldset class="ecq-form-fieldset">
                 <legend class="ecq-legend"> Washrooms facilitiles for children with disabilities: </legend>
                 <div>
-                <label for="washroom-girls"  >Girls' only:</label>
+                <label for="washroom-girls" class="ecq-form-label" >Girls' only:</label>
                 <input type="number" name="washroom-girls" id="washroom-girls" class="ecq-form-input" >
                 </div>
                 <div>
-                <label for="washroom-boys" >Boys' only:</label>
+                <label for="washroom-boys" class="ecq-form-label" >Boys' only:</label>
                 <input type="number" name="washroom-boys" id="washroom-boys" class="ecq-form-input" >
                 </div>
                 <div>
-                <label for="common-washrooms" >Common used Washrooms:</label>
+                <label for="common-washrooms"  class="ecq-form-label">Common used Washrooms:</label>
                 <input type="number" name="common-washrooms" id="common-washrooms" class="ecq-form-input" >
                 </div>
                 <div>
-                <label for="twashroom" >Total no of Washrooms:</label>
+                <label for="twashroom" class="ecq-form-label">Total no of Washrooms:</label>
                 <input type="number" name="twashroom" id="twashroom" class="ecq-form-input" readonly >
                 </div>
                
-              </fieldset>
+                </fieldset>
               </div>
-            </fieldset>
+            
 
             
-          <div class="ecq-form-group">
-            <input type="submit" name="Next" value="Next" class="ecq-form-button">
-          </div>
-         
-        </form>
-      </div>          
-    </section>
+              <div class="ecq-form-group">
+                <a href="staff_profile.html"><input type="submit" name="Next" value="Next" class="ecq-form-button"></a>
+              </div>
+          </form>
+        </div>
+      </div>      
+    </section>          
+  </section>
 
-    <footer class="footer">
-      <div class="container">
-        <p>© 2024 SOP EDU Forms. All rights reserved.</p>
-      </div>
-    </footer>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 SOP EDU Forms. All rights reserved.</p>
+    </div>
+  </footer>
 
 
 </body>
