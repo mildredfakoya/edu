@@ -32,31 +32,35 @@
 
 <section class="row">
   <section class="col-2">
-    <div class="sq-sidenav ">
-        <a href="/pages/se_eduq/se_home.html">Cover</a>
-        <a href="/pages/se_eduq/se_school.html" class="sq-focus">School</a>
-        <a href="/pages/se_eduq/forms/staff.html">Staff</a>
-        <a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a>
-        <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a>
-        <a href="/pages/se_eduq/forms/enrollment.html">Enrolment</a>
-        <a href="/pages/se_eduq/forms/furniture.html">Furniture</a>
-        <a href="/pages/se_eduq/forms/buildings.html">Buildings</a>
-        <a href="/pages/se_eduq/forms/equipments.html">Equipments</a>
-        <a href="/pages/se_eduq/forms/funds.html">Funds Raised</a>
-       
+    <div >
+        <nav class="se_nav ">
+            <ul>
+              <li><a href="/pages/se_eduq/se_home.html">Cover</a></li>
+              <li><a href="/pages/se_eduq/se_school.html" >School</a></li>
+              <li> <a href=" /pages/se_eduq/forms/staff.html">Staff</a></li>
+              <li><a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a></li>
+              <li>  <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a></li>
+              <li><a href="/pages/se_eduq/forms/enrollment.html">Enrolment</a></li>
+              <li> <a href="/pages/se_eduq/forms/furniture.html">Furniture</a></li>
+              <li>
+                <a href="/pages/se_eduq/forms/buildings.html">Buildings</a></li>
+              <li> <a href="/pages/se_eduq/forms/equipments.html">Equipments</a></li>
+              <li><a href="/pages/se_eduq/forms/funds.html">Funds Raised</a></li>
+            </ul>
+          </nav>
     </div>
   </section>
 
   <section class="col-10">
   <div class="sq-form">  
     <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Enrolment</h3>
-    <div>
+    <div class="se-form-container">
         <form action="" method="post">
             <fieldset class="se_fieldset">
                 <legend>Enrolment by Type of Program</legend>
-                <div>
+                <div class="">
                     <div>
-                        <label for="type_program">Enrolment by Type of Program:</label> <br>
+                        <label for="type_program">Enrolment by Type of Program:</label> 
                         <input type="checkbox" name="type_program[]" id="itinerant" value="Itinerant">
                         <label for="intinerant">Itinerant</label>
                     </div>
@@ -72,9 +76,12 @@
                    
                     
                 </div>
+
             </fieldset>
+           
             <fieldset class="se_fieldset">
                 <legend>Enrolment By School and Gender</legend>
+                <div class="se-form-group">
                 <div>
                     <label for="schoolName">Name of Schools where pupils are based:</label>
                     <input type="text" id="schoolName" name="schoolName">
@@ -110,8 +117,9 @@
 <label for="vocationalF">F:</label>
 <input type="number" id="vocationalF" name="vocationalF">
 </div>
-
+</div>
             </fieldset>
+        
             <fieldset  class="se_fieldset">
                 <legend>Distribution of Current Enrolment according to Fresh Intake and Repeaters</legend>
                 <table class="se_form_tables" >

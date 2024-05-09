@@ -35,17 +35,22 @@
 
 <section class="row">
   <section class="col-2">
-    <div class="sq-sidenav ">
-        <a href="/pages/se_eduq/se_home.html">Cover</a>
-        <a href="/pages/se_eduq/se_school.html" class="sq-focus">School</a>
-        <a href="/pages/se_eduq/forms/staff.html">Staff</a>
-        <a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a>
-        <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a>
-        <a href="/pages/se_eduq/forms/enrollment.html">Enrolment</a>
-        <a href="/pages/se_eduq/forms/furniture.html">Furniture</a>
-        <a href="/pages/se_eduq/forms/buildings.html">Buildings</a>
-        <a href="/pages/se_eduq/forms/equipments.html">Equipments</a>
-        <a href="/pages/se_eduq/forms/funds.html">Funds Raised</a>
+    <div >
+        <nav class="se_nav">
+            <ul>
+              <li><a href="/pages/se_eduq/se_home.html">Cover</a></li>
+              <li><a href="/pages/se_eduq/se_school.html" >School</a></li>
+              <li> <a href=" /pages/se_eduq/forms/staff.html">Staff</a></li>
+              <li><a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a></li>
+              <li>  <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a></li>
+              <li><a href="/pages/se_eduq/forms/enrollment.html">Enrolment</a></li>
+              <li> <a href="/pages/se_eduq/forms/furniture.html">Furniture</a></li>
+              <li>
+                <a href="/pages/se_eduq/forms/buildings.html">Buildings</a></li>
+              <li> <a href="/pages/se_eduq/forms/equipments.html">Equipments</a></li>
+              <li><a href="/pages/se_eduq/forms/funds.html">Funds Raised</a></li>
+            </ul>
+          </nav>
        
     </div>
   </section>
@@ -53,297 +58,299 @@
   <section class="col-10">
   <div class="sq-form">  
     <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Students/Pupils</h3>
-    <div>
+    <div class="se-form-container">
         <!-- Form table for Pupils using Aids -->
         <fieldset class="se_fieldset">
             <legend>Number of Pupils Using an Aid according to Gender</legend>
             <form action="">
-                <div>
-                    <label for="glasses-male">Male Pupils using Glasses:</label>
-                    <input type="number" id="glasses-male" name="glasses-male"><br><br>
+                <div class="se-form-group">
+                    <label for="glasses-male" class="se-form-label">Male Pupils using Glasses:</label>
+                    <input type="number" id="glasses-male" name="glasses-male" class="se-form-input">
                 </div>
-                <div>
-                    <label for="glasses-female">Female Pupils using Glasses:</label>
-                    <input type="number" id="glasses-female" name="glasses-female"><br><br>
+                <div class="se-form-group">
+                    <label for="glasses-female" class="se-form-label">Female Pupils using Glasses:</label>
+                    <input type="number" id="glasses-female" name="glasses-female" class="se-form-input">
             
                 </div>
-                <div>
-                    <label for="glasses-total">Total Glasses:</label>
-                    <input type="number" id="glasses-total" name="glasses-total"><br><br>
+                <div class="se-form-group">
+                    <label for="glasses-total" class="se-form-label">Total Glasses:</label>
+                    <input type="number" id="glasses-total" name="glasses-total" class="se-form-input">
                 </div>
-                <div>
-                    <label for="hearing-aid-male">Male Pupils using Hearing Aid:</label>
-                <input type="number" id="hearing-aid-male" name="hearing-aid-male"><br><br>
+                <div class="se-form-group">
+                    <label for="hearing-aid-male" class="se-form-label">Male Pupils using Hearing Aid:</label>
+                <input type="number" id="hearing-aid-male" name="hearing-aid-male" class="se-form-input">
                 </div>
-                <div>
-                    <label for="hearing-aid-female">Female Pupils using Hearing Aid:</label>
-                    <input type="number" id="hearing-aid-female" name="hearing-aid-female"><br><br>
+                <div class="se-form-group">
+                    <label for="hearing-aid-female" class="se-form-label">Female Pupils using Hearing Aid:</label>
+                    <input type="number" id="hearing-aid-female" name="hearing-aid-female" class="se-form-input">
                 </div>
-                <div>
-                    <label for="hearing-aid-total">Total Hearing Aid:</label>
-                <input type="number" id="hearing-aid-total" name="hearing-aid-total" readonly><br><br>
+                <div class="se-form-group">
+                    <label for="hearing-aid-total" class="se-form-label">Total Hearing Aid:</label>
+                <input type="number" id="hearing-aid-total" name="hearing-aid-total" readonly class="se-form-input">
                 </div>
-                <div>
-                    <label for="wheel-chair-male">Male Pupils using Wheel Chair:</label>
-                <input type="number" id="wheel-chair-male" name="wheel-chair-male"><br><br>
+                <div class="se-form-group">
+                    <label for="wheel-chair-male" class="se-form-label">Male Pupils using Wheel Chair:</label>
+                <input type="number" id="wheel-chair-male" name="wheel-chair-male" class="se-form-input">
                 </div>
-                <div>
-                    <label for="wheel-chair-female">Female Pupils using Wheel Chair:</label>
-                    <input type="number" id="wheel-chair-female" name="wheel-chair-female"><br><br>
+                <div class="se-form-group">
+                    <label for="wheel-chair-female" class="se-form-label">Female Pupils using Wheel Chair:</label>
+                    <input type="number" id="wheel-chair-female" name="wheel-chair-female" class="se-form-input" >
             
                 </div>
-                <div>
-                    <label for="wheel-chair-total">Total Wheel Chair:</label>
-                    <input type="number" id="wheel-chair-total" name="wheel-chair-total" readonly><br><br>
+                <div class="se-form-group">
+                    <label for="wheel-chair-total" class="se-form-label">Total Wheel Chair:</label>
+                    <input type="number" id="wheel-chair-total" name="wheel-chair-total" readonly class="se-form-input">
                 </div>
-                <div>
-                    <label for="crutches-male">Male Pupils using Crutches:</label>
-                    <input type="number" id="crutches-male" name="crutches-male"><br><br>
+                <div class="se-form-group">
+                    <label for="crutches-male" class="se-form-label">Male Pupils using Crutches:</label>
+                    <input type="number" id="crutches-male" name="crutches-male" class="se-form-input">
             
                 </div>
-                <div>
-                    <label for="crutches-female">Female Pupils using Crutches:</label>
-                    <input type="number" id="crutches-female" name="crutches-female"><br><br>
+                <div class="se-form-group">
+                    <label for="crutches-female" class="se-form-label">Female Pupils using Crutches:</label>
+                    <input type="number" id="crutches-female" name="crutches-female" class="se-form-input">
             
                 </div>
-                <div>
-                    <label for="crutches-total">Total Crutches:</label>
-                    <input type="number" id="crutches-total" name="crutches-total" readonly><br><br>
+                <div class="se-form-group">
+                    <label for="crutches-total" class="se-form-label">Total Crutches:</label>
+                    <input type="number" id="crutches-total" name="crutches-total" readonly class="se-form-input">
                 </div>
-                <div>
-                    <label for="walkers-male">Male Pupils using Walkers:</label>
-                    <input type="number" id="walkers-male" name="walkers-male"><br><br>
+                <div class="se-form-group">
+                    <label for="walkers-male" class="se-form-label">Male Pupils using Walkers:</label>
+                    <input type="number" id="walkers-male" name="walkers-male" class="se-form-input">
                 </div>
-                <div>
-                    <label for="walkers-female">Female Pupils using Walkers:</label>
-                    <input type="number" id="walkers-female" name="walkers-female"><br><br>
+                <div class="se-form-group">
+                    <label for="walkers-female" class="se-form-label">Female Pupils using Walkers:</label>
+                    <input type="number" id="walkers-female" name="walkers-female" class="se-form-input">
                 </div>
-                <div>
-                    <label for="walkers-total">Total Walkers:</label>
-                <input type="number" id="walkers-total" name="walkers-total" readonly><br><br>
+                <div class="se-form-group">
+                    <label for="walkers-total" class="se-form-label">Total Walkers:</label>
+                <input type="number" id="walkers-total" name="walkers-total" readonly class="se-form-input">
                 </div>
-                <div>
-                    <label for="prosthesis-male">Male Pupils using Prosthesis:</label>
-                    <input type="number" id="prosthesis-male" name="prosthesis-male"><br><br>
+                <div class="se-form-group">
+                    <label for="prosthesis-male" class="se-form-label">Male Pupils using Prosthesis:</label>
+                    <input type="number" id="prosthesis-male" name="prosthesis-male" class="se-form-input">
             
                 </div>
-                   <div>
-                    <label for="prosthesis-female">Female Pupils using Prosthesis:</label>
-                    <input type="number" id="prosthesis-female" name="prosthesis-female"><br><br>
+                   <div class="se-form-group">
+                    <label for="prosthesis-female" class="se-form-label">Female Pupils using Prosthesis:</label>
+                    <input type="number" id="prosthesis-female" name="prosthesis-female" class="se-form-input">
                    </div>
-                   <div>
-                    <label for="prosthesis-total">Total Prosthesis:</label>
-                    <input type="number" id="prosthesis-total" name="prosthesis-total" readonly><br><br>
+                   <div class="se-form-group">
+                    <label for="prosthesis-total" class="se-form-label">Total Prosthesis:</label>
+                    <input type="number" id="prosthesis-total" name="prosthesis-total" readonly class="se-form-input">
                    </div>
-                   <div>
-                    <label for="arm-leg-brace-male">Male Pupils using Arm/Leg Brace:</label>
-                    <input type="number" id="arm-leg-brace-male" name="arm-leg-brace-male"><br><br>
+                   <div class="se-form-group">
+                    <label for="arm-leg-brace-male" class="se-form-label">Male Pupils using Arm/Leg Brace:</label>
+                    <input type="number" id="arm-leg-brace-male" name="arm-leg-brace-male" class="se-form-input">
                    </div>
-                   <div>
-                    <label for="arm-leg-brace-female">Female Pupils using Arm/Leg Brace:</label>
-                    <input type="number" id="arm-leg-brace-female" name="arm-leg-brace-female"><br><br>
-            
-                   </div>
-                   <div>
-                    <label for="arm-leg-brace-total">Total Arm/Leg Brace:</label>
-                    <input type="number" id="arm-leg-brace-total" name="arm-leg-brace-total" readonly><br><br>
+                   <div class="se-form-group">
+                    <label for="arm-leg-brace-female" class="se-form-label">Female Pupils using Arm/Leg Brace:</label>
+                    <input type="number" id="arm-leg-brace-female" name="arm-leg-brace-female" class="se-form-input">
             
                    </div>
-                   <div>
-                    <label for="other-specify-male">Male Pupils using Other  Aids(Specify):</label>
-                    <input type="text" name="other-specify-male" id="others-male" placeholder="Enter other Aids">
-                    <input type="number" id="other-specify-male" name="other-specify-male"><br><br>
+                   <div class="se-form-group">
+                    <label for="arm-leg-brace-total" class="se-form-label">Total Arm/Leg Brace:</label>
+                    <input type="number" id="arm-leg-brace-total" name="arm-leg-brace-total" readonly class="se-form-input">
             
                    </div>
-                   <div>
-                    <label for="other-specify-female">Female Pupils using Other Aids (Specify):</label>
-                    <input type="text" name="other-specify-female" id="others-female" placeholder="Enter other Aids">
-                <input type="number" id="other-specify-female" name="other-specify-female"><br><br>
+                   <div class="se-form-group">
+                    <label for="other-specify-male" class="se-form-label">Male Pupils using Other  Aids(Specify):</label>
+                    <input type="text" name="other-specify-male" id="others-male" placeholder="Enter other Aids"  class="se-form-input">
+                    <input type="number" id="other-specify-male" name="other-specify-male" class="se-form-input" placeholder="Enter number">
+            
                    </div>
-                   <div>
-                    <label for="other-specify-total">Total Other (Specify):</label>
-                    <input type="number" id="other-specify-total" name="other-specify-total" readonly><br><br>
+                   <div class="se-form-group">
+                    <label for="other-specify-female" class="se-form-label">Female Pupils using Other Aids (Specify):</label>
+                    <input type="text" name="other-specify-female" id="others-female" placeholder="Enter other Aids" class="se-form-input">
+                <input type="number" id="other-specify-female" name="other-specify-female" placeholder="Enter Number" class="se-form-input">
+                   </div>
+                   <div class="se-form-group">
+                    <label for="other-specify-total" class="se-form-label">Total Other (Specify):</label>
+                    <input type="number" id="other-specify-total" name="other-specify-total" readonly class="se-form-input">
                    </div>
                     
             
         </fieldset>
          <!-- Pupils tested Form table -->
-        <fieldset class="se_fieldset">
+        <fieldset class="se_fieldset se-form-group">
             <legend>Number of Pupils who have Tested for Hearing and Vision according to Gender</legend>
             
-                <div>
+                <div class="">
                     <label for="hearing-tested-male">Hearing - Number Tested (Male):</label>
-                <input type="number" id="hearing-tested-male" name="hearing-tested-male"><br><br>
+                <input type="number" id="hearing-tested-male" name="hearing-tested-male">
                 </div>
-                <div>
+                <div class="">
                     <label for="hearing-tested-female">Hearing - Number Tested (Female):</label>
-                    <input type="number" id="hearing-tested-female" name="hearing-tested-female"><br><br>
+                    <input type="number" id="hearing-tested-female" name="hearing-tested-female">
                 </div>
-                <div>
+                <div class="">
                     <label for="hearing-glasses-no-male">Hearing - Prescribed but Do Not Wear Glasses (Male):</label>
-                    <input type="number" id="hearing-glasses-no-male" name="hearing-glasses-no-male"><br><br>
+                    <input type="number" id="hearing-glasses-no-male" name="hearing-glasses-no-male">
                 </div>
-                <div>
+                <div class="">
                     <label for="hearing-glasses-no-female">Hearing - Prescribed but Do Not Wear Glasses (Female):</label>
-                    <input type="number" id="hearing-glasses-no-female" name="hearing-glasses-no-female"><br><br>
+                    <input type="number" id="hearing-glasses-no-female" name="hearing-glasses-no-female">
                 </div>
-                <div>
+                <div class="">
                     <label for="hearing-glasses-yes-male">Hearing - Prescribed and Wear Glasses (Male):</label>
-                    <input type="number" id="hearing-glasses-yes-male" name="hearing-glasses-yes-male"><br><br>
+                    <input type="number" id="hearing-glasses-yes-male" name="hearing-glasses-yes-male">
                 </div>
-                <div>
+                <div class="">
                     <label for="hearing-glasses-yes-female">Hearing - Prescribed and Wear Glasses (Female):</label>
-                    <input type="number" id="hearing-glasses-yes-female" name="hearing-glasses-yes-female"><br><br>
+                    <input type="number" id="hearing-glasses-yes-female" name="hearing-glasses-yes-female">
+                </div >
+                <div class=""> 
+                    <label for="hearing-total-male">Hearing - Total (Male):</label>
+                    <input type="number" id="hearing-total-male" name="hearing-total-male" readonly>
                 </div>
-                <div> <label for="hearing-total-male">Hearing - Total (Male):</label>
-                    <input type="number" id="hearing-total-male" name="hearing-total-male" readonly><br><br></div>
-                <div>
+                <div class="">
                     <label for="hearing-total-female">Hearing - Total (Female):</label>
-                <input type="number" id="hearing-total-female" name="hearing-total-female" readonly><br><br>
+                <input type="number" id="hearing-total-female" name="hearing-total-female" readonly>
                 </div>
-                <div>
+                <div class="">
                     <label for="vision-tested-male">Vision - Number Tested (Male):</label>
-                <input type="number" id="vision-tested-male" name="vision-tested-male"><br><br>
+                <input type="number" id="vision-tested-male" name="vision-tested-male">
                 </div>
-                <div>
+                <div class="">
                     <label for="vision-tested-female">Vision - Number Tested (Female):</label>
-                    <input type="number" id="vision-tested-female" name="vision-tested-female"><br><br>
+                    <input type="number" id="vision-tested-female" name="vision-tested-female">
                 </div>
-                <div>
+                <div class="">
                     <label for="vision-glasses-no-male">Vision - Prescribed but Do Not Wear Glasses (Male):</label>
-                    <input type="number" id="vision-glasses-no-male" name="vision-glasses-no-male"><br><br>
+                    <input type="number" id="vision-glasses-no-male" name="vision-glasses-no-male">
                 </div>
-               <div>
+               <div class="">
                 <label for="vision-glasses-no-female">Vision - Prescribed but Do Not Wear Glasses (Female):</label>
                 <input type="number" id="vision-glasses-no-female" name="vision-glasses-no-female"><br><br>
                </div>
-               <div>
+               <div class="">
                 <label for="vision-glasses-yes-male">Vision - Prescribed and Wear Glasses (Male):</label>
-                <input type="number" id="vision-glasses-yes-male" name="vision-glasses-yes-male"><br><br>
+                <input type="number" id="vision-glasses-yes-male" name="vision-glasses-yes-male">
                </div>
-               <div>
+               <div class="">
                 <label for="vision-glasses-yes-female">Vision - Prescribed and Wear Glasses (Female):</label>
-                <input type="number" id="vision-glasses-yes-female" name="vision-glasses-yes-female"><br><br>
+                <input type="number" id="vision-glasses-yes-female" name="vision-glasses-yes-female">
         
                </div>
-               <div>
+               <div class="">
                 <label for="vision-total-male">Vision - Total (Male):</label>
-                <input type="number" id="vision-total-male" name="vision-total-male" readonly><br><br>
+                <input type="number" id="vision-total-male" name="vision-total-male" readonly>
                </div>
-               <div>
+               <div class="">
                 <label for="vision-total-female">Vision - Total (Female):</label>
-                <input type="number" id="vision-total-female" name="vision-total-female" readonly><br><br>
+                <input type="number" id="vision-total-female" name="vision-total-female" readonly>
                </div>
-               <div>
+               <div class="">
                 <label for="others-tested-male">Others (Specify) - Number Tested (Male):</label>
                 <input type="text" name="others-tested-male" id="others-specify-m-t" placeholder="Enter other type of tests">
-                <input type="number" id="others-tested-male" name="others-tested-male"><br><br>
+                <input type="number" id="others-tested-male" name="others-tested-male" placeholder="Enter Number">
                </div>
-               <div>
+               <div class="">
                 <label for="others-tested-female">Others (Specify) - Number Tested (Female):</label>
                 <input type="text" name="others-tested-male" id="others-specify-f-t" placeholder="Enter other type of tests">
-                <input type="number" id="others-tested-female" name="others-tested-female"><br><br>
+                <input type="number" id="others-tested-female" name="others-tested-female" placeholder="Enter Number">
         
                </div>
-               <div>
+               <div class="">
                 <label for="others-glasses-no-male">Others (Specify) - Prescribed but Do Not Wear Glasses (Male):</label>
                 <input type="text" name="others-glasses-no-male" id="others-specify-no-glasses-m" placeholder="Enter other type of tests">
-                <input type="number" id="others-glasses-no-male" name="others-glasses-no-male"><br><br>
+                <input type="number" id="others-glasses-no-male" name="others-glasses-no-male" placeholder="Enter Number">
                </div>
-               <div>
+               <div class="">
                 <label for="others-glasses-no-female">Others (Specify) - Prescribed but Do Not Wear Glasses (Female):</label>
                 <input type="text" name="others-glasses-no-female" id="others-specify-glasses-no-female" placeholder="Enter other type of tests">
-                <input type="number" id="others-glasses-no-female" name="others-glasses-no-female"><br><br>
+                <input type="number" id="others-glasses-no-female" name="others-glasses-no-female" placeholder="Enter Number" class="others">
         
                </div>
-               <div>
+               <div class="">
                 <label for="others-glasses-yes-male">Others (Specify) - Prescribed and Wear Glasses (Male):</label>
                 <input type="text" name="others-glasses-yes-male " id="others-specify-glasses-yes-m" placeholder="Enter other type of tests">
-                <input type="number" id="others-glasses-yes-male" name="others-glasses-yes-male"><br><br>
+                <input type="number" id="others-glasses-yes-male" name="others-glasses-yes-male" placeholder="Enter Number"class="others">
                </div>
         
-                <div>
+                <div class="">
                     <label for="others-glasses-yes-female">Others (Specify) - Prescribed and Wear Glasses (Female):</label>
                     <input type="text" name="others-glasses-yes-male " id="others-specify-glasses-yes-f" placeholder="Enter other type of tests">                  
-                    <input type="number" id="others-glasses-yes-female" name="others-glasses-yes-female"><br><br>
+                    <input type="number" id="others-glasses-yes-female" name="others-glasses-yes-female" placeholder="Enter Number" class="others">
             
                 </div>
-                <div>
+                <div class="">
                     <label for="others-total-male">Others (Specify) - Total (Male):</label>
-                    <input type="number" id="others-total-male" name="others-total-male" readonly><br><br>
+                    <input type="number" id="others-total-male" name="others-total-male" readonly>
                 </div>
-                <div>
+                <div class="">
                     <label for="others-total-female">Others (Specify) - Total (Female):</label>
-                <input type="number" id="others-total-female" name="others-total-female" readonly><br><br>
+                <input type="number" id="others-total-female" name="others-total-female" readonly>
         
                 </div>
                 </fieldset>
-                <fieldset>
+                <fieldset class="se_fieldset se-form-group">
 
                     <legend>Distribution of Pupils according to Distance Travel from their Homes to their School 
-                        (Please list only MAJOR ommunities)
+                        (Please list only MAJOR Communities)
                     </legend>
                     <label for="residential-community">Name of the residential community from which students come from:</label>
-                    <input type="text" id="residential-community" name="residential-community"><br><br>
+                    <input type="text" id="residential-community" name="residential-community">
             
                     <label for="hearing-impaired">Hearing Impaired:</label>
-                    <input type="number" id="hearing-impaired" name="hearing-impaired"><br><br>
+                    <input type="number" id="hearing-impaired" name="hearing-impaired">
             
                     <label for="visually-impaired">Visually Impaired:</label>
-                    <input type="number" id="visually-impaired" name="visually-impaired"><br><br>
+                    <input type="number" id="visually-impaired" name="visually-impaired">
             
                     <label for="learning-difficulties">Learning Difficulties:</label>
-                    <input type="number" id="learning-difficulties" name="learning-difficulties"><br><br>
+                    <input type="number" id="learning-difficulties" name="learning-difficulties">
             
                     <label for="mentally-challenged">Mentally Challenged:</label>
-                    <input type="number" id="mentally-challenged" name="mentally-challenged"><br><br>
+                    <input type="number" id="mentally-challenged" name="mentally-challenged">
             
                     <label for="multiple-handicaps">Multiple Handicaps:</label>
-                    <input type="number" id="multiple-handicaps" name="multiple-handicaps"><br><br>
+                    <input type="number" id="multiple-handicaps" name="multiple-handicaps">
             
                     <label for="autistic">Autistic:</label>
-                    <input type="number" id="autistic" name="autistic"><br><br>
+                    <input type="number" id="autistic" name="autistic">
             
                     <label for="physically-challenged">Physically Challenged:</label>
-                    <input type="number" id="physically-challenged" name="physically-challenged"><br><br>
+                    <input type="number" id="physically-challenged" name="physically-challenged">
             
                     <label for="total">Total:</label>
-                    <input type="number" id="total" name="total" readonly><br><br>
+                    <input type="number" id="total" name="total" readonly>
             
                 </fieldset>
-                <fieldset>
+                <fieldset class="se_fieldset se-form-group">
                     <legend> Movement of Pupils to and from Special Education School and other Schools During Previous Year</legend>
-                    <label for="from-special-to-primary">From Special School to other Primary School:</label><br>
+                    <label for="from-special-to-primary">From Special School to other Primary School:</label>
     <label for="from-special-to-primary-male-pupils">Male:</label>
     <input type="number" id="from-special-to-primary-male-pupils" name="from-special-to-primary-male-pupils">
     <label for="from-special-to-primary-female-pupils">Female:</label>
     <input type="number" id="from-special-to-primary-female-pupils" name="from-special-to-primary-female-pupils">
     <label for="from-special-to-primary-total-pupils">Total:</label>
-    <input type="number" id="from-special-to-primary-total-pupils" name="from-special-to-primary-total-pupils" readonly><br><br>
+    <input type="number" id="from-special-to-primary-total-pupils" name="from-special-to-primary-total-pupils" readonly>
 
-    <label for="from-special-to-secondary">From Special School to Secondary School:</label><br>
+    <label for="from-special-to-secondary">From Special School to Secondary School:</label>
     <label for="from-special-to-secondary-male-pupils">Male:</label>
     <input type="number" id="from-special-to-secondary-male-pupils" name="from-special-to-secondary-male-pupils">
     <label for="from-special-to-secondary-female-pupils">Female:</label>
     <input type="number" id="from-special-to-secondary-female-pupils" name="from-special-to-secondary-female-pupils">
     <label for="from-special-to-secondary-total-pupils">Total:</label>
-    <input type="number" id="from-special-to-secondary-total-pupils" name="from-special-to-secondary-total-pupils" readonly><br><br>
+    <input type="number" id="from-special-to-secondary-total-pupils" name="from-special-to-secondary-total-pupils" readonly>
 
-    <label for="from-primary-to-special">From Other Primary School to Special School:</label><br>
+    <label for="from-primary-to-special">From Other Primary School to Special School:</label>
     <label for="from-primary-to-special-male-pupils">Male:</label>
     <input type="number" id="from-primary-to-special-male-pupils" name="from-primary-to-special-male-pupils">
     <label for="from-primary-to-special-female-pupils">Female:</label>
     <input type="number" id="from-primary-to-special-female-pupils" name="from-primary-to-special-female-pupils">
     <label for="from-primary-to-special-total-pupils">Total:</label>
-    <input type="number" id="from-primary-to-special-total-pupils" name="from-primary-to-special-total-pupils" readonly><br><br>
+    <input type="number" id="from-primary-to-special-total-pupils" name="from-primary-to-special-total-pupils" readonly>
 
-    <label for="from-secondary-to-special-pupils">From Secondary School to Special School:</label><br>
+    <label for="from-secondary-to-special-pupils">From Secondary School to Special School:</label>
     <label for="from-secondary-to-special-male-pupils">Male:</label>
     <input type="number" id="from-secondary-to-special-male-pupils" name="from-secondary-to-special-male-pupils">
     <label for="from-secondary-to-special-female-pupils">Female:</label>
     <input type="number" id="from-secondary-to-special-female-pupils" name="from-secondary-to-special-female-pupils">
     <label for="from-secondary-to-special-total-pupils">Total:</label>
-    <input type="number" id="from-secondary-to-special-total-pupils" name="from-secondary-to-special-total-pupils" readonly><br><br>
+    <input type="number" id="from-secondary-to-special-total-pupils" name="from-secondary-to-special-total-pupils" readonly>
                 </fieldset>
         </form>
      </div>

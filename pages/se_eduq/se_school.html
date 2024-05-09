@@ -32,17 +32,31 @@
 
 <section class="row">
   <section class="col-2">
-  <div class="sq-sidenav ">
-      <a href="/pages/se_eduq/se_home.html">Cover</a>
-      <a href="/pages/se_eduq/se_school.html" class="sq-focus">School</a>
-      <a href=" /pages/se_eduq/forms/staff.html">Staff</a>
-      <a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a>
-      <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a>
-      <a href="/pages/se_eduq/forms/enrollment.html">Enrolment</a>
-      <a href="/pages/se_eduq/forms/furniture.html">Furniture</a>
-      <a href="/pages/se_eduq/forms/buildings.html">Buildings</a>
-      <a href="/pages/se_eduq/forms/equipments.html">Equipments</a>
-      <a href="/pages/se_eduq/forms/funds.html">Funds Raised</a>
+  <div >
+    <nav  class="se_nav">
+      <ul>
+        <li><a href="/pages/se_eduq/se_home.html">Cover</a></li>
+        <li><a href="/pages/se_eduq/se_school.html" >School</a></li>
+        <li> <a href=" /pages/se_eduq/forms/staff.html">Staff</a></li>
+        <li><a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a></li>
+        <li>  <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a></li>
+        <li><a href="/pages/se_eduq/forms/enrollment.html">Enrolment</a></li>
+        <li> <a href="/pages/se_eduq/forms/furniture.html">Furniture</a></li>
+        <li>
+          <a href="/pages/se_eduq/forms/buildings.html">Buildings</a></li>
+        <li> <a href="/pages/se_eduq/forms/equipments.html">Equipments</a></li>
+        <li><a href="/pages/se_eduq/forms/funds.html">Funds Raised</a></li>
+      </ul>
+    </nav>
+      
+      
+     
+      
+    
+      
+     
+      
+      
      
   </div>
   </section>
@@ -50,133 +64,116 @@
   <section class="col-10">
   <div class="sq-form">  
     <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">School Structure Form</h3>
-    <div  class="">
+    <div  class=" se-form-container">
         <form action="#">
-        <fieldset>
+        <fieldset class="se_fieldset">
           <legend> School information</legend>
         
           <!-- School information form -->
-          <div class="form-container">
+          <div class="">
           
             
-              <div class="form-group">
-                <label for="school-code" class="form-label">School Code:</label>
-                <input type="text" id="school-code" name="school-code" class="form-input">
+              <div class="se-form-group">
+                <label for="school-code" class="se-form-label">School Code:</label>
+                <input type="text" id="school-code" name="school-code" class="se-form-input">
               </div>
-              <div class="form-group">
-                <label for="Mailing-address" class="form-label">Mailing Address:</label>
-                <input type="text" id="mailing-address" name="mailing-address" class="form-input">
+              <div class="se-form-group">
+                <label for="Mailing-address" class="se-form-label">Mailing Address:</label>
+                <input type="text" id="mailing-address" name="mailing-address" class="se-form-input">
               </div>
-              <div class="form-group">
-                  <label for="phone-number" class="form-label">Phone Number:</label>
-                  <input type="number" id="phone-number" name="phone-number" class="form-input">
+              <div class="se-form-group">
+                  <label for="phone-number" class="se-form-label">Phone Number:</label>
+                  <input type="number" id="phone-number" name="phone-number" class="se-form-input">
                 </div>
-                <div class="form-group">
-                  <label for="fax-number" class="form-label">Fax Number:</label>
-                  <input type="number" id="fax-number" name="fax-number" class="form-input">
+                <div class="se-form-group">
+                  <label for="fax-number" class="se-form-label">Fax Number:</label>
+                  <input type="number" id="fax-number" name="fax-number" class="se-form-input">
                 </div>
-                <div class="form-group">
-                  <label for="email" class="form-label">Email Address:</label>
-                  <input type="email" id="email" name="email" class="form-input">
+                <div class="se-form-group">
+                  <label for="email" class="se-form-label">Email Address:</label>
+                  <input type="email" id="email" name="email" class="se-form-input">
                 </div>
-                <div class="form-group">
-                  <label for="principal" class="form-label">Name of Principal:</label>
-                  <input type="text" id="principal" name="principal" class="form-input">
+                <div class="se-form-group">
+                  <label for="enrollment" class="se-form-label">Enrollment:</label>
+                  <input type="number" id="enrollment" name="enrollment" class="se-form-input">
                 </div>
-                <div class="form-group">
-                  <label for="district" class="form-label">District:</label>
-                  <select name="district" id="district">
-                      <option value="" selected disabled>Select yout District</option>
-                      <option value="District 1"> District 1</option>
-                      <option value="District 2"> District 2</option>
-                      <option value="District 3"> District 3</option>
-                      <option value="District 4"> District 4</option>
-                      <option value="District 5"> District 5</option>
-                      <option value="District 6"> District 6</option>
-                      <option value="District 7"> District 7</option>
-                      <option value="District 8"> District 8</option>
-                  </select>
-                   
+                <div class="se-form-group">
+                  <label for="number_non_staff" class="se-form-label">Total Number of Non-Teaching Staff:</label>
+                  <input type="number" id="number_non_tstaff" name="number_non_tstaff" class="se-form-input">
                 </div>
-                
+                <div class="se-form-group">
+                  <label for="number_staff" class="se-form-label">Total Number of Teaching Staff:</label>
+                  <input type="number" id="number_staff" name="number_staff" class="se-form-input">
+                </div>
+                 
               </fieldset>
                 <!-- school management -->
-                <fieldset>
+                <fieldset class="se_fieldset">
                   <legend>School Management</legend>
-                
-                <div class="form-group">
-                  <label for="management" class="form-label">Management:</label>
-                  <input type="checkbox" id="ministry_of_education" name="management[]" value="Ministry of Education" class="form-input">
-                  <label for="ministry_of_education" class="form-label">Ministry of Education</label> 
-                  <input type="checkbox" id="board_council" name="management[]" value="Board/Council" class="form-input">
-                  <label for="board_council" class="form-label">Board/Council</label>
-                  <input type="checkbox" id="others" name="management[]" value="Others" class="form-input">
-                  <label for="others" class="form-label">Others</label>
-                  <input type="text" id="others_input" name="others_input" placeholder="Please specify" class="form-input">
-                </div>
+                 
+                <div class="secheck-form-group">
+                 <label for="management" >Management:</label> 
+                  
+                   <input type="checkbox" id="ministry_of_education" name="management[]" value="Ministry of Education" >
+                    <input type="checkbox" id="board_council" name="management[]" value="Board/Council" >
+                    <label for="board_council" >Board/Council</label>
+                   <input type="checkbox" id="others" name="management[]" value="Others" >
+                   <input type="text" id="others_input" name="others_input" placeholder="Please specify">
+                   </div>
+              
               </fieldset>
                 <!-- school Ownership -->
-                <fieldset>
+                <fieldset class="se_fieldset">
                    <legend>School Ownership</legend>
               
-                <div class="form-group">
-                  <label for="ownership" class="form-label">Ownership:</label>
-                  <input type="checkbox" id="government" name="ownership[]" value="Government" class="form-input">
-                  <label for="government" class="form-label">Ministry of Education</label> 
-                  <input type="checkbox" id="private" name="ownership[]" value="private" class="form-input">
-                  <label for="private" class="form-label">Private</label>
-                  <input type="checkbox" id="denominational" name="ownership[]" value="denominational" class="form-input">
-                  <label for="denominational" class="form-label">Denominational</label>
+                <div class="secheck-form-group">
+                  <label for="ownership" class="se-form-label">Ownership:</label>
+                  <input type="checkbox" id="government" name="ownership[]" value="Government" class="se-form-input">
+                  <label for="government" class="se-form-label">Ministry of Education</label> 
+                  <input type="checkbox" id="private" name="ownership[]" value="private" class="se-form-input">
+                  <label for="private" class="se-form-label">Private</label>
+                  <input type="checkbox" id="denominational" name="ownership[]" value="denominational" class="se-form-input">
+                  <label for="denominational" class="se-form-label">Denominational</label>
                    </div>
-                   <div class="form-group">
-                      <label for="enrollment" class="form-label">Enrollment:</label>
-                      <input type="number" id="enrollment" name="enrollment" class="form-input">
-                    </div>
-                    <div class="form-group">
-                      <label for="number_non_staff" class="form-label">Total Number of Non-Teaching Staff:</label>
-                      <input type="number" id="number_non_tstaff" name="number_non_tstaff" class="form-input">
-                    </div>
-                    <div class="form-group">
-                      <label for="number_staff" class="form-label">Total Number of Teaching Staff:</label>
-                      <input type="number" id="number_staff" name="number_staff" class="form-input">
-                    </div>
                   </fieldset>
+                   
+                  
                     <!-- Type of School -->
-                    <fieldset>
+                    <fieldset class="se_fieldset">
                       <legend>Type of School</legend>
                     
-                    <div class="form-group">
-                      <label for="school_type" class="form-label">Type of School:</label>
-                      <input type="checkbox" id="hearing_impaired" name="school_type[]" value="hearing impaired" class="form-input">
-                      <label for="hearing_impaired" class="form-label">Hearing Impaired</label> 
-                      <input type="checkbox" name="school_type[]" id="visually_impaired" value="Visually Impaired" class="form-input">
-                      <label for="visually_impaired" class="form-label">visually_impaired</label>
-                       <input type="checkbox" id="blind" name="school_type[]" value="blind" class="form-input">
-                      <label for="blind" class="form-label">Blind</label>
-                      <input type="checkbox" id="autistic" name="school_type[]" value="Autistic" class="form-input">
-                      <label for="autistic" class="form-label">Autistic</label>
-                      <input type="checkbox" id="physical_impairements" name="school_type[]" value="Physical Impairements" class="form-input">
-                      <label for="physical_impairements" class="form-label">Physical Impairements</label>
-                      <input type="checkbox" id="multiple_handcaps" name="school_type[]" value="Multiple Handcaps" class="form-input">
-                      <label for="multiple_handcaps" class="form-label">Multiple Handcaps</label>
-                      <input type="checkbox" id="mentally_challenged" name="school_type[]" value="Mentally Challenged" class="form-input">
-                      <label for="mentally_challenged" class="form-label">Mentally Challenged</label>
+                    <div class="secheck-form-group">
+                      <label for="school_type" class="se-form-label">Type of School:</label>
+                      <input type="checkbox" id="hearing_impaired" name="school_type[]" value="hearing impaired" class="se-form-input">
+                      <label for="hearing_impaired" class="se-form-label">Hearing Impaired</label> 
+                      <input type="checkbox" name="school_type[]" id="visually_impaired" value="Visually Impaired" class="se-form-input">
+                      <label for="visually_impaired" class="se-form-label">visually_impaired</label>
+                       <input type="checkbox" id="blind" name="school_type[]" value="blind" class="se-form-input">
+                      <label for="blind" class="se-form-label">Blind</label>
+                      <input type="checkbox" id="autistic" name="school_type[]" value="Autistic" class="se-form-input">
+                      <label for="autistic" class="se-form-label">Autistic</label>
+                      <input type="checkbox" id="physical_impairements" name="school_type[]" value="Physical Impairements" class="se-form-input">
+                      <label for="physical_impairements" class="se-form-label">Physical Impairements</label>
+                      <input type="checkbox" id="multiple_handcaps" name="school_type[]" value="Multiple Handcaps" class="se-form-input">
+                      <label for="multiple_handcaps" class="se-form-label">Multiple Handcaps</label>
+                      <input type="checkbox" id="mentally_challenged" name="school_type[]" value="Mentally Challenged" class="se-form-input">
+                      <label for="mentally_challenged" class="se-form-label">Mentally Challenged</label>
                        
                     </div>
                   </fieldset>
                     <!-- Information about the playing field -->
-                    <fieldset>
+                    <fieldset class="se_fieldset">
                       <legend>Information about the playing field</legend>
                     
-                    <div class="form-group">
-                      <label for="playing_field" class="form-label">Playing Field:</label>
-                      <input type="checkbox" id="community" name="playing_field[]" value="Community Owned" class="form-input">
-                      <label for="community" class="form-label">Community Owned</label> 
-                      <input type="checkbox" id="school_owned" name="playing_field[]" value="School Owned" class="form-input">
+                    <div class="secheck-form-group">
+                      <label for="playing_field" class="se-form-label">Playing Field:</label>
+                      <input type="checkbox" id="community" name="playing_field[]" value="Community Owned" class="se-form-input">
+                      <label for="community" class="se-form-label">Community Owned</label> 
+                      <input type="checkbox" id="school_owned" name="playing_field[]" value="School Owned" class="se-form-input">
                       <label for="school_owned" class="form-label">School Owned</label>
-                      <input type="checkbox" id="others" name="playing_field[]" value="Others" class="form-input">
-                      <label for="others" class="form-label">Others</label>
-                      <input type="text" id="others_input" name="others_input" placeholder="Please specify" class="form-input">
+                      <input type="checkbox" id="others" name="playing_field[]" value="Others" class="se-form-input">
+                      <label for="others" class="se-form-label">Others</label>
+                      <input type="text" id="others_input" name="others_input" placeholder="Please specify" class="se-form-input">
                     </div>
                   </fieldset>
             </form>

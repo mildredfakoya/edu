@@ -32,17 +32,22 @@
 
 <section class="row">
   <section class="col-2">
-    <div class="sq-sidenav ">
-        <a href="/pages/se_eduq/se_home.html">Cover</a>
-        <a href="/pages/se_eduq/se_school.html" class="sq-focus">School</a>
-        <a href="/pages/se_eduq/forms/staff.html">Staff</a>
-        <a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a>
-        <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a>
-        <a href="/pages/se_eduq/forms/enrollment.html">Enrolment</a>
-        <a href="/pages/se_eduq/forms/furniture.html">Furniture</a>
-        <a href="/pages/se_eduq/forms/buildings.html">Buildings</a>
-        <a href="/pages/se_eduq/forms/equipments.html">Equipments</a>
-        <a href="/pages/se_eduq/forms/funds.html">Funds Raised</a>
+    <div >
+      <nav class="se_nav ">
+        <ul>
+          <li><a href="/pages/se_eduq/se_home.html">Cover</a></li>
+          <li><a href="/pages/se_eduq/se_school.html" >School</a></li>
+          <li> <a href=" /pages/se_eduq/forms/staff.html">Staff</a></li>
+          <li><a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a></li>
+          <li>  <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a></li>
+          <li><a href="/pages/se_eduq/forms/enrollment.html">Enrolment</a></li>
+          <li> <a href="/pages/se_eduq/forms/furniture.html">Furniture</a></li>
+          <li>
+            <a href="/pages/se_eduq/forms/buildings.html">Buildings</a></li>
+          <li> <a href="/pages/se_eduq/forms/equipments.html">Equipments</a></li>
+          <li><a href="/pages/se_eduq/forms/funds.html">Funds Raised</a></li>
+        </ul>
+      </nav>
        
     </div>
   </section>
@@ -50,9 +55,9 @@
   <section class="col-10">
   <div class="sq-form">  
     <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Staff Information</h3>
-    <div>
+    <div class="se-form-container">
         <form action="">
-            <fieldset>
+            <fieldset class="se_fieldset se-form-group" >
                 <legend> Movement of Teachers to and from Special Education School and other Schools During Previous Year</legend>
                 <label for="from-special-to-primary">From Special School to other Primary School:</label><br>
     <label for="from-special-to-primary-male-teachers">Male:</label>
@@ -86,7 +91,7 @@
     <label for="from-secondary-to-special-total-teachers">Total:</label>
     <input type="number" id="from-secondary-to-special-total-teachers" name="from-secondary-to-special-total-teachers"><br><br>
             </fieldset>
-            <fieldset>
+            <fieldset class="se_fieldset se-form-group">
                 <legend> Number of Teachers during current year according to Gender, Qualification and Training</legend>
         <label for="male-trained">Male - Trained:</label>
         <input type="number" id="male-trained" name="male-trained"><br><br>
@@ -106,10 +111,9 @@
         <label for="total-untrained">Total Untrained:</label>
         <input type="number" id="total-untrained" name="total-untrained" readonly><br><br>
             </fieldset>
-            <fieldset>
-                <legend>Teachers Status According to Qualification, Nationality and Gender for the Current Year</legend>
+             
 
-                <fieldset>
+                <fieldset class="se_fieldset se-form-group">
                     <legend>Total Teaching Staff(In the Classroom)</legend>
                 
                 <label for="T-I">T I (Male):</label>
@@ -197,7 +201,7 @@
                 <label for="Total">Total (Female):</label>
                 <input type="number" id="Total-f" name="Total-f" readonly><br><br>
             </fieldset>
-            <fieldset>
+            <fieldset class="se_fieldset">
                 <legend>Nationality of Teaching Staff</legend>
                 <table  class="se_form_tables">
                   <thead>
@@ -378,7 +382,7 @@
               </table>
             
             </fieldset>
-            <fieldset>
+            <fieldset class="se_fieldset se-form-group">
                 <legend>New Appointment Information according to Grades</legend>
                 <form>
                     <label for="status-grade-T-I">T I:</label>
@@ -491,8 +495,9 @@
                  
                 
             </fieldset>
-            </fieldset>
-            <fieldset>
+            
+            <div class="se-form-group">
+            <fieldset class="se_fieldset se-form-group">
               <legend>Teachers Status According to Specialization, Professional Qualifications and Gender</legend>
             
             <label for="specialization-deaf-education">Deaf Education:</label> <br>
@@ -555,6 +560,7 @@
     <label for="  specialization-total-degree-f"> Total of Female teachers with Degree </label> <br>
     <input type="number" id="specialization-total-degree-f" name="specialization-total-degree-f"  ><br><br>
   </fieldset>
+</div>
         </form>
     </div>
 </section>
