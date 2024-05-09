@@ -29,8 +29,8 @@
     </div>
   </section>
 
-<section class="row">
-  <section class="col-2">
+<section class="row sq-section-bg">
+  <section class="col-2 sq-sidenav-bg">
   <div class="sq-sidenav ">
       <a href="secQHome.html">Cover</a>
       <a href="secQSchool.html" class="sq-focus">School</a>
@@ -48,114 +48,131 @@
   </section>
 
   <section class="col-10">
-  <div class="sq-form">  
+  <div>  
     <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">School Structure Form</h3>
-    <form action="" method="post" autocomplete="off" >
+    <form action="secQStudent.html" method="post" autocomplete="on" >
         <fieldset class="sq-form-fieldset">
             <legend>School Information</legend>
-            <div>
-            <label for="school">Name of School: &nbsp;</label>
-            <input type="text" name="school" id="school" >
-            </div>
-            <div>
-            <label for="estdate">Date Established: &nbsp;</label>
-            <input type="date" name="estdate" id="estdate" >
-            </div>
-            <div>
-            <label for="district">Education District: &nbsp;</label>
-            <input type="text" name="district" id="district" >
-            </div>
-            <div>
-            <label for="principal">Principal: &nbsp;</label>
-            <input type="text" name="principal" id="principal" >
-            </div>
-            <div>
-            <label for="address">School Address: &nbsp;</label>
-            <textarea name="schooladdress" id="schooladdress" cols="40" rows="5" >
-            </textarea>
-            </div>
-            <div>
-            <label for="phone">Telephone: &nbsp;</label>
-            <input type="tel" name="phone" id="phone">
-            </div>
-            <div>
-            <label for="fax">Fax: &nbsp;</label>
-            <input type="tel" name="fax" id="fax" >
-            </div>
-            <div>
-            <label for="email">School Email: &nbsp;</label>
-            <input type="email" name="email" id="email" >
-            </div>
-            <div>
-            <label for="pemail">Principal Email: &nbsp;</label>
-            <input type="email" name="pemail" id="pemail">
-            </div>
+              <div >
+                <label for="school">Name of School: &nbsp;</label>
+                <input type="text" name="school" id="school" >
+              </div>
+              <div>
+                <label for="estdate">Date Established: &nbsp;</label>
+                <input type="date" name="estdate" id="estdate" >
+              </div>
+              <div>
+                <label for="district">Education District: &nbsp;</label>
+                <input type="text" name="district" id="district" >
+              </div>
+              <div>
+                <label for="principal">Principal: &nbsp;</label>
+                <input type="text" name="principal" id="principal" >
+              </div>
+              <div>
+                <label for="address">School Address: &nbsp;</label>
+                <textarea name="schooladdress" id="schooladdress" cols="40" rows="5" >
+                </textarea>
+              </div>
+              <div>
+                <label for="phone">Telephone: &nbsp;</label>
+                <input type="tel" name="phone" id="phone">
+              </div>
+              <div>
+                <label for="fax">Fax: &nbsp;</label>
+                <input type="tel" name="fax" id="fax" >
+              </div>
+              <div>
+                <label for="email">School Email: &nbsp;</label>
+                <input type="email" name="email" id="email" >
+              </div>
+              <div>
+                <label for="pemail">Principal Email: &nbsp;</label>
+                <input type="email" name="pemail" id="pemail">
+              </div>
         </fieldset>
 
         <fieldset class="sq-form-fieldset">
             <legend>Management Structure</legend>
-            <div>
-            <label for="mgt">Management Structure: &nbsp;</label>
-              <input type="checkbox" name="mgt" id="mgt" value="ministry of education">Ministry of Education
-              <input type="checkbox" name="mgt" id="mgt" value="school board/counsil">School Board/Counsil
-              <input type="checkbox" name="mgt" id="mgt" value="church">church
-              <input type="checkbox" name="mgt" id="mgt" value="PTA">PTA <br>
-              <b><i><small>(check all that apply)</small></i></b>
-            </div>
-            <div>
-              <label for="activepta">Does the school have an active PTA?  &nbsp;</label>
-              <input type="radio" name="activepta" id="activepta" value="yes" >Yes
-              <input type="radio" name="activepta" id="activepta" value="no">No 
-            </div>
-            <div>
-              <label for="developmentplan">Does the school have a school development plan?  &nbsp;</label>
-              <input type="radio" name="developmentplan" id="developmentplan" value="yes" >Yes
-              <input type="radio" name="developmentplan" id="developmentplan" value="no">No 
-            </div>
-            <div>
-              <label for="devplandate">Please state the date covered by the plan</label>
-              <label for="devplanfromdate">From: &nbsp;</label>
-              <input type="date" name="devplanfromdate" id="devplanfromdate" >
-              <label for="devplantodate">To: &nbsp;</label>
-              <input type="date" name="devplantodate" id="devplantodate" >
-            </div>
-            <div>
-              <label for="disasterplan">Does the school have a Disaster Management Plan?  &nbsp;</label>
-              <input type="radio" name="disasterplan" id="disasterplan" value="yes" >Yes
-              <input type="radio" name="disasterplan" id="disasterplan" value="no">No 
-            </div>
-            <div>
-              <label for="emergencydrill">Were any emergency drills conducted during previous school
-                year?  &nbsp;</label>
-              <input type="radio" name="emergencydrill" id="emergencydrill" value="yes">Yes
-              <input type="radio" name="emergencydrill" id="emergencydrill" value="no">No 
-            </div>
-            <div>
-              <label for="annualreport">Annual school report was submitted last academic year  &nbsp;</label>
-              <input type="radio" name="annualreport" id="annualreport" value="yes">Yes
-              <input type="radio" name="annualreport" id="annualreport" value="no">No
-            </div>
-            <div>
-              <label for="schoolstatus">School Status/Type/Ownership:  &nbsp;</label>
-              <input type="radio" name="schoolstatus" id="schoolstatus" value="public" >Public
-              <input type="radio" name="schoolstatus" id="schoolstatus" value="government assisted">Government
-              <input type="radio" name="schoolstatus" id="schoolstatus" value="private">Private 
-            </div>
+              
+                <label for="mgt">Management Structure: &nbsp;</label>
+                <div class="sq-input-align">
+                  <input type="checkbox" name="mgt" id="mgt" value="ministry of education">Ministry of Education
+                </div>
+                <div class="sq-input-align">
+                  <input type="checkbox" name="mgt" id="mgt" value="school board/counsil">School Board/Counsil
+                </div>
+                <div class="sq-input-align">
+                  <input type="checkbox" name="mgt" id="mgt" value="church">church
+                </div>
+                <div class="sq-input-align">
+                  <input type="checkbox" name="mgt" id="mgt" value="PTA">PTA <br>
+                </div>
+                <i><small>(check all that apply)</small></i><br><br>
+                    
+              
+                <label for="activepta">Does the school have an active PTA?  &nbsp;</label>
+                <div class="sq-input-align">
+                  <input type="radio" name="activepta" id="activepta" value="yes" >Yes
+                  <input type="radio" name="activepta" id="activepta" value="no">No 
+                </div><br><br>
+                
+                <label for="developmentplan">Does the school have a school development plan?  &nbsp;</label>
+                <div class="sq-input-align">
+                    <input type="radio" name="developmentplan" id="developmentplan" value="yes" >Yes
+                    <input type="radio" name="developmentplan" id="developmentplan" value="no">No 
+                </div><br><br>
+              
+                <label for="devplandate">Please state the date covered by the plan</label><br>
+                <div class="sq-input-align">
+                  <label for="devplanfromdate">From: &nbsp;</label>
+                  <input type="date" name="devplanfromdate" id="devplanfromdate" >
+                </div>
+                <div class="sq-input-align">
+                  <label for="devplantodate">To: &nbsp;</label>
+                  <input type="date" name="devplantodate" id="devplantodate" >
+                </div><br><br>
+              <div>
+                <label for="disasterplan">Does the school have a Disaster Management Plan?  &nbsp;</label>
+                  <input type="radio" name="disasterplan" id="disasterplan" value="yes" >Yes
+                  <input type="radio" name="disasterplan" id="disasterplan" value="no">No 
+              </div><br><br>
+              <div>
+                <label for="emergencydrill">Were any emergency drills conducted during previous school
+                    year?  &nbsp;</label>
+                  <input type="radio" name="emergencydrill" id="emergencydrill" value="yes">Yes
+                  <input type="radio" name="emergencydrill" id="emergencydrill" value="no">No 
+              </div><br><br>
+              <div>
+                <label for="annualreport">Annual school report was submitted last academic year  &nbsp;</label>
+                  <input type="radio" name="annualreport" id="annualreport" value="yes">Yes
+                  <input type="radio" name="annualreport" id="annualreport" value="no">No
+              </div>
+              <div>
+                <label for="schoolstatus">School Status/Type/Ownership:  &nbsp;</label>
+                  <input type="radio" name="schoolstatus" id="schoolstatus" value="public" >Public
+                  <input type="radio" name="schoolstatus" id="schoolstatus" value="government assisted">Government
+                  <input type="radio" name="schoolstatus" id="schoolstatus" value="private">Private 
+              </div>
         </fieldset>
-      <fieldset class="sq-form-fieldset">
-        <legend>School Structure</legend>
-
-          <label for="totalclasses">Total Number of Classes: &nbsp;</label>
-          <input type="number" name="totalclasses" id="totalclasses" ><br>
-
-          <label for="singleclasses">Number of single classes in single classrooms : &nbsp;</label>
-          <input type="number" name="singleclasses" id="singleclasses"><br>
-
-          <label for="halltypeclasses">Number of classes in halltype space: &nbsp;</label>
-          <input type="number" name="halltypeclasses" id="halltypeclasses" ><br>
-
-          <label for="enrollmentcap">School Enrollment Capacity: &nbsp;</label>
-          <input type="number" name="enrollmentcap" id="enrollmentcap"><br>
+        <fieldset class="sq-form-fieldset">
+          <legend>School Structure</legend>
+            <div>
+              <label for="totalclasses">Total Number of Classes: &nbsp;</label>
+                <input type="number" name="totalclasses" id="totalclasses" ><br>
+            </div>
+            <div>
+              <label for="singleclasses">Number of single classes in single classrooms : &nbsp;</label>
+                <input type="number" name="singleclasses" id="singleclasses"><br>
+            </div>
+            <div>
+              <label for="halltypeclasses">Number of classes in halltype space: &nbsp;</label>
+                <input type="number" name="halltypeclasses" id="halltypeclasses" ><br>
+            </div>
+            <div>
+              <label for="enrollmentcap">School Enrollment Capacity: &nbsp;</label>
+                <input type="number" name="enrollmentcap" id="enrollmentcap"><br>
+            </div>
       </fieldset>
 
       <fieldset class="sq-form-fieldset">
@@ -163,81 +180,109 @@
             
             <h4>Enter total number of classes per Forms/ number of Groups</h4>
             <p><i>(e.g there maybe one group of forms 1's or 2 groups of form ones etc)</i></p>
-          <div>
-            <label for="f1"><b>Form-1: &nbsp;</b></label><br>
-            <label for="f1group">Number of Classes/groups: &nbsp;</label>
-            <input type="number" name="f1group" id="f1group" >
-            <label for="f1malestu">Male Students: &nbsp;</label>
-            <input type="f1malestu" name="f1malestu" id="f1malestu" >
-            <label for="f1femalestu">Female Student: &nbsp;</label>
-            <input type="number" name="f1femalestu" id="f1femalestu" ><br><br>
-
-            <label for="f2"><b>Form-2: &nbsp;</b></label><br>
-            <label for="f2group">Number of Classes/groups: &nbsp;</label>
-            <input type="number" name="f2group" id="f2group" >
-            <label for="f2malestu">Male Students: &nbsp;</label>
-            <input type="f2malestu" name="f2malestu" id="f2malestu" >
-            <label for="f2femalestu">Female Student: &nbsp;</label>
-            <input type="number" name="f2femalestu" id="f2femalestu" ><br><br>
-
-            <label for="f3"><b>Form-3: &nbsp;</b></label><br>
-            <label for="f3group">Number of Classes/groups: &nbsp;</label>
-            <input type="number" name="f3group" id="f3group" >
-            <label for="f3malestu">Male Students: &nbsp;</label>
-            <input type="f3malestu" name="f3malestu" id="f3malestu" >
-            <label for="f3femalestu">Female Student: &nbsp;</label>
-            <input type="number" name="f3femalestu" id="f3femalestu" ><br><br>
-
-            <label for="f4"><b>Form-4: &nbsp;</b></label><br>
-            <label for="f4group">Number of Classes/groups: &nbsp;</label>
-            <input type="number" name="f4group" id="f4group" >
-            <label for="f4malestu">Male Students: &nbsp;</label>
-            <input type="f4malestu" name="f4malestu" id="f4malestu" >
-            <label for="f4femalestu">Female Student: &nbsp;</label>
-            <input type="number" name="f4femalestu" id="f4femalestu" ><br><br>
-
-            <label for="f5"><b>Form-5: &nbsp;</b></label><br>
-            <label for="f5group">Number of Classes/groups: &nbsp;</label>
-            <input type="number" name="f5group" id="f5group" >
-            <label for="f5malestu">Male Students: &nbsp;</label>
-            <input type="f5malestu" name="f5malestu" id="f5malestu" >
-            <label for="f5femalestu">Female Student: &nbsp;</label>
-            <input type="number" name="f5femalestu" id="f5femalestu" ><br><br>
-
-            <label for="lower6"><b>Lower-6: &nbsp;</b></label><br>
-            <label for="lower6group">Number of Classes/groups: &nbsp;</label>
-            <input type="number" name="lower6group" id="lower6group" >
-            <label for="lower6malestu">Male Students: &nbsp;</label>
-            <input type="lower6malestu" name="lower6malestu" id="lower6malestu" >
-            <label for="lower6femalestu">Female Student: &nbsp;</label>
-            <input type="number" name="lower6femalestu" id="lower6femalestu" ><br><br>
-
-            <label for="uppper6"><b>Upper-6: &nbsp;</b></label><br>
-            <label for="upper6group">Number of Classes/groups: &nbsp;</label>
-            <input type="number" name="upper6group" id="upper6group" >
-            <label for="upper6malestu">Male Students: &nbsp;</label>
-            <input type="upper6malestu" name="upper6malestu" id="upper6malestu" >
-            <label for="upper6femalestu">Female Student: &nbsp;</label>
-            <input type="number" name="upper6femalestu" id="upper6femalestu" ><br><br>
-
-            <label for="total"><b>Total: &nbsp;</b></label><br>
-            <label for="totalgroup">Number of Classes/groups: &nbsp;</label>
-            <input type="number" name="totalgroup" id="totalgroup" >
-            <label for="totalmalestu">Male Students: &nbsp;</label>
-            <input type="totalmalestu" name="totalmalestu" id="totalmalestu" >
-            <label for="totalfemalestu">Female Student: &nbsp;</label>
-            <input type="number" name="totalfemalestu" id="totalfemalestu" ><br><br>
-
-            <label for="trcount"><b>Total Teacher: &nbsp;</b></label><br>
-            <label for="maletr">Male: &nbsp;</label>
-            <input type="number" name="maletr" id="maletr" >
-            <label for="femaletr">Female: &nbsp;</label>
-            <input type="number" name="femaletr" id="femaletr" >
+          
+            <div >
+              <label for="f1"><b>Form-1: &nbsp;</b></label>
+                  <div class="sq-input-align">
+                    <label for="f1group">Number of Classes/groups: &nbsp;</label>
+                    <input type="number" name="f1group" id="f1group" ><br>
+                  
+                    <label for="f1malestu">Male Students: &nbsp;</label>
+                    <input type="number" name="f1malestu" id="f1malestu" ><br>
+          
+                    <label for="f1femalestu">Female Student: &nbsp;</label>
+                    <input type="number" name="f1femalestu" id="f1femalestu" >
+                  </div><br><br>
+                <label for="f2"><b>Form-2: &nbsp;</b></label>
+                  <div class="sq-input-align">
+                    <label for="f2group">Number of Classes/groups: &nbsp;</label>
+                    <input type="number" name="f2group" id="f2group" ><br>
+                  
+                    <label for="f2malestu">Male Students: &nbsp;</label>
+                    <input type="number" name="f2malestu" id="f2malestu" ><br>
+                 
+                    <label for="f2femalestu">Female Student: &nbsp;</label>
+                    <input type="number" name="f2femalestu" id="f2femalestu" >
+                  </div><br><br>
+                <label for="f3"><b>Form-3: &nbsp;</b></label>
+                <div class="sq-input-align">
+                    <label for="f3group">Number of Classes/groups: &nbsp;</label>
+                    <input type="number" name="f3group" id="f3group" ><br>
+                
+                    <label for="f3malestu">Male Students: &nbsp;</label>
+                    <input type="number" name="f3malestu" id="f3malestu" ><br>
+                
+                    <label for="f3femalestu">Female Student: &nbsp;</label>
+                    <input type="number" name="f3femalestu" id="f3femalestu" >
+                </div><br><br>
+                <label for="f4"><b>Form-4: &nbsp;</b></label>
+                <div class="sq-input-align">
+                    <label for="f4group">Number of Classes/groups: &nbsp;</label>
+                    <input type="number" name="f4group" id="f4group" ><br>
+                               
+                    <label for="f4malestu">Male Students: &nbsp;</label>
+                    <input type="number" name="f4malestu" id="f4malestu" ><br>
+               
+                    <label for="f4femalestu">Female Student: &nbsp;</label>
+                    <input type="number" name="f4femalestu" id="f4femalestu" >
+                </div><br><br>
+                    <label for="f5"><b>Form-5: &nbsp;</b></label>
+                    <div class="sq-input-align">
+                      <label for="f5group">Number of Classes/groups: &nbsp;</label>
+                      <input type="number" name="f5group" id="f5group" ><br>
+                   
+                      <label for="f5malestu">Male Students: &nbsp;</label>
+                      <input type="number" name="f5malestu" id="f5malestu" ><br>
+                   
+                      <label for="f5femalestu">Female Student: &nbsp;</label>
+                      <input type="number" name="f5femalestu" id="f5femalestu" >
+                    </div><br><br>
+                    <label for="lower6"><b>Lower-6: &nbsp;</b></label>
+                    <div class="sq-input-align">
+                      <label for="lower6group">Number of Classes/groups: &nbsp;</label>
+                      <input type="number" name="lower6group" id="lower6group" ><br>
+                    
+                      <label for="lower6malestu">Male Students: &nbsp;</label>
+                      <input type="number" name="lower6malestu" id="lower6malestu" ><br>
+                   
+                      <label for="lower6femalestu">Female Student: &nbsp;</label>
+                      <input type="number" name="lower6femalestu" id="lower6femalestu" >
+                    </div><br><br>
+                    <label for="uppper6"><b>Upper-6: &nbsp;</b></label>
+                    <div class="sq-input-align">
+                      <label for="upper6group">Number of Classes/groups: &nbsp;</label>
+                      <input type="number" name="upper6group" id="upper6group" ><br>
+                   
+                      <label for="upper6malestu">Male Students: &nbsp;</label>
+                      <input type="number" name="upper6malestu" id="upper6malestu" ><br>
+                  
+                      <label for="upper6femalestu">Female Student: &nbsp;</label>
+                      <input type="number" name="upper6femalestu" id="upper6femalestu" >
+                    </div><br><br>
+                    <label for="total"><b>Total: &nbsp;</b></label>
+                    <div class="sq-input-align">
+                      <label for="totalgroup">Number of Classes/groups: &nbsp;</label>
+                      <input type="number" name="totalgroup" id="totalgroup" ><br>
+             
+                      <label for="totalmalestu">Male Students: &nbsp;</label>
+                      <input type="number" name="totalmalestu" id="totalmalestu" ><br>
+                   
+                      <label for="totalfemalestu">Female Student: &nbsp;</label>
+                      <input type="number" name="totalfemalestu" id="totalfemalestu" >
+                    </div><br><br>
+                    <label for="trcount"><b>Total Teacher: &nbsp;</b></label>
+                    <div class="sq-input-align">
+                      <label for="maletr">Male: &nbsp;</label>
+                      <input type="number" name="maletr" id="maletr" ><br>
+                    
+                      <label for="femaletr">Female: &nbsp;</label>
+                      <input type="number" name="femaletr" id="femaletr" >
+                    </div><br><br>
           </div>
       </fieldset>
       <div>
-        <input type="submit" name="save" value="Save" class="sq-form-button">
-        <input type="submit" name="next" value="Next" class="sq-form-button">
+        <input type="submit" name="save" value="Save & Exit" class="sq-form-button">
+        <input type="submit" name="next" value="Save & Next" class="sq-form-button">
       </div>
     </form>
   </div>

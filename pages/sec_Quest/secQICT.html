@@ -29,8 +29,8 @@
     </div>
   </section>
 
-  <section class="row">
-    <section class="col-2">
+  <section class="row sq-section-bg">
+    <section class="col-2 sq-sidenav-bg">
     <div class="sq-sidenav ">
         <a href="secQHome.html">Cover</a>
         <a href="secQSchool.html">School</a>
@@ -50,152 +50,217 @@
         <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">
              Questionnaire for Information and Communiction Technology Dept.</h3>
         <div class="sq-form">  
-            <form action="" method="post" autocomplete="off" >
+            <form action="secQCXC.html" method="post" autocomplete="on" >
                 <fieldset class="sq-form-fieldset">
                     <legend>T9: ICT at Secondary Level</legend>
                     <label for="admin-computer-count">Number of Computers used for <b>Administrative Purpose:</b> &nbsp;</label>
                     <input type="number" name="admin-computer-count" id="admin-computer-count"><br>
                     <label for="pedagogy-computer-count">Number of Computers used for <b>pedagogical purposes:</b> &nbsp;</label>
-                    <input type="number" name="pedagogy-computer-count" id="pedagogy-computer-count"><br>
+                    <input type="number" name="pedagogy-computer-count" id="pedagogy-computer-count"><br><br>
                     <label for="internet-access">Does your school have access to the internet? &nbsp;</label>
                     <input type="radio" name="internet-access" id="internet-access" value="yes">Yes
-                    <input type="radio" name="internet-access" id="internet-access" value="no">No <br>
+                    <input type="radio" name="internet-access" id="internet-access" value="no">No <br><br>
                     <label for="classrooms-internet">Number of classrooms with internet access: &nbsp;</label>
-                    <input type="number" name="classrooms-internet" id="classrooms-internet"><br>
-                    <label for="computer-skill-trs">Number of teachers with <b>Basic Computer Skills: &nbsp;</b></label>
-                    <label for="male-comp-tr">Male</label>
-                    <input type="number" name="male-comp-tr" id="male-comp-tr">
-                    <label for="female-comp-tr">Female</label>
-                    <input type="number" name="female-comp-tr" id="female-comp-tr"><br>
+                    <input type="number" name="classrooms-internet" id="classrooms-internet"><br><br>
 
-                    <label for="current-ict-trs">Number of teachers currently teaching using <b>ICT Facilities: &nbsp;</b></label>
-                    <label for="male-ict-tr">Male</label>
-                    <input type="number" name="male-ict-tr" id="male-ict-tr">
-                    <label for="female-ict-tr">Female</label>
-                    <input type="number" name="female-ict-tr" id="female-ict-tr"><br>
+                    <h4>Number of teachers with <b>Basic Computer Skills: &nbsp;</b></h4>
+                    <div class="sq-input-align">
+                      <label for="male-comp-tr">Male</label>
+                      <input type="number" name="male-comp-tr" id="male-comp-tr"><br>
+                    
+                      <label for="female-comp-tr">Female</label>
+                      <input type="number" name="female-comp-tr" id="female-comp-tr">
+                    </div><br><br>
 
-                    <label for="trained-ict-trs">Number of teachers trained to teach using ICT Facilities: &nbsp;</label>
-                    <label for="male-t-ict-tr">Male</label>
-                    <input type="number" name="male-t-ict-tr" id="male-t-ict-tr">
-                    <label for="female-t-ict-tr">Female</label>
-                    <input type="number" name="female-t-ict-tr" id="female-t-ict-tr">
+                    <h4>Number of teachers currently teaching using <b>ICT Facilities: &nbsp;</b></h4>
+                    <div class="sq-input-align">
+                      <label for="male-ict-tr">Male</label>
+                      <input type="number" name="male-ict-tr" id="male-ict-tr"><br>
+                    
+                      <label for="female-ict-tr">Female</label>
+                      <input type="number" name="female-ict-tr" id="female-ict-tr">
+                    </div><br><br>
+
+                    <h4>Number of teachers trained to teach using ICT Facilities: &nbsp;</h4>
+                    <div class="sq-input-align">
+                      <label for="male-t-ict-tr">Male</label>
+                      <input type="number" name="male-t-ict-tr" id="male-t-ict-tr"><br>
+                    
+                      <label for="female-t-ict-tr">Female</label>
+                      <input type="number" name="female-t-ict-tr" id="female-t-ict-tr">
+                    </div>
                 </fieldset>
                 <fieldset class="sq-form-fieldset">
                     <legend>T10:Non Teaching Staff - Categories</legend> 
                     <label for="secretary-category"><b> Secretary: &nbsp;</b></label>
-                    <label for="male-sec-cat">Male</label>
-                    <input type="number" name="male-sec-cat" id="male-sec-cat">
-                    <label for="female-sec-cat">Female</label>
-                    <input type="number" name="female-sec-cat" id="female-sec-cat"><br>
+                    <div class="sq-input-align">  
+                      <label for="male-sec-cat">Male</label>
+                      <input type="number" name="male-sec-cat" id="male-sec-cat"><br>
+                      <label for="female-sec-cat">Female</label>
+                      <input type="number" name="female-sec-cat" id="female-sec-cat">
+                    </div>
+                    <br><br>
 
                     <label for="typist-category"><b> Typist: &nbsp;</b></label>
-                    <label for="male-typist-cat">Male</label>
-                    <input type="number" name="male-typist-cat" id="male-typist-cat">
-                    <label for="female-typist-cat">Female</label>
-                    <input type="number" name="female-typist-cat" id="female-typist-cat"><br>
+                    <div class="sq-input-align">
+                      <label for="male-typist-cat">Male</label>
+                      <input type="number" name="male-typist-cat" id="male-typist-cat"><br>
+                      <label for="female-typist-cat">Female</label>
+                      <input type="number" name="female-typist-cat" id="female-typist-cat">
+                    </div>
+                      <br><br>
 
                     <label for="bursar-category"><b>Bursar: &nbsp;</b></label>
-                    <label for="male-bursar-cat">Male</label>
-                    <input type="number" name="male-bursar-cat" id="male-bursar-cat">
-                    <label for="female-bursar-cat">Female</label>
-                    <input type="number" name="female-bursar-cat" id="female-bursar-cat"><br>
+                    <div class="sq-input-align">
+                      <label for="male-bursar-cat">Male</label>
+                      <input type="number" name="male-bursar-cat" id="male-bursar-cat"><br>
+                      <label for="female-bursar-cat">Female</label>
+                      <input type="number" name="female-bursar-cat" id="female-bursar-cat">
+                    </div>
+                    <br><br>
+
 
                     <label for="shop-director-category"><b> Shop Director: &nbsp;</b></label>
+                    <div class="sq-input-align">
                     <label for="male-shopdir-cat">Male</label>
-                    <input type="number" name="male-shopdir-cat" id="male-shopdir-cat">
+                    <input type="number" name="male-shopdir-cat" id="male-shopdir-cat"><br>
                     <label for="female-shopdir-cat">Female</label>
-                    <input type="number" name="female-shopdir-cat" id="female-shopdir-cat"><br>
+                    <input type="number" name="female-shopdir-cat" id="female-shopdir-cat">
+                    </div>
+                    <br><br>
 
                     <label for="lab-assist-category"><b> Lab Assistant: &nbsp;</b></label>
+                    <div class="sq-input-align">
                     <label for="male-labassist-cat">Male</label>
-                    <input type="number" name="male-labassist-cat" id="male-labassist-cat">
+                    <input type="number" name="male-labassist-cat" id="male-labassist-cat"><br>
                     <label for="female-labassist-cat">Female</label>
-                    <input type="number" name="female-labassist-cat" id="female-labassist-cat"><br>
+                    <input type="number" name="female-labassist-cat" id="female-labassist-cat">
+                    </div>
+                    <br><br>
 
                     <label for="librarian-category"><b>Librabrian/LRC Coordinator: &nbsp;</b> </label>
+                    <div class="sq-input-align">
                     <label for="male-lrc-cat">Male</label>
-                    <input type="number" name="male-lrc-cat" id="male-lrc-cat">
+                    <input type="number" name="male-lrc-cat" id="male-lrc-cat"><br>
                     <label for="female-lrc-cat">Female</label>
-                    <input type="number" name="female-lrc-cat" id="female-lrc-cat"><br>
+                    <input type="number" name="female-lrc-cat" id="female-lrc-cat">
+                    </div>
+                    <br><br>
 
                     <label for="counsellor-category"><b>Counsellor: &nbsp;</b> </label>
+                    <div class="sq-input-align">
                     <label for="male-counsellor-cat">Male</label>
-                    <input type="number" name="male-counsellor-cat" id="male-counsellor-cat">
+                    <input type="number" name="male-counsellor-cat" id="male-counsellor-cat"><br>
                     <label for="female-counsellor-cat">Female</label>
-                    <input type="number" name="female-counsellor-cat" id="female-counsellor-cat"><br>
+                    <input type="number" name="female-counsellor-cat" id="female-counsellor-cat">
+                    </div>
+                    <br><br>
 
                     <label for="watchman-category"><b>Watchman/Security: &nbsp;</b> </label>
+                    <div class="sq-input-align">
                     <label for="male-watchman-cat">Male</label>
-                    <input type="number" name="male-watchman-cat" id="male-watchman-cat">
+                    <input type="number" name="male-watchman-cat" id="male-watchman-cat"><br>
                     <label for="female-watchman-cat">Female</label>
-                    <input type="number" name="female-watchman-cat" id="female-watchman-cat"><br>
+                    <input type="number" name="female-watchman-cat" id="female-watchman-cat">
+                    </div>
+                    <br><br>
 
                     <label for="cleaner-category"><b>Cleaner: &nbsp;</b> </label>
+                    <div class="sq-input-align">
                     <label for="male-cleaner-cat">Male</label>
-                    <input type="number" name="male-cleaner-cat" id="male-cleaner-cat">
+                    <input type="number" name="male-cleaner-cat" id="male-cleaner-cat"><br>
                     <label for="female-cleaner-cat">Female</label>
-                    <input type="number" name="female-cleaner-cat" id="female-cleaner-cat"><br>
+                    <input type="number" name="female-cleaner-cat" id="female-cleaner-cat">
+                    </div>
+                    <br><br>
 
                     <label for="groundman-category"><b>Groundsman: &nbsp;</b> </label>
+                    <div class="sq-input-align">
                     <label for="male-gm-cat">Male</label>
-                    <input type="number" name="male-gm-cat" id="male-gm-cat">
+                    <input type="number" name="male-gm-cat" id="male-gm-cat"><br>
                     <label for="female-gm-cat">Female</label>
-                    <input type="number" name="female-gm-cat" id="female-gm-cat"><br>
+                    <input type="number" name="female-gm-cat" id="female-gm-cat">
+                    </div>
+                    <br><br>
 
                     <label for="other-category"><b>Other (specify): &nbsp;</b> </label>
+                    <div class="sq-input-align">
                     <label for="male-other-cat">Male</label>
-                    <input type="number" name="male-other-cat" id="male-other-cat">
+                    <input type="number" name="male-other-cat" id="male-other-cat"><br>
                     <label for="female-other-cat">Female</label>
-                    <input type="number" name="female-other-cat" id="female-other-cat"><br>  
+                    <input type="number" name="female-other-cat" id="female-other-cat">
+                    </div>
+                    <br>  <br>
                 </fieldset>
 
                 <fieldset class="sq-form-fieldset">
                     <legend>T11a:Teachers who left in past year for various Reasons</legend>
 
                     <label for="resign-category"><b>Resignation: &nbsp;</b> </label>
+                    <div class="sq-input-align">
                     <label for="male-resign-cat">Male</label>
-                    <input type="number" name="male-resign-cat" id="male-resign-cat">
+                    <input type="number" name="male-resign-cat" id="male-resign-cat"><br>
                     <label for="female-resign-cat">Female</label>
-                    <input type="number" name="female-resign-cat" id="female-resign-cat"><br>
+                    <input type="number" name="female-resign-cat" id="female-resign-cat">
+                    </div>
+                    <br><br>
 
                     <label for="terminate-category"><b>Termination: &nbsp;</b> </label>
+                    <div class="sq-input-align">
                     <label for="male-terminate-cat">Male</label>
-                    <input type="number" name="male-terminate-cat" id="male-terminate-cat">
+                    <input type="number" name="male-terminate-cat" id="male-terminate-cat"><br>
                     <label for="female-terminate-cat">Female</label>
-                    <input type="number" name="female-terminate-cat" id="female-terminate-cat"><br>
+                    <input type="number" name="female-terminate-cat" id="female-terminate-cat">
+                    </div>
+                    <br><br>
 
                     <label for="secondment-category"><b>Secondment: &nbsp;</b> </label>
+                    <div class="sq-input-align">
                     <label for="male-secondment-cat">Male</label>
-                    <input type="number" name="male-secondment-cat" id="male-secondment-cat">
+                    <input type="number" name="male-secondment-cat" id="male-secondment-cat"><br>
                     <label for="female-secondment-cat">Female</label>
-                    <input type="number" name="female-secondment-cat" id="female-secondment-cat"><br>
+                    <input type="number" name="female-secondment-cat" id="female-secondment-cat">
+                    </div>
+                    <br><br>
 
                     <label for="retirement-category"><b>Retirement: &nbsp;</b> </label>
+                    <div class="sq-input-align">
                     <label for="male-retire-cat">Male</label>
-                    <input type="number" name="male-retire-cat" id="male-retire-cat">
+                    <input type="number" name="male-retire-cat" id="male-retire-cat"><br>
                     <label for="female-retire-cat">Female</label>
-                    <input type="number" name="female-retire-cat" id="female-retire-cat"><br>
+                    <input type="number" name="female-retire-cat" id="female-retire-cat">
+                    </div>
+                    <br><br>
 
                     <label for="other-jobleft-category"><b>Other: &nbsp;</b> </label>
+                    <div class="sq-input-align">
                     <label for="male-other-jobleft-cat">Male</label>
-                    <input type="number" name="male-other-jobleft-cat" id="male-other-jobleft-cat">
+                    <input type="number" name="male-other-jobleft-cat" id="male-other-jobleft-cat"><br>
                     <label for="female-other-jobleft-cat">Female</label>
-                    <input type="number" name="female-other-jobleft-cat" id="female-other-jobleft-cat"><br>
+                    <input type="number" name="female-other-jobleft-cat" id="female-other-jobleft-cat">
+                    </div>
+                    <br><br>
                 </fieldset>
 
                 <fieldset class="sq-form-fieldset">
                     <legend>T11b:Teachers on a Study Leave</legend>
                     <label for="sl-with-pay"><b>With Pay: &nbsp;</b></label>
+                    <div class="sq-input-align">
                     <label for="sl-with-pay-male">Male</label>
-                    <input type="number" name="sl-with-pay-male" id="sl-with-pay-male">
+                    <input type="number" name="sl-with-pay-male" id="sl-with-pay-male"><br>
                     <label for="sl-with-pay-female">Female</label>
-                    <input type="number" name="sl-with-pay-female" id="sl-with-pay-female"><br>
+                    <input type="number" name="sl-with-pay-female" id="sl-with-pay-female">
+                    </div>
+                    <br><br>
 
                     <label for="sl-w/o-pay"><b>Without Pay: &nbsp;</b></label>
+                    <div class="sq-input-align">
                     <label for="sl-w/o-pay-male">Male</label>
-                    <input type="number" name="sl-w/o-pay-male" id="sl-w/o-pay-male">
+                    <input type="number" name="sl-w/o-pay-male" id="sl-w/o-pay-male"><br>
                     <label for="sl-w/o-pay-female">Female</label>
                     <input type="number" name="sl-w/o-pay-female" id="sl-w/o-pay-female">
+                    </div>
+                    <br>
                 </fieldset>
 
                 <fieldset class="sq-form-fieldset">
@@ -203,8 +268,8 @@
 
                 </fieldset>
                 <div>
-                    <input type="submit" name="save" value="Save" class="sq-form-button">
-                    <input type="submit" name="next" value="Next" class="sq-form-button">
+                    <input type="submit" name="save" value="Save & Exit" class="sq-form-button">
+                    <input type="submit" name="next" value="Save & Next" class="sq-form-button">
                   </div>
             </form>
         </div>
