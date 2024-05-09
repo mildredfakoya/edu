@@ -6,6 +6,7 @@
   <title>Early Child Questionnaire</title>
   <link rel="stylesheet" href="../../css/main.css">
   <link rel="stylesheet" href="../../css/early_childQ.css">
+  <link rel="stylesheet" href="../early_childQ/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -29,16 +30,15 @@
         </div>
     </section>
 
-    <!--Side navigation of the form sections-->
     <section class="row">
         <section class="col-2">
-            <div class="ecq-sidenav">
-          <nav><a href="ecQ_home.html">Home</a></nav>
-          <nav><a href="demographics.html">Demography</a></nav>
-          <nav><a href="staff_profile.html">Staff Profile</a></nav>
-          <nav><a href="children_profile.html">children Profile</a></nav>
-          <nav><a href="Technical_note.html">Technical Note</a></nav>
-            </div>  
+          <div class="ecq-sidenav">
+            <nav class="navbox"><i class="fa fa-home" aria-hidden="true"></i><a href="ecQ_home.html">Home</a></nav>
+            <nav class="navbox"><i class="fa fa-database" aria-hidden="true"></i><a href="demographics.html">Demographics</a></nav>
+            <nav class="navbox"><i class="fa fa-users" aria-hidden="true"></i><a href="staff_profile.html">Staff Profile</a></nav>
+            <nav class="navbox"><i class="fa fa-child" aria-hidden="true"></i><a href="children_profile.html">children Profile</a></nav>
+            <nav class="navbox"><i class="fa fa-sticky-note" aria-hidden="true"></i><a href="Technical_note.html">Technical Note</a></nav>
+          </div>  
         </section>
  
         <!--main form section-->    
@@ -48,100 +48,128 @@
               
                 <form action="" method="POST" autocomplete="off" target="_self">
 
-                    <div class="form-group-ecq">
+                    <div class="ecq-table-container">
                     <fieldset>
                         <legend><h2>Enrollment by Age and Sex</h2></legend>                        
                         <div>
+                        <table>
                         <p>&lt; 1 year:</p>
-                        <label for="less_year1_male">Male:</label>
-                        <input type="number" id="less_year1_male" name="less_year1_male" class="ecq-form-input">
-                    
-                        <label for="less_year1_female">Female:</label>
-                        <input type="number" id="less_year1_female" name="less_year1_female" class="ecq-form-input">
-                    
-                        <label for="less_year1_total">Total</label>
-                        <input type="number" id="less_year1_total" name="less_year1_total" class="ecq-form-input" readonly>                    
+                        <tr>
+                            <td><label for="less_year1_male">Male:</label></td>
+                            <td><input type="number" id="less_year1_male" name="less_year1_male" class="ecq-form-input"></td>
+                        
+                            <td><label for="less_year1_female">Female:</label></td>
+                            <td><input type="number" id="less_year1_female" name="less_year1_female" class="ecq-form-input"></td>
+                        
+                            <td><label for="less_year1_total">Total</label></td>
+                            <td><input type="number" id="less_year1_total" name="less_year1_total"  class="ecq-form-input" readonly></td>
+                        </tr>
+                        </table>
                         </div>
                
                     
                         <div>
-                        <p>1 year</p>
-                        <label for="less_year1_male">Male:</label>
-                        <input type="number" id="less_year1_male" name="less_year1_male" class="ecq-form-input">
-                    
-                        <label for="less_year1_female">Female:</label>
-                        <input type="number" id="less_year1_female" name="less_year1_female" class="ecq-form-input">
-                    
-                        <label for="less_year1_total">Total</label>
-                        <input type="number" id="less_year1_total" name="less_year1_total" class="ecq-form-input" readonly>                    
+                        <table>
+                        <p> 1 year</p>
+                        <tr>
+                            <td><label for="less_year1_male">Male:</label></td>
+                            <td><input type="number" id="less_year1_male" name="less_year1_male" class="ecq-form-input"></td>
+                        
+                            <td><label for="less_year1_female">Female:</label></td>
+                            <td><input type="number" id="less_year1_female" name="less_year1_female" class="ecq-form-input"></td>
+                        
+                            <td><label for="less_year1_total">Total</label></td>
+                            <td><input type="number" id="less_year1_total" name="less_year1_total" class="ecq-form-input" readonly></td>
+                        </tr>
+                        </table>
                         </div>
                          
                         <div>
-                        <p>2 year</p>
-                        <label for="less_year1_male">Male:</label>
-                        <input type="number" id="less_year1_male" name="less_year1_male" class="ecq-form-input">
+                        <table>
+                        <p> 2 year </p>
+                        <tr>
+                            <td><label for="less_year1_male">Male:</label></td>
+                            <td><input type="number" id="less_year1_male" name="less_year1_male" class="ecq-form-input"></td>
                    
-                        <label for="less_year1_female">Female:</label>
-                        <input type="number" id="less_year1_female" name="less_year1_female" class="ecq-form-input">
+                            <td><label for="less_year1_female">Female:</label></td>
+                            <td><input type="number" id="less_year1_female" name="less_year1_female" class="ecq-form-input"></td>
                     
-                        <label for="less_year1_total">Total</label>
-                        <input type="number" id="less_year1_total" name="less_year1_total" class="ecq-form-input" readonly>                    
+                            <td><label for="less_year1_total">Total</label></td>
+                            <td><input type="number" id="less_year1_total" name="less_year1_total" class="ecq-form-input" readonly></td>
+                        </tr> 
+                        </table>   
                         </div>
                                
                         <div>
+                        <table>
                         <p> 3 year</p>
-                        <label for="less_year1_male">Male:</label>
-                        <input type="number" id="less_year1_male" name="less_year1_male"  class="ecq-form-input">
+                        <tr>
+                            <td><label for="less_year1_male">Male:</label></td>
+                            <td><input type="number" id="less_year1_male" name="less_year1_male"  class="ecq-form-input"></td>
                     
-                        <label for="less_year1_female">Female:</label>
-                        <input type="number" id="less_year1_female" name="less_year1_female" class="ecq-form-input">
+                            <td><label for="less_year1_female">Female:</label></td>
+                            <td><input type="number" id="less_year1_female" name="less_year1_female" class="ecq-form-input"></td>
                     
-                        <label for="less_year1_total">Total</label>
-                        <input type="number" id="less_year1_total" name="less_year1_total" class="ecq-form-input" readonly>                    
+                            <td><label for="less_year1_total">Total</label></td>
+                            <td><input type="number" id="less_year1_total" name="less_year1_total" class="ecq-form-input" readonly>  </td>                  
+                        </tr>
+                        </table>
                         </div>
                 
                         <div>
+                        <table>
                         <p> 4 year</p>
-                        <label for="less_year1_male">Male:</label>
-                        <input type="number" id="less_year1_male" name="less_year1_male" class="ecq-form-input">
+                        <tr>
+                            <td><label for="less_year1_male">Male:</label></td>
+                            <td><input type="number" id="less_year1_male" name="less_year1_male" class="ecq-form-input"></td>
                 
-                        <label for="less_year1_female">Female:</label>
-                        <input type="number" id="less_year1_female" name="less_year1_female" class="ecq-form-input">
+                            <td><label for="less_year1_female">Female:</label></td>
+                            <td><input type="number" id="less_year1_female" name="less_year1_female" class="ecq-form-input"></td>
                             
-                        <label for="less_year1_total">Total</label>
-                        <input type="number" id="less_year1_total" name="less_year1_total" class="ecq-form-input" readonly>                    
+                            <td><label for="less_year1_total">Total</label></td>
+                            <td><input type="number" id="less_year1_total" name="less_year1_total" class="ecq-form-input" readonly> </td>                   
+                        </tr>
+                        </table>
                         </div>
                 
                     
                         <div>
+                        <table>
                         <p>Above 5 Year</p>
-                        <label for="less_year1_male">Male:</label>
-                        <input type="number" id="less_year1_male" name="less_year1_male" class="ecq-form-input" >
+                        <tr>
+                        <td><label for="less_year1_male">Male:</label></td>
+                        <td><input type="number" id="less_year1_male" name="less_year1_male" class="ecq-form-input" ></td>
                    
-                        <label for="less_year1_female">Female:</label>
-                        <input type="number" id="less_year1_female" name="less_year1_female" class="ecq-form-input">
+                        <td><label for="less_year1_female">Female:</label></td>
+                        <td><input type="number" id="less_year1_female" name="less_year1_female" class="ecq-form-input"></td>
                     
-                        <label for="less_year1_total">Total</label>
-                        <input type="number" id="less_year1_total" name="less_year1_total" class="ecq-form-input" readonly>                    
+                        <td><label for="less_year1_total">Total</label></td>
+                        <td><input type="number" id="less_year1_total" name="less_year1_total" class="ecq-form-input" readonly> </td>                   
+                        </tr>    
+                        </table>
                         </div>
                     
                     
                         <div>
+                        <table>
+                        <tr>
                         <p>Total Enrolment by Sex</p>
-                        <label for="total-sex-male">Total male:</label>
-                        <input type="number" id="total-sex-male" name="total-sex-male" class="ecq-form-input">
+                        <td><label for="total-sex-male">Male:</label></td>
+                        <td><input type="number" id="total-sex-male" name="total-sex-male" class="ecq-form-input"></td>
                     
-                        <label for="total-sex-female">Total Female:</label>
-                        <input type="number" id="total-sex-female" name="total-sex-female" class="ecq-form-input">
+                        <td><label for="total-sex-female">Female:</label></td>
+                        <td><input type="number" id="total-sex-female" name="total-sex-female" class="ecq-form-input"></td>
                     
-                        <label for="total_gender-enrolled">Total Sex:</label>
-                        <input type="number" id="total_gender-enrolled" name="total_gender-enrolled" class="ecq-form-input" readonly>                    
-                        </div>
+                        <td><label for="total_gender-enrolled">Total Sex:</label></td>
+                        <td><input type="number" id="total_gender-enrolled" name="total_gender-enrolled" class="ecq-form-input" readonly> </td>                   
+                        </tr>
+                    </table>    
+                    </div>
                     </fieldset>
                     </div>
 
-                    <div class="form-group-ecq"> 
-                        <form action="" method="post">
+                    <div class="ecq-table-grp"> 
+
                         <fieldset>
                             <legend>Distribution of Current Enrolment According to  Areas of Impairment by Sex</legend>
                             <fieldset>
@@ -265,27 +293,31 @@
             
                     </div>
        
-                    <div class="form-group-ecq"> 
+                    <div class= "ecq-table-grp"> 
                         <fieldset>
                         <legend>Other Areas of Impairment </legend>
                         <div>
                         <label for="other_impairment" >Area of Impairment: </label>
                         <input type="text" name="other_impairment" id="other_impairment" class="ecq-form-input" placeholder="specify Area of impairment observed">
+                        </div>
                         <p>Observed</p>
-                        <label for="other_male_impair_observed"> Observed Male:</label>
+                        <div>
+                        <label for="other_male_impair_observed">Male:</label>
                         <input type="text" name="other_impairment" id="other_male_impair_observed" class="ecq-form-input" placeholder="Enter no of male observed">
-                        <label for="other_female_impair_observed"> Observed female:</label>
+                        <label for="other_female_impair_observed"> Female:</label>
                         <input type="text" name="other_female_impair_observed" id="other_female_impair_observed" placeholder="Enter no of female observed" class="ecq-form-input">
-                        <label for="total_impair_observed">Total Observed:</label>
+                        <label for="total_impair_observed">Total:</label>
                         <input type="text" name="total_impair_observed" id="total_impair_observed"  class="ecq-form-input" readonly>
+                        </div>
                         <p>Diagnosed</p>
-                        <label for="male_impair_diagnosed">Diagnosed Male:</label>
+                        <div>
+                        <label for="male_impair_diagnosed"> Male:</label>
                         <input type="text" name="male_impair_diagnosed" id="male_impair_diagnosed" placeholder="Enter no of male Diagnosed" class="ecq-form-input">
             
-                        <label for="female_impair_diagnosed">Diagnosed female:</label>
+                        <label for="female_impair_diagnosed">Female:</label>
                         <input type="text" name="female_impair_diagnosed" id="female_impair_diagnosed" placeholder="Enter no of female Diagnosed" class="ecq-form-input">
                       
-                        <label for="total_impair_diagnosed">Total Diagnosed:</label>
+                        <label for="total_impair_diagnosed">Total:</label>
                         <input type="text" name="total_impair_diagnosed" id="total_impair_diagnosed"  class="ecq-form-input" readonly>
                         </div>
                     
