@@ -143,18 +143,39 @@
   text-align: center;
 }
 */
+
+
+.navbox i {
+  margin-right: 10px;
+}
+
+.navbox a{
+  text-decoration: none;
+
+}
+
 .pq-sidenav
 {
-    height: 100%;
-    width:fit-content; 
-    border-radius: 5px;
-    padding: 20px;
-    background-color: rgb(204, 204, 200);  
+  height: 100%;
+  width:fit-content; 
+  border-radius: 5px;
+  padding: 20px;
+  background-color: rgb(204, 204, 200); 
 }
-.pq-sticky{
+  
+.pq-sidenav > .pqnav-link{
+  display: flex;
+  font-size: 20px;
+  padding: 20px;
+  color: #050000;
+  
+}
+
+/* .pq-sticky{
     margin-top: 0;
     position: fixed;
-}
+} */
+
 .pq-sidenav li
 {
     list-style-type: none;
@@ -171,8 +192,26 @@
 .pq-sidenav a:hover
 {
     text-decoration: none;
-    color: white;  
+    color: #1524ee;  
 }
+
+.pqnav-link:link{
+  background-color: #7a6d6d;
+  color: #0d3decd8;
+}
+.pqnav-link a:visited{ 
+  color:  #007bff;
+
+}
+.pqnav-link:hover a{
+  background-color: #555;
+  color: #92b5db;
+}
+
+.pqnav-link:active{
+  color: #e57d38;
+}
+
 .pq-section-heading
 {
     text-align: center;
@@ -196,6 +235,13 @@
     border-radius: 5px;
     /*background-color: rgb(231, 231, 228);*/
 }
+
+.pq-form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+/*
 .pq-form-input
 {
     width:auto;
@@ -203,12 +249,55 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
+} */
+
 .pq-form-label
-{
-    font-weight: bold;
-    margin-left: 10px;
+{ 
+  width: 200px;
 }
+
+.pq-form-input, textarea {
+  flex: 0.7;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.pq-checkbox-group {
+  display: block;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.pq-radio-group {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; 
+}
+
+.pq-checkbox-group input[type="checkbox"],
+.pq-radio-group input[type="radio"] {
+    margin-right: 5px; }
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pq-grade {
+  margin-bottom: 20px;
+}
+
+.pq-grade-details {
+  margin-left: 20px;
+}
+
+.pq-form-label {
+  display: inline-block;
+  width: 200px; /* addjusting the width to fit*/
+}
+
+
 .pq-form-button{
     width: max-content;
     padding: 10px;
@@ -225,6 +314,12 @@
     margin-bottom: 10px;
     padding: 5px;
 }
+
+.pq_fieldset{
+  margin: 2rem;
+}
+
+
 .pq-form-fieldset legend
 {
     font-size:medium;
@@ -278,6 +373,7 @@
   margin: 25px;
 }
 
+/*
 .pq-form-group{
     width: 100%;
     height: auto;
@@ -285,7 +381,8 @@
     display: inline-flex;
     justify-content:center;
     align-items: center;
-}
+    margin-bottom: 20px;
+} */
 
  /* forms styles */
  .pq-form-tables {
