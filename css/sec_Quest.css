@@ -14,9 +14,6 @@ body
     width:fit-content; 
     border-radius: 5px;
     padding: 20px;
-    /*background-color: rgb(204, 204, 200);
-    height: 100%;
-    margin-top: auto;*/
 }
 .sq-sidenav-bg
 {
@@ -32,6 +29,7 @@ body
 {
     text-decoration: none;
     font-size: 17px;
+    font-weight: 500;
     padding: 5px;
     display: block;
     color: navy;
@@ -86,10 +84,21 @@ body
 }
 .sq-cover-para
 {
-    margin: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-indent: 50px;
+    text-align: center;
 }
-.sq-cover-fieldset{
-    border: 0px;
+.sq-cover li
+{
+    margin-left: 10px;
+    padding: 5px;
+    text-align: center;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+.sq-cover-align{
+    display: block;
 }
 
 /* Forms styling*/
@@ -100,6 +109,7 @@ body
     height: auto;
     margin: 20px;
     display: inline-flex;
+    flex-wrap: wrap;
     justify-content:center;
     align-items: center;
 }
@@ -107,10 +117,11 @@ body
 {
     font-weight: bold;
     margin-left: 5px;
+    width: 150px;
 }
-.sq-form-group input
+.sq-form-group input, select
 {
-    width: auto;
+    width: 200px;
     margin-bottom: 3px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -132,13 +143,7 @@ body
     margin-bottom: 10px;
 }
 
-/*.sq-cvq-form-checklist label
-{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    display: block;
-}*/
+
 .sq-form  /*other forms */
 {
     height: auto;
@@ -146,11 +151,7 @@ body
     margin-left: auto;
     margin-right: auto;
     
-    /*height: auto;
-    width: 100%;
-    position: relative;
-    border-radius: 5px;
-    background-color: #f8f9fa;*/
+    
 }
 .sq-form-button{
     width: max-content;
@@ -202,6 +203,14 @@ body
 .sq-input-align
 {   
     display:inline-table;
+}
+.sq-input-align-staff
+{
+    display:inline-table;
+}
+.sq-input-align-staff input[type="checkbox"]
+{
+    display: inline-block;
 }
 
 /* table styling*/
