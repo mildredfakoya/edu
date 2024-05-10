@@ -7,6 +7,7 @@
     <title>St. Lucia Primary Questionnaire Forms</title>
     <link rel="stylesheet" type="text/css" href="../../css/main.css">
     <link rel="stylesheet" type="text/css" href="../../css/pq.css">
+    <link rel="stylesheet" href="../Pri_Quest/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -32,12 +33,12 @@
     <section class="row">
         <section class="col-2">
         <div class="pq-sidenav ">
-            <a class="pqnav-link" href="./pq_home.html">Cover</a>
-            <a class="pqnav-link" href="./pq_structure.html">Structure</a>
-            <a class="pqnav-link" href="./pq_students.html">Students</a>
-            <a class="pqnav-link" href="./pq_staff.html">Staff</a>
-            <a class="pqnav-link" href="./pq_building.html">Building</a>
-            <a class="pqnav-link" href="./pq_more.html">Classifications & Definitions</a>
+            <nav class="pqnav-link"><i class="fa fa-home" aria-hidden="true"></i><a href="pq_home.html">Cover</a></nav>
+            <nav class="pqnav-link"><i class="fa fa-sitemap" aria-hidden="true"></i><a href="./pq_structure.html">Structure</a></nav>
+            <nav class="pqnav-link"><i class="fa fa-graduation-cap" aria-hidden="true"></i><a href="./pq_students.html">Student</a></nav>
+            <nav class="pqnav-link"><i class="fa fa-male" aria-hidden="true"></i><a href="./pq_staff.html">Staff</a></nav>
+            <nav class="pqnav-link"><i class="fa fa-building" aria-hidden="true"></i><a href="./pq_building.html">Building</a></nav>
+            <nav class="pqnav-link"><i class="fa fa-user" aria-hidden="true"></i><a href="./pq_more.html">Classifications and Definitions</a></nav>
            
         </div>
         </section>
@@ -814,41 +815,42 @@
                         <fieldset class="pq-form-fieldset">
                             <legend>ICT at Primary Level</legend>
                             <ol>
-                                <li>
-                                    <label>No of computers used for administrative purposes:</label>
+                                <li class="pq-form-group">
+                                    <label class="pq-form-label">No of computers used for administrative purposes:</label>
                                     <input type="number" name="t8_admin_computers" class="pq-form-input">
                                 </li>
-                                <li>
-                                    <label>No of computers used for pedagogical purposes:</label>
+                                <li class="pq-form-group">
+                                    <label class="pq-form-label">No of computers used for pedagogical purposes:</label>
                                     <input type="number" name="t8_pedagogical_computers" class="pq-form-input">
                                 </li>
-                                <li>
-                                    <label>Does your school have access to the internet?</label>
+                                <li class="pq-form-group">
+                                    <label class="pq-form-label">Does your school have access to the internet?</label>
                                     <select name="t8_internet_access" class="pq-form-input">
                                         <option value="yes">Yes</option>
                                         <option value="no">No</option>
                                     </select>
                                 </li>
-                                <li>
-                                    <label>Number of classrooms with internet access:</label>
+                                <li class="pq-form-group">
+                                    <label class="pq-form-label">Number of classrooms with internet access:</label>
                                     <input type="number" name="t8_classrooms_with_internet" class="pq-form-input">
                                 </li>
-                                <li>
-                                    <label>No of teachers with basic computer skills:</label>
+                                <li class="pq-form-group">
+                                    <label class="pq-form-label">No of teachers with basic computer skills:</label>
                                     <input type="number" name="t8_teachers_with_skills" class="pq-form-input">
                                 </li>
-                                <li>
-                                    <label>No. of teachers currently teaching using ICT facilities:</label>
+                                <li class="pq-form-group">
+                                    <label class="pq-form-label">No. of teachers currently teaching using ICT facilities:</label>
                                     <input type="number" name="t8_teachers_using_ict" class="pq-form-input">
                                 </li>
-                                <li>
-                                    <label>Number of teachers trained to teach using ICT facilities:</label>
+                                <li class="pq-form-group">
+                                    <label class="pq-form-label">Number of teachers trained to teach using ICT facilities:</label>
                                     <input type="number" name="t8_teachers_trained" class="pq-form-input">
                                 </li>
                             </ol>
                         </fieldset>
                         <div>
-                            <input type="submit" name="next" value="Next" class="pq-form-button">
+                            <input type="submit" name="save" value="Save and Exit" class="pq-form-button">
+                            <a href="./pq_staff.html"> <input type="submit" name="next" value="Save and Next" class="pq-form-button"> </a>
                           </div>
                     </form>
                 </div>

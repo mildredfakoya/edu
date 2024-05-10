@@ -7,6 +7,7 @@
     <title>Primary Questionnaire Forms</title>
     <link rel="stylesheet" type="text/css" href="../../css/main.css">
     <link rel="stylesheet" type="text/css" href="../../css/pq.css">
+    <link rel="stylesheet" href="../Pri_Quest/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -32,12 +33,12 @@
     <section class="row">
         <section class="col-2">
         <div class="pq-sidenav ">
-            <a class="pqnav-link" href="./pq_home.html">Cover</a>
-            <a class="pqnav-link" href="./pq_structure.html">Structure</a>
-            <a class="pqnav-link" href="./pq_students.html">Students</a>
-            <a class="pqnav-link" href="./pq_staff.html">Staff</a>
-            <a class="pqnav-link" href="./pq_building.html">Building</a>
-            <a class="pqnav-link" href="./pq_more.html">Classifications & Definitions</a>
+          <nav class="pqnav-link"><i class="fa fa-home" aria-hidden="true"></i><a href="pq_home.html">Cover</a></nav>
+          <nav class="pqnav-link"><i class="fa fa-sitemap" aria-hidden="true"></i><a href="./pq_structure.html">Structure</a></nav>
+          <nav class="pqnav-link"><i class="fa fa-graduation-cap" aria-hidden="true"></i><a href="./pq_students.html">Student</a></nav>
+          <nav class="pqnav-link"><i class="fa fa-male" aria-hidden="true"></i><a href="./pq_staff.html">Staff</a></nav>
+          <nav class="pqnav-link"><i class="fa fa-building" aria-hidden="true"></i><a href="./pq_building.html">Building</a></nav>
+          <nav class="pqnav-link"><i class="fa fa-user" aria-hidden="true"></i><a href="./pq_more.html">Classifications and Definitions</a></nav>
            
         </div>
         </section>
@@ -48,240 +49,336 @@
               <form action="#" method="post" autocomplete="off" >
                   <fieldset class="pq-form-fieldset">
                       <legend>School Information</legend>
+                      <div class="pq-form-group">
                       <label for="school" class="pq-form-label">Name of School: &nbsp;</label>
                       <input type="text" name="school" id="school" class="pq-form-input"><br>
+                      </div>
+                      <div class="pq-form-group">
                       <label for="estdate" class="pq-form-label">Date Established: &nbsp;</label>
                       <input type="date" name="estdate" id="estdate" class="pq-form-input"><br>
+                      </div>
+                      <div class="pq-form-group">
                       <label for="district" class="pq-form-label">Education District: &nbsp;</label>
                       <input type="text" name="district" id="district" class="pq-form-input"><br>
+                      </div>
+                      <div class="pq-form-group">
                       <label for="principal" class="pq-form-label">Principal: &nbsp;</label>
                       <input type="text" name="principal" id="principal"  class="pq-form-input"><br>
+                      </div>
+                      <div class="pq-form-group">
                       <label for="address" class="pq-form-label">School Address: &nbsp;</label><br>
                       <textarea name="schooladdress" id="schooladdress" cols="40" rows="5" class="pq-form-input">
-                      </textarea><br>
+                      </textarea>
+                      </div>
+                      <div class="pq-form-group">
                       <label for="phone" class="pq-form-label">Telephone: &nbsp;</label>
                       <input type="tel" name="phone" id="phone" class="pq-form-input"><br>
+                      </div>
+                      <div class="pq-form-group">
                       <label for="fax" class="pq-form-label">Fax: &nbsp;</label>
                       <input type="tel" name="fax" id="fax" class="pq-form-input"><br>
+                      </div>
+                      <div class="pq-form-group">
                       <label for="email" class="pq-form-label">School Email: &nbsp;</label>
                       <input type="email" name="email" id="email" class="pq-form-input"><br>
+                      </div>
+                      <div class="pq-form-group">
                       <label for="pemail" class="pq-form-label">Principal Email: &nbsp;</label>
                       <input type="email" name="pemail" id="pemail" class="pq-form-input"><br>
-                  </fieldset>
+                      </div>
+                    </fieldset>
           
                   <fieldset class="pq-form-fieldset">
                       <legend>Management Structure</legend>
+                      <div class="pq-form-group">
                       <label for=" " class="pq-form-label">Management Structure: &nbsp;</label>
-                        <input type="checkbox" name="ministry of education" id="ministry of education" value="ministry of education" class="pq-form-input">
+                      <div class="pq-checkbox-group">
+                        <input type="checkbox" name="ministry of education" id="ministry of education" value="ministry of education">
                         <label for="ministry of education" class="pq-form-label">Ministry od Education</label>
-                        <input type="checkbox" name="school board" id="school board" value="school board/counsil" class="pq-form-input">
+                      </div>
+                      <div class="pq-checkbox-group">
+                        <input type="checkbox" name="school board" id="school board" value="school board/counsil">
                         <label for="school board" class="pq-form-label">School Board/Counsil</label>
-                        <input type="checkbox" name="church" id="church" value="church" class="pq-form-input">
+                      </div>
+                      <div class="pq-checkbox-group">
+                        <input type="checkbox" name="church" id="church" value="church">
                         <label for="church" class="pq-form-label">Church</label>
-                        <input type="checkbox" name="pta" id="pta" value="pta" class="pq-form-input">
-                        <label for="pta" class="pq-form-label">PTA</label> <br>
-                        <b><i><small>(check all that apply)</small></i></b><br>
-          
+                      </div>
+                      <div class="pq-checkbox-group">
+                        <input type="checkbox" name="pta" id="pta" value="pta">
+                        <label for="pta" class="pq-form-label">PTA</label> 
+                      </div> <br/>
+                      </div>
+                      <i><small>(check all that apply)</small></i><br/>
+                      
+                      <div class="pq-form-group">
                         <label for="" class="pq-form-label">Does the school have an active PTA?  &nbsp;</label>
-                        <input type="radio" name="activepta" id="active-yes" value="yes" class="pq-form-input">
+                        <div class="pq-radio-group">
+                        <input type="radio" name="activepta" id="active-yes" value="yes">
                         <label for="active-yes" class="pq-form-label">Yes</label>
-                        <input type="radio" name="activepta" id="active-no" value="no" class="pq-form-input">
-                        <label for="active-no" class="pq-form-label">No</label> <br>
-          
+                        </div>
+                        <div class="pq-radio-group">
+                        <input type="radio" name="activepta" id="active-no" value="no">
+                        <label for="active-no" class="pq-form-label">No</label>
+                        </div>
+                      </div>
+                      <div class="pq-form-group"> 
                         <label for="" class="pq-form-label">Does the school have a school development plan?  &nbsp;</label>
-                        <input type="radio" name="developmentplan" id="devplan-yes" value="yes" class="pq-form-input">
+                        <div class="pq-radio-group">
+                        <input type="radio" name="developmentplan" id="devplan-yes" value="yes">
                         <label for="devplan-yes" class="pq-form-label">Yes</label>
-                        <input type="radio" name="developmentplan" id="devplan-no" value="no" class="pq-form-input">
+                        </div>
+                        <div class="pq-radio-group">
+                        <input type="radio" name="developmentplan" id="devplan-no" value="no">
                         <label for="devplan-no" class="pq-form-label">No</label> <br>
-          
+                        </div>
+                      </div>
+                      <div class="pq-form-group">
                         <label for="" class="pq-form-label">Does the school have a Disaster Management Plan?  &nbsp;</label>
-                        <input type="radio" name="disasterplan" id="disasterplan-yes" value="yes" class="pq-form-input">
+                        <div class="pq-radio-group">
+                        <input type="radio" name="disasterplan" id="disasterplan-yes" value="yes">
                         <label for="disasterplan-yes" class="pq-form-label">Yes</label>
-                        <input type="radio" name="disasterplan" id="disasterplan-no" value="no" class="pq-form-input">
-                        <label for="disasterplan-no" class="pq-form-label">No</label> <br>
-                        
+                        </div>
+                        <div class="pq-radio-group">
+                        <input type="radio" name="disasterplan" id="disasterplan-no" value="no">
+                        <label for="disasterplan-no" class="pq-form-label">No</label>
+                        </div>
+                      </div>
+
+                      <div class="pq-form-group">
                         <label for=""  class="pq-form-label">Were any emergency drills conducted during previous school
                           year?  &nbsp;</label>
-                        <input type="radio" name="emergencydrill" id="emergencydrill-yes" value="yes" class="pq-form-input">
+                        <div class="pq-radio-group"> 
+                        <input type="radio" name="emergencydrill" id="emergencydrill-yes" value="yes">
                         <label for="emergencydrill-yes" class="pq-form-label">Yes</label>
-                        <input type="radio" name="emergencydrill" id="emergencydrill-no" value="no" class="pq-form-input">
-                        <label for="emergencydrill-no" class="pq-form-label">No</label> <br>
-          
+                        </div>
+                        <div class="pq-radio-group">
+                        <input type="radio" name="emergencydrill" id="emergencydrill-no" value="no">
+                        <label for="emergencydrill-no" class="pq-form-label">No</label>
+                        </div> 
+                      </div>
+                      <div class="pq-form-group">
                         <label for="" class="pq-form-label">Annual school report was submitted last academic year  &nbsp;</label>
-                        <input type="radio" name="annualreport" id="annualreport-yes" value="yes" class="pq-form-input">
+                        <div class="pq-radio-group">
+                        <input type="radio" name="annualreport" id="annualreport-yes" value="yes">
                         <label for="annualreport-yes" class="pq-form-label">Yes</label>
-                        <input type="radio" name="annualreport" id="annualreport-no" value="no" class="pq-form-input">
-                        <label for="annualreport-no" class="pq-form-label">No</label> <br>
-          
+                        </div>
+                        <div class="pq-radio-group">
+                        <input type="radio" name="annualreport" id="annualreport-no" value="no">
+                        <label for="annualreport-no" class="pq-form-label">No</label>
+                        </div>
+                      </div>
+                      <div class="pq-form-group">
                         <label for="" class="pq-form-label">School Status/Type/Ownership:  &nbsp;</label>
+                        <div class="pq-radio-group">
                         <label for="schoolstatus-pulic" class="pq-form-label">Public</label>
-                        <input type="radio" name="schoolstatus" id="schoolstatus-pulic" value="public" class="pq-form-input">
+                        <input type="radio" name="schoolstatus" id="schoolstatus-pulic" value="public">
+                        </div>
+                        <div class="pq-radio-group">
                         <label for="schoolstatus-govtassit" class="pq-form-label">Government Assited</label>
-                        <input type="radio" name="schoolstatus" id="schoolstatus-govtassit" value="government assisted" class="pq-form-input">
+                        <input type="radio" name="schoolstatus" id="schoolstatus-govtassit" value="government assisted">
+                        </div>
+                        <div class="pq-radio-group">
                         <label for="schoolstatus-private" class="pq-form-label">Private</label>
-                        <input type="radio" name="schoolstatus" id="schoolstatus-private" value="private" class="pq-form-input"> <br>
+                        <input type="radio" name="schoolstatus" id="schoolstatus-private" value="Private">
+                        </div>
+                      </div>
                   </fieldset>
-                <fieldset class="pq-form-fieldset">
-                  <legend>School Structure</legend>
-          
-                    <label for="totalclasses" class="pq-form-label">Total Number of Classes: &nbsp;</label>
-                    <input type="number" name="totalclasses" id="totalclasses" class="pq-form-input"><br>
-          
-                    <label for="singleclasses" class="pq-form-label">Number of single classes in single classrooms : &nbsp;</label>
-                    <input type="number" name="singleclasses" id="singleclasses" class="pq-form-input"><br>
-          
-                    <label for="halltypeclasses" class="pq-form-label">Number of classes in halltype space: &nbsp;</label>
-                    <input type="number" name="halltypeclasses" id="halltypeclasses" class="pq-form-input"><br>
-          
-                    <label for="enrollmentcap" class="pq-form-label">School Enrollment Capacity: &nbsp;</label>
-                    <input type="number" name="enrollmentcap" id="enrollmentcap" class="pq-form-input"><br>
 
-                    <legend>Student Enrolment</legend>
-                        
-                    <label for="male_enrolment" class="pq-form-label">Male:</label>
-                    <input type="number" id="male_enrolment" name="male_enrolment" min="0" class="pq-form-input">
-                        
-                    <label for="female_enrolment">Female:</label>
-                    <input type="number" id="female_enrolment" name="female_enrolment" min="0" class="pq-form-input">
-                        
-                    <label for="total_enrolment">Total:</label>
-                    <input type="number" id="total_enrolment" name="total_enrolment" min="0" class="pq-form-input"><br>
+                  <fieldset class="pq-form-fieldset">
+                    <legend>School Structure</legend>
+                    <div class="pq-form-group">
+                        <label for="totalclasses" class="pq-form-label">Total Number of Classes:</label>
+                        <input type="number" name="totalclasses" id="totalclasses" class="pq-form-input">
+                    </div>
+                    <div class="pq-form-group">
+                        <label for="singleclasses" class="pq-form-label">Number of single classes in single classrooms:</label>
+                        <input type="number" name="singleclasses" id="singleclasses" class="pq-form-input">
+                    </div>
+                    <div class="pq-form-group">
+                        <label for="halltypeclasses" class="pq-form-label">Number of classes in halltype space:</label>
+                        <input type="number" name="halltypeclasses" id="halltypeclasses" class="pq-form-input">
+                    </div>
+                    <div class="pq-form-group">
+                        <label for="enrollmentcap" class="pq-form-label">School Enrollment Capacity:</label>
+                        <input type="number" name="enrollmentcap" id="enrollmentcap" class="pq-form-input">
+                    </div>
                 </fieldset>
+                
+                <fieldset class="pq-form-fieldset">
+                    <legend>Student Enrolment</legend>
+                    <div class="pq-form-group">
+                        <label for="male_enrolment" class="pq-form-label">Male:</label>
+                        <input type="number" id="male_enrolment" name="male_enrolment" min="0" class="pq-form-input">
+                    </div>
+                    <div class="pq-form-group">
+                        <label for="female_enrolment" class="pq-form-label">Female:</label>
+                        <input type="number" id="female_enrolment" name="female_enrolment" min="0" class="pq-form-input">
+                    </div>
+                    <div class="pq-form-group">
+                        <label for="total_enrolment" class="pq-form-label">Total:</label>
+                        <input type="number" id="total_enrolment" name="total_enrolment" min="0" class="pq-form-input">
+                    </div>
+                </fieldset>
+                
+                
+                
           
                 <fieldset class="pq-form-fieldset">
                   <legend>Class Structure</legend>
-                      
-                      <h4>Teachers, enrollment and number of classes/groups per grade</h4>
-                      <p><i>(e.g there maybe one group of classes of K in 1's or 2 groups of Grade ones etc)</i></p>
-                    <legend>Students</legend><br/>  
-                    <div>
-                      <label for="K"><b>K: &nbsp;</b></label><br>
-                      <label for="Kgroup">Number of Classes/groups: &nbsp;</label>
-                      <input type="number" name="Kgroup" id="Kgroup" class="pq-form-input" min="0">
-                      <label for="Kmalestu">Male Students: &nbsp;</label>
-                      <input type="number" name="Kmalestu" id="Kmalestu" class="pq-form-input" min="0">
-                      <label for="Kfemalestu">Female Student: &nbsp;</label>
-                      <input type="number" name="Kfemalestu" id="Kfemalestu" class="pq-form-input" min="0"><br><br>
-          
-                      <label for="G1"><b>GRADE 1: &nbsp;</b></label><br>
-                      <label for="G1group">Number of Classes/groups: &nbsp;</label>
-                      <input type="number" name="G1group" id="G1group" class="pq-form-input" min="0">
-                      <label for="G1malestu">Male Students: &nbsp;</label>
-                      <input type="number" name="G1malestu" id="G1malestu" class="pq-form-input" min="0">
-                      <label for="G1femalestu">Female Student: &nbsp;</label>
-                      <input type="number" name="G1femalestu" id="G1femalestu" class="pq-form-input" min="0"><br><br>
-          
-                      <label for="G2"><b>GRADE 2: &nbsp;</b></label><br>
-                      <label for="G2group">Number of Classes/groups: &nbsp;</label>
-                      <input type="number" name="G2group" id="G2group" class="pq-form-input" min="0">
-                      <label for="G2malestu">Male Students: &nbsp;</label>
-                      <input type="number" name="G2malestu" id="G2malestu" class="pq-form-input" min="0">
-                      <label for="G2femalestu">Female Student: &nbsp;</label>
-                      <input type="number" name="G2femalestu" id="G2femalestu" class="pq-form-input" min="0"><br><br>
-          
-                      <label for="G3"><b>GRADE 3: &nbsp;</b></label><br>
-                      <label for="G3group">Number of Classes/groups: &nbsp;</label>
-                      <input type="number" name="G3group" id="G3group" class="pq-form-input" min="0">
-                      <label for="G3malestu">Male Students: &nbsp;</label>
-                      <input type="number" name="G3malestu" id="G3malestu" class="pq-form-input" min="0">
-                      <label for="G2femalestu">Female Student: &nbsp;</label>
-                      <input type="number" name="G3femalestu" id="G3femalestu" class="pq-form-input" min="0"><br><br>
-          
-                      <label for="G4"><b>GRADE 4: &nbsp;</b></label><br>
-                      <label for="G4group">Number of Classes/groups: &nbsp;</label>
-                      <input type="number" name="G4group" id="G4group" class="pq-form-input" min="0">
-                      <label for="G4malestu">Male Students: &nbsp;</label>
-                      <input type="number" name="G4malestu" id="G4malestu" class="pq-form-input" min="0">
-                      <label for="G4femalestu">Female Student: &nbsp;</label>
-                      <input type="number" name="G4femalestu" id="G4femalestu" class="pq-form-input" min="0"><br><br>>
-          
-                      <label for="G5"><b>GRADE 5: &nbsp;</b></label><br>
-                      <label for="G5group">Number of Classes/groups: &nbsp;</label>
-                      <input type="number" name="G5group" id="G5group" class="pq-form-input" min="0">
-                      <label for="G5malestu">Male Students: &nbsp;</label>
-                      <input type="number" name="G5malestu" id="G5malestu" class="pq-form-input" min="0">
-                      <label for="G5femalestu">Female Student: &nbsp;</label>
-                      <input type="number" name="G5femalestu" id="G5femalestu" class="pq-form-input" min="0"><br><br>
-          
-                      <label for="G6"><b>GRADE 6: &nbsp;</b></label><br>
-                      <label for="G6group">Number of Classes/groups: &nbsp;</label>
-                      <input type="number" name="G6group" id="G6group" class="pq-form-input" min="0">
-                      <label for="G6malestu">Male Students: &nbsp;</label>
-                      <input type="number" name="G6malestu" id="G6malestu" class="pq-form-input" min="0">
-                      <label for="G6femalestu">Female Student: &nbsp;</label>
-                      <input type="number" name="G6femalestu" id="G6femalestu" class="pq-form-input" min="0"><br><br>
-          
-                      <label for="total" class="pq-form-label"><b>Total: &nbsp;</b></label><br>
-                      <label for="totalgroup" class="pq-form-label">Number of Classes/groups: &nbsp;</label>
-                      <input type="number" name="totalgroup" id="totalgroup" class="pq-form-input" min="0">
-                      <label for="totalmalestu" class="pq-form-label">Male Students: &nbsp;</label>
-                      <input type="number" name="totalmalestu" id="totalmalestu" class="pq-form-input" min="0">
-                      <label for="totalfemalestu" class="pq-form-label">Female Student: &nbsp;</label>
-                      <input type="number" name="totalfemalestu" id="totalfemalestu" class="pq-form-input" min="0"><br><br>
-                    </div>
-                    <legend>Teachers</legend><br/>  
-                    <div>
-                      <label for="K" class="pq-form-label"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; K: &nbsp;</b></label>
-                      <label for="Kmaleteachers" class="pq-form-label">Male Teachers: &nbsp;</label>
-                      <input type="number" name="Kmaleteachers" id="Kmaleteachers" class="pq-form-input" min="0">
-                      <label for="Kfemaleteachers" class="pq-form-label">Female Teachers: &nbsp;</label>
-                      <input type="number" name="Kfemaleteachers" id="Kfemaleteachers" class="pq-form-input" min="0"><br><br>
-          
-                      <label for="G1"><b>GRADE 1: &nbsp;</b></label>
-                      <label for="G1maleteachers"class="pq-form-label">Male Teachers: &nbsp;</label>
-                      <input type="number" name="G1maleteachers" id="G1maleteachers" class="pq-form-input" min="0">
-                      <label for="G1femalesteachers" class="pq-form-label">Female Teachers: &nbsp;</label>
-                      <input type="number" name="G1femalestu" id="G1femalestu" class="pq-form-input" min="0"><br><br>
-          
-                      <label for="G2"><b>GRADE 2: &nbsp;</b></label>
-                      <label for="G2maleteachers" class="pq-form-label">Male Teachers: &nbsp;</label>
-                      <input type="number" name="G2maleteachers" id="G2maleteachers" class="pq-form-input" min="0">
-                      <label for="G2femaleteachers" class="pq-form-label">Female Teachers: &nbsp;</label>
-                      <input type="number" name="G2femaleteachers" id="G2femaleteachers" class="pq-form-input" min="0"><br><br>
-          
-                      <label for="G3"><b>GRADE 3: &nbsp;</b></label>
-                      <label for="G3maleteachers" class="pq-form-label">Male Teachers: &nbsp;</label>
-                      <input type="number" name="G3maleteachers" id="G3maleteachers" class="pq-form-input" min="0">
-                      <label for="G2femaleteachers" class="pq-form-label">Female Teachers: &nbsp;</label>
-                      <input type="number" name="G3femaleteachers" id="G3femaleteachers" class="pq-form-input" min="0"><br><br>
-          
-                      <label for="G4"><b>GRADE 4: &nbsp;</b></label>
-                      <label for="G4maleteachers" class="pq-form-label">Male Teachers: &nbsp;</label>
-                      <input type="number" name="G4maleteachers" id="G4maleteachers" class="pq-form-input" min="0">
-                      <label for="G4females" class="pq-form-label">Female Teachers: &nbsp;</label>
-                      <input type="number" name="G4femaleteachers" id="G4femaleteachers" class="pq-form-input" min="0"><br><br>
-          
-                      <label for="G5"><b>GRADE 5: &nbsp;</b></label>
-                      
-                      <label for="G5maleteachers" class="pq-form-label">Male Teachers: &nbsp;</label>
-                      <input type="number" name="G5maleteachers" id="G5maleteachers" class="pq-form-input" min="0">
-                      <label for="G5femaleteachers" class="pq-form-label">Female Teachers: &nbsp;</label>
-                      <input type="number" name="G5femaleteachers" id="G5femaleteachers" class="pq-form-input" min="0"><br><br>
-          
-                      <label for="G6"><b>GRADE 6: &nbsp;</b></label>
-                      
-                      <label for="G6maleteachers" class="pq-form-label">Male Teachers: &nbsp;</label>
-                      <input type="number" name="G6maleteachers" id="G6maleteachers" class="pq-form-input" min="0">
-                      <label for="G6femaleteachers" class="pq-form-label">Female Teachers: &nbsp;</label>
-                      <input type="number" name="G6femaleteachers" id="G6femaleteachers" class="pq-form-input" min="0"><br><br>
-          
-                      <label for="total"><b>Total: &nbsp;</b></label>
-                      
-                      <label for="totalmaleteachers" class="pq-form-label">&nbsp; &nbsp; Male Teachers:&nbsp; &nbsp; &nbsp; &nbsp;</label>
-                      <input type="number" name="totalmaleteachers" id="totalmaleteachers" class="pq-form-input" min="0">
-                      <label for="totalfemaleteachers" class="pq-form-label">Female Teachers: &nbsp;</label>
-                      <input type="number" name="totalfemaleteachers" id="totalfemaleteachers" class="pq-form-input" min="0"><br><br>
+                  <h4>Teachers, enrollment and number of classes/groups per grade</h4>
+                  <p><i>(e.g there maybe one group of classes of K in 1's or 2 groups of Grade ones etc)</i></p>
 
-                      <label for="specialistteachers" class="pq-form-label">No. of Specialist Teachers (on school's staff): &nbsp;</label>
-                      <input type="number" id="specialistteachers" name="specialistteachers" class="pq-form-input" min="0">
+                  <div>
+                    <legend>Students</legend><br/>  
+                    <div class="pq-grade">
+                      <label for="K"><b>K: &nbsp;</b></label><br>
+                      <div class="pq-grade-details">
+                        <label for="Kgroup">Number of Classes/groups: &nbsp;</label>
+                        <input type="number" name="Kgroup" id="Kgroup" class="pq-form-input" min="0">
+                        <label for="Kmalestu">Male Students: &nbsp;</label>
+                        <input type="number" name="Kmalestu" id="Kmalestu" class="pq-form-input" min="0">
+                        <label for="Kfemalestu">Female Student: &nbsp;</label>
+                        <input type="number" name="Kfemalestu" id="Kfemalestu" class="pq-form-input" min="0"><br><br>
+                      </div>
                       
-                      <label for="shared_specialist_teachers" class="pq-form-label">No. of Specialist Teachers who are Shared: &nbsp;</label>
-                      <input type="number" id="shared_specialist_teachers" name="shared_specialist_teachers" class="pq-form-input" min="0">
+                      <label for="G1"><b>GRADE 1: &nbsp;</b></label><br>
+                      <div class="pq-grade-details">
+                        <label for="G1group">Number of Classes/groups: &nbsp;</label>
+                        <input type="number" name="G1group" id="G1group" class="pq-form-input" min="0">
+                        <label for="G1malestu">Male Students: &nbsp;</label>
+                        <input type="number" name="G1malestu" id="G1malestu" class="pq-form-input" min="0">
+                        <label for="G1femalestu">Female Student: &nbsp;</label>
+                        <input type="number" name="G1femalestu" id="G1femalestu" class="pq-form-input" min="0"><br><br>
+                      </div>  
+                      <label for="G2"><b>GRADE 2: &nbsp;</b></label><br>
+                      <div class="pq-grade-details">
+                        <label for="G2group">Number of Classes/groups: &nbsp;</label>
+                        <input type="number" name="G2group" id="G2group" class="pq-form-input" min="0">
+                        <label for="G2malestu">Male Students: &nbsp;</label>
+                        <input type="number" name="G2malestu" id="G2malestu" class="pq-form-input" min="0">
+                        <label for="G2femalestu">Female Student: &nbsp;</label>
+                        <input type="number" name="G2femalestu" id="G2femalestu" class="pq-form-input" min="0"><br><br>
+                      </div>
+                      <label for="G3"><b>GRADE 3: &nbsp;</b></label><br>
+                      <div class="pq-grade-details">
+                        <label for="G3group">Number of Classes/groups: &nbsp;</label>
+                        <input type="number" name="G3group" id="G3group" class="pq-form-input" min="0">
+                        <label for="G3malestu">Male Students: &nbsp;</label>
+                        <input type="number" name="G3malestu" id="G3malestu" class="pq-form-input" min="0">
+                        <label for="G2femalestu">Female Student: &nbsp;</label>
+                        <input type="number" name="G3femalestu" id="G3femalestu" class="pq-form-input" min="0"><br><br>
+                      </div>
+                      <label for="G4"><b>GRADE 4: &nbsp;</b></label><br>
+                      <div class="pq-grade-details">
+                        <label for="G4group">Number of Classes/groups: &nbsp;</label>
+                        <input type="number" name="G4group" id="G4group" class="pq-form-input" min="0">
+                        <label for="G4malestu">Male Students: &nbsp;</label>
+                        <input type="number" name="G4malestu" id="G4malestu" class="pq-form-input" min="0">
+                        <label for="G4femalestu">Female Student: &nbsp;</label>
+                        <input type="number" name="G4femalestu" id="G4femalestu" class="pq-form-input" min="0"><br><br>
+                      </div>
+                      <label for="G5"><b>GRADE 5: &nbsp;</b></label><br>
+                      <div class="pq-grade-details">
+                        <label for="G5group">Number of Classes/groups: &nbsp;</label>
+                        <input type="number" name="G5group" id="G5group" class="pq-form-input" min="0">
+                        <label for="G5malestu">Male Students: &nbsp;</label>
+                        <input type="number" name="G5malestu" id="G5malestu" class="pq-form-input" min="0">
+                        <label for="G5femalestu">Female Student: &nbsp;</label>
+                        <input type="number" name="G5femalestu" id="G5femalestu" class="pq-form-input" min="0"><br><br>
+                      </div>
+                      <label for="G6"><b>GRADE 6: &nbsp;</b></label><br>
+                      <div class="pq-grade-details">
+                        <label for="G6group">Number of Classes/groups: &nbsp;</label>
+                        <input type="number" name="G6group" id="G6group" class="pq-form-input" min="0">
+                        <label for="G6malestu">Male Students: &nbsp;</label>
+                        <input type="number" name="G6malestu" id="G6malestu" class="pq-form-input" min="0">
+                        <label for="G6femalestu">Female Student: &nbsp;</label>
+                        <input type="number" name="G6femalestu" id="G6femalestu" class="pq-form-input" min="0"><br><br>
+                      </div>
+                      <label for="total"><b>Total: &nbsp;</b></label><br>
+                      <div class="pq-grade-details">
+                        <label for="totalgroup" class="pq-form-label">Number of Classes/groups: &nbsp;</label>
+                        <input type="number" name="totalgroup" id="totalgroup" class="pq-form-input" min="0">
+                        <label for="totalmalestu" class="pq-form-label">Male Students: &nbsp;</label>
+                        <input type="number" name="totalmalestu" id="totalmalestu" class="pq-form-input" min="0">
+                        <label for="totalfemalestu" class="pq-form-label">Female Student: &nbsp;</label>
+                        <input type="number" name="totalfemalestu" id="totalfemalestu" class="pq-form-input" min="0"><br><br>
+                      </div>
+                    </div>
+
+                    <div>
+                      <legend>Teachers</legend><br/>
+                      <div class="pq-grade">
+                        <label for="K" class="pq-form-label"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; K: &nbsp;</b></label>
+                        <div class="pq-grade-details">
+                          <label for="Kmaleteachers" class="pq-form-label">Male Teachers: &nbsp;</label>
+                          <input type="number" name="Kmaleteachers" id="Kmaleteachers" class="pq-form-input" min="0">
+                          <label for="Kfemaleteachers" class="pq-form-label">Female Teachers: &nbsp;</label>
+                          <input type="number" name="Kfemaleteachers" id="Kfemaleteachers" class="pq-form-input" min="0"><br><br>
+                        </div>
+                        <label for="G1"><b>GRADE 1: &nbsp;</b></label>
+                        <div class="pq-grade-details">
+                          <label for="G1maleteachers"class="pq-form-label">Male Teachers: &nbsp;</label>
+                          <input type="number" name="G1maleteachers" id="G1maleteachers" class="pq-form-input" min="0">
+                          <label for="G1femalesteachers" class="pq-form-label">Female Teachers: &nbsp;</label>
+                          <input type="number" name="G1femalestu" id="G1femalestu" class="pq-form-input" min="0"><br><br>
+                        </div>
+                        <label for="G2"><b>GRADE 2: &nbsp;</b></label>
+                        <div class="pq-grade-details">
+                          <label for="G2maleteachers" class="pq-form-label">Male Teachers: &nbsp;</label>
+                          <input type="number" name="G2maleteachers" id="G2maleteachers" class="pq-form-input" min="0">
+                          <label for="G2femaleteachers" class="pq-form-label">Female Teachers: &nbsp;</label>
+                          <input type="number" name="G2femaleteachers" id="G2femaleteachers" class="pq-form-input" min="0"><br><br>
+                        </div>
+                        <label for="G3"><b>GRADE 3: &nbsp;</b></label>
+                        <div class="pq-grade-details">
+                          <label for="G3maleteachers" class="pq-form-label">Male Teachers: &nbsp;</label>
+                          <input type="number" name="G3maleteachers" id="G3maleteachers" class="pq-form-input" min="0">
+                          <label for="G2femaleteachers" class="pq-form-label">Female Teachers: &nbsp;</label>
+                          <input type="number" name="G3femaleteachers" id="G3femaleteachers" class="pq-form-input" min="0"><br><br>
+                        </div>
+                        <label for="G4"><b>GRADE 4: &nbsp;</b></label>
+                        <div class="pq-grade-details">
+                          <label for="G4maleteachers" class="pq-form-label">Male Teachers: &nbsp;</label>
+                          <input type="number" name="G4maleteachers" id="G4maleteachers" class="pq-form-input" min="0">
+                          <label for="G4females" class="pq-form-label">Female Teachers: &nbsp;</label>
+                          <input type="number" name="G4femaleteachers" id="G4femaleteachers" class="pq-form-input" min="0"><br><br>
+                        </div>
+                        <label for="G5"><b>GRADE 5: &nbsp;</b></label>
+                        <div class="pq-grade-details">
+                          <label for="G5maleteachers" class="pq-form-label">Male Teachers: &nbsp;</label>
+                          <input type="number" name="G5maleteachers" id="G5maleteachers" class="pq-form-input" min="0">
+                          <label for="G5femaleteachers" class="pq-form-label">Female Teachers: &nbsp;</label>
+                          <input type="number" name="G5femaleteachers" id="G5femaleteachers" class="pq-form-input" min="0"><br><br>   
+                        </div>
+                        <label for="G6"><b>GRADE 6: &nbsp;</b></label>
+                        <div class="pq-grade-details">
+                          <label for="G6maleteachers" class="pq-form-label">Male Teachers: &nbsp;</label>
+                          <input type="number" name="G6maleteachers" id="G6maleteachers" class="pq-form-input" min="0">
+                          <label for="G6femaleteachers" class="pq-form-label">Female Teachers: &nbsp;</label>
+                          <input type="number" name="G6femaleteachers" id="G6femaleteachers" class="pq-form-input" min="0"><br><br>
+                        </div>
+                        <label for="total"><b>Total: &nbsp;</b></label>
+                        <div class="pq-grade-details">
+                          <label for="totalmaleteachers" class="pq-form-label">Male Teachers: &nbsp;</label>
+                          <input type="number" name="totalmaleteachers" id="totalmaleteachers" class="pq-form-input" min="0">
+                          <label for="totalfemaleteachers" class="pq-form-label">Female Teachers: &nbsp;</label>
+                          <input type="number" name="totalfemaleteachers" id="totalfemaleteachers" class="pq-form-input" min="0"><br><br>
+                        </div>
+                        <div>
+                          <label for="specialistteachers" class="pq-form-label">No. of Specialist Teachers (on school's staff): &nbsp;</label>
+                          <input type="number" id="specialistteachers" name="specialistteachers" class="pq-form-input" min="0">
+            
+                          <label for="shared_specialist_teachers" class="pq-form-label">No. of Specialist Teachers who are Shared: &nbsp;</label>
+                          <input type="number" id="shared_specialist_teachers" name="shared_specialist_teachers" class="pq-form-input" min="0"> 
+                        </div>
                     </div>
 
                 </fieldset>
                 <div>
-                  <input type="submit" name="next" value="Next" class="pq-form-button">
+                  <input type="submit" name="save" value="Save and Exit" class="pq-form-button">
+                  <a href="pq_students.html"> <input type="submit" name="next" value="Save and Next" class="pq-form-button"> </a>
                 </div>
               </form>
             </div>
