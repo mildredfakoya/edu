@@ -21,21 +21,20 @@
 
   <section class="row">
     <div >
-      <h2 class="sq-section-heading">Government of St. Lucia</h2>
-      <h3 class="sq-section-heading">Ministry of Education, Innovation Gender Relations 
-        and Sustainable Development</h3>
+      <h2 class="sq-section-heading">Government</h2>
+      <h3 class="sq-section-heading">Education Management Information System</h3>
     </div>
   </section>
 
 <section class="row">
   <div class="sq-cover">
-    <br><h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Annual Education Census Questionnaire 
-      Secondary School 2020-21 Academic Year</h3>
+    <br><h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">EMIS Questionnaire for Secondary School </h3>
      
     <form action="secQSchool.html" method="post" autocomplete="on">
       <!--<fieldset class="sq-cover-fieldset" style="margin: auto;">-->
-      <div class="sq-form-group">
-        <label for="district" >Select District: &nbsp;</label>
+      <div class="sq-form-group ">
+        
+        <label for="district" >Select District: </label>
         <select name="district" id="district" required> 
           <option selected>Select District  &nbsp; </option>
           <option value="district 1">District 1</option>
@@ -47,36 +46,61 @@
           <option value="district 7">District 7</option>
           <option value="district 8">District 8</option>
         </select>
-      
+     
 
         <!--School list should change as per the district selection-->
       
-        <label for="schoolname" >Name of the School: &nbsp;</label>
+        <label for="schoolname" >Name of the School: </label>
         <select name="schoolname" id="schoolname" required> 
               <option selected>Select School</option>
-              <option value="babonneau secondary">Babonneau Secondary</option>
-              <option value="corinth secondary">Corinth Secondary</option>
-              <option value="saint lucia sports academy">Saint Luica Sports Academy</option>
+              <option value="All Girl's Secondary School">All Girl's Secondary School</option>
+              <option value="All Boy's Secondary School">All Boy's Secondary School</option>
+              <option value="Co-Educational Secondary School">Co-Educational Secondary School</option>
         </select>
       </div>
-
-      <h4 style="text-align: center; font-style: oblique;">Instructions:</h4>
-          <p class="sq-cover-para">1. &nbsp;All data furnished in this questionnaire should refer to the day of <b>October 15, 2020.</b>
-            The completed questionnaire should reach your <b>District Office</b> by <b>November 20, 2020.</b></p>
-          <p class="sq-cover-para">2. &nbsp;Please refer to the 
-             <i style="color: blue;">explanatory notes</i> provided on the 
-              last page before completing the questionnaire. You may contact officers of the Department
-            of Education, Innovation and Gender Relations at <b>468-3220/3221</b> or at the <i>educationstats@gmail.com</i> 
-          for any assistance required in completing the questionnaire.</p><br>
-          
       <div class="sq-form-group">
-        <label for="principal-name" >Name of the Principal: &nbsp;</label>
-        <input type="text" name="principal-name" id="principal-name" required>
-     
-        <label for="date" >Date: &nbsp;</label>
-        <input type="date" name="date" id="date" required><br><br>
-      </div>
+        
+        <label for="principal-name" >Name of the Principal: </label>
+        <input type="text" name="principal-name" id="principal-name" >
+      
+       
+        <label for="date" >Date: </label>
+        <input type="date" name="date" id="date" >  
+      
+    </div>
 
+    <!--<h4 style="text-align: center; font-style: oblique;">Introduction</h4>
+    <p class="sq-cover-para">It’s great to see that the Education Management Information System (EMIS) is being used 
+      to collect data and create statistics for secondary-level education. </p>-->
+    
+      <h4 style="text-align: center; font-style: oblique;">Purpose of EMIS</h4>
+    <li><b>EMIS</b> is designed to collect data related to <b>Secondary-Level Education.</b></li>
+    <li>Its primary mission is to create statistics for both government agencies and schools.</li>
+    <li>This achievement is made possible through the use of various 
+      <i style="color: blue;" >questionnaires</i> that cover
+       different aspects of education.</li>
+    
+    <h4 style="text-align: center; font-style: oblique;">Data Collection Area</h4>
+    <p class="sq-cover-para">EMIS gathers information on several critical areas:</p>
+    <li><b>Enrollment:</b> Tracking student enrollment numbers.</li>
+    <li><b>Attendance:</b> Monitoring student attendance.</li>
+    <li><b>Dropouts:</b> Identifying students who leave the educational system prematurely.</li>
+    <li><b>Skills:</b> Assessing students’ skills and abilities.</li>
+    <li><b>Sex Ratio:</b> Analyzing the gender distribution among students.</li>
+    <li><b>Staff Information: </b>Collecting data on school staff.</li>
+    <li><b>Subjects Offered:</b> Documenting the subjects provided by schools.</li>
+    <li><b>Computer Literacy: Evaluating students’ digital literacy.</b></li>
+
+    <h4 style="text-align: center; font-style: oblique;">Statistical Analysis</h4>
+    
+       <li>The data collected through EMIS contributes to meaningful statistical analysis.</li>
+       <li>Schools and government entities can use these statistics for various purposes,
+         including evaluating teaching methods and creating enabling environments for personal development.</li>
+    
+    <P class="sq-cover-para">Overall, EMIS plays a crucial role in informed decision-making and 
+      improving educational outcomes.</P>
+
+      
         <!--<button type="submit" class="sq-form-button">Continue</button>-->
       <div class="sq-form-group">
         <input type="submit" name="continue" value="Continue" class="sq-form-button"> 
