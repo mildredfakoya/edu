@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SOP Internship forms Page</title>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/sec_Quest.css">
   <link rel="stylesheet" href="/css/se_eduq.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -22,45 +22,78 @@
 
   <section class="row">
     <div >
-      <h2 class="sq-section-heading">Government of St. Lucia</h2>
-      <h3 class="sq-section-heading">Ministry of Education, Innovation Gender Relations 
-        and Sustainable Development</h3>
-        <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">
-            Special Education (V/Fort) Questionnaire for the Academic Year 2020/21</h3>
-    </div>
+        <h2 class="se_headings" style="margin-top: 20px;">Education Management Information System</h2>
+        <h3 class="se_headings" style="margin-top: 20px; font-style: italic;"> 
+          Designed to collect information about individuals with special needs in the education sector.
+         
+          </h3>
+          <!-- <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">
+              Special Education (V/Fort) Questionnaire for the Academic Year 2020/21</h3> -->
+      </div>
   </section>
 
 <section class="row">
-  <section class="col-2">
+  <section class="col-2 col-md-12">
     <div >
-        <nav class="se_nav ">
-            <ul>
-              <li><a href="/pages/se_eduq/se_home.html">Cover</a></li>
-              <li><a href="/pages/se_eduq/se_school.html" >School</a></li>
-              <li> <a href=" /pages/se_eduq/forms/staff.html">Staff</a></li>
-              <li><a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a></li>
-              <li>  <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a></li>
-              <li><a href="/pages/se_eduq/forms/enrollment.html">Enrolment</a></li>
-              <li> <a href="/pages/se_eduq/forms/furniture.html">Furniture</a></li>
-              <li>
-                <a href="/pages/se_eduq/forms/buildings.html">Buildings</a></li>
-              <li> <a href="/pages/se_eduq/forms/equipments.html">Equipments</a></li>
-              <li><a href="/pages/se_eduq/forms/funds.html">Funds Raised</a></li>
-            </ul>
-          </nav>
-    </div>
+        <nav  class="se_nav ">
+          <ul> 
+            <li>
+              <div class="se-dropdown se-mobile-menu">
+                <button>Menu &#X25BC;</button>
+                <div class="se-dropdown-content">
+                  <a href="/pages/se_eduq/se_home.html">Cover</a>
+                  <a href="/pages/se_eduq/se_school.html"  >School</a>
+                  <a href=" /pages/se_eduq/forms/staff.html">Staff</a>
+                  <a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a>
+                  <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a>
+                  <a href="/pages/se_eduq/forms/enrollment.html" class="se-focus" >Enrolment</a>
+                  <a href="/pages/se_eduq/forms/furniture.html">Furniture</a>
+                  <a href="/pages/se_eduq/forms/buildings.html">Buildings</a>
+                  <a href="/pages/se_eduq/forms/equipments.html">Equipments</a>
+    
+                </div>
+    
+              </div>
+            </li>
+            <div class="se-main-menu">
+            
+            <li><a href="/pages/se_eduq/se_home.html">Cover</a></li>
+            <li><a href="/pages/se_eduq/se_school.html" >School</a></li>
+            <li> <a href=" /pages/se_eduq/forms/staff.html">Staff</a></li>
+          
+        
+            <li><a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a></li>
+             <li>  <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a></li>
+             <li><a href="/pages/se_eduq/forms/enrollment.html"  class="se-focus">Enrolment</a></li>
+            
+            
+             <li> <a href="/pages/se_eduq/forms/furniture.html">Furniture</a></li>
+             <li>
+               <a href="/pages/se_eduq/forms/buildings.html">Buildings</a>
+              </li>
+             <li> <a href="/pages/se_eduq/forms/equipments.html">Equipments</a></li>
+            
+          </div>
+          </ul>
+        </nav>
+          
+          
+      
+      </div>
   </section>
 
-  <section class="col-10">
-  <div class="sq-form">  
-    <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Enrolment</h3>
-    <div class="se-form-container">
+  <section class="col-10 col-md-12 se-main-container">
+    
+  <div class="se-form-container">  
+    <h3 class="se_headings" style="font-style: italic; padding: 5px;">Enrolment</h3>
+    <div class="">
         <form action="" method="post">
-            <fieldset class="se_fieldset">
+            <fieldset class="se_fieldset se-form-group ">
                 <legend>Enrolment by Type of Program</legend>
                 <div class="">
+                    <label for="type_program">Enrolment by Type of Program:</label> 
                     <div>
-                        <label for="type_program">Enrolment by Type of Program:</label> 
+                        
                         <input type="checkbox" name="type_program[]" id="itinerant" value="Itinerant">
                         <label for="intinerant">Itinerant</label>
                     </div>
@@ -90,31 +123,31 @@
                 
 <label>Infant/Primary:</label>
 <div>
-<label for="infantPrimaryM">M:</label>
+<label for="infantPrimaryM">Male:</label>
 <input type="number" id="infantPrimaryM" name="infantPrimaryM">
 </div>
 <div>
-<label for="infantPrimaryF">F:</label>
+<label for="infantPrimaryF">Female:</label>
 <input type="number" id="infantPrimaryF" name="infantPrimaryF">
 </div>
 
 <label>Secondary:</label>
 <div>
-<label for="secondaryM">M:</label>
+<label for="secondaryM">Male:</label>
 <input type="number" id="secondaryM" name="secondaryM">
 </div>
 <div>
-<label for="secondaryF">F:</label>
+<label for="secondaryF">Female:</label>
 <input type="number" id="secondaryF" name="secondaryF">
 </div>
 
 <label>Vocational/Skills:</label>
 <div>
-<label for="vocationalM">M:</label>
+<label for="vocationalM">Male:</label>
 <input type="number" id="vocationalM" name="vocationalM">
 </div>
 <div>
-<label for="vocationalF">F:</label>
+<label for="vocationalF">Female:</label>
 <input type="number" id="vocationalF" name="vocationalF">
 </div>
 </div>
@@ -122,6 +155,7 @@
         
             <fieldset  class="se_fieldset">
                 <legend>Distribution of Current Enrolment according to Fresh Intake and Repeaters</legend>
+                <div class="se-table-container" >
                 <table class="se_form_tables" >
                     <thead>
                       <tr>
@@ -384,6 +418,7 @@
                            </div>
                     </tbody>
                   </table>
+                </div>
             </fieldset>
             <fieldset class="se_fieldset">
                 <legend> Student Enrolment By Class ,Gender and Age (Total should match that in 1.12)</legend>
@@ -1162,7 +1197,7 @@
                 <td>M</td>
                 <div>
                     <td><label for="hearing_impaired_m_l5" hidden>Hearing Impaired:</label>
-                        <input type="number" name="hearing_impaired_m_lt5" id="hearing_impaired_m_l5"></td>
+                        <input type="number" name="hearing_impaired_m_l5" id="hearing_impaired_m_l5"></td>
                 </div>
                  <div>
                     <td><label for="visually_impaired_m_l5" hidden >Visually Impaired:</label>
@@ -1179,7 +1214,7 @@
                     <div>
                         <td><label for="multiple_handicaps_m_l5" hidden>Multiple Handicaps:</label>
                             <input type="number" name="multiple_handicaps_m_l5" id="multiple_handicaps_m_l5"></td>
-                    </div>l5
+                    </div>
                   <div>
                     <td><label for="autistic_m_l5" hidden>Autistic:</label>
                         <input type="number" name="autistic_m_l5" id="autistic_m_l5"></td>
@@ -1549,7 +1584,7 @@
                     <td><label for="mentally_challenged_f_20+" hidden>Mentally Challenged:</label>
                         <input type="number" name="mentally_challenged_f_20+" id="mentally_challenged_f_20+"></td>
                  </div>
-                <div>20+
+                <div>
                     <td><label for="multiple_handicaps_f_20+" hidden>Multiple Handicaps:</label>
                         <input type="number" name="multiple_handicaps_f_lt5" id="multiple_handicaps_f_lt5"></td>
                 </div>
@@ -1636,7 +1671,7 @@
     </table>
       </fieldset>
       <!-- School leavers form -->
-      <fieldset> 
+      <fieldset class="se_fieldset"> 
         <legend>School Leavers During Last School Year</legend>
         <table class="se_form_tables">
             <thead>
@@ -1964,9 +1999,20 @@
         </table>
     
       </fieldset>
+
+      <div class="se_myForm-button">
+        <div>
+            <a href="/pages/se_eduq/forms/enrollment.html"> <input type="button" name="next" value="Save & Exit" > </a>
+          
+          </div>
+          <div>
+            <a href="/pages/se_eduq/forms/furniture.html"> <input type="button" name="next" value="Save & Next"> </a>
+          
+          </div>
+      </div>
         </form>
     </div>
-     
+    
 </section>
 
 

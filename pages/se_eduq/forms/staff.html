@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SOP Internship forms Page</title>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/sec_Quest.css">
+  
   <link rel="stylesheet" href="/css/se_eduq.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -22,40 +23,71 @@
 
   <section class="row">
     <div >
-      <h2 class="sq-section-heading">Government of St. Lucia</h2>
-      <h3 class="sq-section-heading">Ministry of Education, Innovation Gender Relations 
-        and Sustainable Development</h3>
-        <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">
-            Special Education (V/Fort) Questionnaire for the Academic Year 2020/21</h3>
+      <h2 class="se_headings" style="margin-top: 20px;">Education Management Information System</h2>
+      <h3 class="se_headings" style="margin-top: 20px; font-style: italic;"> 
+        Designed to collect information about individuals with special needs in the education sector.
+       
+        </h3>
+        <!-- <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">
+            Special Education (V/Fort) Questionnaire for the Academic Year 2020/21</h3> -->
     </div>
   </section>
 
 <section class="row">
-  <section class="col-2">
+  <section class="col-2 col-md-12">
     <div >
-      <nav class="se_nav ">
-        <ul>
+      <nav  class="se_nav ">
+        <ul> 
+          <li>
+            <div class="se-dropdown se-mobile-menu">
+              <button>Menu &#X25BC;</button>
+              <div class="se-dropdown-content">
+                <a href="/pages/se_eduq/se_home.html">Cover</a>
+                <a href="/pages/se_eduq/se_school.html"  >School</a>
+                <a href=" /pages/se_eduq/forms/staff.html" class="se-focus">Staff</a>
+                <a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a>
+                <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a>
+                <a href="/pages/se_eduq/forms/enrollment.html" >Enrolment</a>
+                <a href="/pages/se_eduq/forms/furniture.html">Furniture</a>
+                <a href="/pages/se_eduq/forms/buildings.html">Buildings</a>
+                <a href="/pages/se_eduq/forms/equipments.html">Equipments</a>
+  
+              </div>
+  
+            </div>
+          </li>
+          <div class="se-main-menu">
+          
           <li><a href="/pages/se_eduq/se_home.html">Cover</a></li>
           <li><a href="/pages/se_eduq/se_school.html" >School</a></li>
-          <li> <a href=" /pages/se_eduq/forms/staff.html">Staff</a></li>
+          <li> <a href=" /pages/se_eduq/forms/staff.html" class="se-focus" >Staff</a></li>
+        
+      
           <li><a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a></li>
-          <li>  <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a></li>
-          <li><a href="/pages/se_eduq/forms/enrollment.html">Enrolment</a></li>
-          <li> <a href="/pages/se_eduq/forms/furniture.html">Furniture</a></li>
-          <li>
-            <a href="/pages/se_eduq/forms/buildings.html">Buildings</a></li>
-          <li> <a href="/pages/se_eduq/forms/equipments.html">Equipments</a></li>
-          <li><a href="/pages/se_eduq/forms/funds.html">Funds Raised</a></li>
+           <li>  <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a></li>
+           <li><a href="/pages/se_eduq/forms/enrollment.html" >Enrolment</a></li>
+          
+          
+           <li> <a href="/pages/se_eduq/forms/furniture.html">Furniture</a></li>
+           <li>
+             <a href="/pages/se_eduq/forms/buildings.html">Buildings</a>
+            </li>
+           <li> <a href="/pages/se_eduq/forms/equipments.html">Equipments</a></li>
+          
+        </div>
         </ul>
       </nav>
-       
+        
+        
+    
     </div>
   </section>
 
-  <section class="col-10">
+  <section class="col-10 se-main-container col-md-12">
   <div class="sq-form">  
-    <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Staff Information</h3>
+   
     <div class="se-form-container">
+      <h3 class="se_headings" style="font-style: italic; padding: 5px;">Staff Information</h3>
         <form action="">
             <fieldset class="se_fieldset se-form-group" >
                 <legend> Movement of Teachers to and from Special Education School and other Schools During Previous Year</legend>
@@ -382,187 +414,200 @@
               </table>
             
             </fieldset>
-            <fieldset class="se_fieldset se-form-group">
+            <fieldset class="se_fieldset  se-form-group">
                 <legend>New Appointment Information according to Grades</legend>
                 <form>
+                  <div class="se-appint-form">
+
                     <label for="status-grade-T-I">T I:</label>
                     <label for="status-grade-T-I-m">Male:</label>
                     <input type="number" id="status-grade-T-I-m" name="status-grade-T-I-m" >
                     <label for="status-grade-T-I-f">Female:</label>
-                    <input type="number" id="status-grade-T-I-f" name="status-grade-T-I-f" ><br><br>
+                    <input type="number" id="status-grade-T-I-f" name="status-grade-T-I-f" >
                 
                     <label for="status-grade-T-II-c">T II(c):</label>
                     <label for="status-grade-T-II-c-m">Male:</label>
                     <input type="number" id="status-grade-T-II-c-m" name="status-grade-T-II-c-m" >
                     <label for="status-grade-T-II-c-f">Female:</label>
-                    <input type="number" id="status-grade-T-II-c-f" name="status-grade-T-II-c-f" ><br><br>
+                    <input type="number" id="status-grade-T-II-c-f" name="status-grade-T-II-c-f" >
                 
                     <label for="status-grade-T-II-b">T II(b):</label>
                     <label for="status-grade-T-II-b-m">Male:</label>
                     <input type="number" id="status-grade-T-II-b-m" name="status-grade-T-II-b-m" >
                     <label for="status-grade-T-II-b-f">Female:</label>
-                    <input type="number" id="status-grade-T-II-b-f" name="status-grade-T-II-b-f" ><br><br>
+                    <input type="number" id="status-grade-T-II-b-f" name="status-grade-T-II-b-f" >
                 
                      
                     <label for="status-grade-T-II-a">T II(a):</label>
                     <label for="status-grade-T-II-a-m">Male:</label>
                     <input type="number" id="status-grade-T-II-a-m" name="status-grade-T-II-a-m" >
                     <label for="status-grade-T-II-a-f">Female:</label>
-                    <input type="number" id="status-grade-T-II-a-f" name="status-grade-T-II-a-f"><br><br>
+                    <input type="number" id="status-grade-T-II-a-f" name="status-grade-T-II-a-f">
                 
                     <label for="status-grade-T-III-b">T III(b):</label>
                     <label for="status-grade-T-III-b-m">Male:</label>
                     <input type="number" id="status-grade-T-III-b-m" name="status-grade-T-III-b-m" >
                     <label for="status-grade-T-III-b-f">Female:</label>
-                    <input type="number" id="status-grade-T-III-b-f" name="status-grade-T-III-b-f" ><br><br>
+                    <input type="number" id="status-grade-T-III-b-f" name="status-grade-T-III-b-f" >
                 
                     <label for="status-grade-T-III-a">T III(a):</label>
                     <label for="status-grade-T-III-a-m">Male:</label>
                     <input type="number" id="status-grade-T-III-a-m" name="status-grade-T-III-a-m" >
                     <label for="status-grade-T-III-a-f">Female:</label>
-                    <input type="number" id="status-grade-T-III-a-f" name="status-grade-T-III-a-f"><br><br>
+                    <input type="number" id="status-grade-T-III-a-f" name="status-grade-T-III-a-f">
                 
                     <label for="status-grade-Special-Teacher-I">Special Teacher I:</label>
                     <label for="status-grade-Special-Teacher-I-m">Male:</label>
                     <input type="number" id="status-grade-Special-Teacher-I-m" name="status-grade-Special-Teacher-I-m">
                     <label for="status-grade-Special-Teacher-I-f">Female:</label>
-                    <input type="number" id="status-grade-Special-Teacher-I-f" name="status-grade-Special-Teacher-I-f"><br><br>
+                    <input type="number" id="status-grade-Special-Teacher-I-f" name="status-grade-Special-Teacher-I-f">
                 
                     <label for="status-grade-Special-Teacher-II">Special Teacher II:</label>
                     <label for="status-grade-Special-Teacher-II-m">Male:</label>
                     <input type="number" id="status-grade-Special-Teacher-II-m" name="status-grade-Special-Teacher-II-m">
                     <label for="status-grade-Special-Teacher-II-f">Female:</label>
-                    <input type="number" id="status-grade-Special-Teacher-II-f" name="status-grade-Special-Teacher-II-f" ><br><br>
+                    <input type="number" id="status-grade-Special-Teacher-II-f" name="status-grade-Special-Teacher-II-f" >
                 
                     <label for="status-grade-T-IV">T IV:</label>
                     <label for="status-grade-T-IV-m">Male:</label>
                     <input type="number" id="status-grade-T-IV-m" name="status-grade-T-IV-m" >
                     <label for="status-grade-T-IV-f">Female:</label>
-                    <input type="number" id="status-grade-T-IV-f" name="status-grade-T-IV-f" ><br><br>
+                    <input type="number" id="status-grade-T-IV-f" name="status-grade-T-IV-f" >
                 
                     <label for="status-grade-GT-I">GT (I):</label>
                     <label for="status-grade-GT-I-m">Male:</label>
                     <input type="number" id="status-grade-GT-I-m" name="status-grade-GT-I-m" >
                     <label for="status-grade-GT-I-f">Female:</label>
-                    <input type="number" id="status-grade-GT-I-f" name="status-grade-GT-I-f" ><br><br>
+                    <input type="number" id="status-grade-GT-I-f" name="status-grade-GT-I-f" >
                 
                     <label for="status-grade-GT-II">GT (II):</label>
                     <label for="status-grade-GT-II-m">Male:</label>
                     <input type="number" id="status-grade-GT-II-m" name="status-grade-GT-II-m" >
                     <label for="status-grade-GT-II-f">Female:</label>
-                    <input type="number" id="status-grade-GT-II-f" name="status-grade-GT-II-f" ><br><br>
+                    <input type="number" id="status-grade-GT-II-f" name="status-grade-GT-II-f" >
                 
                     <label for="status-grade-GT-III">GT (III):</label>
                     <label for="status-grade-GT-III-m">Male:</label>
                     <input type="number" id="status-grade-GT-III-m" name="status-grade-GT-III-m" >
                     <label for="status-grade-GT-III-f">Female:</label>
-                    <input type="number" id="status-grade-GT-III-f" name="status-grade-GT-III-f" ><br><br>
+                    <input type="number" id="status-grade-GT-III-f" name="status-grade-GT-III-f" >
                 
                     <label for="status-grade-GT-IV">GT (IV):</label>
                     <label for="status-grade-GT-IV-m">Male:</label>
                     <input type="number" id="status-grade-GT-IV-m" name="status-grade-GT-IV-m" >
                     <label for="status-grade-GT-IV-f">Female:</label>
-                    <input type="number" id="status-grade-GT-IV-f" name="status-grade-GT-IV-f" ><br><br>
+                    <input type="number" id="status-grade-GT-IV-f" name="status-grade-GT-IV-f" >
                 
                     <label for="status-grade-GT-V">GT (V):</label>
                     <label for="status-grade-GT-V-m">Male:</label>
                     <input type="number" id="status-grade-GT-V-m" name="status-grade-GT-V-m" >
                     <label for="status-grade-GT-V-f">Female:</label>
-                    <input type="number" id="status-grade-GT-V-f" name="status-grade-GT-V-f" ><br><br>
+                    <input type="number" id="status-grade-GT-V-f" name="status-grade-GT-V-f" >
                 
                     <label for="status-grade-Teacher-Aide">Teacher Aide:</label>
                     <label for="status-grade-Teacher-Aide-m">Male:</label>
                     <input type="number" id="status-grade-Teacher-Aide-m" name="status-grade-Teacher-Aide-m" >
                     <label for="status-grade-Teacher-Aide-f">Female:</label>
-                    <input type="number" id="status-grade-Teacher-Aide-f" name="status-grade-Teacher-Aide-f" ><br><br>
+                    <input type="number" id="status-grade-Teacher-Aide-f" name="status-grade-Teacher-Aide-f" >
                 
                     <label for="status-grade-Other">Other:</label>
                     <label for="status-grade-Other-m">Male:</label>
                     <input type="number" id="status-grade-Other-m" name="status-grade-Other-m" >
                     <label for="status-grade-Other-f">Female:</label>
-                    <input type="number" id="status-grade-Other-f" name="status-grade-Other-f" ><br><br>
+                    <input type="number" id="status-grade-Other-f" name="status-grade-Other-f" >
                 
                     <label for="total">Total:</label>
                     <label for="total-m">Male:</label>
                     <input type="number" id="total-m" name="total-m" >
                     <label for="total-f">Female:</label>
-                    <input type="number" id="total-f" name="total-f" ><br><br>
+                    <input type="number" id="total-f" name="total-f" >
                 
                 
                      
                 
-                     
+                  </div> 
                  
                 
             </fieldset>
             
-            <div class="se-form-group">
+            <div>
             <fieldset class="se_fieldset se-form-group">
               <legend>Teachers Status According to Specialization, Professional Qualifications and Gender</legend>
             
-            <label for="specialization-deaf-education">Deaf Education:</label> <br>
-            <label for="specialization-deaf-education-certificate-m">Male Teachers specializing in Deaf Education With Certicate:</label> <br>
-    <input type="number" id="specialization-deaf-education-certificate-m" name="specialization-deaf-education-certificate-m" placeholder=" Male with Certificate " ><br>
-    <label for="specialization-deaf-education-certificate-f">Female Teachers specializing in Deaf Education With Certicate:</label><br> 
-    <input type="number" id="specialization-deaf-education-certificate-f" name="specialization-deaf-education-certificate-f" placeholder=" Female with Certificate " ><br>
-    <label for=" specialization-deaf-education-diploma-m">Male Teachers specializing in Deaf Education With Diploma:</label><br> 
-    <input type="number" id="specialization-deaf-education-diploma-m" name="specialization-deaf-education-diploma-m"  ><br>
-    <label for=" specialization-deaf-education-diploma-f">Female Teachers specializing in Deaf Education With Diploma:</label><br> 
-    <input type="number" id="specialization-deaf-education-diploma-f" name="specialization-deaf-education-diploma-f"  ><br>
-    <label for=" specialization-deaf-education-degree-m">Male Teachers specializing in Deaf Education With a Degree:</label><br>
-    <input type="number" id="specialization-deaf-education-degree-m" name="specialization-deaf-education-degree-m"  > <br>
-    <label for=" specialization-deaf-education-degree-f">Female Teachers specializing in Deaf Education With a Degree:</label><br>
-    <input type="number" id="specialization-deaf-education-degree-f" name="specialization-deaf-education-degree-f"  ><br><br>
+            <label for="specialization-deaf-education">Deaf Education:</label>
+            <label for="specialization-deaf-education-certificate-m">Male Teachers specializing in Deaf Education With Certicate:</label> 
+    <input type="number" id="specialization-deaf-education-certificate-m" name="specialization-deaf-education-certificate-m" placeholder=" Male with Certificate " >
+    <label for="specialization-deaf-education-certificate-f">Female Teachers specializing in Deaf Education With Certicate:</label>
+    <input type="number" id="specialization-deaf-education-certificate-f" name="specialization-deaf-education-certificate-f" placeholder=" Female with Certificate " >
+    <label for=" specialization-deaf-education-diploma-m">Male Teachers specializing in Deaf Education With Diploma:</label> 
+    <input type="number" id="specialization-deaf-education-diploma-m" name="specialization-deaf-education-diploma-m"  >
+    <label for=" specialization-deaf-education-diploma-f">Female Teachers specializing in Deaf Education With Diploma:</label>
+    <input type="number" id="specialization-deaf-education-diploma-f" name="specialization-deaf-education-diploma-f"  >
+    <label for=" specialization-deaf-education-degree-m">Male Teachers specializing in Deaf Education With a Degree:</label>
+    <input type="number" id="specialization-deaf-education-degree-m" name="specialization-deaf-education-degree-m"  > 
+    <label for=" specialization-deaf-education-degree-f">Female Teachers specializing in Deaf Education With a Degree:</label>
+    <input type="number" id="specialization-deaf-education-degree-f" name="specialization-deaf-education-degree-f"  >
 
-    <label for="specialization-learning-disabilities">Learning Disabilities:</label> <br>
-    <label for="specialization-learning-disabilities-certificate-m">Male Teachers specializing in Learning Disabilities with a Certificate</label> <br>
-    <input type="number" id="specialization-learning-disabilities-certificate-m" name="specialization-learning-disabilities-certificate-m"   ><br>
-    <label for="specialization-learning-disabilities-certificate-f">Female Teachers specializing in Learning Disabilities with a Certificate</label> <br>
+    <label for="specialization-learning-disabilities">Learning Disabilities:</label> 
+    <label for="specialization-learning-disabilities-certificate-m">Male Teachers specializing in Learning Disabilities with a Certificate</label> 
+    <input type="number" id="specialization-learning-disabilities-certificate-m" name="specialization-learning-disabilities-certificate-m"   >
+    <label for="specialization-learning-disabilities-certificate-f">Female Teachers specializing in Learning Disabilities with a Certificate</label> 
 
-    <input type="number" id="specialization-learning-disabilities-certificate-f" name="specialization-learning-disabilities-certificate-f"   > <br>
-    <label for="specialization-learning-disabilities-diploma-m">Male Teachers specializing in Learning Disabilities with a Diploma</label><br>
-    <input type="number" id="specialization-learning-disabilities-diploma-m" name="specialization-learning-disabilities-diploma-m"   ><br>
-    <label for="specialization-learning-disabilities-diploma-f">Female Teachers specializing in Learning Disabilities with a Diploma</label> <br>
-    <input type="number" id="specialization-learning-disabilities-diploma-f" name="specialization-learning-disabilities-diploma-f"   > <br>
-    <label for="specialization-learning-disabilities-degree-m">Male Teachers specializing in Learning Disabilities with a Degree</label> <br>
-    <input type="number" id="specialization-learning-disabilities-degree-m" name="specialization-learning-disabilities-degree-m"   > <br>
-    <label for="specialization-learning-disabilities-degree-f">Female Teachers specializing in Learning Disabilities with a Degree.</label> <br>
-    <input type="number" id="specialization-learning-disabilities-degree-f" name="specialization-learning-disabilities-degree-f"   ><br><br>
+    <input type="number" id="specialization-learning-disabilities-certificate-f" name="specialization-learning-disabilities-certificate-f"   > 
+    <label for="specialization-learning-disabilities-diploma-m">Male Teachers specializing in Learning Disabilities with a Diploma</label>
+    <input type="number" id="specialization-learning-disabilities-diploma-m" name="specialization-learning-disabilities-diploma-m"   >
+    <label for="specialization-learning-disabilities-diploma-f">Female Teachers specializing in Learning Disabilities with a Diploma</label> 
+    <input type="number" id="specialization-learning-disabilities-diploma-f" name="specialization-learning-disabilities-diploma-f"   > 
+    <label for="specialization-learning-disabilities-degree-m">Male Teachers specializing in Learning Disabilities with a Degree</label>
+    <input type="number" id="specialization-learning-disabilities-degree-m" name="specialization-learning-disabilities-degree-m"   > 
+    <label for="specialization-learning-disabilities-degree-f">Female Teachers specializing in Learning Disabilities with a Degree.</label> 
+    <input type="number" id="specialization-learning-disabilities-degree-f" name="specialization-learning-disabilities-degree-f"   >
 
-    <label for="specialization-blind-education">Blind Education:</label> <br>
-    <label for="specialization-blind-education-certificate-m"> Male Teachers in Blind Education With Certificate</label> <br>
-    <input type="number" id="specialization-blind-education-certificate-m" name="specialization-blind-education-certificate-m" ><br>
-    <label for="specialization-blind-education-certificate-f">Female Teachers in Blind Education With Certificate</label> <br>
+    <label for="specialization-blind-education">Blind Education:</label> 
+    <label for="specialization-blind-education-certificate-m"> Male Teachers in Blind Education With Certificate</label> 
+    <input type="number" id="specialization-blind-education-certificate-m" name="specialization-blind-education-certificate-m" >
+    <label for="specialization-blind-education-certificate-f">Female Teachers in Blind Education With Certificate</label> 
     
-    <input type="number" id="specialization-blind-education-certificate-f" name="specialization-blind-education-certificate-f"  ><br>
-    <label for="specialization-blind-education-diploma-m">Male Teachers in Blind Education With Diploma </label><br>
-    <input type="number" id="specialization-blind-education-diploma-m" name="specialization-blind-education-diploma-m"  ><br>
-    <label for="specialization-blind-education-diploma-f"> Female Teachers in Blind Education With Diploma </label> <br>
-    <input type="number" id="specialization-blind-education-diploma-f" name="specialization-blind-education-diploma-f"  ><br>
-    <label for="specialization-blind-education-degree-m">Male Teachers in Blind Education With Degree</label> <br>
-    <input type="number" id="specialization-blind-education-degree-m" name="specialization-blind-education-degree-m"  > <br>
-    <label for="specialization-blind-education-degree-f"> Female Teachers in Blind Education With Diploma</label> <br>
-    <input type="number" id="specialization-blind-education-degree-f" name="specialization-blind-education-degree-f"  ><br><br>
+    <input type="number" id="specialization-blind-education-certificate-f" name="specialization-blind-education-certificate-f"  >
+    <label for="specialization-blind-education-diploma-m">Male Teachers in Blind Education With Diploma </label>
+    <input type="number" id="specialization-blind-education-diploma-m" name="specialization-blind-education-diploma-m"  >
+    <label for="specialization-blind-education-diploma-f"> Female Teachers in Blind Education With Diploma </label> 
+    <input type="number" id="specialization-blind-education-diploma-f" name="specialization-blind-education-diploma-f"  >
+    <label for="specialization-blind-education-degree-m">Male Teachers in Blind Education With Degree</label>
+    <input type="number" id="specialization-blind-education-degree-m" name="specialization-blind-education-degree-m"  > 
+    <label for="specialization-blind-education-degree-f"> Female Teachers in Blind Education With Diploma</label> 
+    <input type="number" id="specialization-blind-education-degree-f" name="specialization-blind-education-degree-f"  >
 
     <!-- Space for the  remaining specializations -->
 
-    <label for="specialization-total">Total:</label> <br>
-    <label for="specialization-total-certificate-m">Total of Male teachers with Certifacte</label> <br>
-    <input type="number" id="specialization-total-certificate-m" name="specialization-total-certificate-m"  > <br>
-    <label for="specialization-total-certificate-f">Total of Female teachers with Certifacte</label><br>
-    <input type="number" id="specialization-total-certificate-f" name="specialization-total-certificate-f"  > <br>
-    <label for="specialization-total-diploma-m"> Total of Male teachers with Diploma </label> <br>
-    <input type="number" id="specialization-total-diploma-m" name="specialization-total-diploma-m"  ><br>
-    <label for="specialization-total-diploma-f"> Total of Female teachers with Diploma </label> <br>
-    <input type="number" id="specialization-total-diploma-f" name="specialization-total-diploma-f"  > <br>
-    <label for=" specialization-total-degree-m"> Total of Male teachers with Degree </label> <br>
-    <input type="number" id="specialization-total-degree-m" name="specialization-total-degree-m"  > <br>
-    <label for="  specialization-total-degree-f"> Total of Female teachers with Degree </label> <br>
-    <input type="number" id="specialization-total-degree-f" name="specialization-total-degree-f"  ><br><br>
+    <label for="specialization-total">Total:</label> 
+    <label for="specialization-total-certificate-m">Total of Male teachers with Certifacte</label> 
+    <input type="number" id="specialization-total-certificate-m" name="specialization-total-certificate-m"  > 
+    <label for="specialization-total-certificate-f">Total of Female teachers with Certifacte</label>
+    <input type="number" id="specialization-total-certificate-f" name="specialization-total-certificate-f"  > 
+    <label for="specialization-total-diploma-m"> Total of Male teachers with Diploma </label> 
+    <input type="number" id="specialization-total-diploma-m" name="specialization-total-diploma-m"  >
+    <label for="specialization-total-diploma-f"> Total of Female teachers with Diploma </label> 
+    <input type="number" id="specialization-total-diploma-f" name="specialization-total-diploma-f"  > 
+    <label for=" specialization-total-degree-m"> Total of Male teachers with Degree </label> 
+    <input type="number" id="specialization-total-degree-m" name="specialization-total-degree-m"  > 
+    <label for="  specialization-total-degree-f"> Total of Female teachers with Degree </label> 
+    <input type="number" id="specialization-total-degree-f" name="specialization-total-degree-f"  >
   </fieldset>
 </div>
+
         </form>
-    </div>
+        <div class="se_myForm-button">
+    
+          <a href="/pages/se_eduq/forms/staff.html"> <input type="button" name="next" value="Save & Exit" > </a>
+        
+        
+        
+          <a href="/pages/se_eduq/forms/non-staff.html"> <input type="button" name="next" value="Save & Next" > </a>
+        
+        </div>
+        </div>
+    
 </section>
 
 
