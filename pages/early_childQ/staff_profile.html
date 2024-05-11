@@ -43,34 +43,30 @@
   </section>
 
 
-    <!--main form section-->    
+  <!--main form section-->    
 
-    <div class="col-10">
-        <div class="ecq-form">
+  <session class="col-10">
+      <div class="ecq-form">
 
-          <h2 class="ecq-section-heading" id="add-style">Staff Profile Form </legend></h2>
+        <h2 class="ecq-section-heading" id="add-style">Staff Profile Form </legend></h2>
                
-        <div class="ecq-form">
-            <form method="post" target="_self" autocomplete="off">
-
-              <fieldset>
-                <legend>Distribution by Sex, Teaching Experience, Training and Qualification</legend>
-                
-                <div class="hori-nav-container">
+          <fieldset class="form-group-ecq">
+            <legend>Distribution by Sex, Teaching Experience, Training and Qualification</legend>
+            <form action="children_profile.html" method="post" target="_self" autocomplete="off">
+              <div class="hori-nav-container">
                   <nav class="ecq-hori-nav"  >
                     <a class="nav-link" href="#">New Staff Entry</a>
                     <a class="nav-link" href="#">View Staff</a>
                     <a class="nav-link" href="#">Update Staff</a>
                     <a class="nav-link" href="#">Delete Staff</a>
-                </nav>
-                </div>              
-
-                <div class="form-group-ecq">
-                <fieldset class="ecq-form-fieldset">
-                    <legend>Staff Classification</legend>
+                  </nav>
+              </div>  
+  
+                <fieldset class="form-group-ecq">
+                  <legend>Staff Classification</legend>
                     <div>
                     <label for=" staff_classification" class="ecq-form-label"> Staff Classification:</label>
-                    <select name="staff_classification" id="staff_classification" class="ecq-form-input">
+                    <select name="staff_classification" id="staff_classification">
                     <option value="Select staff classification">Select staff classification</option>
                     <option value="ECA- Early Childhood Administrator/Supervisor">ECA- Early Childhood Administrator/Supervisor</option>
                     <option value="ECP- Early Childhood Practitioner">ECP- Early Childhood Practitioner</option>
@@ -83,45 +79,44 @@
                     </select>
                     </div>
                 </fieldset>
-                </div>
                 
-                <div class="form-group-ecq">
-                <fieldset>
-                <legend>Staff full Name </legend>
-                <div>
-                <label for="staff_name" class="ecq-form-label" >Name : </label>
-                <input type="text" id="staff_name" name="staff_name" placeholder="Enter Name" class="ecq-form-input">
-                </div>
-                <div>
-                <label for="staff_surname" class="ecq-form-label" >Surame :</label>
-                <input type="text" id="staff_surname" name="staff_surname" placeholder="Enter surame" class="ecq-form-input">
-                </div>
+
+                <fieldset class="form-group-ecq">
+                  <legend>Staff full Name </legend>
+                    <div>
+                      <label for="staff_name">Name : </label>
+                      <input type="text" id="staff_name" name="staff_name" placeholder="Enter Name">
+                    </div>
+                    <div>
+                      <label for="staff_surname">Surame :</label>
+                      <input type="text" id="staff_surname" name="staff_surname" placeholder="Enter surame">
+                  </div>
                 </fieldset>
 
-                <div class="ecq-table-container">
-                <fieldset>
+                <div >
+                <fieldset class="form-group-ecq">
                 <legend> Staff Gender </legend>
-                <table>
-                  <tr>
-                    <td><label for="male_sex" class="ecq-form-label" > Male </label></td>
-                    <td><input type="radio" id="male_sex" name="sex" class="ecq-form-input"></td>
-                  </tr>
+                <div>
+                  <div>
+                    <label for="male_sex"> Male </label>
+                    <input type="radio" id="male_sex" name="sex" >
+                  </div>
                   
-                  <tr>
-                    <td><label for="female_sex" class="ecq-form-label"> Female</label></td>
-                    <td><input type="radio" id="female_sex" name="sex" class="ecq-form-input"></td>
-                  </tr>
-                </table>
+                  <div>
+                    <label for="female_sex" class="ecq-form-label"> Female</label>
+                    <input type="radio" id="female_sex" name="sex">
+                  </div>
+                </div>
                 </fieldset>
                 </div>
 
-                <div class="form-group-ecq">
-                <fieldset>
+                <div>
+                <fieldset class="form-group-ecq">
                 <legend> Staff Age Range</legend>
-                <table>
-                  <tr>
-                    <td><label for="age_range" class="ecq-form-label"> Age_Range </label></td>
-                    <td><select name="age_range" id="age_range" class="ecq-form-input">
+                <div>
+                  <div>
+                    <label for="age_range" class="ecq-form-label"> Age_Range </label>
+                    <select name="age_range" id="age_range">
                     <option value="select age range"> Select age range</option>
                     <option value="Less than 25"> Less than 25</option>
                     <option value="25-29"> 25-29</option>
@@ -131,63 +126,63 @@
                     <option value="45-49">45-49</option>
                     <option value="50 and above">50 and Above</option>
                     </select>
-                    </td>
-                  </tr>
-                </table>
+                    
+                  </div>
+                </div>
                 </fieldset>
                 </div>
                 
-                <div class="form-group-ecq">
-                <fieldset>
+                <div>
+                <fieldset class="form-group-ecq">
                 <legend>Children Age Group Under Care</legend> 
-                <table>          
+                <div>          
                   <p> <small><i>Please thick age group under practioner care:</i></small></p>
-                  <tr>
-                    <td><label for="age_grp_care" class="ecq-form-label">Birth-2yrs</label></td>
-                    <td><input type="checkbox" id="age_grp_care" name="age_grp_care" class="ecq-form-input" ></td>
-                  </tr>
-                  <tr>
-                    <td><label for="above3_care" class="ecq-form-label">3-5+ yrs</label></td>
-                    <td><input type="checkbox" name="above3_care" id="above3_care" class="ecq-form-input"></td>
-                  </tr>
-                  <tr>
-                    <td><label for="above5_care" class="ecq-form-label">Birth-5+yrs</label></td>
-                    <td><input type="checkbox" id="above5_care" name="above5_care" class="ecq-form-input"> </td>
-                  </tr>
-                </table>
+                  <div>
+                    <label for="age_grp_care">Birth-2yrs</label>
+                    <input type="checkbox" id="age_grp_care" name="age_grp_care"  >
+                  </div>
+                  <div>
+                    <label for="above3_care">3-5+ yrs</label>
+                    <input type="checkbox" name="above3_care" id="above3_care" >
+                  </div>
+                  <div>
+                    <label for="above5_care">Birth-5+yrs</label>
+                    <input type="checkbox" id="above5_care" name="above5_care" > 
+                  </div>
+                </div>
                 </fieldset>
                 </div>
 
-                <div class="form-group-ecq">
-                <fieldset>
-                    <legend>Years of EC teaching Experience </legend>
-                    <label for="ec_experience" class="ecq-form-label" >Years of Experience:</label>
-                    <input type="text" id="ec_experience" name="ec_experience" placeholder="Enter Staff EC experience years" class="ecq-form-input">
+                <div>
+                <fieldset class="form-group-ecq">
+                  <legend>Years of EC teaching Experience </legend>
+                    <label for="ec_experience">Years of Experience:</label>
+                    <input type="text" id="ec_experience" name="ec_experience" placeholder="Enter Staff EC experience years">
                 </fieldset>
                 </div>
 
-                <div class="form-group-ecq">
-                <fieldset> 
+                <div>
+                <fieldset class="form-group-ecq"> 
                   <legend>Early Childhood Trained</legend>
-                  <table>
+                  <div>
                     <p><small><i>indicate if staff have undergo childhood training programme </i></small></p>
-                    <tr>
-                      <td><label for="childhood_trained_yes" class="ecq-form-label"> Yes </label></td>
-                      <td><input type="radio" id="childhood_trained_yes" name="childhood_trained" class="ecq-form-input"></td>
-                    </tr>
-                    <tr>
-                      <td><label for="childhood_trained_no" class="ecq-form-label"> No </label></td>
-                      <td><input type="radio" id="childhood_trained_no" name="childhood_trained" class="ecq-form-input"></td>
-                    </tr>
-                  </table>
+                    <div>
+                      <label for="childhood_trained_yes" class="ecq-form-label"> Yes </label>
+                      <input type="radio" id="childhood_trained_yes" name="childhood_trained" >
+                    </div>
+                    <div>
+                      <label for="childhood_trained_no" class="ecq-form-label"> No </label>
+                      <input type="radio" id="childhood_trained_no" name="childhood_trained">
+                    </div>
+                  </div>
                 </fieldset>
                 </div>
 
-                <div class="form-group-ecq">
-                <fieldset>
+                <div>
+                <fieldset class="form-group-ecq">
                     <legend>Highest Qualification: </legend>
-                    <label for="highest_qualification" class="ecq-form-label" >Highest Qualification:</label>
-                    <select name="highest_qualification" id="highest_qualification" class="ecq-form-input">
+                    <label for="highest_qualification">Highest Qualification:</label>
+                    <select name="highest_qualification" id="highest_qualification">
                     <option value="Please select">Please Select</option> 
                     <option value="BA  Bachelor of Arts">BA  Bachelor of Arts</option>
                     <option value="BSC Bac. of Science">BSC Bac. of Science </option>
@@ -208,61 +203,59 @@
                 </fieldset>
                 </div>
 
-                <div class="form-group-ecq">
-                  <fieldset>
+                <div>
+                  <fieldset class="form-group-ecq">
                     <legend>Area of Specialization of Highest Qualification</legend>
                     <label for="spe-higest-qual" class="ecq-form-label">Specialization of Highest Qualification</label>
-                    <input type="text" name="spe-higest-qual" id="spe-higest-qual" placeholder="Kindly specify" class="ecq-form-input">
+                    <input type="text" name="spe-higest-qual" id="spe-higest-qual" placeholder="Kindly specify">
 
                   </fieldset>
                 </div>
 
-                <div class="form-group-ecq">
-                  <fieldset>
+                <div >
+                  <fieldset class="form-group-ecq">
                     <legend>Other Qualifications</legend>
                     <label for="other-qualify" class="ecq-form-label"> Other Qualifications</label>
-                    <input type="text" name="other-qualify" id="other-qualify" placeholder="Kinldy state your other qualifications" class="ecq-form-input">
+                    <input type="text" name="other-qualify" id="other-qualify" placeholder="Kinldy state your other qualifications">
                   </fieldset>
                 </div>
 
-                <div class="form-group-ecq">
-                  <fieldset>
+                <div >
+                  <fieldset class="form-group-ecq">
                     <legend>No. of Hours engaged in CPD in past academic year</legend>
                     <label for="hour-engaged" class="ecq-form-label"> Hours engaged </label>
-                    <input type="text" id="hour-engaged" name="hour-engaged" class="ecq-form-input" placeholder="Kindly state">
+                    <input type="text" id="hour-engaged" name="hour-engaged" placeholder="Kindly state">
                   </fieldset>
                 </div>
 
-                <div class="form-group-ecq">
-                  <fieldset>
+                <div >
+                  <fieldset class="form-group-ecq">
                     <legend>Was appraised in last school year</legend>
-                    <table>
+                    <div>
                     <p>Appraisal:</p>
-                    <tr>
-                      <td><label for="appraisal-yes" class="ecq-form-label"> Yes</label></td>
-                      <td><input type="radio" name="appraisal" id="appraisal-yes" class="ecq-form-input"></td>
-                    </tr>
-                    <tr>
-                      <td><label for="appraisal-no"class="ecq-form-label"> No </label></td>
-                      <td><input type="radio" name="appraisal" id="appraisal-no" class="ecq-form-input"></td>
-                    </tr>
-                    </table>
+                    <div>
+                      <label for="appraisal-yes" class="ecq-form-label"> Yes</label>
+                      <input type="radio" name="appraisal" id="appraisal-yes" >
+                    </div>
+                    <div>
+                      <label for="appraisal-no"class="ecq-form-label"> No </label>
+                      <input type="radio" name="appraisal" id="appraisal-no" >
+                    </div>
+                  </div>
                   </fieldset>
                 </div>
 
-                <div class="ecq-form-group">
-                  <input type="submit" name="Next" value="Next" class="ecq-form-button">
+                <div class="button-container">
+                  <input type="submit" name="Save" value="Save & Exit" class="ecq-form-button">
+                  <input type="submit" name="Next" value="Save & Next" class="ecq-form-button">
                 </div>
 
-              </fieldset>
+             
             </form>
+
+          </fieldset>
         
-        </div>
-        </div>
-
-
-
-    </div>
+      </div>
   </section>
 
   <footer class="footer">
