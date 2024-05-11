@@ -14,6 +14,7 @@ body
     width:fit-content; 
     border-radius: 5px;
     padding: 20px;
+    overflow: auto;
 }
 .sq-sidenav-bg
 {
@@ -82,44 +83,70 @@ body
     border-radius: 5px;
     background-color: rgb(231, 231, 228);
 }
-.sq-cover-para
+/*.sq-cover-para
 {
     margin-left: 25px;
     margin-right: 25px;
     text-indent: 50px;
-    text-align: center;
-}
-.sq-cover li
+    text-align:justify;
+}*/
+/*.sq-cover li
 {
     margin-left: 10px;
     padding: 5px;
-    text-align: center;
+    text-align:justify;
     list-style-type: circle;
     list-style-position: inside;
-}
+}*/
 .sq-cover-align{
     display: block;
 }
+.sq-cover-button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sq-cover-button input
+{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 10px;
+}
 
 /* Forms styling*/
-
+.sq-item-container
+{
+    max-width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); background-color: #63686d;*/
+}
 .sq-form-group /* for cover page*/
 {
-    width: 100%;
+    width: auto;
     height: auto;
-    margin: 20px;
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    align-items: center;
+    margin-bottom:20px;
+    margin-left: 20px; 
 }
 .sq-form-group label /* cover page*/
 {
     font-weight: bold;
     margin-left: 5px;
-    width: 150px;
+    width: auto;
+    display: block;
+    text-align: center;
 }
-.sq-form-group input, select
+.sq-form-group input,select
 {
     width: 200px;
     margin-bottom: 3px;
@@ -127,31 +154,22 @@ body
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-.sq-cvq-form /* this class has been used only in secQCVQ file */
+.sq-form-group li,p
 {
-    margin-left: 20px;
-    padding: 20px;
-    text-align: center;
-    width:50%;
-    position: relative;
-    border-radius: 5px;
-    background-color: rgb(243, 243, 236);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    text-align:justify;
+    list-style-type: circle;
+    list-style-position: inside;  
 }
-.sq-cvq-form-checklist
-{
-    margin-left: 5px;
-    margin-bottom: 10px;
-}
-
-
 .sq-form  /*other forms */
 {
     height: auto;
     width: 100%;
     margin-left: auto;
-    margin-right: auto;
-    
-    
+    margin-right: auto;   
 }
 .sq-form-button{
     width: max-content;
@@ -161,9 +179,11 @@ body
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    position: relative;
+    margin: auto;
+    /*position: relative;*/
 }
-.sq-form-fieldset{
+.sq-form-fieldset
+{
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-left: 5px;
@@ -199,6 +219,21 @@ body
 .sq-form-fieldset input[type="radio"]
 {
     width: auto;
+}
+.sq-cvq-form /* this class has been used only in secQCVQ file */
+{
+    margin-left: 20px;
+    padding: 20px;
+    text-align: center;
+    width:50%;
+    position: relative;
+    border-radius: 5px;
+    background-color: rgb(243, 243, 236);
+}
+.sq-cvq-form-checklist
+{
+    margin-left: 5px;
+    margin-bottom: 10px;
 }
 .sq-input-align
 {   
@@ -236,6 +271,7 @@ body
     background-color: rgb(237, 240, 240);
     margin: 15px;
     text-align: center;
+    overflow: auto;
 }
 .sq-hori-nav a
 {
@@ -268,8 +304,15 @@ body
   border-radius: 5px;
   border: 1px solid #ccc;
 }
-
-
+.sq-footer
+{
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    width: 50%;
+    margin: auto;
+    text-align: center; 
+    justify-content: center;
+}
 
 
 

@@ -6,6 +6,7 @@
   <title>SOP Internship forms Page</title>
   <link rel="stylesheet" href="../../css/main.css">
   <link rel="stylesheet" href="../../css/sec_Quest.css">
+ 
 </head>
 
 <body>
@@ -21,19 +22,20 @@
 
   <section class="row">
     <div >
-      <h2 class="sq-section-heading">Government</h2>
-      <h3 class="sq-section-heading">Education Management Information System</h3>
+      <h2 class="sq-section-heading">Education Management Information System</h2>
+      <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">
+        EMIS Questionnaire for Secondary School </h3>
     </div>
   </section>
 
 <section class="row">
   <div class="sq-cover">
-    <br><h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">EMIS Questionnaire for Secondary School </h3>
+    <br><h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Cover </h3>
      
     <form action="secQSchool.html" method="post" autocomplete="on">
       <!--<fieldset class="sq-cover-fieldset" style="margin: auto;">-->
-      <div class="sq-form-group ">
-        
+      <div class="sq-item-container">
+      <div class="sq-form-group ">  
         <label for="district" >Select District: </label>
         <select name="district" id="district" required> 
           <option selected>Select District  &nbsp; </option>
@@ -46,10 +48,7 @@
           <option value="district 7">District 7</option>
           <option value="district 8">District 8</option>
         </select>
-     
-
         <!--School list should change as per the district selection-->
-      
         <label for="schoolname" >Name of the School: </label>
         <select name="schoolname" id="schoolname" required> 
               <option selected>Select School</option>
@@ -58,52 +57,50 @@
               <option value="Co-Educational Secondary School">Co-Educational Secondary School</option>
         </select>
       </div>
-      <div class="sq-form-group">
-        
+      <div class="sq-form-group"> 
         <label for="principal-name" >Name of the Principal: </label>
         <input type="text" name="principal-name" id="principal-name" >
       
-       
-        <label for="date" >Date: </label>
+        <label for="date" >Starting Date: </label>
         <input type="date" name="date" id="date" >  
-      
-    </div>
-
-    <!--<h4 style="text-align: center; font-style: oblique;">Introduction</h4>
-    <p class="sq-cover-para">It’s great to see that the Education Management Information System (EMIS) is being used 
-      to collect data and create statistics for secondary-level education. </p>-->
+      </div>
+      </div>
     
       <h4 style="text-align: center; font-style: oblique;">Purpose of EMIS</h4>
-    <li><b>EMIS</b> is designed to collect data related to <b>Secondary-Level Education.</b></li>
-    <li>Its primary mission is to create statistics for both government agencies and schools.</li>
-    <li>This achievement is made possible through the use of various 
-      <i style="color: blue;" >questionnaires</i> that cover
-       different aspects of education.</li>
+      <div class="sq-form-group">
+        <li><b>EMIS</b> is designed to collect data related to <b>Secondary-Level Education.</b></li>
+        <li>Its primary mission is to create statistics for both government agencies and schools.</li>
+       <li>This achievement is made possible through the use of various 
+            <i style="color: blue;" >questionnaires</i> that cover
+              different aspects of education.</li>
+      </div>
     
     <h4 style="text-align: center; font-style: oblique;">Data Collection Area</h4>
+    <div class="sq-form-group">
     <p class="sq-cover-para">EMIS gathers information on several critical areas:</p>
     <li><b>Enrollment:</b> Tracking student enrollment numbers.</li>
     <li><b>Attendance:</b> Monitoring student attendance.</li>
     <li><b>Dropouts:</b> Identifying students who leave the educational system prematurely.</li>
-    <li><b>Skills:</b> Assessing students’ skills and abilities.</li>
-    <li><b>Sex Ratio:</b> Analyzing the gender distribution among students.</li>
     <li><b>Staff Information: </b>Collecting data on school staff.</li>
     <li><b>Subjects Offered:</b> Documenting the subjects provided by schools.</li>
-    <li><b>Computer Literacy: Evaluating students’ digital literacy.</b></li>
+    <li><b>Computer Literacy: </b>Evaluating students’ digital literacy.</li>
+    <li><b>Gender Ratio:</b> Analyzing the gender distribution among students.</li>
+    <li><b>Skills:</b> Assessing students’ skills and abilities.</li>
+    </div>
 
     <h4 style="text-align: center; font-style: oblique;">Statistical Analysis</h4>
-    
+    <div class="sq-form-group">
        <li>The data collected through EMIS contributes to meaningful statistical analysis.</li>
        <li>Schools and government entities can use these statistics for various purposes,
          including evaluating teaching methods and creating enabling environments for personal development.</li>
     
     <P class="sq-cover-para">Overall, EMIS plays a crucial role in informed decision-making and 
       improving educational outcomes.</P>
-
+    </div>
       
         <!--<button type="submit" class="sq-form-button">Continue</button>-->
-      <div class="sq-form-group">
-        <input type="submit" name="continue" value="Continue" class="sq-form-button"> 
+      <div class="sq-cover-button">
+        <input type="submit" name="continue" value="Continue" > 
       </div>
     </form>
      
@@ -112,7 +109,7 @@
 
 
 <footer class="footer">
-  <div class="container">
+  <div class="sq-footer">
     <p>© 2024 SOP EDU Forms. All rights reserved.</p>
   </div>
 </footer>
