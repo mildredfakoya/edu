@@ -24,80 +24,104 @@
 
   <section class="row">
     <div >
-      <h2 class="ecq-section-heading">Government of St. Lucia</h2>
-      <h3 class="ecq-section-heading">Ministry of Education, Innovation Gender Relations 
-        and Sustainable Development</h3>
+      <h2 class="ecq-section-heading" id="add-style" >Education Management Information System</h2>
     </div>
   </section>
  
   
   <section class="row">
     <div class="ecq-dist-cover">
-      <br><h3 class="ecq-section-heading" id="add-style" >Annual Education Census Questionnaire 
-        Secondary School 2020-21 Academic Year</h3>
+      <div>
+          <h2  class="ecq-section-heading" id="add-style" >Education Management Information System (EMIS) for Early Childhood</h2>
+          <h3 class="ecq-section-heading" id="add-style" >Annual Education Census Questionnaire for
+          Early chilhood</h3>
+      </div>
        
-        <form action="demographics.html" method="post" autocomplete="off">
+      <form action="demographics.html" method="post" autocomplete="off">
         
-        <div class="ecq-form-group">
-          <label for="district" class="form-label">Select District: &nbsp;</label>
+        <div class="ecq-form-cover">
 
-          <select name="district" id="district" class="ecq-form-input"> 
-            <option selected>Select District  &nbsp; </option>
-            <option value="district 1">District 1</option>
-            <option value="district 2">District 2</option>
-            <option value="district 3">District 3</option>
-            <option value="district 4">District 4</option>
-            <option value="district 5">District 5</option>
-            <option value="district 6">District 6</option>
-            <option value="district 7">District 7</option>
-            <option value="district 8">District 8</option>
-          </select>
-          
-          <!--School list should change as per the district selection-->
-          <label for="schoolname">Name of the School: &nbsp;</label>
-          <select name="schoolname" id="schoolname" class="ecq-form-input"> 
+          <div style="display: inline;">
+            <div>
+            <label for="district" class="form-label">Select District: &nbsp;</label>
+
+            <select name="district" id="district" class="ecq-form-input"> 
+              <option selected>Select District  &nbsp; </option>
+              <option value="district 1">District 1</option>
+              <option value="district 2">District 2</option>
+              <option value="district 3">District 3</option>
+              <option value="district 4">District 4</option>
+              <option value="district 5">District 5</option>
+              <option value="district 6">District 6</option>
+              <option value="district 7">District 7</option>
+              <option value="district 8">District 8</option>
+            </select>
+            </div>
+            <!--School list should change as per the district selection-->
+            <div>
+            <label for="schoolname">Name of the School: &nbsp;</label>
+            <select name="schoolname" id="schoolname" class="ecq-form-input"> 
                 <option selected>Select School</option>
-                <option value="Ave Maria Girls Infant">Ave Maria Girls Infant</option>
-                <option value="St. Aloysius R.C. Boy's Infant">St. Aloysius R.C. Boy's Infant</option>
-                <option value="Anse La Raye Infant">Anse La Raye Infant</option>
-                <option value="Bexon Infant">Bexon Infant</option>
-                <option value="Millet Infant">Millet Infant</option>
-                <option value="Dennery Infant">Dennery Infant</option>
-                <option value="Vieux Fort Infant">Vieux Fort Infant</option>
-                <option value="Canaries Infant">Canaries Infant</option>
-          </select>
+                <option value="Ave Maria Girls Infant">Sunshine Sprouts Academy</option>
+                <option value="St. Aloysius R.C. Boy's Infant">Tiny Treasures Nursery</option>
+                <option value="Anse La Raye Infant">Bright Beginnings Childcare</option>
+                <option value="Bexon Infant">Dreamy Days Early Childhood Center</option>
+                <option value="Millet Infant">Happy Hearts Kindergarten</option>
+                <option value="Dennery Infant">Little Learners Preschool</option>
+                <option value="Vieux Fort Infant">Growing Genius Academy</option>
+                <option value="Canaries Infant">EarlyDays Kindergarten</option>
+            </select>
+            </div>
+          </div>
+          <div class="ecq-form-cover">
+            <div>
+            <label for="principal-name"> Name of the Principal: &nbsp;</label>
+            <input type="text" name="principal-name" id="principal-name"  required>
+            </div>
+            <div>
+            <label for="date"> Completed Date: &nbsp;</label>
+            <input type="date" name="date" id="date" required>
+            </div>
+          </div> 
+        
         </div>
-            <div class="form-instruction"><h4>Instructions:</h4></div>
-            
-              <p class="ecq-inst-para">1. &nbsp;All data furnished in this questionnaire should refer to the day of <b>October 15, 2020.</b>
-              The completed questionnaire should reach your <b>District Office</b> by <b>November 20, 2020.</b></p>
-              
-              <p class="ecq-inst-para">2.  &nbsp;Please refer to the <em style="color: blue;"> &nbsp;technical notes </em> for explanation or definition on the last page. 
-                You may contact officers of the Ministry of Education at 451-7710/468-3220 or at ecsu.slu@gmail.com for further assistance required in completing the questionnaire. 
+
+        <div class="form-instruction-head"><h4>Purpose of EMIS </h4></div>
+          <div>
+            <ul class="form-instruction">
+              <li><b>EMIS</b> is designed to collect data related to Early Childfood Education</li>
+              <li>Its <b>main aim</b> is to facilitate informed decision-making, improve program effectiveness, and enhance the quality of education and care provided to young children.</li>
+              <li>Its <b>mission</b> is to create statistic for stakeholders, government agencies and school Administrator</li>
+            </ul>
+          </div>
+      <div class="form-instruction-head"><h4> Data Collection Area </h4></div>
+          <div>
+            <ul class="form-instruction">
+                <li>The questionnaire collects insights to customize programs and support the unique needs of early childhoo</li>
+                <li>The Demographics page compiles questions and criteria for evaluating a school's demographics, facilities, and resources.</li>
+                <li>The staff profile gathers Information for related to managing and assessing the qualifications, experience, and performance of staffs</li>
+                <li>The children prolife collect informations in assessing and managing children enrollment and special needs care in early education</li>
+            </ul>
+          </div>
+        </div>    
+        
+        
+        <!--<p class="ecq-inst-para">
+                Our system prioritizes Early Childhood Development within our inclusive education center.
               </p>
 
-              <p class="ecq-inst-para">3. The completed questionnaire should reach the following address before or on <em style="color: blue; font-weight: bold;">Due date</em>  </p>       
-              <div class="text-cover"> <p>Curriculum Officer – Early Childhood Services Unit
-                    <p>Department of Education, Innovation and Gender Relations</p> 
-                    <p>Francis Compton Building, Waterfront, Castries </p>
-              </div>  
-             
+              <p class="ecq-inst-para">We are deeply committed to delivering top-notch care and education for young children. </p>
+              <p class="ecq-inst-para">Our dedication lies in nurturing holistic development and cultivating a nurturing atmosphere where every child can thrive and achieve their utmost potential.</p>
+        -->
+
               
-            <div class="ecq-form-group">
-
-              <label for="principal-name" class="form-label"> Name of the Principal: &nbsp;</label>
-              <input type="text" name="principal-name" id="principal-name" class="ecq-form-input" required>
-             
-              <label for="date" class="ecq-form-label"> Completed Date: &nbsp;</label>
-              <input type="date" name="date" id="date" class="ecq-form-input" required>
-
-            </div> 
+                            
+            
 
           
-          <div class="ecq-form-group">
+        <div class="button-container">
           <input type="submit" name="continue" value="Continue" class="ecq-form-button">
-          </div>
-       
+        </div>
       </form>
     </div>
   </section>
