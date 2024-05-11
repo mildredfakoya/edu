@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SOP Internship forms Page</title>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/sec_Quest.css">
   <link rel="stylesheet" href="/css/se_eduq.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -22,45 +22,75 @@
 
   <section class="row">
     <div >
-      <h2 class="sq-section-heading">Government of St. Lucia</h2>
-      <h3 class="sq-section-heading">Ministry of Education, Innovation Gender Relations 
-        and Sustainable Development</h3>
-        <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">
-            Special Education (V/Fort) Questionnaire for the Academic Year 2020/21</h3>
+      <h2 class="se_headings" style="margin-top: 20px;">Education Management Information System</h2>
+      <h3 class="se_headings" style="margin-top: 20px; font-style: italic;"> 
+        Designed to collect information about individuals with special needs in the education sector.
+       
+        </h3>
+        <!-- <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">
+            Special Education (V/Fort) Questionnaire for the Academic Year 2020/21</h3> -->
     </div>
   </section>
 
 <section class="row">
-  <section class="col-2">
+  <section class="col-2 col-md-12">
     <div >
-      <nav class="se_nav ">
-        <ul>
+      <nav  class="se_nav ">
+        <ul> 
+          <li>
+            <div class="se-dropdown se-mobile-menu">
+              <button>Menu &#X25BC;</button>
+              <div class="se-dropdown-content">
+                <a href="/pages/se_eduq/se_home.html">Cover</a>
+                <a href="/pages/se_eduq/se_school.html" >School</a>
+                <a href=" /pages/se_eduq/forms/staff.html">Staff</a>
+                <a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a>
+                <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a>
+                <a href="/pages/se_eduq/forms/enrollment.html" >Enrolment</a>
+                <a href="/pages/se_eduq/forms/furniture.html">Furniture</a>
+                <a href="/pages/se_eduq/forms/buildings.html">Buildings</a>
+                <a href="/pages/se_eduq/forms/equipments.html" class="se-focus" >Equipments</a>
+  
+              </div>
+  
+            </div>
+          </li>
+          <div class="se-main-menu">
+          
           <li><a href="/pages/se_eduq/se_home.html">Cover</a></li>
           <li><a href="/pages/se_eduq/se_school.html" >School</a></li>
           <li> <a href=" /pages/se_eduq/forms/staff.html">Staff</a></li>
+        
+      
           <li><a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a></li>
-          <li>  <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a></li>
-          <li><a href="/pages/se_eduq/forms/enrollment.html">Enrolment</a></li>
-          <li> <a href="/pages/se_eduq/forms/furniture.html">Furniture</a></li>
-          <li>
-            <a href="/pages/se_eduq/forms/buildings.html">Buildings</a></li>
-          <li> <a href="/pages/se_eduq/forms/equipments.html">Equipments</a></li>
-          <li><a href="/pages/se_eduq/forms/funds.html">Funds Raised</a></li>
+           <li>  <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a></li>
+           <li><a href="/pages/se_eduq/forms/enrollment.html" >Enrolment</a></li>
+          
+          
+           <li> <a href="/pages/se_eduq/forms/furniture.html">Furniture</a></li>
+           <li>
+             <a href="/pages/se_eduq/forms/buildings.html">Buildings</a>
+            </li>
+           <li> <a href="/pages/se_eduq/forms/equipments.html" class="se-focus" >Equipments</a></li>
+          
+        </div>
         </ul>
       </nav>
-       
+        
+        
+    
     </div>
   </section>
 
-  <section class="col-10">
-  <div class="sq-form">  
-    <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Equipments</h3>
-    <div  class="se-form-container">
-      <div class="se-form-group">
+  <section class="col-10 col-md-12 se-main-container">
+  <div class="se-form-container ">  
+    <h3 class="se_headings" style="font-style: italic; padding: 5px;">Equipments</h3>
+    <div  class="">
+      <div class="">
         <form action="#">
-        <fieldset class="se_fieldset">
+        <fieldset class="se_fieldset se-form-group ">
           <legend> Conditions of Equipment</legend>
-          <div>
+          <div class="">
             <label for="photocopiers">Photocopiers:</label><br>
             <input type="checkbox" id="photocopiers-satisfactory" name="photocopiers-satisfactory">
             <label for="photocopiers-satisfactory">Satisfactory</label>
@@ -70,7 +100,7 @@
             <input type="text" id="photocopiers-repairs" name="photocopiers-repairs"><br>
         </div>
     
-        <div>
+        <div class="">
             <label for="bells">Bells:</label><br>
             <input type="checkbox" id="bells-satisfactory" name="bells-satisfactory">
             <label for="bells-satisfactory">Satisfactory</label>
@@ -230,8 +260,19 @@
             <input type="text" id="others-repairs" name="others-repairs"><br>
         </div>
           </fieldset>
-             
+            <div class="se_myForm-button">
+              <div>
+                <a href="/pages/se_eduq/forms/equipments.html"> <input type="button" name="next" value="Save & Exit" > </a>
+              
+              </div>
+              <div>
+                <a href="/pages/se_eduq/forms/equipments.html"> <input type="button" name="next" value="Save & Submit" > </a>
+              
+              </div>
+
+            </div> 
     </form>
+  </div>
   </div>
   </div>
 </section>

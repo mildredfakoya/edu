@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SOP Internship forms Page</title>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/sec_Quest.css">
   <link rel="stylesheet" href="/css/se_eduq.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -25,40 +25,71 @@
 
   <section class="row">
     <div >
-      <h2 class="sq-section-heading">Government of St. Lucia</h2>
-      <h3 class="sq-section-heading">Ministry of Education, Innovation Gender Relations 
-        and Sustainable Development</h3>
-        <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">
-            Special Education (V/Fort) Questionnaire for the Academic Year 2020/21</h3>
-    </div>
+        <h2 class="se_headings" style="margin-top: 20px;">Education Management Information System</h2>
+        <h3 class="se_headings" style="margin-top: 20px; font-style: italic;"> 
+          Designed to collect information about individuals with special needs in the education sector.
+         
+          </h3>
+          <!-- <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">
+              Special Education (V/Fort) Questionnaire for the Academic Year 2020/21</h3> -->
+      </div>
   </section>
 
 <section class="row">
-  <section class="col-2">
+  <section class="col-2 col-md-12">
     <div >
-        <nav class="se_nav">
-            <ul>
-              <li><a href="/pages/se_eduq/se_home.html">Cover</a></li>
-              <li><a href="/pages/se_eduq/se_school.html" >School</a></li>
-              <li> <a href=" /pages/se_eduq/forms/staff.html">Staff</a></li>
-              <li><a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a></li>
-              <li>  <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a></li>
-              <li><a href="/pages/se_eduq/forms/enrollment.html">Enrolment</a></li>
-              <li> <a href="/pages/se_eduq/forms/furniture.html">Furniture</a></li>
-              <li>
-                <a href="/pages/se_eduq/forms/buildings.html">Buildings</a></li>
-              <li> <a href="/pages/se_eduq/forms/equipments.html">Equipments</a></li>
-              <li><a href="/pages/se_eduq/forms/funds.html">Funds Raised</a></li>
-            </ul>
-          </nav>
-       
-    </div>
+        <nav  class="se_nav ">
+          <ul> 
+            <li>
+              <div class="se-dropdown se-mobile-menu">
+                <button>Menu &#X25BC;</button>
+                <div class="se-dropdown-content">
+                  <a href="/pages/se_eduq/se_home.html">Cover</a>
+                  <a href="/pages/se_eduq/se_school.html"  >School</a>
+                  <a href=" /pages/se_eduq/forms/staff.html">Staff</a>
+                  <a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a>
+                  <a href="/pages/se_eduq/forms/students.html" class="se-focus">Students/Pupils</a>
+                  <a href="/pages/se_eduq/forms/enrollment.html" >Enrolment</a>
+                  <a href="/pages/se_eduq/forms/furniture.html">Furniture</a>
+                  <a href="/pages/se_eduq/forms/buildings.html">Buildings</a>
+                  <a href="/pages/se_eduq/forms/equipments.html">Equipments</a>
+    
+                </div>
+    
+              </div>
+            </li>
+            <div class="se-main-menu">
+            
+            <li><a href="/pages/se_eduq/se_home.html">Cover</a></li>
+            <li><a href="/pages/se_eduq/se_school.html" >School</a></li>
+            <li> <a href=" /pages/se_eduq/forms/staff.html">Staff</a></li>
+          
+        
+            <li><a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a></li>
+             <li>  <a href="/pages/se_eduq/forms/students.html" class="se-focus" >Students/Pupils</a></li>
+             <li><a href="/pages/se_eduq/forms/enrollment.html" >Enrolment</a></li>
+            
+            
+             <li> <a href="/pages/se_eduq/forms/furniture.html">Furniture</a></li>
+             <li>
+               <a href="/pages/se_eduq/forms/buildings.html">Buildings</a>
+              </li>
+             <li> <a href="/pages/se_eduq/forms/equipments.html">Equipments</a></li>
+            
+          </div>
+          </ul>
+        </nav>
+          
+          
+      
+      </div>
   </section>
 
-  <section class="col-10">
-  <div class="sq-form">  
-    <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Students/Pupils</h3>
-    <div class="se-form-container">
+  <section class="col-10 se-main-container col-md-12">
+    
+  <div class="  se-form-container">  
+    <h3 class="se_headings" style="font-style: italic; padding: 5px;">Students/Pupils</h3>
+    <div class="">
         <!-- Form table for Pupils using Aids -->
         <fieldset class="se_fieldset">
             <legend>Number of Pupils Using an Aid according to Gender</legend>
@@ -157,12 +188,14 @@
                    <div class="se-form-group">
                     <label for="other-specify-male" class="se-form-label">Male Pupils using Other  Aids(Specify):</label>
                     <input type="text" name="other-specify-male" id="others-male" placeholder="Enter other Aids"  class="se-form-input">
+                    <label for=""></label> 
                     <input type="number" id="other-specify-male" name="other-specify-male" class="se-form-input" placeholder="Enter number">
             
                    </div>
                    <div class="se-form-group">
                     <label for="other-specify-female" class="se-form-label">Female Pupils using Other Aids (Specify):</label>
                     <input type="text" name="other-specify-female" id="others-female" placeholder="Enter other Aids" class="se-form-input">
+                    <label for=""></label> 
                 <input type="number" id="other-specify-female" name="other-specify-female" placeholder="Enter Number" class="se-form-input">
                    </div>
                    <div class="se-form-group">
@@ -244,34 +277,42 @@
                <div class="">
                 <label for="others-tested-male">Others (Specify) - Number Tested (Male):</label>
                 <input type="text" name="others-tested-male" id="others-specify-m-t" placeholder="Enter other type of tests">
+                <label for=""></label> 
                 <input type="number" id="others-tested-male" name="others-tested-male" placeholder="Enter Number">
                </div>
                <div class="">
                 <label for="others-tested-female">Others (Specify) - Number Tested (Female):</label>
                 <input type="text" name="others-tested-male" id="others-specify-f-t" placeholder="Enter other type of tests">
+                <label for=""></label> 
                 <input type="number" id="others-tested-female" name="others-tested-female" placeholder="Enter Number">
         
                </div>
                <div class="">
                 <label for="others-glasses-no-male">Others (Specify) - Prescribed but Do Not Wear Glasses (Male):</label>
                 <input type="text" name="others-glasses-no-male" id="others-specify-no-glasses-m" placeholder="Enter other type of tests">
+                <label for=""></label> 
                 <input type="number" id="others-glasses-no-male" name="others-glasses-no-male" placeholder="Enter Number">
                </div>
                <div class="">
                 <label for="others-glasses-no-female">Others (Specify) - Prescribed but Do Not Wear Glasses (Female):</label>
                 <input type="text" name="others-glasses-no-female" id="others-specify-glasses-no-female" placeholder="Enter other type of tests">
+                <label for=""></label>
                 <input type="number" id="others-glasses-no-female" name="others-glasses-no-female" placeholder="Enter Number" class="others">
         
                </div>
                <div class="">
                 <label for="others-glasses-yes-male">Others (Specify) - Prescribed and Wear Glasses (Male):</label>
+                
+                
                 <input type="text" name="others-glasses-yes-male " id="others-specify-glasses-yes-m" placeholder="Enter other type of tests">
+                <label for=""></label> 
                 <input type="number" id="others-glasses-yes-male" name="others-glasses-yes-male" placeholder="Enter Number"class="others">
                </div>
         
                 <div class="">
                     <label for="others-glasses-yes-female">Others (Specify) - Prescribed and Wear Glasses (Female):</label>
-                    <input type="text" name="others-glasses-yes-male " id="others-specify-glasses-yes-f" placeholder="Enter other type of tests">                  
+                    <input type="text" name="others-glasses-yes-male " id="others-specify-glasses-yes-f" placeholder="Enter other type of tests">
+                    <label for=""></label>                  
                     <input type="number" id="others-glasses-yes-female" name="others-glasses-yes-female" placeholder="Enter Number" class="others">
             
                 </div>
@@ -318,10 +359,12 @@
                     <input type="number" id="total" name="total" readonly>
             
                 </fieldset>
-                <fieldset class="se_fieldset se-form-group">
+                <fieldset class="se_fieldset ">
+                    
                     <legend> Movement of Pupils to and from Special Education School and other Schools During Previous Year</legend>
+                    <div  class="se-form-group">
                     <label for="from-special-to-primary">From Special School to other Primary School:</label>
-    <label for="from-special-to-primary-male-pupils">Male:</label>
+                    <label for="from-special-to-primary-male-pupils">Male:</label>
     <input type="number" id="from-special-to-primary-male-pupils" name="from-special-to-primary-male-pupils">
     <label for="from-special-to-primary-female-pupils">Female:</label>
     <input type="number" id="from-special-to-primary-female-pupils" name="from-special-to-primary-female-pupils">
@@ -352,8 +395,20 @@
     <label for="from-secondary-to-special-total-pupils">Total:</label>
     <input type="number" id="from-secondary-to-special-total-pupils" name="from-secondary-to-special-total-pupils" readonly>
                 </fieldset>
+            </div>
+                <div class="se_myForm-button">
+                    <div>
+                        <a href="/pages/se_eduq/forms/students.html"> <input type="button" name="next" value="Save & Exit" > </a>
+                      
+                      </div>
+                      <div>
+                        <a href="/pages/se_eduq/forms/enrollment.html"> <input type="button" name="next" value="Save & Next" > </a>
+                      
+                      </div>
+                </div>
         </form>
      </div>
+     
 </section>
 
 

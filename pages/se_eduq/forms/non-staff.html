@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SOP Internship forms Page</title>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/sec_Quest.css">
   <link rel="stylesheet" href="/css/se_eduq.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+ 
 </head>
 <body>
 
@@ -22,129 +24,175 @@
 
   <section class="row">
     <div >
-      <h2 class="sq-section-heading">Government of St. Lucia</h2>
-      <h3 class="sq-section-heading">Ministry of Education, Innovation Gender Relations 
-        and Sustainable Development</h3>
-        <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">
-            Special Education (V/Fort) Questionnaire for the Academic Year 2020/21</h3>
+      <h2 class="se_headings" style="margin-top: 20px;">Education Management Information System</h2>
+      <h3 class="se_headings" style="margin-top: 20px; font-style: italic;"> 
+        Designed to collect information about individuals with special needs in the education sector.
+       
+        </h3>
+        <!-- <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">
+            Special Education (V/Fort) Questionnaire for the Academic Year 2020/21</h3> -->
     </div>
   </section>
 
 <section class="row">
-  <section class="col-2">
+  <section class="col-2 col-md-12">
     <div >
-      <nav class="se_nav">
-        <ul>
+      <nav  class="se_nav ">
+        <ul> 
+          <li>
+            <div class="se-dropdown se-mobile-menu">
+              <button>Menu &#X25BC;</button>
+              <div class="se-dropdown-content">
+                <a href="/pages/se_eduq/se_home.html">Cover</a>
+                <a href="/pages/se_eduq/se_school.html"  >School</a>
+                <a href=" /pages/se_eduq/forms/staff.html">Staff</a>
+                <a href="/pages/se_eduq/forms/non-staff.html" class="se-focus">Non-Staff</a>
+                <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a>
+                <a href="/pages/se_eduq/forms/enrollment.html" >Enrolment</a>
+                <a href="/pages/se_eduq/forms/furniture.html">Furniture</a>
+                <a href="/pages/se_eduq/forms/buildings.html">Buildings</a>
+                <a href="/pages/se_eduq/forms/equipments.html">Equipments</a>
+  
+              </div>
+  
+            </div>
+          </li>
+          <div class="se-main-menu">
+          
           <li><a href="/pages/se_eduq/se_home.html">Cover</a></li>
           <li><a href="/pages/se_eduq/se_school.html" >School</a></li>
           <li> <a href=" /pages/se_eduq/forms/staff.html">Staff</a></li>
-          <li><a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a></li>
-          <li>  <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a></li>
-          <li><a href="/pages/se_eduq/forms/enrollment.html">Enrolment</a></li>
-          <li> <a href="/pages/se_eduq/forms/furniture.html">Furniture</a></li>
-          <li>
-            <a href="/pages/se_eduq/forms/buildings.html">Buildings</a></li>
-          <li> <a href="/pages/se_eduq/forms/equipments.html">Equipments</a></li>
-          <li><a href="/pages/se_eduq/forms/funds.html">Funds Raised</a></li>
+        
+      
+          <li><a href="/pages/se_eduq/forms/non-staff.html" class="se-focus" >Non-Staff</a></li>
+           <li>  <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a></li>
+           <li><a href="/pages/se_eduq/forms/enrollment.html" >Enrolment</a></li>
+          
+          
+           <li> <a href="/pages/se_eduq/forms/furniture.html">Furniture</a></li>
+           <li>
+             <a href="/pages/se_eduq/forms/buildings.html">Buildings</a>
+            </li>
+           <li> <a href="/pages/se_eduq/forms/equipments.html">Equipments</a></li>
+          
+        </div>
         </ul>
       </nav>
-       
+        
+        
+    
     </div>
   </section>
 
-  <section class="col-10">
-  <div class="sq-form">  
-    <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">Non-Staff Information</h3>
-    <div class="se-form-container">
+  <section class="col-10 col-md-12 se-main-container">
+ 
+  <div class="se-form-container">  
+    <h3 class="se_headings " style="font-style: italic; padding: 5px;">Non-Staff Information</h3>
+    <div class="">
       <div class="se-form-group">
       <form action="" method="post">
         <fieldset class="se_fieldset">
             <legend> Number of Non-Teaching Staff according to Gender</legend>
            
-            <label for="bursar-m">Bursar (Male):</label>
-    <input type="number" id="bursar-m" name="bursar-m"><br><br>
+    <label for="bursar-m">Bursar (Male):</label>
+    <input type="number" id="bursar-m" name="bursar-m">
     
     <label for="bursar-f">Bursar (Female):</label>
-    <input type="number" id="bursar-f" name="bursar-f"><br><br>
+    <input type="number" id="bursar-f" name="bursar-f">
     
     <label for="cleaners-m">Cleaners/Sweepers (Male):</label>
-    <input type="number" id="cleaners-m" name="cleaners-m"><br><br>
+    <input type="number" id="cleaners-m" name="cleaners-m">
     
     <label for="cleaners-f">Cleaners/Sweepers (Female):</label>
-    <input type="number" id="cleaners-f" name="cleaners-f"><br><br>
+    <input type="number" id="cleaners-f" name="cleaners-f">
     
     <label for="driver-m">Driver (Male):</label>
-    <input type="number" id="driver-m" name="driver-m"><br><br>
+    <input type="number" id="driver-m" name="driver-m">
     
     <label for="driver-f">Driver (Female):</label>
-    <input type="number" id="driver-f" name="driver-f"><br><br>
+    <input type="number" id="driver-f" name="driver-f">
     
     <label for="groundsman-m">Groundsman (Male):</label>
-    <input type="number" id="groundsman-m" name="groundsman-m"><br><br>
+    <input type="number" id="groundsman-m" name="groundsman-m">
     
     <label for="groundsman-f">Groundsman (Female):</label>
-    <input type="number" id="groundsman-f" name="groundsman-f"><br><br>
+    <input type="number" id="groundsman-f" name="groundsman-f">
 
     <label for="guidance-counselor-m">Guidance Counselor (Male):</label>
-    <input type="number" id="guidance-Counselor-m" name="guidance-counselor-m"><br><br>
+    <input type="number" id="guidance-Counselor-m" name="guidance-counselor-m">
     
     <label for="guidance-counselor-f"> Guidance Counselor (Female):</label>
-    <input type="number" id="guidance-counselor-f" name="guidance-counselor-f"><br><br>
+    <input type="number" id="guidance-counselor-f" name="guidance-counselor-f">
     
     <label for="janitor-m"> Janitor/Custodian (Male):</label>
-    <input type="number" id="janitor-m" name="janitor-m"><br><br>
+    <input type="number" id="janitor-m" name="janitor-m">
     
     <label for="janitor-f"> Janitor/Custodian (Female):</label>
-    <input type="number" id="janitor-f" name="janitor-f"><br><br>
+    <input type="number" id="janitor-f" name="janitor-f">
 
     <label for="librarian-m">  Librarian (Male):</label>
-    <input type="number" id="librarian-m" name="librarian-m"><br><br>
+    <input type="number" id="librarian-m" name="librarian-m">
     
     <label for="librarian-f"> Librarian (Female):</label>
-    <input type="number" id="librarian-f" name="librarian-f"><br><br>
+    <input type="number" id="librarian-f" name="librarian-f">
 
     <label for="maintenance-m"> Maintenance Crew (Male):</label>
-    <input type="number" id="maintenance-m" name="maintenance-m"><br><br>
+    <input type="number" id="maintenance-m" name="maintenance-m">
     
     <label for="maintenance-f"> Maintenance Crew (Female):</label>
-    <input type="number" id="maintenance-f" name="maintenance-f"><br><br>
+    <input type="number" id="maintenance-f" name="maintenance-f">
 
     <label for="secretary-m"> Secretary (Male):</label>
-    <input type="number" id="secretary-m" name="secretary-m"><br><br>
+    <input type="number" id="secretary-m" name="secretary-m">
     
     <label for="secretary-f"> Secretary (Female):</label>
-    <input type="number" id="secretary-f" name="secretary-f"><br><br>
+    <input type="number" id="secretary-f" name="secretary-f">
     
     <label for="typist-m"> Typist/Clerk (Male):</label>
-    <input type="number" id="typist-m" name="typist-m"><br><br>
+    <input type="number" id="typist-m" name="typist-m">
     
     <label for="typist-f"> Typist/Clerk (Female):</label>
-    <input type="number" id="typist-f" name="typist-f"><br><br>
+    <input type="number" id="typist-f" name="typist-f">
 
     <label for="watchman-m"> Watchman/Security (Male):</label>
-    <input type="number" id="watchman-m" name="watchman-m"><br><br>
+    <input type="number" id="watchman-m" name="watchman-m">
     
     <label for="watchman-f"> Watchman/Security (Female):</label>
-    <input type="number" id="watchman-f" name="watchman-f"><br><br>
-     
+    <input type="number" id="watchman-f" name="watchman-f">
+    <div class="others-form-group">
     <label for="other-male">Other (Specify) (Male):</label>
-    <input type="text" name="other-female" id="other-male" placeholder="Enter non-staff  Work type">
-    <input type="number" id="other-male" name="other-male"><br><br>
+  
+    <input type="text" name="other-male" id="other-male" placeholder="Enter non-staff  Work type for male workers">
+    <label for=""></label>
+    <input type="number" id="other-male" name="other-male" ><br>
+  
+    <label for="other-f">Other (Specify) (Female):</label> 
     
-    <label for="other-f">Other (Specify) (Female):</label>
-    <input type="text" name="other-f" id="other-f" placeholder="Enter non-staff  Work type" >
-    <input type="number" id="watchman-other" name="watchman-other"><br><br>
-    
+    <input type="text" name="other-f" id="other-f" placeholder="Enter non-staff  Work type for female workers" > 
+    <label for=""></label>
+    <input type="number" id="watchman-other" name="watchman-other">
+  
+  </div>
     <label for="total-m">Total (Male):</label>
-    <input type="number" id="total-m" name="total-m" readonly><br><br>
-    
+    <input type="number" id="total-m" name="total-m" readonly>
     <label for="total-f">Total (Female):</label>
-    <input type="number" id="total-f" name="total-f" readonly><br><br>
+    <input type="number" id="total-f" name="total-f" readonly>
         </fieldset>
-        
-
+      
+        <div class="se_myForm-button">
+          <div>
+            <a href="/pages/se_eduq/forms/non-staff.html"> <input type="button" name="next" value="Save & Exit"  > </a>
+          
+          </div>
+          <div>
+            <a href="/pages/se_eduq/forms/students.html"> <input type="button" name="next" value="Save & Next"> </a>
+        </div>
         </form>
       </div>
+      </div>
+    </div>
+    
+    
     </div>
 </section>
 

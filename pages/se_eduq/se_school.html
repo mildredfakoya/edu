@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SOP Internship forms Page</title>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/sec_Quest.css">
-  <link rel="stylesheet" href="/css/se_eduq.css">
+   <link rel="stylesheet" href="/css/se_eduq.css">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -22,49 +22,71 @@
 
   <section class="row">
     <div >
-      <h2 class="sq-section-heading">Government of St. Lucia</h2>
-      <h3 class="sq-section-heading">Ministry of Education, Innovation Gender Relations 
-        and Sustainable Development</h3>
-        <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">
-          Special Education (V/Fort) Questionnaire for the Academic Year 2020/21</h3>
+      <h2 class="se_headings" style="margin-top: 20px;">Education Management Information System</h2>
+      <h3 class="se_headings" style="margin-top: 20px; font-style: italic;"> 
+        Designed to collect information about individuals with special needs in the education sector.
+       
+        </h3>
+        <!-- <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">
+            Special Education (V/Fort) Questionnaire for the Academic Year 2020/21</h3> -->
     </div>
   </section>
 
 <section class="row">
-  <section class="col-2">
+  <section class="col-2  col-md-12">
   <div >
-    <nav  class="se_nav">
-      <ul>
-        <li><a href="/pages/se_eduq/se_home.html">Cover</a></li>
-        <li><a href="/pages/se_eduq/se_school.html" >School</a></li>
-        <li> <a href=" /pages/se_eduq/forms/staff.html">Staff</a></li>
-        <li><a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a></li>
-        <li>  <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a></li>
-        <li><a href="/pages/se_eduq/forms/enrollment.html">Enrolment</a></li>
-        <li> <a href="/pages/se_eduq/forms/furniture.html">Furniture</a></li>
+    <nav  class="se_nav ">
+      <ul> 
         <li>
-          <a href="/pages/se_eduq/forms/buildings.html">Buildings</a></li>
-        <li> <a href="/pages/se_eduq/forms/equipments.html">Equipments</a></li>
-        <li><a href="/pages/se_eduq/forms/funds.html">Funds Raised</a></li>
+          <div class="se-dropdown se-mobile-menu">
+            <button>Menu &#X25BC;</button>
+            <div class="se-dropdown-content">
+              <a href="/pages/se_eduq/se_home.html">Cover</a>
+              <a href="/pages/se_eduq/se_school.html" class="se-focus" >School</a>
+              <a href=" /pages/se_eduq/forms/staff.html">Staff</a>
+              <a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a>
+              <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a>
+              <a href="/pages/se_eduq/forms/enrollment.html" >Enrolment</a>
+              <a href="/pages/se_eduq/forms/furniture.html">Furniture</a>
+              <a href="/pages/se_eduq/forms/buildings.html">Buildings</a>
+              <a href="/pages/se_eduq/forms/equipments.html">Equipments</a>
+
+            </div>
+
+          </div>
+        </li>
+        <div class="se-main-menu">
+        
+        <li><a href="/pages/se_eduq/se_home.html">Cover</a></li>
+        <li><a href="/pages/se_eduq/se_school.html" class="se-focus" >School</a></li>
+        <li> <a href=" /pages/se_eduq/forms/staff.html">Staff</a></li>
+      
+    
+        <li><a href="/pages/se_eduq/forms/non-staff.html">Non-Staff</a></li>
+         <li>  <a href="/pages/se_eduq/forms/students.html">Students/Pupils</a></li>
+         <li><a href="/pages/se_eduq/forms/enrollment.html" >Enrolment</a></li>
+        
+        
+         <li> <a href="/pages/se_eduq/forms/furniture.html">Furniture</a></li>
+         <li>
+           <a href="/pages/se_eduq/forms/buildings.html">Buildings</a>
+          </li>
+         <li> <a href="/pages/se_eduq/forms/equipments.html">Equipments</a></li>
+        
+      </div>
       </ul>
     </nav>
       
       
-     
-      
-    
-      
-     
-      
-      
-     
+  
   </div>
   </section>
 
-  <section class="col-10">
-  <div class="sq-form">  
-    <h3 class="sq-section-heading" style="font-style: italic; padding: 5px;">School Structure Form</h3>
+  <section class="col-10 col-md-12 se-main-container">
+  <div class="">  
+    
     <div  class=" se-form-container">
+      <h3 class="se_headings" style="font-style: italic; padding: 5px;">School Structure Form</h3>
         <form action="#">
         <fieldset class="se_fieldset">
           <legend> School information</legend>
@@ -108,26 +130,47 @@
                  
               </fieldset>
                 <!-- school management -->
-                <fieldset class="se_fieldset">
+                <fieldset class="se_fieldset se-form-group ">
                   <legend>School Management</legend>
-                 
-                <div class="secheck-form-group">
-                 <label for="management" >Management:</label> 
-                  
-                   <input type="checkbox" id="ministry_of_education" name="management[]" value="Ministry of Education" >
-                    <input type="checkbox" id="board_council" name="management[]" value="Board/Council" >
+                 <div class="secheck-form-group">
+                  <label for="management" >Management:</label> 
+                <div >
+                
+                 <input type="checkbox" id="ministry_of_education" name="management[]" value="Ministry of Education" >
+                 <label for="ministry_of_education" >Ministry of Education</label>
+                   <input type="checkbox" id="board_council" name="management[]" value="Board/Council" >
                     <label for="board_council" >Board/Council</label>
                    <input type="checkbox" id="others" name="management[]" value="Others" >
+                   <label for="others"> Others</label>
                    <input type="text" id="others_input" name="others_input" placeholder="Please specify">
                    </div>
+                  </div>
               
               </fieldset>
-                <!-- school Ownership -->
-                <fieldset class="se_fieldset">
-                   <legend>School Ownership</legend>
-              
+               <!-- Information about the playing field -->
+               <fieldset class="se_fieldset se-form-group">
+                <legend>Information about the playing field</legend>
                 <div class="secheck-form-group">
-                  <label for="ownership" class="se-form-label">Ownership:</label>
+                  <label for="playing_field" class="se-form-label">Playing Field:</label>
+              <div>
+                
+                <input type="checkbox" id="community" name="playing_field[]" value="Community Owned" >
+                <label for="community" >Community Owned</label> 
+                <input type="checkbox" id="school_owned" name="playing_field[]" value="School Owned" >
+                <label for="school_owned" >School Owned</label>
+                <input type="checkbox" id="others" name="playing_field[]" value="Others" >
+                <label for="others" >Others</label>
+                <input type="text" id="others_input" name="others_input" placeholder="Please specify" >
+              </div>
+            </div>
+            </fieldset>
+                <!-- school Ownership -->
+                <fieldset class="se_fieldset se-form-group">
+                   <legend>School Ownership</legend>
+              <div class="secheck-form-group">
+                <label for="ownership" class="se-form-label">Ownership:</label>
+                <div >
+                
                   <input type="checkbox" id="government" name="ownership[]" value="Government" class="se-form-input">
                   <label for="government" class="se-form-label">Ministry of Education</label> 
                   <input type="checkbox" id="private" name="ownership[]" value="private" class="se-form-input">
@@ -135,15 +178,17 @@
                   <input type="checkbox" id="denominational" name="ownership[]" value="denominational" class="se-form-input">
                   <label for="denominational" class="se-form-label">Denominational</label>
                    </div>
+                  </div>
                   </fieldset>
                    
                   
                     <!-- Type of School -->
-                    <fieldset class="se_fieldset">
+                    <fieldset class="se_fieldset se-form-group ">
                       <legend>Type of School</legend>
-                    
-                    <div class="secheck-form-group">
+                    <div  class="secheck-form-group">
                       <label for="school_type" class="se-form-label">Type of School:</label>
+                     <div>
+                     
                       <input type="checkbox" id="hearing_impaired" name="school_type[]" value="hearing impaired" class="se-form-input">
                       <label for="hearing_impaired" class="se-form-label">Hearing Impaired</label> 
                       <input type="checkbox" name="school_type[]" id="visually_impaired" value="Visually Impaired" class="se-form-input">
@@ -160,28 +205,19 @@
                       <label for="mentally_challenged" class="se-form-label">Mentally Challenged</label>
                        
                     </div>
+                  </div>
                   </fieldset>
-                    <!-- Information about the playing field -->
-                    <fieldset class="se_fieldset">
-                      <legend>Information about the playing field</legend>
+                   
+                  <div class="se_myForm-button">
+                    <div >
+                      <a href="/pages/se_eduq/forms/staff.html"> <input type="button" name="next" value="Next & Save"   style="margin-left:10rem;"> </a>
                     
-                    <div class="secheck-form-group">
-                      <label for="playing_field" class="se-form-label">Playing Field:</label>
-                      <input type="checkbox" id="community" name="playing_field[]" value="Community Owned" class="se-form-input">
-                      <label for="community" class="se-form-label">Community Owned</label> 
-                      <input type="checkbox" id="school_owned" name="playing_field[]" value="School Owned" class="se-form-input">
-                      <label for="school_owned" class="form-label">School Owned</label>
-                      <input type="checkbox" id="others" name="playing_field[]" value="Others" class="se-form-input">
-                      <label for="others" class="se-form-label">Others</label>
-                      <input type="text" id="others_input" name="others_input" placeholder="Please specify" class="se-form-input">
-                    </div>
-                  </fieldset>
+                   </div>
+                   <div></div>
+                  </div>
             </form>
           </div>
-      <div>
-         <a href="/pages/se_eduq/forms/staff.html"> <input type="button" name="next" value="Next" class="sq-form-button"> </a>
-       
-      </div>
+      
     </form>
   </div>
 </section>
