@@ -3,56 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SOP Internship Forms Page</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>Education Insight Forms Page</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+
+  <style>
+   
+  </style>
 </head>
 <body>
 
-  <header class="header">
-    <h1>Welcome to EDU Forms Project Page</h1>
-    <!-- Navigation -->
-    <nav class="nav">
-      <a class="nav-link" href="#">Home</a>
-      <a class="nav-link" href="#">About</a>
-      <a class="nav-link" href="#">Logout</a>
-    </nav>
-  </header>
+<header class="header">
+  <h1>Education Management Information System</h1>
+  <!-- Navigation -->
+  <nav class="nav">
+    <a class="nav-link" href="#">Home</a>
+    <a class="nav-link" href="#">About</a>
+    <a class="nav-link" href="#">Logout</a>
+  </nav>
+</header>
 
-  <section class="about section">
-    <div class="container">
-      <h2 class="section-heading">About Us</h2>
-      <p class="section-content">We are on a mission to collect information from schools to better understand their needs and improve educational experiences.</p>
-    </div>
-  </section>
-
-  <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
-    <div class="col-2"></div>
-    <div class="col-8">
-      <form method ="post" name = "choices">
-        <input type = "radio" name ="type" value = "earlychild"/>Earlychild Hood education Questionaire<br/><br/>
-        <input type = "radio" name ="type" value = "pri"/>Primary Questionaire<br/><br/>
-        <input type = "radio" name ="type" value = "sec"/>Secondary Questionaire<br/><br/>
-        <input type = "radio" name ="type" value = "Special"/>Special Education Questionaire<br/><br/>
-        <input type = submit name = submit value = GO>
-      </form>
-
-    </div>
-    <div class="col-2"></div>
-
+<section class="row">
+  <div class="col-12">
+  <div class="section-content">
+    <h2 class="section-heading">About Education Insight</h2>
+    <p>Education Insight is a pioneering platform that revolutionizes the way educational data is managed and utilized. Our mission is to empower educational institutions with comprehensive insights that drive informed decision-making and foster academic excellence. By integrating Education Management Information System (EMIS) and Learning Management System (LMS) capabilities, we offer a robust solution for tracking, analyzing, and reporting on educational activities, special education needs, and learning disabilities.</p>
+    <p>Our objectives are to streamline data collection at all administrative levels, provide dynamic data visualization and reporting, and support student learning through an interactive portal. With Education Insight, stakeholders can effectively assess educational outcomes, tailor interventions, and promote inclusive education for all learners.</p>
   </div>
+</div>
+</section>
 
-
-  <footer class="footer">
-    <div class="container">
-      <p>© 2024 SOP EDU Forms. All rights reserved.</p>
+<div class="">
+  <div class="row">
+    <div class="col-6">
+    <div class=" form-container ">
+        <h2>Choose a Questionnaire</h2>
+        <form method="post" name="choices">
+          <div class="form-group">
+            <input type="radio" id="earlychild" name="type" value="earlychild">
+            <label for="earlychild">Early Child Education Questionnaire</label>
+          </div>
+          <div class="form-group">
+            <input type="radio" id="pri" name="type" value="pri">
+            <label for="pri">Primary Education Questionnaire</label>
+          </div>
+          <div class="form-group">
+            <input type="radio" id="sec" name="type" value="sec">
+            <label for="sec" >Secondary Education Questionnaire</label>
+          </div>
+          <div class="form-group">
+            <input type="radio" id="special" name="type" value="Special">
+            <label for="special">Special Education Questionnaire</label>
+          </div>
+          <button type="submit" id="submit-btn" name="submit">GO</button>
+        </form>
     </div>
-  </footer>
+  </div>
+    <div class="col-6 ">
+      <div class="sidebar">
+        <h3>Quick Facts</h3>
+        <ul>
+          <li><strong>National Coverage:</strong> Comprehensive data from all regions</li>
+          <li><strong>Real-Time Analytics:</strong> Instant insights for informed decision-making</li>
+          <li><strong>Inclusive Data:</strong> Focus on special education needs and learning disabilities</li>
+        </ul>
+        <h3>Contact Us</h3>
+        <p>For support or inquiries, please email us at <a href="mailto:support@educationinsight.com">support@educationinsight.com</a> or call us at +1 (234) 567-8900.</p>
+      </div>
+       
+    </div>
+  </div>
+</div>
+
+<footer class="row">
+ <div class="footer col-12"><p>© 2024 Education Insight. All rights reserved.</p></div> 
+</footer>
+
 <script>
-let formvalue = document.forms.choices.type.value;
-if(formvalue == earlychild){
-  
-}
-</script>
-  </body>
-  </html>
+    const submitBtn = document.getElementById("submit-btn");
+    submitBtn.addEventListener("click", function(event) {
+      event.preventDefault();
+      const formValue = document.querySelector('input[name="type"]:checked').value;
+      switch (formValue) {
+        case "earlychild":
+          window.location.href = "pages/early_childQ/ecQ_home.html";
+          break;
+        case "pri":
+          window.location.href = "pages/Pri_Quest/pq_home.html";
+          break;
+        case "sec":
+          window.location.href = "pages/sec_Quest/secQHome.html";
+          break;
+        case "Special":
+          window.location.href = "pages/se_eduq/se_home.html";
+          break;
+        default:
+          alert("Please select a module.");
+      }
+    });
+  </script>
+
+</body>
+</html>
