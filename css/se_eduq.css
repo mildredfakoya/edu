@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Montserrat', Helvetica, sans-serif;
   font-weight: 100;
@@ -263,20 +264,7 @@ button {
   text-align: center;
 }
 
-/* .se-cover-flex{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-  } */
-
-/* Check boxes */
-
-
-
-
-
-
+ 
 
 /* Tables for the forms */
 .se-table-container {
