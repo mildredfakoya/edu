@@ -1,19 +1,16 @@
-
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
-
-
-body{
-  font-family: 'Montserrat' , Helvetica, sans-serif;
+body {
+  font-family: 'Montserrat', Helvetica, sans-serif;
   font-weight: 100;
   color: #000;
-  a{
+
+  a {
     text-decoration: none;
     color: #fff;
   }
 }
 
- /* Landing page styles */
- .se-cover{
+/* Landing page styles */
+.se-cover {
   text-align: center;
   padding: 10px;
   border-radius: 5px;
@@ -22,360 +19,399 @@ body{
   width: 90%;
   margin: 0 auto;
 }
-.se-content-section{
+
+.se-content-section {
   display: flex;
   padding: 30px 30px;
   color: rgb(15, 14, 14);
   margin-top: 4rem;
-  
-  }
-  
 
-
-.se-column:first-child{
-  margin-right: 20px; /* Add space between the first and second column */
 }
-.se-objectives{
+
+
+
+.se-column:first-child {
+  margin-right: 20px;
+  /* Add space between the first and second column */
+}
+
+.se-objectives {
   flex: 1;
   background-color: #f2f2f2;
   border-radius: 20px;
   box-shadow: 2px 3px 6px #007bff;
- 
+
 
 }
-.se-objectives ul{
+
+.se-objectives ul {
   list-style-type: none;
   text-align: left;
   padding: 0;
 }
 
-.se-objectives ul li{
-  display: block; /* Display list items as blocks */
- margin-bottom: 20px; /* Add margin between list items */
+.se-objectives ul li {
+  display: block;
+  /* Display list items as blocks */
+  margin-bottom: 20px;
+  /* Add margin between list items */
 }
 
-.se-instructions{
+.se-instructions {
   flex: 1;
-  background-color:#f2f2f2 ;
+  background-color: #f2f2f2;
   border-radius: 20px;
   box-shadow: 2px 3px 6px #007bff;
 
- 
- 
+
+
 }
-.se-instructions ul{
+
+.se-instructions ul {
   list-style-type: none;
   text-align: left;
   padding: 0;
 }
-.se-instructions ul li{
- display: block; /* Display list items as blocks */
- margin-bottom: 20px; /* Add margin between list items */
+
+.se-instructions ul li {
+  display: block;
+  /* Display list items as blocks */
+  margin-bottom: 20px;
+  /* Add margin between list items */
 }
 
-  /* main container */
-  .se-main-container{
-    display: flex;
-    flex-wrap: wrap;
-    overflow-wrap: normal;
-    margin:0 auto;
-    
-  }
- 
- 
-   
+/* main container */
+.se-main-container {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-wrap: normal;
+  margin: 0 auto;
 
-  /* next button styles */
-  .se_myForm-button {
-    display: flex;
-    justify-content: space-between; 
-    
-     
-  }
-  .se_myForm-button input[type="button"]{
-    display: inline-block;
-    background-color: #007bff;
-    width: 130px;
-    padding:10px;
-    border-radius: 10px;
-    color: #fff;
-    border-style: none;
-    margin-bottom:5rem ;
+}
 
-  }
-  .se_myForm-button input[type="button"]:hover {
-    background-color:rgb(9, 112, 221)  ;
-    cursor: pointer;
-    
-  }
-  
-  
-.se_myForm label{
+
+
+
+/* next button styles */
+.se_myForm-button {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.se_myForm-button input[type="button"] {
+  display: inline-block;
+  background-color: #007bff;
+  width: 130px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  border-style: none;
+  margin-bottom: 5rem;
+
+}
+
+.se_myForm-button input[type="button"]:hover {
+  background-color: rgb(9, 112, 221);
+  cursor: pointer;
+
+}
+
+
+.se_myForm label {
   margin-bottom: 1rem;
 }
- 
- /* headings */
- .se_headings{
- text-align: center;
- margin-top: .6rem;
- }
- 
- /* Side Navigation */
-.se_nav,button{
-  background-color: rgb(50, 141, 239); 
-  border-radius: .5rem;
-  margin-top: 1.4rem ;
-  
-   }
-   .se_nav ul {
-    padding:0;
-    margin:0;
-    list-style-type: none;
-     
- }
- 
- 
-.se_nav  a, .se_nav button{
-   border: 2px solid rgb(250, 250, 250); 
-   display: inline-block;
-   text-align: center;
-   text-decoration: none;
-   padding: 8px 12px;
-   border-radius: 12px ;
-   width: 100%;
-   color: #fff;
-   font-size: 18px;
-   font-weight: bold;
-}
-.se_nav  a:hover, .se_nav button:hover{
-  background-color: rgba(0,250,250,0.5);
-  padding:8px ;
-  margin-bottom: 5px;
-  
+
+/* headings */
+.se_headings {
+  text-align: center;
+  margin-top: .6rem;
 }
 
-.se-focus{
+/* Side Navigation */
+.se_nav,
+button {
+  background-color: rgb(50, 141, 239);
+  border-radius: .5rem;
+  margin-top: 1.4rem;
+
+}
+
+.se_nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+}
+
+
+.se_nav a,
+.se_nav button {
+  border: 2px solid rgb(250, 250, 250);
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 12px;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.se_nav a:hover,
+.se_nav button:hover {
+  background-color: rgba(0, 250, 250, 0.5);
+  padding: 8px;
+  margin-bottom: 5px;
+
+}
+
+.se-focus {
   background-color: rgba(7, 179, 7, 0.7);
 }
-.se_nav  a:active{
-   background-color: rgba(0,250,0,0.7);
-   outline: 1px solid #fff;
-   
-}  
- /* Mobile menu */
- .se_nav .se-dropdown, .se-dropdown-content{
-  display: none;
- }
 
- 
-  /* forms styles */
-  .se-form-container{
-    height: auto;
-    max-width:auto;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0);
-    padding: 2rem;
-    background-color: rgb(235, 238, 242);
-    overflow:auto;
-    text-wrap: wrap;
-    
-    
-    
-  }
+.se_nav a:active {
+  background-color: rgba(0, 250, 0, 0.7);
+  outline: 1px solid #fff;
 
-  .se-form-group{
-    margin-bottom: 20px;
-     
-  
-  }
-  .se-form-group label{
-    display:inline-block;
-    font-weight: bold;
-    margin: 7px 0 5px 0;
-    width: 450px;
-     
-  }
-  .se-form-group input{
-    width: 300px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 6px;
-     
-  }
-  
-  .se-form-group input:focus{
-    border: 2px solid #d0d0;
-  }
-  /*Landing page styles*/
-  .se-form-group  .cover-label{
-     display: inline-flex; 
-    width: 20%;
-    text-align: right;
-    justify-content: center;
-  }
-   
-  .se-form-group .cover-form-input{
-    width:25%;
-    margin-bottom: 3px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-   
-    
-  
-  }
-  .se-cover-button input[type="button"]{
-    width: 15%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    position: relative;
-    margin-top: 3rem;
 }
-   
-  .se-cover-form{
-    text-align: center;
-  }
-  /* .se-cover-flex{
+
+/* Mobile menu */
+.se_nav .se-dropdown,
+.se-dropdown-content {
+  display: none;
+}
+
+
+/* forms styles */
+.se-form-container {
+  height: auto;
+  max-width: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0);
+  padding: 2rem;
+  background-color: rgb(235, 238, 242);
+  overflow: auto;
+  text-wrap: wrap;
+
+
+
+}
+
+.se-form-group {
+  margin-bottom: 20px;
+
+
+}
+
+.se-form-group label {
+  display: inline-block;
+  font-weight: bold;
+  margin: 7px 0 5px 0;
+  width: 450px;
+
+}
+
+.se-form-group input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 6px;
+
+}
+
+.se-form-group input:focus {
+  border: 2px solid #d0d0;
+}
+
+/*Landing page styles*/
+.se-form-group .cover-label {
+  display: inline-flex;
+  width: 20%;
+  text-align: right;
+  justify-content: center;
+}
+
+.se-form-group .cover-form-input {
+  width: 25%;
+  margin-bottom: 3px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+
+
+}
+
+.se-cover-button input[type="button"] {
+  width: 15%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.se-cover-form {
+  text-align: center;
+}
+
+/* .se-cover-flex{
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
   } */
-   
+
 /* Check boxes */
-    
-   
-   
-    
-    
-      
 
-  /* Tables for the forms */
-  .se-table-container{
-    overflow: auto; /* Enable horizontal scrolling */
+
+
+
+
+
+
+/* Tables for the forms */
+.se-table-container {
+  overflow: auto;
+  /* Enable horizontal scrolling */
+  margin: 0 auto;
+}
+
+.se_form_tables {
+  margin: 1rem;
+  border-collapse: collapse;
+
+
+
+}
+
+.se_form_tables th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+.se_form_tables th {
+  background-color: #f2f2f2;
+}
+
+.se_form_tables td input {
+  width: 80%;
+}
+
+/* Fieldset styles */
+.se_fieldset {
+  margin: 2rem;
+  border: 1px solid rgb(165, 161, 161);
+}
+
+.se_fieldset legend {
+  font-style: italic;
+  font-size: 1.1rem;
+  font-family: Helvetica, sans-serif;
+
+
+}
+
+
+/* Media query for screens with minimum width of 768px */
+@media only screen and (max-width: 768px) {
+
+  .se_nav a {
+
+    font-size: .9rem;
+    padding: .6rem;
+    border: 1px solid #fff;
+    width: 100%;
+    text-align: center;
+
+
+  }
+
+  .se_nav li {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+
+
+
+  }
+
+  /* mobile menu */
+  .se_nav .se-dropdown {
+    display: block;
+  }
+
+  .se_nav .se-dropdown-content {
+    display: none;
+  }
+
+  .se_nav .se-dropdown:hover .se-dropdown-content {
+    display: block;
+
+  }
+
+  .se-main-menu {
+    display: none;
+  }
+
+  /* landing page styles */
+  .se-form-group .cover-label {
+    display: inline;
     margin: 0 auto;
+    text-align: center;
+    margin-bottom: 1rem;
   }
-   
-  .se_form_tables {
-      margin: 1rem;
-      border-collapse: collapse;
-      
-     
-     
-  }
- .se_form_tables  th, td {
-      border: 1px solid black;
-      padding: 8px;
-      text-align: left;
-  }
-   .se_form_tables th {
-      background-color: #f2f2f2;
-  }
-  .se_form_tables td input{
-     width: 80%;
-  }
-   
-  /* Fieldset styles */
-  .se_fieldset{
-    margin: 2rem;
-    border: 1px solid rgb(165, 161, 161);
-  }
-  .se_fieldset legend{
-    font-style: italic;
-    font-size: 1.1rem;
-    font-family: Helvetica, sans-serif;
-     
+
+  .se-form-group .cover-form-input {
+    margin-bottom: .6rem;
+
 
   }
-  
-   
-  /* Media query for screens with minimum width of 768px */
-  @media only screen and (max-width: 768px){
-   
-    .se_nav a{
-     
-      font-size: .9rem;
-      padding: .6rem;
-      border: 1px solid #fff;
-      width: 100%;
-      text-align: center;
 
-      
-    }
-    .se_nav li {
-      display: inline-block;
-      width: 100%;
-      margin-bottom: 5px;
-       
+  .se-form-group label {
+    display: block;
+    width: 80%;
+    text-align: center;
+  }
 
-      
-    }
-      /* mobile menu */
-      .se_nav .se-dropdown{
-        display: block;
-      }
-      .se_nav .se-dropdown-content{
-        display: none;
-      }
-      .se_nav .se-dropdown:hover .se-dropdown-content{
-        display: block;
+  .se-form-group input {
+    width: 80%;
+  }
 
-      }
-      .se-main-menu{
-        display: none;
-      }
-    /* landing page styles */
-    .se-form-group .cover-label{
-      display: inline;
-      margin:0 auto;
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-    .se-form-group .cover-form-input{
-      margin-bottom: .6rem;
-      
-    
-    }
-    .se-form-group label{
-      display: block;
-      width: 80%;
-      text-align: center;
-    }
-    .se-form-group input{
-      width: 80%;
-    }
-     .se-form-group .cover-label ,.cover-form-select{
-      display: inline-block;
-      width: 80%;
-      text-align: center;
-     }
+  .se-form-group .cover-label,
+  .cover-form-select {
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+  }
 
-     .se-form-group .cover-form-input{
-      width: 80%;
-     }
-    
-    
-    /* Mobile styles for tables */
-    .se_form_tables td input{
-      width: 100%;
-   }
-   .se-form-container{
+  .se-form-group .cover-form-input {
+    width: 80%;
+  }
+
+
+  /* Mobile styles for tables */
+  .se_form_tables td input {
+    width: 100%;
+  }
+
+  .se-form-container {
     width: auto;
     align-items: center;
-   }
-   .col-md-12{
-    width:100%
-   }
-     
-   }
-   
-   
+  }
 
-  
-  
+  .col-md-12 {
+    width: 100%
+  }
+
+}
