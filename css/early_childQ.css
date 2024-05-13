@@ -17,6 +17,7 @@
     background-color: rgb(231, 231, 228);
 }
 
+
 .ecq-inst-para /*cover page*/
 { 
     margin: 25px;
@@ -26,19 +27,23 @@
 .ecq-form-cover{  /*cover page*/
     max-width: 100%;
     border-radius:5px;
-    height: auto;
-    margin: 20px;
+    /*height: auto;*/
+    margin: 0 auto;
+    padding: 20px;
     display: flex;
     justify-content:center;
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+
 }
 
 .ecq-cover-container{
     display: flex;
     flex-direction: column;
+   
 }
+
 
 .ecq-cover-container div{
     margin-bottom: 3px;
